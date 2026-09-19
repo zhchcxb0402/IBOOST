@@ -32,13 +32,47 @@ function png(size) {
   ihdr.writeUInt32BE(size, 4);
   ihdr[8] = 8; // bit depth
   ihdr[9] = 2; // truecolor RGB
-  const row = Buffer.alloc(1 + size * 3);
-  for (let x = 0; x < size; x++) {
-    row[1 + x * 3] = 0x58;
-    row[2 + x * 3] = 0xcc;
-    row[3 + x * 3] = 0x02;
+
+  // Blue background with a white upward chevron (approximates icon.svg).
+  const bg = [0x25, 0x63, 0xeb];
+  const fg = [0xff, 0xff, 0xff];
+  const px = Buffer.alloc(size * size * 3);
+  const set = (x, y, c) => {
+    if (x < 0 || y < 0 || x >= size || y >= size) return;
+    const i = (y * size + x) * 3;
+    px[i] = c[0];
+    px[i + 1] = c[1];
+    px[i + 2] = c[2];
+  };
+  for (let y = 0; y < size; y++)
+    for (let x = 0; x < size; x++) set(x, y, bg);
+  // chevron: two strokes meeting at (cx, cy-apex), thickness t
+  const cx = size / 2;
+  const apex = size * 0.36;
+  const base = size * 0.62;
+  const half = size * 0.2;
+  const t = size * 0.05;
+  for (let y = Math.floor(apex - t); y < base + t; y++) {
+    const prog = (y - apex) / (base - apex);
+    const lx = cx - half * prog;
+    const rx = cx + half * prog;
+    for (const sx of [lx, rx])
+      for (let dx = -t; dx <= t; dx++) set(Math.round(sx + dx), y, fg);
   }
-  const raw = Buffer.concat(Array.from({ length: size }, () => row));
+  // dot
+  const r = size * 0.055;
+  const dy = Math.round(size * 0.75);
+  for (let y = -r; y <= r; y++)
+    for (let x = -r; x <= r; x++)
+      if (x * x + y * y <= r * r) set(Math.round(cx + x), dy + y, fg);
+
+  const rows = [];
+  for (let y = 0; y < size; y++) {
+    const row = Buffer.alloc(1 + size * 3);
+    px.copy(row, 1, y * size * 3, (y + 1) * size * 3);
+    rows.push(row);
+  }
+  const raw = Buffer.concat(rows);
   const idat = deflateSync(raw);
   return Buffer.concat([
     Buffer.from([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a]),
