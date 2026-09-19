@@ -161,7 +161,7 @@ export const businessManagement: Subject = {
               id: "bm-l2-q4",
               type: "short",
               prompt:
-                "Write 'increase market share to 20% within two years' is SMART. Which criterion does 'within two years' satisfy? (one word)",
+                "The objective 'increase market share to 20% within two years' is SMART. Which criterion does 'within two years' satisfy? (one word)",
               answer: "Time-bound",
               keywords: ["time"],
               acceptable: ["time bound", "timed", "timebound"],

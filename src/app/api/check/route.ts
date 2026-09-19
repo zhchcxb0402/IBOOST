@@ -37,7 +37,8 @@ function rulesCheck(b: Required<Body>): { correct: boolean; feedback: string } {
   const hits = b.keywords.filter((k) =>
     normalize(b.userAnswer).includes(normalize(k))
   );
-  if (b.keywords.length > 0 && hits.length / b.keywords.length >= 0.6) {
+  const required = Math.min(2, Math.ceil(b.keywords.length * 0.6));
+  if (b.keywords.length > 0 && hits.length >= required) {
     return {
       correct: true,
       feedback: `Covers the key ideas (${hits.length}/${b.keywords.length} keywords).`,
