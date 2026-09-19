@@ -2,6 +2,7 @@
 
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
+import type { Level } from "@/content/types";
 
 export const MAX_HEARTS = 5;
 
@@ -14,11 +15,15 @@ type ProgressState = {
   lastActiveDate: string | null;
   completedLessons: Record<string, true>;
   srs: Record<string, SrsEntry>;
+  onboarded: boolean;
+  selectedSubjects: Record<string, Level>;
   completeLesson: (key: string, xpEarned: number) => void;
   loseHeart: () => void;
   refillHearts: () => void;
   reviewCard: (cardId: string, known: boolean) => void;
   syncDaily: () => void;
+  setSubjectLevel: (slug: string, level: Level | null) => void;
+  finishOnboarding: () => void;
   reset: () => void;
 };
 
@@ -44,6 +49,8 @@ export const useProgress = create<ProgressState>()(
       lastActiveDate: null,
       completedLessons: {},
       srs: {},
+      onboarded: false,
+      selectedSubjects: {},
       completeLesson: (key, xpEarned) =>
         set((s) => {
           const today = todayStr();
@@ -81,6 +88,14 @@ export const useProgress = create<ProgressState>()(
             ? { hearts: MAX_HEARTS }
             : s
         ),
+      setSubjectLevel: (slug, level) =>
+        set((s) => {
+          const next = { ...s.selectedSubjects };
+          if (level === null) delete next[slug];
+          else next[slug] = level;
+          return { selectedSubjects: next };
+        }),
+      finishOnboarding: () => set({ onboarded: true }),
       reset: () =>
         set({
           xp: 0,
@@ -89,8 +104,21 @@ export const useProgress = create<ProgressState>()(
           lastActiveDate: null,
           completedLessons: {},
           srs: {},
+          onboarded: false,
+          selectedSubjects: {},
         }),
     }),
-    { name: "iboost-progress" }
+    {
+      name: "iboost-progress",
+      version: 2,
+      migrate: (state: unknown) => {
+        const s = (state ?? {}) as Partial<ProgressState>;
+        return {
+          ...s,
+          onboarded: s.onboarded ?? false,
+          selectedSubjects: s.selectedSubjects ?? {},
+        } as ProgressState;
+      },
+    }
   )
 );

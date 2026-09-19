@@ -1,17 +1,16 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useSyncExternalStore } from "react";
 import { useProgress } from "@/store/progress";
 
 export function useHydrated() {
-  const [hydrated, setHydrated] = useState(false);
+  const hydrated = useSyncExternalStore(
+    (cb) => useProgress.persist?.onFinishHydration?.(cb) ?? (() => {}),
+    () => useProgress.persist?.hasHydrated?.() ?? true,
+    () => false
+  );
   useEffect(() => {
-    const unsub = useProgress.persist?.onFinishHydration?.(() =>
-      setHydrated(true)
-    );
-    if (useProgress.persist?.hasHydrated?.()) setHydrated(true);
     useProgress.getState().syncDaily();
-    return unsub;
   }, []);
   return hydrated;
 }
