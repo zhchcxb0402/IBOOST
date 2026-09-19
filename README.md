@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# IBOOST
 
-## Getting Started
+Gamified learning PWA — Next.js (App Router) + Tailwind CSS + shadcn/ui + Supabase.
 
-First, run the development server:
+## Setup
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Install Node via nvm (no Homebrew needed):
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+   ```bash
+   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+   source ~/.zshrc
+   nvm install --lts
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. Install pnpm:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+   ```bash
+   corepack enable && corepack prepare pnpm@latest --activate
+   ```
 
-## Learn More
+3. Install dependencies:
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   pnpm install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. Configure environment:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   ```bash
+   cp .env.example .env.local
+   ```
 
-## Deploy on Vercel
+   Fill in `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY`
+   from your Supabase project settings.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+5. Run the dev server:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   ```bash
+   pnpm dev
+   ```
+
+   App runs at http://localhost:3000.
+
+## Useful commands
+
+- `pnpm build` — production build
+- `pnpm lint` — eslint
+- `pnpm dlx shadcn@latest add <component>` — add shadcn/ui components
+- `node scripts/gen-icons.mjs` — regenerate placeholder PWA icons
+
+## Branch workflow
+
+- `main` is the stable branch — never commit directly to it.
+- Create a feature branch per task: `git checkout -b feat/<short-name>`
+- Open a PR into `main` when done.
