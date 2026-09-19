@@ -39,7 +39,7 @@ Gamified learning PWA — Next.js (App Router) + Tailwind CSS + shadcn/ui + Supa
    pnpm dev
    ```
 
-   App runs at http://localhost:3000.
+   App runs at https://iboostlearningtool.vercel.app
 
 ## Useful commands
 
