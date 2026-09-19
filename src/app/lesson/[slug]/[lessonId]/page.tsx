@@ -4,7 +4,16 @@ import { useState } from "react";
 import Link from "next/link";
 import { notFound, useParams, useRouter } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
-import { Check, Flame, Heart, X, Zap } from "lucide-react";
+import {
+  Check,
+  Flame,
+  Heart,
+  Loader2,
+  Sparkles,
+  X,
+  Zap,
+} from "lucide-react";
+import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import {
@@ -21,11 +30,14 @@ import { cn } from "@/lib/utils";
 
 type Phase = "answering" | "correct" | "wrong" | "done";
 
-function isCorrect(q: Question, sel: number | null, text: string): boolean {
+function norm(s: string) {
+  return s.trim().toLowerCase();
+}
+
+function mcqCorrect(q: Question, sel: number | null, text: string): boolean {
   if (q.type === "mcq") return sel === q.answerIndex;
-  const norm = (s: string) => s.trim().toLowerCase();
-  const ok = [q.answer, ...(q.acceptable ?? [])].map(norm);
-  return ok.includes(norm(text));
+  if (q.type === "tf") return (text === "true") === q.answer;
+  return false;
 }
 
 export default function LessonPage() {
@@ -38,10 +50,14 @@ export default function LessonPage() {
 
   const [qIndex, setQIndex] = useState(0);
   const [sel, setSel] = useState<number | null>(null);
+  const [tfSel, setTfSel] = useState<boolean | null>(null);
   const [text, setText] = useState("");
   const [phase, setPhase] = useState<Phase>("answering");
   const [correctCount, setCorrectCount] = useState(0);
   const [heartDialog, setHeartDialog] = useState(false);
+  const [checking, setChecking] = useState(false);
+  const [feedback, setFeedback] = useState("");
+  const [source, setSource] = useState<"ai" | "rules" | null>(null);
 
   const lesson = found?.lesson;
   const subject = found?.subject;
@@ -50,9 +66,11 @@ export default function LessonPage() {
   if (!lesson || !subject || !q) notFound();
 
   const progress = (qIndex / lesson.questions.length) * 100;
+  const tfText = tfSel === null ? "" : String(tfSel);
 
-  const check = () => {
-    const ok = isCorrect(q, sel, text);
+  const applyResult = (ok: boolean, fb = "", src: "ai" | "rules" | null = null) => {
+    setFeedback(fb);
+    setSource(src);
     if (ok) {
       setCorrectCount((c) => c + 1);
       setPhase("correct");
@@ -63,6 +81,33 @@ export default function LessonPage() {
     }
   };
 
+  const check = async () => {
+    if (q.type === "short") {
+      setChecking(true);
+      try {
+        const res = await fetch("/api/check", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            prompt: q.prompt,
+            answer: q.answer,
+            keywords: q.keywords,
+            acceptable: q.acceptable ?? [],
+            userAnswer: text,
+          }),
+        });
+        const data = await res.json();
+        applyResult(!!data.correct, data.feedback ?? "", data.source ?? null);
+      } catch {
+        applyResult(false, "Could not check your answer.");
+      } finally {
+        setChecking(false);
+      }
+      return;
+    }
+    applyResult(mcqCorrect(q, sel, tfText));
+  };
+
   const next = () => {
     if (qIndex + 1 >= lesson.questions.length) {
       const xp = correctCount * 10 + 20;
@@ -71,14 +116,28 @@ export default function LessonPage() {
     } else {
       setQIndex((i) => i + 1);
       setSel(null);
+      setTfSel(null);
       setText("");
+      setFeedback("");
+      setSource(null);
       setPhase("answering");
     }
   };
 
-  const canCheck = q.type === "mcq" ? sel !== null : text.trim().length > 0;
+  const canCheck =
+    q.type === "mcq"
+      ? sel !== null
+      : q.type === "tf"
+        ? tfSel !== null
+        : text.trim().length > 0;
   const xpEarned = correctCount * 10 + 20;
   const accuracy = Math.round((correctCount / lesson.questions.length) * 100);
+  const correctAnswerText =
+    q.type === "mcq"
+      ? q.choices[q.answerIndex]
+      : q.type === "tf"
+        ? String(q.answer).toUpperCase()
+        : q.answer;
 
   if (phase === "done") {
     return (
@@ -96,7 +155,9 @@ export default function LessonPage() {
             key={i}
             className="absolute size-3 rounded-full"
             style={{
-              backgroundColor: ["#58CC02", "#1CB0F6", "#FF9600", "#CE82FF"][i % 4],
+              backgroundColor: ["#2563EB", "#1CB0F6", "#FF9600", "#CE82FF"][
+                i % 4
+              ],
               left: "50%",
               top: "40%",
             }}
@@ -148,7 +209,7 @@ export default function LessonPage() {
           className="w-full max-w-sm"
         >
           <Button
-            className="w-full rounded-2xl border-b-4 border-[#46a302] bg-[#58CC02] py-6 text-base font-extrabold hover:bg-[#4fb802] active:border-b-0"
+            className="w-full rounded-2xl border-b-4 border-brand-dark bg-brand py-6 text-base font-extrabold hover:bg-brand-dark active:border-b-0"
             onClick={() => router.push(`/learn/${slug}`)}
           >
             CONTINUE
@@ -184,7 +245,7 @@ export default function LessonPage() {
           >
             <h1 className="text-xl font-extrabold leading-snug">{q.prompt}</h1>
 
-            {q.type === "mcq" ? (
+            {q.type === "mcq" && (
               <div className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2">
                 {q.choices.map((choice, i) => (
                   <button
@@ -193,7 +254,7 @@ export default function LessonPage() {
                     className={cn(
                       "rounded-2xl border-2 border-b-4 px-4 py-4 text-left font-bold transition-colors",
                       sel === i
-                        ? "border-[#1CB0F6] bg-[#1CB0F6]/10 text-[#1CB0F6]"
+                        ? "border-brand bg-brand/10 text-brand"
                         : "border-muted bg-card hover:bg-muted/50"
                     )}
                   >
@@ -201,18 +262,35 @@ export default function LessonPage() {
                   </button>
                 ))}
               </div>
-            ) : (
-              <input
+            )}
+
+            {q.type === "tf" && (
+              <div className="mt-6 grid grid-cols-2 gap-3">
+                {[true, false].map((v) => (
+                  <button
+                    key={String(v)}
+                    onClick={() => phase === "answering" && setTfSel(v)}
+                    className={cn(
+                      "rounded-2xl border-2 border-b-4 px-4 py-6 text-center text-lg font-extrabold transition-colors",
+                      tfSel === v
+                        ? "border-brand bg-brand/10 text-brand"
+                        : "border-muted bg-card hover:bg-muted/50"
+                    )}
+                  >
+                    {v ? "TRUE" : "FALSE"}
+                  </button>
+                ))}
+              </div>
+            )}
+
+            {q.type === "short" && (
+              <textarea
                 value={text}
                 onChange={(e) => setText(e.target.value)}
-                disabled={phase !== "answering"}
+                disabled={phase !== "answering" || checking}
                 placeholder="Type your answer…"
-                className="mt-6 w-full rounded-2xl border-2 border-b-4 border-muted bg-card px-4 py-4 font-bold outline-none focus:border-[#1CB0F6]"
-                onKeyDown={(e) => {
-                  if (e.key === "Enter" && phase === "answering" && canCheck)
-                    check();
-                  else if (e.key === "Enter" && phase !== "answering") next();
-                }}
+                rows={3}
+                className="mt-6 w-full rounded-2xl border-2 border-b-4 border-muted bg-card px-4 py-4 font-bold outline-none focus:border-brand resize-none"
               />
             )}
           </motion.div>
@@ -229,26 +307,49 @@ export default function LessonPage() {
       >
         <div className="mx-auto flex w-full max-w-md flex-col gap-3">
           {phase === "correct" && (
-            <p className="font-extrabold text-emerald-600">Nice! 🎉</p>
+            <div>
+              <p className="font-extrabold text-emerald-600">
+                Nice! 🎉{" "}
+                {source === "ai" && (
+                  <Badge className="ml-1 border-0 bg-brand-soft font-extrabold text-brand-dark align-middle">
+                    <Sparkles className="mr-1 size-3" /> Checked by AI
+                  </Badge>
+                )}
+              </p>
+              {feedback && (
+                <p className="text-sm font-bold text-emerald-600">{feedback}</p>
+              )}
+            </div>
           )}
           {phase === "wrong" && (
             <div>
               <p className="font-extrabold text-rose-600">
-                Correct answer:{" "}
-                {q.type === "mcq" ? q.choices[q.answerIndex] : q.answer}
+                Correct answer: {correctAnswerText}{" "}
+                {source === "ai" && (
+                  <Badge className="ml-1 border-0 bg-brand-soft font-extrabold text-brand-dark align-middle">
+                    <Sparkles className="mr-1 size-3" /> Checked by AI
+                  </Badge>
+                )}
               </p>
-              <p className="text-sm font-bold text-rose-500">
-                {q.explanation}
-              </p>
+              {feedback && (
+                <p className="text-sm font-bold text-rose-500">{feedback}</p>
+              )}
+              <p className="text-sm font-bold text-rose-500">{q.explanation}</p>
             </div>
           )}
           {phase === "answering" ? (
             <Button
-              disabled={!canCheck}
+              disabled={!canCheck || checking}
               onClick={check}
-              className="w-full rounded-2xl border-b-4 border-[#46a302] bg-[#58CC02] py-6 text-base font-extrabold hover:bg-[#4fb802] active:border-b-0 disabled:opacity-40"
+              className="w-full rounded-2xl border-b-4 border-brand-dark bg-brand py-6 text-base font-extrabold hover:bg-brand-dark active:border-b-0 disabled:opacity-40"
             >
-              CHECK
+              {checking ? (
+                <>
+                  <Loader2 className="mr-2 size-4 animate-spin" /> CHECKING…
+                </>
+              ) : (
+                "CHECK"
+              )}
             </Button>
           ) : (
             <Button
@@ -256,7 +357,7 @@ export default function LessonPage() {
               className={cn(
                 "w-full rounded-2xl border-b-4 py-6 text-base font-extrabold active:border-b-0",
                 phase === "correct"
-                  ? "border-[#46a302] bg-[#58CC02] hover:bg-[#4fb802]"
+                  ? "border-brand-dark bg-brand hover:bg-brand-dark"
                   : "border-rose-600 bg-rose-500 hover:bg-rose-600"
               )}
             >
@@ -279,7 +380,7 @@ export default function LessonPage() {
             </DialogDescription>
           </DialogHeader>
           <Button
-            className="w-full rounded-2xl border-b-4 border-[#46a302] bg-[#58CC02] font-extrabold hover:bg-[#4fb802] active:border-b-0"
+            className="w-full rounded-2xl border-b-4 border-brand-dark bg-brand font-extrabold hover:bg-brand-dark active:border-b-0"
             onClick={() => {
               refillHearts();
               setHeartDialog(false);

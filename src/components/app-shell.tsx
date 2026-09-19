@@ -2,31 +2,42 @@
 
 import { useEffect } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { Home, Layers, Map, User } from "lucide-react";
+import { usePathname, useRouter } from "next/navigation";
+import { BookOpen, Home, Layers, User } from "lucide-react";
+import { Logo } from "@/components/logo";
 import { cn } from "@/lib/utils";
+import { useHydrated } from "@/lib/use-hydrated";
 import { useProgress } from "@/store/progress";
 
 const NAV = [
   { href: "/", label: "Home", icon: Home },
-  { href: "/", label: "Learn", icon: Map },
+  { href: "/subjects", label: "Subjects", icon: BookOpen },
   { href: "/flashcards", label: "Flashcards", icon: Layers },
   { href: "/profile", label: "Profile", icon: User },
 ];
 
-function isActive(pathname: string, href: string, label: string) {
-  if (label === "Learn") return pathname.startsWith("/learn");
-  if (href === "/") return pathname === "/";
+function isActive(pathname: string, href: string) {
+  if (href === "/") return pathname === "/" || pathname.startsWith("/learn");
   return pathname.startsWith(href);
 }
 
 export function AppShell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
-  const fullScreen = pathname.startsWith("/lesson/");
+  const router = useRouter();
+  const hydrated = useHydrated();
+  const onboarded = useProgress((s) => s.onboarded);
+  const fullScreen =
+    pathname.startsWith("/lesson/") || pathname === "/onboarding";
 
   useEffect(() => {
     useProgress.getState().syncDaily();
   }, []);
+
+  useEffect(() => {
+    if (hydrated && !onboarded && pathname !== "/onboarding") {
+      router.replace("/onboarding");
+    }
+  }, [hydrated, onboarded, pathname, router]);
 
   if (fullScreen) return <>{children}</>;
 
@@ -34,10 +45,8 @@ export function AppShell({ children }: { children: React.ReactNode }) {
     <div className="min-h-screen md:flex">
       {/* Sidebar (md+) */}
       <aside className="hidden md:flex md:w-60 md:flex-col md:border-r md:p-4 md:gap-1 shrink-0">
-        <Link href="/" className="mb-6 flex items-center gap-2 px-2">
-          <span className="text-2xl font-extrabold text-[#58CC02] tracking-tight">
-            IBOOST
-          </span>
+        <Link href="/" className="mb-6 px-2">
+          <Logo />
         </Link>
         {NAV.map(({ href, label, icon: Icon }) => (
           <Link
@@ -45,8 +54,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
             href={href}
             className={cn(
               "flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-bold text-muted-foreground hover:bg-muted transition-colors",
-              isActive(pathname, href, label) &&
-                "text-[#58CC02] bg-[#58CC02]/10"
+              isActive(pathname, href) && "text-brand bg-brand/10"
             )}
           >
             <Icon className="size-5" />
@@ -68,7 +76,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
               href={href}
               className={cn(
                 "flex flex-col items-center gap-0.5 py-2 text-[10px] font-bold text-muted-foreground",
-                isActive(pathname, href, label) && "text-[#58CC02]"
+                isActive(pathname, href) && "text-brand"
               )}
             >
               <Icon className="size-6" />
