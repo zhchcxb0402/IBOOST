@@ -9,11 +9,13 @@ import { StatsPills } from "@/components/stats-pills";
 import { lessonCount, subjects, unitsForLevel } from "@/content";
 import { useHydrated } from "@/lib/use-hydrated";
 import { useProgress } from "@/store/progress";
+import { useAuth } from "@/lib/auth";
 
 export default function HomePage() {
   const hydrated = useHydrated();
   const completedLessons = useProgress((s) => s.completedLessons);
   const selectedSubjects = useProgress((s) => s.selectedSubjects);
+  const { user } = useAuth();
 
   const selected = subjects.filter((s) =>
     hydrated ? selectedSubjects[s.slug] : false
@@ -23,7 +25,17 @@ export default function HomePage() {
     <div className="pt-4 space-y-6">
       <header className="flex items-center justify-between">
         <span className="text-xl font-extrabold tracking-tight">Learn</span>
-        <StatsPills />
+        <div className="flex items-center gap-2">
+          <StatsPills />
+          {!user && (
+            <Link
+              href="/login"
+              className="rounded-full border-2 border-border px-3 py-1 text-xs font-extrabold text-muted-foreground hover:text-foreground hover:border-foreground/30 transition-colors"
+            >
+              Sign in
+            </Link>
+          )}
+        </div>
       </header>
 
       <section className="grid grid-cols-1 gap-3 sm:grid-cols-2">

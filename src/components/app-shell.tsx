@@ -8,6 +8,8 @@ import { Logo } from "@/components/logo";
 import { cn } from "@/lib/utils";
 import { useHydrated } from "@/lib/use-hydrated";
 import { useProgress } from "@/store/progress";
+import { useAuth } from "@/lib/auth";
+import { useProgressSync } from "@/lib/sync";
 
 const NAV = [
   { href: "/", label: "Home", icon: Home },
@@ -26,15 +28,24 @@ export function AppShell({ children }: { children: React.ReactNode }) {
   const router = useRouter();
   const hydrated = useHydrated();
   const onboarded = useProgress((s) => s.onboarded);
+  const { user, profile } = useAuth();
+  useProgressSync(user);
   const fullScreen =
-    pathname.startsWith("/lesson/") || pathname === "/onboarding";
+    pathname.startsWith("/lesson/") ||
+    pathname === "/onboarding" ||
+    pathname === "/login";
 
   useEffect(() => {
     useProgress.getState().syncDaily();
   }, []);
 
   useEffect(() => {
-    if (hydrated && !onboarded && pathname !== "/onboarding") {
+    if (
+      hydrated &&
+      !onboarded &&
+      pathname !== "/onboarding" &&
+      pathname !== "/login"
+    ) {
       router.replace("/onboarding");
     }
   }, [hydrated, onboarded, pathname, router]);
@@ -48,19 +59,35 @@ export function AppShell({ children }: { children: React.ReactNode }) {
         <Link href="/" className="mb-6 px-2">
           <Logo />
         </Link>
-        {NAV.map(({ href, label, icon: Icon }) => (
-          <Link
-            key={label}
-            href={href}
-            className={cn(
-              "flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-bold text-muted-foreground hover:bg-muted transition-colors",
-              isActive(pathname, href) && "text-brand bg-brand/10"
-            )}
-          >
-            <Icon className="size-5" />
-            {label.toUpperCase()}
-          </Link>
-        ))}
+        {NAV.map(({ href, label, icon: Icon }) => {
+          const avatarUrl =
+            href === "/profile" && user
+              ? ((profile?.avatar_url as string | undefined) ??
+                (user.user_metadata?.avatar_url as string | undefined))
+              : undefined;
+          return (
+            <Link
+              key={label}
+              href={href}
+              className={cn(
+                "flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-bold text-muted-foreground hover:bg-muted transition-colors",
+                isActive(pathname, href) && "text-brand bg-brand/10"
+              )}
+            >
+              {avatarUrl ? (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img
+                  src={avatarUrl}
+                  alt=""
+                  className="size-5 rounded-full object-cover"
+                />
+              ) : (
+                <Icon className="size-5" />
+              )}
+              {label.toUpperCase()}
+            </Link>
+          );
+        })}
       </aside>
 
       <main className="mx-auto w-full max-w-md md:max-w-2xl flex-1 px-4 pb-24 md:pb-8">
@@ -70,19 +97,35 @@ export function AppShell({ children }: { children: React.ReactNode }) {
       {/* Bottom tab bar (mobile) */}
       <nav className="fixed bottom-0 inset-x-0 z-50 border-t bg-background md:hidden">
         <div className="mx-auto flex max-w-md items-stretch justify-between px-6">
-          {NAV.map(({ href, label, icon: Icon }) => (
-            <Link
-              key={label}
-              href={href}
-              className={cn(
-                "flex flex-col items-center gap-0.5 py-2 text-[10px] font-bold text-muted-foreground",
-                isActive(pathname, href) && "text-brand"
-              )}
-            >
-              <Icon className="size-6" />
-              {label.toUpperCase()}
-            </Link>
-          ))}
+          {NAV.map(({ href, label, icon: Icon }) => {
+            const avatarUrl =
+              href === "/profile" && user
+                ? ((profile?.avatar_url as string | undefined) ??
+                  (user.user_metadata?.avatar_url as string | undefined))
+                : undefined;
+            return (
+              <Link
+                key={label}
+                href={href}
+                className={cn(
+                  "flex flex-col items-center gap-0.5 py-2 text-[10px] font-bold text-muted-foreground",
+                  isActive(pathname, href) && "text-brand"
+                )}
+              >
+                {avatarUrl ? (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img
+                    src={avatarUrl}
+                    alt=""
+                    className="size-6 rounded-full object-cover"
+                  />
+                ) : (
+                  <Icon className="size-6" />
+                )}
+                {label.toUpperCase()}
+              </Link>
+            );
+          })}
         </div>
       </nav>
     </div>

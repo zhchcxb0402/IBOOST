@@ -26,6 +26,7 @@ import {
 import { getLesson } from "@/content";
 import type { Question } from "@/content/types";
 import { MAX_HEARTS, useProgress } from "@/store/progress";
+import { useAuth } from "@/lib/auth";
 import { cn } from "@/lib/utils";
 
 type Phase = "answering" | "correct" | "wrong" | "done";
@@ -47,6 +48,7 @@ export default function LessonPage() {
 
   const { hearts, streak, loseHeart, refillHearts, completeLesson } =
     useProgress();
+  const { user } = useAuth();
 
   const [qIndex, setQIndex] = useState(0);
   const [sel, setSel] = useState<number | null>(null);
@@ -202,6 +204,14 @@ export default function LessonPage() {
             </div>
           </div>
         </motion.div>
+        {!user && (
+          <Link
+            href="/login"
+            className="text-sm font-extrabold text-brand hover:underline"
+          >
+            Sign in to save your streak
+          </Link>
+        )}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
