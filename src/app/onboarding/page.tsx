@@ -32,7 +32,7 @@ export default function OnboardingPage() {
     for (const [slug, level] of Object.entries(picked))
       setSubjectLevel(slug, level);
     finishOnboarding();
-    router.push("/");
+    router.push("/home");
   };
 
   const built = subjects.filter((s) => !s.comingSoon);
