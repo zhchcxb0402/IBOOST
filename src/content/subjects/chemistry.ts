@@ -178,6 +178,227 @@ export const chemistry: Subject = {
             },
           ],
         },
+        {
+          id: "ch-l11",
+          title: "Limiting reagent and percentage yield",
+          questions: [
+            {
+              id: "ch-l11-q1",
+              type: "mcq",
+              prompt: "The limiting reagent is the reactant that",
+              choices: [
+                "is most expensive",
+                "runs out first and stops the reaction",
+                "is in excess",
+                "is a gas",
+              ],
+              answerIndex: 1,
+              explanation:
+                "It determines the maximum amount of product.",
+            },
+            {
+              id: "ch-l11-q2",
+              type: "mcq",
+              prompt: "Percentage yield equals",
+              choices: [
+                "actual/theoretical × 100%",
+                "theoretical/actual × 100%",
+                "actual × theoretical",
+                "100% always",
+              ],
+              answerIndex: 0,
+              explanation:
+                "% yield = actual yield ÷ theoretical yield × 100%.",
+            },
+            {
+              id: "ch-l11-q3",
+              type: "tf",
+              prompt:
+                "The reagent in excess has material left over when the reaction ends.",
+              answer: true,
+              explanation:
+                "Only the limiting reagent is fully consumed.",
+            },
+            {
+              id: "ch-l11-q4",
+              type: "mcq",
+              prompt:
+                "Correct order for a limiting-reagent problem:",
+              choices: [
+                "mass → volume → moles",
+                "moles of each → compare to ratio → use limiting → product moles → mass",
+                "weigh products first",
+                "guess the excess",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Convert to moles, divide by coefficients, smallest ratio is limiting.",
+            },
+            {
+              id: "ch-l11-q5",
+              type: "short",
+              prompt:
+                "2H₂ + O₂ → 2H₂O. With 4 mol H₂ and 1 mol O₂, how many moles of H₂O form?",
+              answer: "2",
+              keywords: ["2"],
+              acceptable: ["2 mol"],
+              explanation:
+                "O₂ is limiting (needs 2 mol H₂): 1 mol O₂ → 2 mol H₂O; 2 mol H₂ left over.",
+            },
+            {
+              id: "ch-l11-q6",
+              type: "short",
+              prompt:
+                "Theoretical yield 10 g, actual yield 8 g. Give the percentage yield.",
+              answer: "80%",
+              keywords: ["80"],
+              acceptable: ["80", "80 percent"],
+              explanation: "8/10 × 100 = 80%.",
+            },
+          ],
+        },
+        {
+          id: "ch-l12",
+          title: "Empirical and molecular formulas",
+          questions: [
+            {
+              id: "ch-l12-q1",
+              type: "mcq",
+              prompt: "An empirical formula shows",
+              choices: [
+                "the actual number of atoms",
+                "the simplest whole-number ratio of atoms",
+                "the structure",
+                "the mass",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Simplest ratio — e.g. CH₂O for glucose.",
+            },
+            {
+              id: "ch-l12-q2",
+              type: "mcq",
+              prompt: "The empirical formula of C₆H₁₂O₆ is",
+              choices: ["C₆H₁₂O₆", "CH₂O", "C₂H₄O₂", "CHO"],
+              answerIndex: 1,
+              explanation: "Divide subscripts by 6: CH₂O.",
+            },
+            {
+              id: "ch-l12-q3",
+              type: "tf",
+              prompt:
+                "The molecular formula is a whole-number multiple of the empirical formula.",
+              answer: true,
+              explanation:
+                "Molecular = n × empirical; find n from the molar mass.",
+            },
+            {
+              id: "ch-l12-q4",
+              type: "mcq",
+              prompt:
+                "First step converting percentage composition to empirical formula:",
+              choices: [
+                "multiply by 100",
+                "divide each % by the element's Ar",
+                "add the percentages",
+                "round to integers",
+              ],
+              answerIndex: 1,
+              explanation:
+                "% mass → moles → divide by smallest → whole-number ratio.",
+            },
+            {
+              id: "ch-l12-q5",
+              type: "short",
+              prompt:
+                "A hydrocarbon is 80% C and 20% H by mass. Give its empirical formula.",
+              answer: "CH3",
+              keywords: ["CH3", "CH₃"],
+              acceptable: ["CH₃"],
+              explanation:
+                "80/12 = 6.67 mol C; 20/1 = 20 mol H; ratio 1:3 → CH₃.",
+            },
+            {
+              id: "ch-l12-q6",
+              type: "short",
+              prompt:
+                "Empirical formula CH₂ (mass 14) and molecular mass 56. Give the molecular formula.",
+              answer: "C4H8",
+              keywords: ["C4H8", "C₄H₈"],
+              acceptable: ["C₄H₈"],
+              explanation: "56/14 = 4 → C₄H₈.",
+            },
+          ],
+        },
+        {
+          id: "ch-l13",
+          title: "Mole calculations: exam practice",
+          questions: [
+            {
+              id: "ch-l13-q1",
+              type: "mcq",
+              prompt: "The number of moles is calculated by",
+              choices: [
+                "n = m/M",
+                "n = M/m",
+                "n = m × M",
+                "n = m/V",
+              ],
+              answerIndex: 0,
+              explanation: "n = mass ÷ molar mass.",
+            },
+            {
+              id: "ch-l13-q2",
+              type: "mcq",
+              prompt: "Moles of solute in a solution are found using",
+              choices: [
+                "n = c/V",
+                "n = c × V (V in dm³)",
+                "n = V/c",
+                "n = mM",
+              ],
+              answerIndex: 1,
+              explanation:
+                "n = cV — watch the cm³ → dm³ conversion (÷1000).",
+            },
+            {
+              id: "ch-l13-q3",
+              type: "tf",
+              prompt:
+                "One mole contains approximately 6.02 × 10²³ particles (Avogadro's number).",
+              answer: true,
+              explanation: "N_A = 6.02 × 10²³ mol⁻¹.",
+            },
+            {
+              id: "ch-l13-q4",
+              type: "mcq",
+              prompt: "The mass of n moles of a substance is",
+              choices: ["n/M", "n × M", "M/n", "M + n"],
+              answerIndex: 1,
+              explanation: "m = nM.",
+            },
+            {
+              id: "ch-l13-q5",
+              type: "short",
+              prompt:
+                "Give the moles in 8 g of CH₄ (M = 16 g/mol).",
+              answer: "0.5",
+              keywords: ["0.5"],
+              acceptable: ["0.5 mol"],
+              explanation: "8/16 = 0.5 mol.",
+            },
+            {
+              id: "ch-l13-q6",
+              type: "short",
+              prompt:
+                "Give the mass of 0.25 mol of NaOH (M = 40 g/mol).",
+              answer: "10",
+              keywords: ["10"],
+              acceptable: ["10 g"],
+              explanation: "0.25 × 40 = 10 g.",
+            },
+          ],
+        },
       ],
     },
     {
@@ -342,6 +563,236 @@ export const chemistry: Subject = {
               keywords: ["3p", "subshell", "shield", "higher"],
               explanation:
                 "3p is further/higher energy than 3s → lower IE despite more protons.",
+            },
+          ],
+        },
+        {
+          id: "ch-l14",
+          title: "VSEPR shapes and polarity",
+          questions: [
+            {
+              id: "ch-l14-q1",
+              type: "mcq",
+              prompt:
+                "Four electron domains around a central atom give which electron geometry?",
+              choices: [
+                "trigonal planar",
+                "tetrahedral",
+                "linear",
+                "bent",
+              ],
+              answerIndex: 1,
+              explanation:
+                "4 domains → tetrahedral arrangement of electron pairs.",
+            },
+            {
+              id: "ch-l14-q2",
+              type: "mcq",
+              prompt:
+                "NH₃ has 3 bonding domains + 1 lone pair. Its molecular shape is",
+              choices: [
+                "tetrahedral",
+                "trigonal planar",
+                "trigonal pyramidal",
+                "bent",
+              ],
+              answerIndex: 2,
+              explanation:
+                "The lone pair shapes a tetrahedron into a pyramid: ~107°.",
+            },
+            {
+              id: "ch-l14-q3",
+              type: "tf",
+              prompt:
+                "CO₂ has polar bonds but is a nonpolar molecule because the dipoles cancel.",
+              answer: true,
+              explanation:
+                "Linear and symmetric → bond dipoles cancel out.",
+            },
+            {
+              id: "ch-l14-q4",
+              type: "mcq",
+              prompt: "The bond angle in water is approximately",
+              choices: ["180°", "120°", "109.5°", "104.5°"],
+              answerIndex: 3,
+              explanation:
+                "Two lone pairs compress H–O–H to ~104.5°.",
+            },
+            {
+              id: "ch-l14-q5",
+              type: "short",
+              prompt: "Name the molecular shape of BF₃.",
+              answer: "trigonal planar",
+              keywords: ["trigonal", "planar"],
+              acceptable: ["trigonal planar", "flat triangle"],
+              explanation:
+                "3 domains, no lone pairs → trigonal planar, 120°.",
+            },
+            {
+              id: "ch-l14-q6",
+              type: "short",
+              prompt: "Give the bond angle in methane CH₄, in degrees.",
+              answer: "109.5",
+              keywords: ["109.5"],
+              acceptable: ["109.5°", "109"],
+              explanation: "Perfect tetrahedron: 109.5°.",
+            },
+          ],
+        },
+        {
+          id: "ch-l15",
+          title: "Intermolecular forces and boiling points",
+          questions: [
+            {
+              id: "ch-l15-q1",
+              type: "mcq",
+              prompt:
+                "The strongest type of intermolecular force is",
+              choices: [
+                "London dispersion",
+                "dipole–dipole",
+                "hydrogen bonding",
+                "ionic",
+              ],
+              answerIndex: 2,
+              explanation:
+                "H-bonding (N/O/F–H) >> dipole–dipole > dispersion.",
+            },
+            {
+              id: "ch-l15-q2",
+              type: "mcq",
+              prompt:
+                "London dispersion forces increase with",
+              choices: [
+                "charge",
+                "number of electrons / molecular size",
+                "polarity",
+                "temperature",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Larger electron clouds → stronger temporary dipoles.",
+            },
+            {
+              id: "ch-l15-q3",
+              type: "tf",
+              prompt:
+                "Hydrogen bonding explains water's unusually high boiling point.",
+              answer: true,
+              explanation:
+                "Without H-bonds, H₂O would boil far below 0°C (compare H₂S).",
+            },
+            {
+              id: "ch-l15-q4",
+              type: "mcq",
+              prompt:
+                "Hydrogen bonding occurs when H is bonded to",
+              choices: [
+                "any atom",
+                "N, O or F",
+                "C only",
+                "metals",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Needs a highly electronegative atom with a lone pair: N, O, F.",
+            },
+            {
+              id: "ch-l15-q5",
+              type: "short",
+              prompt:
+                "Which has the higher boiling point: H₂O or H₂S? (one word)",
+              answer: "water",
+              keywords: ["water", "H2O", "H₂O"],
+              acceptable: ["H2O", "H₂O"],
+              explanation:
+                "H-bonding in water vs weak dipole forces in H₂S.",
+            },
+            {
+              id: "ch-l15-q6",
+              type: "short",
+              prompt:
+                "Name the dominant intermolecular force between CHCl₃ (chloroform, polar) molecules.",
+              answer: "dipole-dipole",
+              keywords: ["dipole"],
+              acceptable: ["dipole-dipole forces", "permanent dipole"],
+              explanation:
+                "Polar molecule without N/O/F–H → dipole–dipole.",
+            },
+          ],
+        },
+        {
+          id: "ch-l16",
+          title: "Periodic trends",
+          questions: [
+            {
+              id: "ch-l16-q1",
+              type: "mcq",
+              prompt:
+                "Across a period (left to right), atomic radius",
+              choices: [
+                "increases",
+                "decreases",
+                "stays constant",
+                "doubles",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Greater nuclear charge pulls the same shell tighter.",
+            },
+            {
+              id: "ch-l16-q2",
+              type: "mcq",
+              prompt:
+                "Across a period, first ionisation energy generally",
+              choices: [
+                "decreases",
+                "increases",
+                "stays constant",
+                "halves",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Atoms hold electrons more tightly across a period.",
+            },
+            {
+              id: "ch-l16-q3",
+              type: "tf",
+              prompt:
+                "Electronegativity increases across a period and decreases down a group.",
+              answer: true,
+              explanation:
+                "Peak at fluorine (top right).",
+            },
+            {
+              id: "ch-l16-q4",
+              type: "mcq",
+              prompt: "The most electronegative element is",
+              choices: ["oxygen", "chlorine", "fluorine", "francium"],
+              answerIndex: 2,
+              explanation: "Fluorine = 4.0 on the Pauling scale.",
+            },
+            {
+              id: "ch-l16-q5",
+              type: "short",
+              prompt:
+                "Which is larger: a Na atom or a Na⁺ ion? (one word)",
+              answer: "Na",
+              keywords: ["na", "atom", "sodium atom"],
+              acceptable: ["na atom", "sodium", "the atom"],
+              explanation:
+                "Na⁺ loses its outer shell — much smaller.",
+            },
+            {
+              id: "ch-l16-q6",
+              type: "short",
+              prompt:
+                "State the trend in first ionisation energy DOWN a group (one word).",
+              answer: "decreases",
+              keywords: ["decreas"],
+              acceptable: ["decrease", "goes down", "lower"],
+              explanation:
+                "Outer electron farther and more shielded → easier to remove.",
             },
           ],
         },
@@ -516,6 +967,243 @@ export const chemistry: Subject = {
             },
           ],
         },
+        {
+          id: "ch-l17",
+          title: "Enthalpy calculations: q = mcΔT and bond enthalpies",
+          questions: [
+            {
+              id: "ch-l17-q1",
+              type: "mcq",
+              prompt:
+                "The heat absorbed or released when a substance changes temperature is",
+              choices: [
+                "q = mcΔT",
+                "q = m/ΔT",
+                "q = c²",
+                "q = mL always",
+              ],
+              answerIndex: 0,
+              explanation: "q = mcΔT.",
+            },
+            {
+              id: "ch-l17-q2",
+              type: "mcq",
+              prompt:
+                "Using bond enthalpies, ΔH equals",
+              choices: [
+                "bonds formed − bonds broken",
+                "bonds broken − bonds formed",
+                "products − reactants",
+                "zero",
+              ],
+              answerIndex: 1,
+              explanation:
+                "ΔH ≈ Σ(bonds broken) − Σ(bonds formed).",
+            },
+            {
+              id: "ch-l17-q3",
+              type: "tf",
+              prompt:
+                "An exothermic reaction has a negative ΔH because heat is released.",
+              answer: true,
+              explanation:
+                "Products lower in enthalpy → ΔH < 0.",
+            },
+            {
+              id: "ch-l17-q4",
+              type: "mcq",
+              prompt:
+                "Bond enthalpy calculations are approximate because tabulated values are",
+              choices: [
+                "exact",
+                "average values over many compounds",
+                "only for gases",
+                "negative",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Mean bond enthalpies — actual bonds vary with environment.",
+            },
+            {
+              id: "ch-l17-q5",
+              type: "short",
+              prompt:
+                "100 g of water warms by 10°C (c = 4.18 J/g·K). Give q in joules.",
+              answer: "4180",
+              keywords: ["4180", "4.18"],
+              acceptable: ["4,180", "4.18 kJ"],
+              explanation: "q = 100 × 4.18 × 10 = 4,180 J.",
+            },
+            {
+              id: "ch-l17-q6",
+              type: "short",
+              prompt:
+                "Estimate ΔH for H₂ + Cl₂ → 2HCl using bond enthalpies: H–H 436, Cl–Cl 243, H–Cl 432 kJ/mol.",
+              answer: "-185",
+              keywords: ["-185", "185"],
+              acceptable: ["−185", "-185 kJ", "−185 kJ"],
+              explanation:
+                "Broken: 436 + 243 = 679; formed: 2 × 432 = 864; ΔH = 679 − 864 = −185 kJ.",
+            },
+          ],
+        },
+        {
+          id: "ch-l18",
+          title: "Hess cycle applications",
+          questions: [
+            {
+              id: "ch-l18-q1",
+              type: "mcq",
+              prompt: "Hess's law states that enthalpy change",
+              choices: [
+                "depends on the pathway",
+                "is independent of the route taken",
+                "is always negative",
+                "requires a catalyst",
+              ],
+              answerIndex: 1,
+              explanation:
+                "ΔH is a state function — same start and end, same ΔH.",
+            },
+            {
+              id: "ch-l18-q2",
+              type: "mcq",
+              prompt: "Using enthalpies of formation, ΔH_reaction equals",
+              choices: [
+                "ΣΔHf(reactants) − ΣΔHf(products)",
+                "ΣΔHf(products) − ΣΔHf(reactants)",
+                "ΣΔHf(products) + ΣΔHf(reactants)",
+                "ΔHf of the catalyst",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Products minus reactants.",
+            },
+            {
+              id: "ch-l18-q3",
+              type: "tf",
+              prompt:
+                "Reversing a reaction changes the sign of ΔH.",
+              answer: true,
+              explanation:
+                "Exothermic forward → endothermic backward.",
+            },
+            {
+              id: "ch-l18-q4",
+              type: "mcq",
+              prompt:
+                "Hess cycles are most useful for reactions whose ΔH is",
+              choices: [
+                "easy to measure",
+                "difficult or impossible to measure directly",
+                "zero",
+                "very fast",
+              ],
+              answerIndex: 1,
+              explanation:
+                "e.g. enthalpy of formation of CH₄ — measured indirectly via combustions.",
+            },
+            {
+              id: "ch-l18-q5",
+              type: "short",
+              prompt:
+                "Using ΔHf: CO₂ = −394, CO = −111 kJ/mol. Give ΔH for CO + ½O₂ → CO₂ in kJ/mol.",
+              answer: "-283",
+              keywords: ["-283", "283"],
+              acceptable: ["−283", "-283 kJ/mol"],
+              explanation:
+                "−394 − (−111) = −283 kJ/mol.",
+            },
+            {
+              id: "ch-l18-q6",
+              type: "short",
+              prompt:
+                "A → B is +50 kJ and B → C is −20 kJ. Give ΔH for A → C in kJ.",
+              answer: "30",
+              keywords: ["30"],
+              acceptable: ["+30", "30 kJ"],
+              explanation: "50 − 20 = +30 kJ.",
+            },
+          ],
+        },
+        {
+          id: "ch-l19",
+          title: "Born–Haber cycles",
+          level: "HL",
+          questions: [
+            {
+              id: "ch-l19-q1",
+              type: "mcq",
+              prompt:
+                "Lattice enthalpy is defined as the enthalpy change when",
+              choices: [
+                "a solid melts",
+                "gaseous ions form one mole of ionic solid",
+                "an atom ionises",
+                "a bond breaks",
+              ],
+              answerIndex: 1,
+              explanation:
+                "MX(g ions) → MX(s) — always exothermic.",
+            },
+            {
+              id: "ch-l19-q2",
+              type: "mcq",
+              prompt:
+                "A Born–Haber cycle does NOT include",
+              choices: [
+                "atomisation",
+                "ionisation energy",
+                "electron affinity",
+                "activation energy",
+              ],
+              answerIndex: 3,
+              explanation:
+                "It uses atomisation, IE, EA, bond dissociation and lattice enthalpy — kinetics (Ea) is irrelevant.",
+            },
+            {
+              id: "ch-l19-q3",
+              type: "tf",
+              prompt:
+                "Lattice enthalpy is larger for small, highly charged ions.",
+              answer: true,
+              explanation:
+                "MgO (2+/2−) has far greater lattice enthalpy than NaCl.",
+            },
+            {
+              id: "ch-l19-q4",
+              type: "mcq",
+              prompt:
+                "Which has the greater lattice enthalpy magnitude?",
+              choices: ["NaCl", "MgO", "KBr", "CsI"],
+              answerIndex: 1,
+              explanation:
+                "Mg²⁺ and O²⁻ — 4× the charge product of NaCl, smaller ions.",
+            },
+            {
+              id: "ch-l19-q5",
+              type: "short",
+              prompt:
+                "Born–Haber for NaCl: sublimation +107, IE +496, ½Cl₂ bond +121, EA −349, ΔHf = −411 kJ/mol. Give the lattice enthalpy.",
+              answer: "-786",
+              keywords: ["-786", "786"],
+              acceptable: ["−786", "-786 kJ"],
+              explanation:
+                "Steps sum: 107 + 496 + 121 − 349 = 375; lattice = −411 − 375 = −786 kJ/mol.",
+            },
+            {
+              id: "ch-l19-q6",
+              type: "short",
+              prompt:
+                "Is the first electron affinity of chlorine exothermic or endothermic? (one word)",
+              answer: "exothermic",
+              keywords: ["exotherm"],
+              acceptable: ["negative", "exo"],
+              explanation:
+                "Cl + e⁻ → Cl⁻ releases energy — negative ΔH.",
+            },
+          ],
+        },
       ],
     },
     {
@@ -681,6 +1369,245 @@ export const chemistry: Subject = {
             },
           ],
         },
+        {
+          id: "ch-l20",
+          title: "Rate graphs and collision theory",
+          questions: [
+            {
+              id: "ch-l20-q1",
+              type: "mcq",
+              prompt:
+                "On a concentration–time graph, the rate of reaction at time t is given by",
+              choices: [
+                "the value of the curve",
+                "the gradient of the curve at t",
+                "the area under the curve",
+                "the y-intercept",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Rate = slope; it decreases as reactants run out.",
+            },
+            {
+              id: "ch-l20-q2",
+              type: "mcq",
+              prompt:
+                "For a collision to lead to reaction, particles must collide with",
+              choices: [
+                "any energy",
+                "energy ≥ Ea and correct orientation",
+                "low speed",
+                "a catalyst always",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Both conditions: sufficient energy AND the right geometry.",
+            },
+            {
+              id: "ch-l20-q3",
+              type: "tf",
+              prompt:
+                "A catalyst increases rate by providing a path with lower activation energy, without changing ΔH.",
+              answer: true,
+              explanation:
+                "Same overall enthalpy change, faster route.",
+            },
+            {
+              id: "ch-l20-q4",
+              type: "mcq",
+              prompt:
+                "Raising temperature increases rate mainly because",
+              choices: [
+                "particles move slower",
+                "a greater fraction of collisions have energy ≥ Ea",
+                "concentration increases",
+                "Ea increases",
+              ],
+              answerIndex: 1,
+              explanation:
+                "The Maxwell–Boltzmann tail past Ea grows steeply with T.",
+            },
+            {
+              id: "ch-l20-q5",
+              type: "short",
+              prompt:
+                "Powdered magnesium reacts faster than a ribbon of the same mass because of increased ___ (one phrase).",
+              answer: "surface area",
+              keywords: ["surface", "area"],
+              acceptable: ["surface area"],
+              explanation:
+                "More particles exposed → more collisions per second.",
+            },
+            {
+              id: "ch-l20-q6",
+              type: "short",
+              prompt:
+                "0.05 mol of product forms in 10 s. Give the average rate in mol/s.",
+              answer: "0.005",
+              keywords: ["0.005"],
+              acceptable: ["5e-3", "0.005 mol/s"],
+              explanation: "0.05/10 = 0.005 mol/s.",
+            },
+          ],
+        },
+        {
+          id: "ch-l21",
+          title: "Kc expressions and Le Châtelier",
+          questions: [
+            {
+              id: "ch-l21-q1",
+              type: "mcq",
+              prompt: "For aA + bB ⇌ cC + dD, Kc equals",
+              choices: [
+                "[A]ᵃ[B]ᵇ/([C]ᶜ[D]ᵈ)",
+                "[C]ᶜ[D]ᵈ/([A]ᵃ[B]ᵇ)",
+                "[A][B]/[C][D]",
+                "c + d − a − b",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Products over reactants, each raised to its coefficient.",
+            },
+            {
+              id: "ch-l21-q2",
+              type: "mcq",
+              prompt:
+                "Adding more reactant to a system at equilibrium shifts the position",
+              choices: [
+                "left",
+                "right",
+                "nowhere",
+                "out of the flask",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Le Châtelier: the system consumes some of the added species.",
+            },
+            {
+              id: "ch-l21-q3",
+              type: "tf",
+              prompt:
+                "Kc changes only when the temperature changes — not with concentration or pressure.",
+              answer: true,
+              explanation:
+                "Kc is temperature-dependent only; position shifts to restore it.",
+            },
+            {
+              id: "ch-l21-q4",
+              type: "mcq",
+              prompt: "Adding a catalyst to an equilibrium system",
+              choices: [
+                "shifts equilibrium right",
+                "shifts it left",
+                "reaches equilibrium faster without changing Kc",
+                "increases ΔH",
+              ],
+              answerIndex: 2,
+              explanation:
+                "Catalysts speed both directions equally — same Kc.",
+            },
+            {
+              id: "ch-l21-q5",
+              type: "short",
+              prompt:
+                "Write the Kc expression for N₂ + 3H₂ ⇌ 2NH₃.",
+              answer: "[NH3]^2/([N2][H2]^3)",
+              keywords: ["NH3", "N2", "H2"],
+              acceptable: ["[nh3]2/([n2][h2]3)", "Kc = [NH₃]²/([N₂][H₂]³)"],
+              explanation:
+                "[NH₃]²/([N₂][H₂]³).",
+            },
+            {
+              id: "ch-l21-q6",
+              type: "short",
+              prompt:
+                "For an exothermic forward reaction, heating shifts equilibrium which way? (one word)",
+              answer: "left",
+              keywords: ["left", "backward", "reactant"],
+              acceptable: ["backwards", "towards reactants", "reverse"],
+              explanation:
+                "The system opposes the added heat → shifts toward reactants.",
+            },
+          ],
+        },
+        {
+          id: "ch-l22",
+          title: "Kc calculations",
+          level: "HL",
+          questions: [
+            {
+              id: "ch-l22-q1",
+              type: "mcq",
+              prompt:
+                "An ICE table tracks which quantities for each species?",
+              choices: [
+                "initial, change, equilibrium",
+                "ions, catalysts, energy",
+                "input, current, end",
+                "index, concentration, enthalpy",
+              ],
+              answerIndex: 0,
+              explanation:
+                "Initial, Change, Equilibrium — the standard Kc workflow.",
+            },
+            {
+              id: "ch-l22-q2",
+              type: "mcq",
+              prompt: "A Kc much greater than 1 means",
+              choices: [
+                "reactants are favoured",
+                "products are favoured at equilibrium",
+                "no reaction occurs",
+                "Kc is wrong",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Large Kc → product-rich equilibrium.",
+            },
+            {
+              id: "ch-l22-q3",
+              type: "tf",
+              prompt:
+                "Pure solids and liquids are omitted from Kc expressions.",
+              answer: true,
+              explanation:
+                "Their 'concentrations' are effectively constant.",
+            },
+            {
+              id: "ch-l22-q4",
+              type: "mcq",
+              prompt: "If the reaction quotient Q < Kc, the system shifts",
+              choices: [
+                "left",
+                "right (towards products)",
+                "nowhere",
+                "to a new Kc",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Q must rise to reach Kc → forward reaction dominates.",
+            },
+            {
+              id: "ch-l22-q5",
+              type: "short",
+              prompt:
+                "Equilibrium: [NH₃] = 0.2, [N₂] = 0.1, [H₂] = 0.1 M. Give Kc for N₂ + 3H₂ ⇌ 2NH₃.",
+              answer: "400",
+              keywords: ["400"],
+              explanation:
+                "Kc = 0.2²/(0.1 × 0.1³) = 0.04/0.0001 = 400.",
+            },
+            {
+              id: "ch-l22-q6",
+              type: "short",
+              prompt:
+                "For A ⇌ B, equilibrium has [A] = 0.3 and [B] = 0.6. Give Kc.",
+              answer: "2",
+              keywords: ["2"],
+              explanation: "Kc = [B]/[A] = 0.6/0.3 = 2.",
+            },
+          ],
+        },
       ],
     },
     {
@@ -830,6 +1757,319 @@ export const chemistry: Subject = {
               keywords: ["conjugate", "base", "hydroly", "oh", "basic"],
               explanation:
                 "e.g. CH₃COO⁻ + H₂O ⇌ CH₃COOH + OH⁻ → pH > 7 at equivalence.",
+            },
+          ],
+        },
+        {
+          id: "ch-l23",
+          title: "pH, pOH and Kw",
+          questions: [
+            {
+              id: "ch-l23-q1",
+              type: "mcq",
+              prompt: "pH is defined as",
+              choices: [
+                "log[H⁺]",
+                "−log[H⁺]",
+                "[H⁺]/[OH⁻]",
+                "14 − [H⁺]",
+              ],
+              answerIndex: 1,
+              explanation: "pH = −log₁₀[H⁺].",
+            },
+            {
+              id: "ch-l23-q2",
+              type: "mcq",
+              prompt: "The ionic product of water Kw at 25°C is",
+              choices: [
+                "1 × 10⁻¹⁴",
+                "1 × 10⁻⁷",
+                "14",
+                "1 × 10⁻¹",
+              ],
+              answerIndex: 0,
+              explanation:
+                "Kw = [H⁺][OH⁻] = 10⁻¹⁴ at 25°C.",
+            },
+            {
+              id: "ch-l23-q3",
+              type: "tf",
+              prompt: "At 25°C, pH + pOH = 14.",
+              answer: true,
+              explanation:
+                "Follows directly from Kw = 10⁻¹⁴.",
+            },
+            {
+              id: "ch-l23-q4",
+              type: "mcq",
+              prompt: "A strong acid is one that",
+              choices: [
+                "is concentrated",
+                "dissociates essentially completely in water",
+                "has pH 7",
+                "contains two H atoms",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Strength = extent of dissociation, not concentration.",
+            },
+            {
+              id: "ch-l23-q5",
+              type: "short",
+              prompt: "Give the pH of a solution with [H⁺] = 1 × 10⁻³ M.",
+              answer: "3",
+              keywords: ["3"],
+              acceptable: ["3.0"],
+              explanation: "pH = −log(10⁻³) = 3.",
+            },
+            {
+              id: "ch-l23-q6",
+              type: "short",
+              prompt: "A solution has pH = 9. Give its pOH.",
+              answer: "5",
+              keywords: ["5"],
+              explanation: "pOH = 14 − 9 = 5.",
+            },
+          ],
+        },
+        {
+          id: "ch-l24",
+          title: "Buffers, electrolysis and redox titrations",
+          level: "HL",
+          questions: [
+            {
+              id: "ch-l24-q1",
+              type: "mcq",
+              prompt: "A buffer solution contains",
+              choices: [
+                "a strong acid and a strong base",
+                "a weak acid and its conjugate base (or its salt)",
+                "pure water",
+                "a salt only",
+              ],
+              answerIndex: 1,
+              explanation:
+                "e.g. CH₃COOH + CH₃COONa — the pair absorbs added H⁺ or OH⁻.",
+            },
+            {
+              id: "ch-l24-q2",
+              type: "mcq",
+              prompt: "In electrolysis, reduction occurs at the",
+              choices: [
+                "anode",
+                "cathode",
+                "salt bridge",
+                "power supply",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Cathode = reduction (electrons supplied); remember RED CAT.",
+            },
+            {
+              id: "ch-l24-q3",
+              type: "tf",
+              prompt:
+                "A buffer resists pH change when small amounts of acid or base are added.",
+              answer: true,
+              explanation:
+                "The weak acid/base pair neutralises additions — pH barely moves.",
+            },
+            {
+              id: "ch-l24-q4",
+              type: "mcq",
+              prompt:
+                "In a titration, the equivalence point differs from the endpoint because the endpoint is",
+              choices: [
+                "always at pH 7",
+                "where the indicator changes colour",
+                "never reached",
+                "the start",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Equivalence = exact stoichiometric amounts; endpoint = indicator colour change.",
+            },
+            {
+              id: "ch-l24-q5",
+              type: "short",
+              prompt:
+                "During electrolysis of MOLTEN NaCl, name the product formed at the cathode.",
+              answer: "sodium",
+              keywords: ["sodium", "na"],
+              acceptable: ["Na", "liquid sodium"],
+              explanation:
+                "Na⁺ + e⁻ → Na at the cathode; Cl₂ gas forms at the anode.",
+            },
+            {
+              id: "ch-l24-q6",
+              type: "short",
+              prompt:
+                "MnO₄⁻ oxidises Fe²⁺ in a 1:5 ratio. Give the moles of Fe²⁺ oxidised by 0.02 mol MnO₄⁻.",
+              answer: "0.1",
+              keywords: ["0.1"],
+              acceptable: ["0.10", "0.1 mol"],
+              explanation: "0.02 × 5 = 0.1 mol Fe²⁺.",
+            },
+          ],
+        },
+        {
+          id: "ch-l25",
+          title: "Organic nomenclature and spectroscopy",
+          questions: [
+            {
+              id: "ch-l25-q1",
+              type: "mcq",
+              prompt: "The suffix '-ol' indicates which functional group?",
+              choices: [
+                "aldehyde",
+                "alcohol",
+                "ketone",
+                "carboxylic acid",
+              ],
+              answerIndex: 1,
+              explanation:
+                "-ol = alcohol (–OH); e.g. ethanol.",
+            },
+            {
+              id: "ch-l25-q2",
+              type: "mcq",
+              prompt:
+                "In IR spectroscopy, a broad absorption around 3200–3600 cm⁻¹ typically indicates",
+              choices: [
+                "C=O",
+                "O–H",
+                "C–H",
+                "C–Cl",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Broad O–H stretch — characteristic of alcohols/carboxylic acids.",
+            },
+            {
+              id: "ch-l25-q3",
+              type: "tf",
+              prompt:
+                "In ¹H NMR, the number of signals equals the number of different proton environments.",
+              answer: true,
+              explanation:
+                "Chemically equivalent protons give one signal; integration gives the ratio.",
+            },
+            {
+              id: "ch-l25-q4",
+              type: "mcq",
+              prompt:
+                "A strong sharp IR peak near 1700 cm⁻¹ indicates",
+              choices: [
+                "O–H",
+                "C=O",
+                "N–H",
+                "C–O",
+              ],
+              answerIndex: 1,
+              explanation:
+                "C=O stretch ~1700 cm⁻¹ — carbonyl compounds.",
+            },
+            {
+              id: "ch-l25-q5",
+              type: "short",
+              prompt:
+                "Give the number of ¹H NMR signals for ethanol CH₃CH₂OH.",
+              answer: "3",
+              keywords: ["3"],
+              explanation:
+                "CH₃, CH₂ and OH are three distinct environments.",
+            },
+            {
+              id: "ch-l25-q6",
+              type: "short",
+              prompt:
+                "Give the suffix used to name ketones (e.g. propan___).",
+              answer: "-one",
+              keywords: ["one"],
+              acceptable: ["one", "-one"],
+              explanation:
+                "Ketones end in '-one': propanone, butanone.",
+            },
+          ],
+        },
+        {
+          id: "ch-l26",
+          title: "SN1 and SN2 mechanisms",
+          level: "HL",
+          questions: [
+            {
+              id: "ch-l26-q1",
+              type: "mcq",
+              prompt: "SN2 reactions proceed via",
+              choices: [
+                "a carbocation",
+                "one concerted step with backside attack",
+                "two steps",
+                "free radicals",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Nucleophile attacks as the leaving group departs — one step, inversion of configuration.",
+            },
+            {
+              id: "ch-l26-q2",
+              type: "mcq",
+              prompt: "SN1 reactions are fastest for",
+              choices: [
+                "primary halogenoalkanes",
+                "tertiary halogenoalkanes",
+                "methyl halides",
+                "all equally",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Tertiary carbocations are most stable → fast SN1.",
+            },
+            {
+              id: "ch-l26-q3",
+              type: "tf",
+              prompt:
+                "The rate of an SN1 reaction depends only on the substrate concentration, not the nucleophile.",
+              answer: true,
+              explanation:
+                "Rate-determining step is carbocation formation: rate = k[RX].",
+            },
+            {
+              id: "ch-l26-q4",
+              type: "mcq",
+              prompt:
+                "In a mechanism, a curly arrow shows the movement of",
+              choices: [
+                "atoms",
+                "a pair of electrons",
+                "protons only",
+                "energy",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Curly arrows track electron pairs from nucleophile to electrophile.",
+            },
+            {
+              id: "ch-l26-q5",
+              type: "short",
+              prompt:
+                "Which reacts fastest by SN2: primary, secondary or tertiary halogenoalkane? (one word)",
+              answer: "primary",
+              keywords: ["primary"],
+              acceptable: ["1°", "primary halogenoalkane"],
+              explanation:
+                "Least steric hindrance → easiest backside attack.",
+            },
+            {
+              id: "ch-l26-q6",
+              type: "short",
+              prompt:
+                "Name the positively charged intermediate in an SN1 reaction.",
+              answer: "carbocation",
+              keywords: ["carbocation"],
+              acceptable: ["carbonium ion"],
+              explanation:
+                "The leaving group departs first, forming a carbocation.",
             },
           ],
         },
