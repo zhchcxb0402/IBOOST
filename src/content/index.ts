@@ -12,6 +12,10 @@ import { history } from "./subjects/history";
 import { psychology } from "./subjects/psychology";
 import { ess } from "./subjects/ess";
 import { geography } from "./subjects/geography";
+import { mathAi } from "./subjects/math-ai";
+import { spanishB } from "./subjects/spanish-b";
+import { germanB } from "./subjects/german-b";
+import { frenchB } from "./subjects/french-b";
 import { decks } from "./decks";
 
 export const subjects: Subject[] = [
@@ -28,6 +32,10 @@ export const subjects: Subject[] = [
   psychology,
   ess,
   geography,
+  mathAi,
+  spanishB,
+  germanB,
+  frenchB,
 ];
 export { decks };
 
