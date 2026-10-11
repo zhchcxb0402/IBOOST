@@ -5,6 +5,9 @@ import { businessManagement } from "./subjects/business-management";
 import { physics } from "./subjects/physics";
 import { chemistry } from "./subjects/chemistry";
 import { economics } from "./subjects/economics";
+import { biology } from "./subjects/biology";
+import { computerScience } from "./subjects/computer-science";
+import { englishB } from "./subjects/english-b";
 import { decks } from "./decks";
 
 export const subjects: Subject[] = [
@@ -13,6 +16,9 @@ export const subjects: Subject[] = [
   businessManagement,
   physics,
   chemistry,
+  biology,
+  computerScience,
+  englishB,
   economics,
 ];
 export { decks };
