@@ -178,6 +178,211 @@ export const spanishB: Subject = {
             },
           ],
         },
+        {
+          id: "sb-l12",
+          title: "Identidades: lectura y vocabulario",
+          questions: [
+            {
+              id: "sb-l12-q1",
+              type: "mcq",
+              prompt:
+                "Lee: «Aunque nació en Lima, Lucía se crió en Madrid. Todavía echa de menos la comida de su abuela.» — ¿Qué significa «se crió»?",
+              choices: [
+                "was raised",
+                "was born",
+                "studied",
+                "travelled",
+              ],
+              answerIndex: 0,
+              explanation:
+                "«Criarse» = to grow up/be raised (crecer, educarse).",
+            },
+            {
+              id: "sb-l12-q2",
+              type: "mcq",
+              prompt:
+                "«Echar de menos» significa",
+              choices: ["to hate", "to miss", "to throw away", "to forget"],
+              answerIndex: 1,
+              explanation:
+                "«Echar de menos» = to miss (Spain); «extrañar» in Latin America.",
+            },
+            {
+              id: "sb-l12-q3",
+              type: "tf",
+              prompt:
+                "«Mis raíces están en Perú» — «raíces» means 'roots', referring to cultural origin.",
+              answer: true,
+              explanation:
+                "«Raíces» = roots — a key identity word.",
+            },
+            {
+              id: "sb-l12-q4",
+              type: "mcq",
+              prompt:
+                "«Me llevo muy bien con mi hermana.» — «llevarse bien con» means",
+              choices: [
+                "to argue with",
+                "to get on well with",
+                "to live with",
+                "to look like",
+              ],
+              answerIndex: 1,
+              explanation:
+                "«Llevarse bien/mal con» = get on well/badly with someone.",
+            },
+            {
+              id: "sb-l12-q5",
+              type: "short",
+              prompt:
+                "Traduce: 'self-esteem' (two words in Spanish).",
+              answer: "autoestima",
+              keywords: ["autoestima"],
+              acceptable: ["la autoestima"],
+              explanation:
+                "La autoestima — key vocabulary for the Identities theme.",
+            },
+            {
+              id: "sb-l12-q6",
+              type: "short",
+              prompt:
+                "Completa: «Estoy orgullosa de mis ___ (raíces/origenes)».",
+              answer: "raíces",
+              keywords: ["raíces", "raices"],
+              acceptable: ["raices", "mis raíces"],
+              explanation:
+                "«Raíces» = roots; also acceptable without the accent for typing.",
+            },
+          ],
+        },
+        {
+          id: "sb-l13",
+          title: "Por y para",
+          questions: [
+            {
+              id: "sb-l13-q1",
+              type: "mcq",
+              prompt: "«Este regalo es ___ ti.» — ¿Por o para?",
+              choices: ["por", "para", "a", "de"],
+              answerIndex: 1,
+              explanation:
+                "Recipient/destination → «para»: for you.",
+            },
+            {
+              id: "sb-l13-q2",
+              type: "mcq",
+              prompt: "«Gracias ___ tu ayuda.» — ¿Por o para?",
+              choices: ["para", "por", "con", "sin"],
+              answerIndex: 1,
+              explanation:
+                "Cause/reason → «por»: thanks FOR your help.",
+            },
+            {
+              id: "sb-l13-q3",
+              type: "tf",
+              prompt:
+                "«Estudio para ser médico» uses «para» because it expresses a goal.",
+              answer: true,
+              explanation:
+                "Purpose/goal → «para» (in order to become).",
+            },
+            {
+              id: "sb-l13-q4",
+              type: "mcq",
+              prompt: "«Caminamos ___ el parque durante dos horas.»",
+              choices: ["para", "por", "en", "a"],
+              answerIndex: 1,
+              explanation:
+                "Movement through/along + duration → «por».",
+            },
+            {
+              id: "sb-l13-q5",
+              type: "short",
+              prompt:
+                "Completa: «Lo hice ___ ti» (I did it FOR you, on your behalf).",
+              answer: "por",
+              keywords: ["por"],
+              acceptable: ["por ti"],
+              explanation:
+                "On behalf of / because of someone → «por».",
+            },
+            {
+              id: "sb-l13-q6",
+              type: "short",
+              prompt:
+                "Completa: «El tren sale ___ Barcelona» (destination).",
+              answer: "para",
+              keywords: ["para"],
+              acceptable: ["para Barcelona"],
+              explanation:
+                "Destination → «para»: heading for Barcelona.",
+            },
+          ],
+        },
+        {
+          id: "sb-l14",
+          title: "Los pronombres de objeto",
+          questions: [
+            {
+              id: "sb-l14-q1",
+              type: "mcq",
+              prompt: "«¿Viste la película? — Sí, ___ vi ayer.»",
+              choices: ["le", "la", "lo", "se"],
+              answerIndex: 1,
+              explanation:
+                "La película (feminine, direct object) → «la».",
+            },
+            {
+              id: "sb-l14-q2",
+              type: "mcq",
+              prompt: "«___ di un regalo a mi madre.» (I gave a gift TO her)",
+              choices: ["La", "Le", "Lo", "Me"],
+              answerIndex: 1,
+              explanation:
+                "Indirect object (to her) → «le».",
+            },
+            {
+              id: "sb-l14-q3",
+              type: "tf",
+              prompt:
+                "In Spanish, object pronouns usually go before the conjugated verb.",
+              answer: true,
+              explanation:
+                "«Te quiero», not «quiero te» — except with infinitives/gerunds/affirmative commands.",
+            },
+            {
+              id: "sb-l14-q4",
+              type: "mcq",
+              prompt: "«Quiero comprar___» (I want to buy IT - masculine object)",
+              choices: ["me", "le", "lo", "se"],
+              answerIndex: 2,
+              explanation:
+                "Attached to the infinitive: «comprarlo».",
+            },
+            {
+              id: "sb-l14-q5",
+              type: "short",
+              prompt:
+                "Reescribe: «Doy el libro a Juan» (using a pronoun for 'a Juan').",
+              answer: "le doy el libro",
+              keywords: ["le doy", "le"],
+              acceptable: ["Le doy el libro"],
+              explanation:
+                "Indirect object pronoun «le» precedes the verb.",
+            },
+            {
+              id: "sb-l14-q6",
+              type: "short",
+              prompt:
+                "Completa: «¿Las llaves? No ___ encuentro.» (feminine plural)",
+              answer: "las",
+              keywords: ["las"],
+              acceptable: ["no las encuentro"],
+              explanation:
+                "«Las» replaces «las llaves» — direct object, feminine plural.",
+            },
+          ],
+        },
       ],
     },
     {
@@ -310,6 +515,211 @@ export const spanishB: Subject = {
               keywords: ["tengas"],
               explanation:
                 "«Esperar que» + subjunctive; tener → tengas (irregular yo-form based).",
+            },
+          ],
+        },
+        {
+          id: "sb-l15",
+          title: "Experiencias: lectura de un blog de viaje",
+          questions: [
+            {
+              id: "sb-l15-q1",
+              type: "mcq",
+              prompt:
+                "Lee: «El año pasado decidí hacer un viaje sola por Sudamérica. Al principio tenía miedo, pero pronto conocí a gente increíble.» — La narradora",
+              choices: [
+                "travels with friends",
+                "travelled alone",
+                "never left home",
+                "was never afraid",
+              ],
+              answerIndex: 1,
+              explanation:
+                "«Hacer un viaje sola» = to travel alone (feminine).",
+            },
+            {
+              id: "sb-l15-q2",
+              type: "mcq",
+              prompt:
+                "«Al principio» significa",
+              choices: ["at the end", "at first", "however", "therefore"],
+              answerIndex: 1,
+              explanation:
+                "«Al principio» = at the beginning/at first.",
+            },
+            {
+              id: "sb-l15-q3",
+              type: "tf",
+              prompt:
+                "«Pronto conocí a gente increíble» uses the preterite for a completed past action.",
+              answer: true,
+              explanation:
+                "«Conocí» = preterite of conocer — a completed event.",
+            },
+            {
+              id: "sb-l15-q4",
+              type: "mcq",
+              prompt:
+                "«Este viaje me cambió la vida» — the verb means the trip",
+              choices: [
+                "cost a lot",
+                "changed her life",
+                "was boring",
+                "ended early",
+              ],
+              answerIndex: 1,
+              explanation:
+                "«Cambiar la vida» = to change one's life.",
+            },
+            {
+              id: "sb-l15-q5",
+              type: "short",
+              prompt:
+                "Traduce al español: 'I met amazing people' (conocer, pretérito).",
+              answer: "conocí a gente increíble",
+              keywords: ["conocí", "conoci"],
+              acceptable: ["conocí gente increíble", "conoci a gente increible"],
+              explanation:
+                "Preterite of conocer + personal «a».",
+            },
+            {
+              id: "sb-l15-q6",
+              type: "short",
+              prompt:
+                "Completa: «___ un viaje» (to take a trip — hacer).",
+              answer: "hacer",
+              keywords: ["hacer"],
+              acceptable: ["Hacer", "hizo", "hice"],
+              explanation:
+                "«Hacer un viaje» = to take/go on a trip.",
+            },
+          ],
+        },
+        {
+          id: "sb-l16",
+          title: "El futuro y el condicional",
+          questions: [
+            {
+              id: "sb-l16-q1",
+              type: "mcq",
+              prompt: "«Mañana ___ al médico.» (ir, future, yo)",
+              choices: ["voy", "iré", "iba", "fui"],
+              answerIndex: 1,
+              explanation:
+                "Simple future of ir, yo → «iré».",
+            },
+            {
+              id: "sb-l16-q2",
+              type: "mcq",
+              prompt: "«Me ___ vivir en el campo.» (gustar, conditional)",
+              choices: ["gusta", "gustaba", "gustaría", "gustará"],
+              answerIndex: 2,
+              explanation:
+                "Conditional «gustaría» = would like.",
+            },
+            {
+              id: "sb-l16-q3",
+              type: "tf",
+              prompt:
+                "The Spanish future tense uses infinitive + endings (-é, -ás, -á…).",
+              answer: true,
+              explanation:
+                "hablaré, hablarás, hablará — endings added to the whole infinitive.",
+            },
+            {
+              id: "sb-l16-q4",
+              type: "mcq",
+              prompt: "Irregular future stem of «hacer» is",
+              choices: ["hacer-", "har-", "hac-", "hiz-"],
+              answerIndex: 1,
+              explanation:
+                "har- → haré, harás… like decir → dir-.",
+            },
+            {
+              id: "sb-l16-q5",
+              type: "short",
+              prompt:
+                "Conjuga (futuro, él): «tener» → ___.",
+              answer: "tendrá",
+              keywords: ["tendrá", "tendra"],
+              acceptable: ["tendra"],
+              explanation:
+                "Irregular stem tendr- + -á.",
+            },
+            {
+              id: "sb-l16-q6",
+              type: "short",
+              prompt:
+                "Conjuga (condicional, yo): «poder» → ___.",
+              answer: "podría",
+              keywords: ["podría", "podria"],
+              acceptable: ["podria"],
+              explanation:
+                "Irregular stem podr- + -ía.",
+            },
+          ],
+        },
+        {
+          id: "sb-l17",
+          title: "El imperativo y las oraciones de relativo",
+          questions: [
+            {
+              id: "sb-l17-q1",
+              type: "mcq",
+              prompt: "Affirmative tú command of «hablar»:",
+              choices: ["hablas", "habla", "hable", "hable"],
+              answerIndex: 1,
+              explanation:
+                "Tú command = third-person singular form: «habla».",
+            },
+            {
+              id: "sb-l17-q2",
+              type: "mcq",
+              prompt: "Negative tú command of «comer»: «No ___»",
+              choices: ["comes", "come", "comas", "coma"],
+              answerIndex: 2,
+              explanation:
+                "Negative commands use the subjunctive: «no comas».",
+            },
+            {
+              id: "sb-l17-q3",
+              type: "tf",
+              prompt:
+                "«El libro que leí» uses «que» as a relative pronoun meaning 'that/which'.",
+              answer: true,
+              explanation:
+                "«Que» is the most common relative pronoun.",
+            },
+            {
+              id: "sb-l17-q4",
+              type: "mcq",
+              prompt: "«La ciudad ___ nací es muy pequeña.»",
+              choices: ["que", "donde", "cuyo", "quien"],
+              answerIndex: 1,
+              explanation:
+                "Place → «donde» (or «en la que»).",
+            },
+            {
+              id: "sb-l17-q5",
+              type: "short",
+              prompt:
+                "Imperativo afirmativo (tú) de «hacer»: ___.",
+              answer: "haz",
+              keywords: ["haz"],
+              acceptable: ["Haz"],
+              explanation:
+                "Irregular: haz, di, ve, pon, sal, ten, sé.",
+            },
+            {
+              id: "sb-l17-q6",
+              type: "short",
+              prompt:
+                "Completa: «El chico ___ vive al lado es médico.» (who)",
+              answer: "que",
+              keywords: ["que"],
+              acceptable: ["que"],
+              explanation:
+                "«Que» for 'who/that' referring to people or things.",
             },
           ],
         },
@@ -481,6 +891,232 @@ export const spanishB: Subject = {
             },
           ],
         },
+        {
+          id: "sb-l18",
+          title: "Organización social: lectura y conectores",
+          questions: [
+            {
+              id: "sb-l18-q1",
+              type: "mcq",
+              prompt:
+                "Lee: «El ayuntamiento ha puesto en marcha un programa de voluntariado. Los vecinos pueden apuntarse gratis los sábados por la mañana.» — El programa es",
+              choices: [
+                "paid",
+                "free for residents",
+                "only for students",
+                "cancelled",
+              ],
+              answerIndex: 1,
+              explanation:
+                "«Apuntarse gratis» = sign up free of charge.",
+            },
+            {
+              id: "sb-l18-q2",
+              type: "mcq",
+              prompt: "«Poner en marcha» significa",
+              choices: ["to cancel", "to launch/start", "to close", "to delay"],
+              answerIndex: 1,
+              explanation:
+                "«Poner en marcha» = to set in motion, launch.",
+            },
+            {
+              id: "sb-l18-q3",
+              type: "tf",
+              prompt:
+                "«Los vecinos» means 'the neighbours' — people living in the area.",
+              answer: true,
+              explanation:
+                "Vecino/a = neighbour; barrio = neighbourhood.",
+            },
+            {
+              id: "sb-l18-q4",
+              type: "mcq",
+              prompt: "Connector for addition: «___ es gratis, es divertido.»",
+              choices: ["Pero", "Además de", "Sin embargo", "Porque"],
+              answerIndex: 1,
+              explanation:
+                "«Además de» = as well as / besides — addition.",
+            },
+            {
+              id: "sb-l18-q5",
+              type: "short",
+              prompt:
+                "Traduce: 'the town hall / city council'. (two words)",
+              answer: "el ayuntamiento",
+              keywords: ["ayuntamiento"],
+              acceptable: ["ayuntamiento", "el ayuntamiento"],
+              explanation:
+                "El ayuntamiento — local government vocabulary.",
+            },
+            {
+              id: "sb-l18-q6",
+              type: "short",
+              prompt:
+                "Traduce: 'to sign up / register' (reflexive verb).",
+              answer: "apuntarse",
+              keywords: ["apuntarse", "inscribirse", "registrarse"],
+              acceptable: ["inscribirse", "registrarse"],
+              explanation:
+                "«Apuntarse» / «inscribirse» = to sign up.",
+            },
+          ],
+        },
+        {
+          id: "sb-l19",
+          title: "Compartir el planeta: el medio ambiente",
+          questions: [
+            {
+              id: "sb-l19-q1",
+              type: "mcq",
+              prompt:
+                "«Hay que reducir el consumo de plástico de un solo uso.» — «de un solo uso» means",
+              choices: [
+                "reusable",
+                "single-use / disposable",
+                "recycled",
+                "expensive",
+              ],
+              answerIndex: 1,
+              explanation:
+                "«De un solo uso» = single-use, disposable.",
+            },
+            {
+              id: "sb-l19-q2",
+              type: "mcq",
+              prompt: "«El cambio climático» significa",
+              choices: [
+                "the weather forecast",
+                "climate change",
+                "a season",
+                "a storm",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Key environment term.",
+            },
+            {
+              id: "sb-l19-q3",
+              type: "tf",
+              prompt:
+                "«Las energías renovables» include solar and wind power.",
+              answer: true,
+              explanation:
+                "Solar, eólica, hidráulica = energías renovables.",
+            },
+            {
+              id: "sb-l19-q4",
+              type: "mcq",
+              prompt: "«La huella de carbono» es",
+              choices: [
+                "a shoe brand",
+                "the carbon footprint",
+                "a type of fuel",
+                "a forest",
+              ],
+              answerIndex: 1,
+              explanation:
+                "«Huella de carbono» = carbon footprint.",
+            },
+            {
+              id: "sb-l19-q5",
+              type: "short",
+              prompt:
+                "Traduce: 'to recycle'. (Spanish infinitive)",
+              answer: "reciclar",
+              keywords: ["reciclar"],
+              acceptable: ["reciclar"],
+              explanation:
+                "Reciclar — regular -ar verb.",
+            },
+            {
+              id: "sb-l19-q6",
+              type: "short",
+              prompt:
+                "Completa: «Tenemos que ___ el planeta» (proteger).",
+              answer: "proteger",
+              keywords: ["proteger", "salvar", "cuidar"],
+              acceptable: ["salvar", "cuidar"],
+              explanation:
+                "Proteger / salvar / cuidar el planeta.",
+            },
+          ],
+        },
+        {
+          id: "sb-l20",
+          title: "Repaso: lectura del texto 'Un barrio sostenible'",
+          questions: [
+            {
+              id: "sb-l20-q1",
+              type: "mcq",
+              prompt:
+                "Lee: «En nuestro barrio hemos instalado paneles solares y un jardín comunitario. Gracias a esto, la factura de la luz ha bajado un 30%.» — La factura",
+              choices: [
+                "has risen",
+                "has gone down",
+                "stayed the same",
+                "was cancelled",
+              ],
+              answerIndex: 1,
+              explanation:
+                "«Ha bajado» = has gone down/decreased.",
+            },
+            {
+              id: "sb-l20-q2",
+              type: "mcq",
+              prompt: "«Un jardín comunitario» es",
+              choices: [
+                "a private garden",
+                "a community garden",
+                "a shopping centre",
+                "a school",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Comunitario = shared by the community.",
+            },
+            {
+              id: "sb-l20-q3",
+              type: "tf",
+              prompt:
+                "«Gracias a» introduces a positive cause — 'thanks to'.",
+              answer: true,
+              explanation:
+                "«Gracias a» = positive cause; «a causa de» = neutral/negative.",
+            },
+            {
+              id: "sb-l20-q4",
+              type: "mcq",
+              prompt:
+                "«Los paneles solares» generate",
+              choices: ["wind", "electricity from the sun", "water", "gas"],
+              answerIndex: 1,
+              explanation:
+                "Paneles solares = solar panels.",
+            },
+            {
+              id: "sb-l20-q5",
+              type: "short",
+              prompt:
+                "¿Cuánto bajó la factura? (un número con %)",
+              answer: "30%",
+              keywords: ["30"],
+              acceptable: ["30", "30 por ciento", "un 30%"],
+              explanation:
+                "«Ha bajado un 30%».",
+            },
+            {
+              id: "sb-l20-q6",
+              type: "short",
+              prompt:
+                "Traduce: 'the electricity bill' (two words).",
+              answer: "la factura de la luz",
+              keywords: ["factura", "luz"],
+              acceptable: ["la factura de luz", "la factura"],
+              explanation:
+                "La factura de la luz = electricity bill.",
+            },
+          ],
+        },
       ],
     },
     {
@@ -649,6 +1285,238 @@ export const spanishB: Subject = {
               acceptable: ["a quotation", "the phrase that proves it"],
               explanation:
                 "You must cite the part of the text proving your answer — not just say true/false.",
+            },
+          ],
+        },
+        {
+          id: "sb-l21",
+          title: "Tipos de texto: correo, artículo, discurso",
+          questions: [
+            {
+              id: "sb-l21-q1",
+              type: "mcq",
+              prompt: "Un correo formal empieza con",
+              choices: [
+                "«¡Hola!»",
+                "«Estimado señor López:» o «Estimado/a…»",
+                "«Oye,»",
+                "«¿Qué tal?»",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Registro formal: «Estimado/a + nombre:» con dos puntos.",
+            },
+            {
+              id: "sb-l21-q2",
+              type: "mcq",
+              prompt: "Un artículo de revista escolar suele tener",
+              choices: [
+                "sin título",
+                "un título llamativo, párrafos con subtítulos y un tono semformal",
+                "solo opiniones",
+                "números",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Artículo: título, introducción, desarrollo, conclusión.",
+            },
+            {
+              id: "sb-l21-q3",
+              type: "tf",
+              prompt:
+                "Un discurso (speech) se dirige directamente al público y usa preguntas retóricas.",
+              answer: true,
+              explanation:
+                "Características: «queridos compañeros», preguntas retóricas, llamada a la acción.",
+            },
+            {
+              id: "sb-l21-q4",
+              type: "mcq",
+              prompt: "Un folleto (brochure) informativo contiene",
+              choices: [
+                "capítulos largos",
+                "texto breve, secciones, datos y a menudo imágenes",
+                "una entrevista",
+                "poesía",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Folleto: información organizada visualmente, lenguaje persuasivo.",
+            },
+            {
+              id: "sb-l21-q5",
+              type: "short",
+              prompt:
+                "Frase formal para cerrar una carta: «Atentamente,» o «Cordialmente,» — escribe una.",
+              answer: "atentamente",
+              keywords: ["atentamente", "cordialmente", "un saludo"],
+              acceptable: ["cordialmente", "atentamente"],
+              explanation:
+                "«Atentamente» / «Cordialmente» = formal closings.",
+            },
+            {
+              id: "sb-l21-q6",
+              type: "short",
+              prompt:
+                "En una reseña (review), ¿qué sección recomienda o valora al final? (una palabra)",
+              answer: "conclusión",
+              keywords: ["conclusión", "conclusion", "recomendación", "recomendacion"],
+              acceptable: ["conclusion", "la conclusión", "recomendacion"],
+              explanation:
+                "La conclusión/recomendación final cierra la reseña.",
+            },
+          ],
+        },
+        {
+          id: "sb-l22",
+          title: "Entrevista y reseña: convenciones",
+          questions: [
+            {
+              id: "sb-l22-q1",
+              type: "mcq",
+              prompt: "Una entrevista escrita suele estar en formato",
+              choices: [
+                "de párrafos largos",
+                "de preguntas y respuestas (entrevistador/entrevistado)",
+                "de carta",
+                "de lista",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Formato Q&A con el nombre de quien habla.",
+            },
+            {
+              id: "sb-l22-q2",
+              type: "mcq",
+              prompt: "Una reseña de un libro debe incluir",
+              choices: [
+                "solo el resumen",
+                "una breve descripción, evaluación y recomendación",
+                "nada de opinión",
+                "el precio solamente",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Reseña = describir + evaluar + recomendar.",
+            },
+            {
+              id: "sb-l22-q3",
+              type: "tf",
+              prompt:
+                "En una entrevista, las preguntas suelen usar «¿usted…?» cuando el registro es formal.",
+              answer: true,
+              explanation:
+                "Usted en contextos formales; tú en informales.",
+            },
+            {
+              id: "sb-l22-q4",
+              type: "mcq",
+              prompt: "Adjetivo positivo para una reseña:",
+              choices: ["aburrido", "emocionante", "terrible", "mediocre"],
+              answerIndex: 1,
+              explanation:
+                "«Emocionante», «impresionante», «conmovedor» = positivos.",
+            },
+            {
+              id: "sb-l22-q5",
+              type: "short",
+              prompt:
+                "Traduce al español: 'an interview' (feminine noun).",
+              answer: "una entrevista",
+              keywords: ["entrevista"],
+              acceptable: ["entrevista", "la entrevista"],
+              explanation:
+                "La entrevista — de entrevistar.",
+            },
+            {
+              id: "sb-l22-q6",
+              type: "short",
+              prompt:
+                "Traduce: 'I would recommend this film' (recomendar, condicional).",
+              answer: "recomendaría",
+              keywords: ["recomendaría", "recomendaria", "recomiendo"],
+              acceptable: ["recomendaria", "recomiendo esta película", "recomiendo"],
+              explanation:
+                "«Recomendaría esta película» (conditional for polite recommendation).",
+            },
+          ],
+        },
+        {
+          id: "sb-l23",
+          title: "Estrategias de examen: comprensión auditiva y lectora",
+          questions: [
+            {
+              id: "sb-l23-q1",
+              type: "mcq",
+              prompt: "Antes de escuchar el audio en el examen debes",
+              choices: [
+                "cerrar los ojos",
+                "leer las preguntas y predecir el contenido",
+                "escribir las respuestas",
+                "esperar",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Predecir el vocabulario ayuda a captar la información clave.",
+            },
+            {
+              id: "sb-l23-q2",
+              type: "mcq",
+              prompt: "Si no entiendes una palabra al leer, primero",
+              choices: [
+                "usa el diccionario",
+                "deduce el significado por el contexto",
+                "salta la pregunta",
+                "tradúcela",
+              ],
+              answerIndex: 1,
+              explanation:
+                "El contexto suele revelar el significado — estrategia clave.",
+            },
+            {
+              id: "sb-l23-q3",
+              type: "tf",
+              prompt:
+                "En la comprensión auditiva, las preguntas suelen seguir el orden del texto.",
+              answer: true,
+              explanation:
+                "Las respuestas aparecen secuencialmente en el audio.",
+            },
+            {
+              id: "sb-l23-q4",
+              type: "mcq",
+              prompt: "«Distinguir hechos de opiniones» es una destreza de",
+              choices: [
+                "escritura",
+                "comprensión lectora crítica",
+                "pronunciación",
+                "gramática",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Diferenciar hecho/opinión = lectura crítica (Paper 2).",
+            },
+            {
+              id: "sb-l23-q5",
+              type: "short",
+              prompt:
+                "¿Cuántas tareas de escritura hay que hacer en Paper 1 de Spanish B? (número)",
+              answer: "1",
+              keywords: ["1"],
+              acceptable: ["una", "uno"],
+              explanation:
+                "Un texto elegido entre tres opciones.",
+            },
+            {
+              id: "sb-l23-q6",
+              type: "short",
+              prompt:
+                "Nombre de la técnica: leer rápido para captar la idea general (en inglés 'skimming').",
+              answer: "lectura rápida",
+              keywords: ["rápid", "rapid", "skim", "general"],
+              acceptable: ["skimming", "lectura general", "vistazo"],
+              explanation:
+                "Lectura rápida / skimming para la idea general.",
             },
           ],
         },
@@ -898,6 +1766,168 @@ export const spanishB: Subject = {
               acceptable: ["por otro lado", "sin embargo", "por el contrario", "no obstante"],
               explanation:
                 "«Por otro lado», «sin embargo», «no obstante» — standard counter-argument signposts.",
+            },
+          ],
+        },
+        {
+          id: "sb-l24",
+          title: "HL: análisis de un extracto literario",
+          level: "HL",
+          questions: [
+            {
+              id: "sb-l24-q1",
+              type: "mcq",
+              prompt:
+                "En HL Paper 2 puede aparecer un extracto literario. Al analizarlo, hay que fijarse en",
+              choices: [
+                "solo el argumento",
+                "cómo el lenguaje crea personajes, ambiente y tema",
+                "la biografía del autor",
+                "la traducción",
+              ],
+              answerIndex: 1,
+              explanation:
+                "HL exige análisis de las técnicas del autor, no solo comprensión.",
+            },
+            {
+              id: "sb-l24-q2",
+              type: "mcq",
+              prompt:
+                "Lee: «La casa respiraba silencio; hasta el reloj parecía latir más despacio.» — El efecto principal es",
+              choices: [
+                "la personificación",
+                "la rima",
+                "las estadísticas",
+                "una pregunta",
+              ],
+              answerIndex: 0,
+              explanation:
+                "La casa «respira», el reloj «late» — personificación que crea ambiente.",
+            },
+            {
+              id: "sb-l24-q3",
+              type: "tf",
+              prompt:
+                "Un narrador en primera persona da acceso a sus pensamientos pero puede ser inconfiable.",
+              answer: true,
+              explanation:
+                "La perspectiva narrativa moldea nuestra lectura.",
+            },
+            {
+              id: "sb-l24-q4",
+              type: "mcq",
+              prompt: "El «tono» de un extracto se refiere a",
+              choices: [
+                "el volumen",
+                "la actitud del escritor expresada por la elección de palabras",
+                "la letra",
+                "el escenario",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Tono = actitud (irónico, nostálgico, crítico…) transmitida por la dicción.",
+            },
+            {
+              id: "sb-l24-q5",
+              type: "short",
+              prompt:
+                "Nombra la figura retórica: «Era una roca en la tormenta.» (una palabra)",
+              answer: "metáfora",
+              keywords: ["metáfora", "metafora"],
+              acceptable: ["metafora", "una metáfora"],
+              explanation:
+                "Comparación directa sin «como» = metáfora.",
+            },
+            {
+              id: "sb-l24-q6",
+              type: "short",
+              prompt:
+                "La persona que cuenta la historia en un texto literario es el/la ___.",
+              answer: "narrador/a",
+              keywords: ["narrador", "narradora"],
+              acceptable: ["narrador", "narradora", "el narrador"],
+              explanation:
+                "Narrador ≠ autor — distinción clave en HL.",
+            },
+          ],
+        },
+        {
+          id: "sb-l25",
+          title: "HL: planificación del Paper 1",
+          level: "HL",
+          questions: [
+            {
+              id: "sb-l25-q1",
+              type: "mcq",
+              prompt: "En Paper 1 de HL hay que escribir un texto de",
+              choices: [
+                "100–150 palabras",
+                "450–600 palabras",
+                "50 palabras",
+                "2000 palabras",
+              ],
+              answerIndex: 1,
+              explanation:
+                "HL: 450–600 palabras, una tarea entre tres; SL: 250–400.",
+            },
+            {
+              id: "sb-l25-q2",
+              type: "mcq",
+              prompt: "Antes de escribir, el primer paso es",
+              choices: [
+                "empezar a escribir",
+                "identificar audiencia, propósito y tipo de texto",
+                "contar palabras",
+                "copiar la tarea",
+              ],
+              answerIndex: 1,
+              explanation:
+                "La tarea define contexto/audiencia/propósito — la planificación empieza ahí.",
+            },
+            {
+              id: "sb-l25-q3",
+              type: "tf",
+              prompt:
+                "Un esquema de 5 minutos mejora la coherencia del texto final.",
+              answer: true,
+              explanation:
+                "Planificar ideas → estructura → conectores = mayor coherencia.",
+            },
+            {
+              id: "sb-l25-q4",
+              type: "mcq",
+              prompt: "El criterio «Mensaje» en Paper 1 evalúa",
+              choices: [
+                "la letra",
+                "si el texto cumple su propósito comunicativo",
+                "la velocidad",
+                "la gramática solamente",
+              ],
+              answerIndex: 1,
+              explanation:
+                "¿Logra el texto su objetivo para esa audiencia?",
+            },
+            {
+              id: "sb-l25-q5",
+              type: "short",
+              prompt:
+                "Nombra UN conector para dar un ejemplo (en español).",
+              answer: "por ejemplo",
+              keywords: ["ejemplo", "como", "así", "esto es"],
+              acceptable: ["por ejemplo", "como por ejemplo", "es decir"],
+              explanation:
+                "«Por ejemplo», «como», «es decir»…",
+            },
+            {
+              id: "sb-l25-q6",
+              type: "short",
+              prompt:
+                "El primer párrafo de un artículo debe captar la ___ del lector. (una palabra)",
+              answer: "atención",
+              keywords: ["atención", "atencion", "interés", "interes"],
+              acceptable: ["atencion", "interés", "interes"],
+              explanation:
+                "La introducción engancha al lector — atención o interés.",
             },
           ],
         },

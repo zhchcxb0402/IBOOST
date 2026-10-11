@@ -192,6 +192,237 @@ export const englishB: Subject = {
             },
           ],
         },
+        {
+          id: "eb-l12",
+          title: "Identities: vocabulary in context",
+          questions: [
+            {
+              id: "eb-l12-q1",
+              type: "mcq",
+              prompt:
+                "'She grew up in a bilingual household, switching between languages without thinking.' — 'grew up' means",
+              choices: [
+                "was raised",
+                "became taller",
+                "planted",
+                "woke up",
+              ],
+              answerIndex: 0,
+              explanation:
+                "'Grow up' = spend childhood developing; a phrasal verb.",
+            },
+            {
+              id: "eb-l12-q2",
+              type: "mcq",
+              prompt:
+                "'He takes after his mother — they have the same sense of humour.' — 'takes after' means",
+              choices: [
+                "follows behind",
+                "resembles",
+                "looks for",
+                "collects",
+              ],
+              answerIndex: 1,
+              explanation:
+                "'Take after' = resemble a parent or relative.",
+            },
+            {
+              id: "eb-l12-q3",
+              type: "tf",
+              prompt:
+                "'To fit in' means to feel you belong to a group.",
+              answer: true,
+              explanation:
+                "'Fit in' = be accepted as part of a group — key identity vocabulary.",
+            },
+            {
+              id: "eb-l12-q4",
+              type: "mcq",
+              prompt:
+                "'Despite moving abroad, she never lost her sense of belonging.' — 'belonging' refers to",
+              choices: [
+                "property",
+                "feeling part of a community",
+                "luggage",
+                "a club membership",
+              ],
+              answerIndex: 1,
+              explanation:
+                "'Sense of belonging' = feeling connected to a group or place.",
+            },
+            {
+              id: "eb-l12-q5",
+              type: "short",
+              prompt:
+                "Phrasal verb: 'I really look ___ to my grandmother — she's my role model.' (respect)",
+              answer: "up",
+              keywords: ["up"],
+              acceptable: ["up to"],
+              explanation:
+                "'Look up to' = admire/respect someone.",
+            },
+            {
+              id: "eb-l12-q6",
+              type: "short",
+              prompt:
+                "Translate the idea: to be proud of your cultural ___ (the customs and background you inherit).",
+              answer: "heritage",
+              keywords: ["heritage"],
+              acceptable: ["cultural heritage", "roots"],
+              explanation:
+                "'Heritage' = inherited traditions, language and culture.",
+            },
+          ],
+        },
+        {
+          id: "eb-l13",
+          title: "Phrasal verbs for everyday life",
+          questions: [
+            {
+              id: "eb-l13-q1",
+              type: "mcq",
+              prompt:
+                "'The meeting was called off because of the storm.' — 'called off' means",
+              choices: ["cancelled", "loudly announced", "delayed", "attended"],
+              answerIndex: 0,
+              explanation:
+                "'Call off' = cancel an event.",
+            },
+            {
+              id: "eb-l13-q2",
+              type: "mcq",
+              prompt:
+                "'I need to catch up on my homework this weekend.' — 'catch up on' means",
+              choices: [
+                "throw away",
+                "do work you are behind on",
+                "copy",
+                "run faster",
+              ],
+              answerIndex: 1,
+              explanation:
+                "'Catch up on' = reach the level you should be at.",
+            },
+            {
+              id: "eb-l13-q3",
+              type: "tf",
+              prompt:
+                "In 'put off', the meaning is the same as 'postpone'.",
+              answer: true,
+              explanation:
+                "'Put off' = postpone to a later time.",
+            },
+            {
+              id: "eb-l13-q4",
+              type: "mcq",
+              prompt:
+                "'We ran out of milk, so I went to the shop.' — 'ran out of' means",
+              choices: [
+                "ran towards",
+                "had no more left",
+                "escaped",
+                "bought",
+              ],
+              answerIndex: 1,
+              explanation:
+                "'Run out of' = exhaust your supply.",
+            },
+            {
+              id: "eb-l13-q5",
+              type: "short",
+              prompt:
+                "Complete: 'Could you please fill ___ this form?' (a document)",
+              answer: "in",
+              keywords: ["in"],
+              acceptable: ["in", "out"],
+              explanation:
+                "'Fill in/out' a form = complete it.",
+            },
+            {
+              id: "eb-l13-q6",
+              type: "short",
+              prompt:
+                "Complete: 'She came ___ an old photo while cleaning the attic.' (found by chance)",
+              answer: "across",
+              keywords: ["across"],
+              acceptable: ["across", "upon"],
+              explanation:
+                "'Come across' = find or meet by chance.",
+            },
+          ],
+        },
+        {
+          id: "eb-l14",
+          title: "Conditionals and imagined situations",
+          questions: [
+            {
+              id: "eb-l14-q1",
+              type: "mcq",
+              prompt:
+                "Which sentence is a SECOND conditional (hypothetical present)?",
+              choices: [
+                "If it rains, I will stay home.",
+                "If I had more time, I would learn another language.",
+                "If you heat ice, it melts.",
+                "If she had studied, she would have passed.",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Second conditional: if + past simple, would + infinitive — unreal now.",
+            },
+            {
+              id: "eb-l14-q2",
+              type: "mcq",
+              prompt:
+                "'If I had known, I ___ have helped.' — correct form?",
+              choices: ["will", "would", "can", "must"],
+              answerIndex: 1,
+              explanation:
+                "Third conditional: if + past perfect, would have + participle.",
+            },
+            {
+              id: "eb-l14-q3",
+              type: "tf",
+              prompt:
+                "The zero conditional (if + present, present) expresses general truths.",
+              answer: true,
+              explanation:
+                "e.g. 'If you mix blue and yellow, you get green' — always true.",
+            },
+            {
+              id: "eb-l14-q4",
+              type: "mcq",
+              prompt:
+                "'Unless you hurry, you'll miss the bus.' — 'unless' means",
+              choices: ["if", "if not", "because", "when"],
+              answerIndex: 1,
+              explanation:
+                "'Unless' = 'if…not' — a common first-conditional variant.",
+            },
+            {
+              id: "eb-l14-q5",
+              type: "short",
+              prompt:
+                "Rewrite as a wish: 'I'm not tall.' → 'I wish I ___ taller.'",
+              answer: "were",
+              keywords: ["were"],
+              acceptable: ["was"],
+              explanation:
+                "'Wish + past' for present wishes; 'were' is the formal form for all persons.",
+            },
+            {
+              id: "eb-l14-q6",
+              type: "short",
+              prompt:
+                "Complete (third conditional): 'If they ___ (leave) earlier, they wouldn't have missed the flight.'",
+              answer: "had left",
+              keywords: ["had left"],
+              acceptable: ["'d left"],
+              explanation:
+                "Third conditional uses past perfect in the if-clause.",
+            },
+          ],
+        },
       ],
     },
     {
@@ -363,6 +594,232 @@ export const englishB: Subject = {
             },
           ],
         },
+        {
+          id: "eb-l15",
+          title: "Experiences: reading a travel account",
+          questions: [
+            {
+              id: "eb-l15-q1",
+              type: "mcq",
+              prompt:
+                "Read: 'The overnight train rattled through the mountains. By dawn, exhausted but exhilarated, we stepped onto the platform in a city we had only seen in photographs.' — The travellers felt",
+              choices: [
+                "disappointed",
+                "tired but excited",
+                "bored",
+                "frightened",
+              ],
+              answerIndex: 1,
+              explanation:
+                "'Exhausted but exhilarated' = tired yet thrilled.",
+            },
+            {
+              id: "eb-l15-q2",
+              type: "mcq",
+              prompt:
+                "In the same passage, 'stepped onto the platform' tells us they",
+              choices: [
+                "got off the train",
+                "bought tickets",
+                "missed the train",
+                "took photos",
+              ],
+              answerIndex: 0,
+              explanation:
+                "The platform is where you arrive — inference from context.",
+            },
+            {
+              id: "eb-l15-q3",
+              type: "tf",
+              prompt:
+                "'It turned out to be the best decision we ever made' — 'turned out' means proved to be in the end.",
+              answer: true,
+              explanation:
+                "'Turn out' = the eventual result.",
+            },
+            {
+              id: "eb-l15-q4",
+              type: "mcq",
+              prompt:
+                "Read: 'Volunteering at the shelter opened my eyes to how privileged I am.' — 'opened my eyes' means",
+              choices: [
+                "woke me up",
+                "made me aware of something",
+                "hurt my eyes",
+                "was boring",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Idiom: to make someone see the truth.",
+            },
+            {
+              id: "eb-l15-q5",
+              type: "short",
+              prompt:
+                "Read: 'We set off at sunrise and reached the summit by noon.' What time did they arrive? (one word)",
+              answer: "noon",
+              keywords: ["noon", "midday", "12"],
+              acceptable: ["midday", "12pm", "12 pm"],
+              explanation:
+                "'By noon' = 12 o'clock.",
+            },
+            {
+              id: "eb-l15-q6",
+              type: "short",
+              prompt:
+                "Read: 'The festival draws thousands of visitors every year.' 'Draws' here means ___.",
+              answer: "attracts",
+              keywords: ["attract"],
+              acceptable: ["attracts", "brings"],
+              explanation:
+                "Context meaning of 'draw' = attract.",
+            },
+          ],
+        },
+        {
+          id: "eb-l16",
+          title: "Human ingenuity: technology vocabulary",
+          questions: [
+            {
+              id: "eb-l16-q1",
+              type: "mcq",
+              prompt:
+                "'The breakthrough allowed doctors to detect diseases earlier.' — 'breakthrough' means",
+              choices: [
+                "an accident",
+                "an important discovery",
+                "a broken machine",
+                "a delay",
+              ],
+              answerIndex: 1,
+              explanation:
+                "A breakthrough = sudden important advance.",
+            },
+            {
+              id: "eb-l16-q2",
+              type: "mcq",
+              prompt:
+                "'Smartphones have become so widespread that many people can't imagine life without them.' — 'widespread' means",
+              choices: ["expensive", "common everywhere", "fragile", "new"],
+              answerIndex: 1,
+              explanation:
+                "Widespread = found over a large area / among many people.",
+            },
+            {
+              id: "eb-l16-q3",
+              type: "tf",
+              prompt:
+                "'Cutting-edge' technology means the most advanced available.",
+              answer: true,
+              explanation:
+                "Cutting-edge / state-of-the-art = newest, most advanced.",
+            },
+            {
+              id: "eb-l16-q4",
+              type: "mcq",
+              prompt:
+                "'The app was designed to help users cut down on screen time.' — 'cut down on' means",
+              choices: ["increase", "reduce", "delete", "sell"],
+              answerIndex: 1,
+              explanation:
+                "'Cut down on' = reduce the amount of.",
+            },
+            {
+              id: "eb-l16-q5",
+              type: "short",
+              prompt:
+                "Word for: a person who comes up with new inventions. (noun)",
+              answer: "inventor",
+              keywords: ["inventor"],
+              acceptable: ["an inventor"],
+              explanation:
+                "Invent → invention → inventor.",
+            },
+            {
+              id: "eb-l16-q6",
+              type: "short",
+              prompt:
+                "Complete the collocation: '___-edge technology' (most advanced).",
+              answer: "cutting",
+              keywords: ["cutting"],
+              acceptable: ["cutting edge"],
+              explanation:
+                "Cutting-edge = state-of-the-art.",
+            },
+          ],
+        },
+        {
+          id: "eb-l17",
+          title: "Reported speech and passive voice",
+          questions: [
+            {
+              id: "eb-l17-q1",
+              type: "mcq",
+              prompt:
+                "Report: 'I am tired,' she said. → She said that she ___ tired.",
+              choices: ["is", "was", "were", "be"],
+              answerIndex: 1,
+              explanation:
+                "Reported speech shifts tenses back: am → was.",
+            },
+            {
+              id: "eb-l17-q2",
+              type: "mcq",
+              prompt:
+                "Report: 'We will meet tomorrow,' he said. → He said they ___ meet the next day.",
+              choices: ["will", "would", "can", "shall"],
+              answerIndex: 1,
+              explanation:
+                "will → would; tomorrow → the next day.",
+            },
+            {
+              id: "eb-l17-q3",
+              type: "tf",
+              prompt:
+                "'The novel was written by a young refugee' is a passive sentence.",
+              answer: true,
+              explanation:
+                "was + past participle = passive; agent introduced by 'by'.",
+            },
+            {
+              id: "eb-l17-q4",
+              type: "mcq",
+              prompt:
+                "The passive is preferred when",
+              choices: [
+                "the action's doer is unknown or unimportant",
+                "we want a short sentence",
+                "speaking to friends",
+                "always",
+              ],
+              answerIndex: 0,
+              explanation:
+                "'My bike was stolen' — we don't know who stole it.",
+            },
+            {
+              id: "eb-l17-q5",
+              type: "short",
+              prompt:
+                "Report the question 'Where do you live?' → He asked me where ___.",
+              answer: "I lived",
+              keywords: ["i lived", "lived"],
+              acceptable: ["I lived"],
+              explanation:
+                "Reported questions lose inversion and shift tense back.",
+            },
+            {
+              id: "eb-l17-q6",
+              type: "short",
+              prompt:
+                "Make it passive: 'They built the bridge in 1980.' → The bridge ___.",
+              answer: "was built in 1980",
+              keywords: ["was built"],
+              acceptable: ["was built"],
+              explanation:
+                "was/were + past participle.",
+            },
+          ],
+        },
       ],
     },
     {
@@ -526,6 +983,227 @@ export const englishB: Subject = {
               keywords: ["long", "short", "term", "pattern"],
               explanation:
                 "Weather changes daily; climate describes averages over decades.",
+            },
+          ],
+        },
+        {
+          id: "eb-l18",
+          title: "Social organisation: reading a community notice",
+          questions: [
+            {
+              id: "eb-l18-q1",
+              type: "mcq",
+              prompt:
+                "Read: 'Residents are invited to the neighbourhood clean-up on Saturday. Gloves and bags will be provided, but sturdy shoes are recommended.' — Participants should",
+              choices: [
+                "bring gloves",
+                "wear strong shoes",
+                "pay a fee",
+                "come on Sunday",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Gloves/bags provided; shoes are the participant's job.",
+            },
+            {
+              id: "eb-l18-q2",
+              type: "mcq",
+              prompt:
+                "In the notice, 'sturdy' most nearly means",
+              choices: ["fashionable", "strong and durable", "old", "light"],
+              answerIndex: 1,
+              explanation:
+                "Context: outdoor work needs tough footwear.",
+            },
+            {
+              id: "eb-l18-q3",
+              type: "tf",
+              prompt:
+                "'The event will go ahead rain or shine' means it will only happen in good weather.",
+              answer: false,
+              explanation:
+                "'Rain or shine' = whatever the weather.",
+            },
+            {
+              id: "eb-l18-q4",
+              type: "mcq",
+              prompt:
+                "'The council has set aside funds for a new playground.' — 'set aside' means",
+              choices: [
+                "spent",
+                "reserved for a purpose",
+                "borrowed",
+                "wasted",
+              ],
+              answerIndex: 1,
+              explanation:
+                "'Set aside' = keep money/time for a specific use.",
+            },
+            {
+              id: "eb-l18-q5",
+              type: "short",
+              prompt:
+                "Word for: an unpaid helper at a community event. (noun)",
+              answer: "volunteer",
+              keywords: ["volunteer"],
+              acceptable: ["a volunteer"],
+              explanation:
+                "Volunteers offer time without pay — a key theme word.",
+            },
+            {
+              id: "eb-l18-q6",
+              type: "short",
+              prompt:
+                "Complete: 'The neighbourhood watch aims to ___ crime.' (reduce/prevent)",
+              answer: "prevent",
+              keywords: ["prevent", "reduce", "deter"],
+              acceptable: ["reduce", "deter"],
+              explanation:
+                "Prevent / reduce / deter crime — common collocations.",
+            },
+          ],
+        },
+        {
+          id: "eb-l19",
+          title: "Sharing the planet: environment vocabulary",
+          questions: [
+            {
+              id: "eb-l19-q1",
+              type: "mcq",
+              prompt:
+                "'If we carry on polluting at this rate, the damage will be irreversible.' — 'carry on' means",
+              choices: ["stop", "continue", "carry objects", "shout"],
+              answerIndex: 1,
+              explanation:
+                "'Carry on' = continue doing something.",
+            },
+            {
+              id: "eb-l19-q2",
+              type: "mcq",
+              prompt:
+                "'The new law aims to phase out single-use plastics by 2030.' — 'phase out' means",
+              choices: [
+                "ban immediately",
+                "gradually stop using",
+                "increase production",
+                "recycle",
+              ],
+              answerIndex: 1,
+              explanation:
+                "'Phase out' = discontinue gradually over time.",
+            },
+            {
+              id: "eb-l19-q3",
+              type: "tf",
+              prompt:
+                "'Carbon footprint' is the amount of greenhouse gases a person or activity produces.",
+              answer: true,
+              explanation:
+                "A key sustainability term.",
+            },
+            {
+              id: "eb-l19-q4",
+              type: "mcq",
+              prompt:
+                "'Renewable' energy comes from sources that",
+              choices: [
+                "will run out",
+                "are naturally replenished",
+                "are cheap",
+                "pollute",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Solar, wind, hydro replenish naturally.",
+            },
+            {
+              id: "eb-l19-q5",
+              type: "short",
+              prompt:
+                "Word for: the variety of life in an ecosystem. (one word)",
+              answer: "biodiversity",
+              keywords: ["biodiversity"],
+              acceptable: ["bio-diversity"],
+              explanation:
+                "Bio + diversity — variety of species.",
+            },
+            {
+              id: "eb-l19-q6",
+              type: "short",
+              prompt:
+                "Complete the collocation: 'climate ___' (a long-term global problem).",
+              answer: "change",
+              keywords: ["change"],
+              acceptable: ["change", "crisis"],
+              explanation:
+                "Climate change — the central environmental collocation.",
+            },
+          ],
+        },
+        {
+          id: "eb-l20",
+          title: "Linking words and cohesion",
+          questions: [
+            {
+              id: "eb-l20-q1",
+              type: "mcq",
+              prompt:
+                "Choose the linker for CONTRAST: '___ the cost, the project went ahead.'",
+              choices: ["Because of", "Despite", "Thanks to", "Due to"],
+              answerIndex: 1,
+              explanation:
+                "'Despite' + noun = contrast.",
+            },
+            {
+              id: "eb-l20-q2",
+              type: "mcq",
+              prompt:
+                "Choose the linker for RESULT: 'It rained all week; ___, the match was cancelled.'",
+              choices: ["however", "therefore", "although", "meanwhile"],
+              answerIndex: 1,
+              explanation:
+                "'Therefore' introduces a result.",
+            },
+            {
+              id: "eb-l20-q3",
+              type: "tf",
+              prompt:
+                "'Furthermore' and 'moreover' add information; 'however' signals contrast.",
+              answer: true,
+              explanation:
+                "Know your linker functions: addition, contrast, result, sequence.",
+            },
+            {
+              id: "eb-l20-q4",
+              type: "mcq",
+              prompt:
+                "'First of all, … Secondly, … ___' — the correct sequencer is",
+              choices: ["nevertheless", "finally", "although", "despite"],
+              answerIndex: 1,
+              explanation:
+                "Sequencers organise a text chronologically.",
+            },
+            {
+              id: "eb-l20-q5",
+              type: "short",
+              prompt:
+                "Linker meaning 'in spite of the fact that' + clause (one word).",
+              answer: "although",
+              keywords: ["although"],
+              acceptable: ["although", "even though"],
+              explanation:
+                "Although / even though take a clause; despite takes a noun.",
+            },
+            {
+              id: "eb-l20-q6",
+              type: "short",
+              prompt:
+                "Complete: '___ (as a result), many residents lost their homes.'",
+              answer: "consequently",
+              keywords: ["consequent", "therefore", "as a result", "thus"],
+              acceptable: ["therefore", "as a result", "thus"],
+              explanation:
+                "Any result linker works.",
             },
           ],
         },
@@ -697,6 +1375,243 @@ export const englishB: Subject = {
               keywords: ["describe", "interpret", "theme", "link"],
               explanation:
                 "Describe → interpret → connect to the prescribed theme and wider ideas.",
+            },
+          ],
+        },
+        {
+          id: "eb-l21",
+          title: "Text types: emails, reports and proposals",
+          questions: [
+            {
+              id: "eb-l21-q1",
+              type: "mcq",
+              prompt: "A formal email to a teacher should open with",
+              choices: [
+                "'Hey!'",
+                "'Dear Ms Chen,' or 'Dear Sir/Madam,'",
+                "'Hi guys,'",
+                "'What's up,'",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Formal register needs a formal salutation.",
+            },
+            {
+              id: "eb-l21-q2",
+              type: "mcq",
+              prompt: "A report differs from a review because a report",
+              choices: [
+                "gives personal opinions",
+                "presents factual findings with headings for a specific reader",
+                "is always informal",
+                "recommends films",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Report = organised, factual, headed, audience-specific.",
+            },
+            {
+              id: "eb-l21-q3",
+              type: "tf",
+              prompt:
+                "A proposal suggests a plan of action and argues why it should be adopted.",
+              answer: true,
+              explanation:
+                "Proposals persuade decision-makers — recommendations + justification.",
+            },
+            {
+              id: "eb-l21-q4",
+              type: "mcq",
+              prompt: "Which closing suits a formal letter?",
+              choices: [
+                "'See ya!'",
+                "'Yours sincerely,' or 'Yours faithfully,'",
+                "'Bye for now,'",
+                "'Cheers,'",
+              ],
+              answerIndex: 1,
+              explanation:
+                "'Sincerely' when you know the name; 'faithfully' for 'Dear Sir/Madam'.",
+            },
+            {
+              id: "eb-l21-q5",
+              type: "short",
+              prompt:
+                "Name ONE feature a report uses that a friendly letter does not.",
+              answer: "headings",
+              keywords: ["heading", "section", "title", "subhead"],
+              acceptable: ["headings", "section titles"],
+              explanation:
+                "Headings, numbered sections, formal tone.",
+            },
+            {
+              id: "eb-l21-q6",
+              type: "short",
+              prompt:
+                "Formal phrase meaning 'I am writing to complain about…'. Give the first three words.",
+              answer: "i am writing",
+              keywords: ["i am writing"],
+              acceptable: ["I am writing"],
+              explanation:
+                "Standard formal-letter opener.",
+            },
+          ],
+        },
+        {
+          id: "eb-l22",
+          title: "Formal vs informal register",
+          questions: [
+            {
+              id: "eb-l22-q1",
+              type: "mcq",
+              prompt: "Which is informal?",
+              choices: [
+                "'I would appreciate your assistance.'",
+                "'Could you give me a hand?'",
+                "'I am writing to enquire…'",
+                "'I regret to inform you…'",
+              ],
+              answerIndex: 1,
+              explanation:
+                "'Give me a hand' is colloquial — fine for friends, not formal letters.",
+            },
+            {
+              id: "eb-l22-q2",
+              type: "mcq",
+              prompt: "Contracted forms ('can't', 'won't') are appropriate in",
+              choices: [
+                "formal reports",
+                "informal emails to friends",
+                "official complaints",
+                "proposals",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Contractions mark informal register.",
+            },
+            {
+              id: "eb-l22-q3",
+              type: "tf",
+              prompt:
+                "Phrasal verbs often mark informal register; single formal verbs ('request' vs 'ask for') suit formal texts.",
+              answer: true,
+              explanation:
+                "'Ask for' → 'request'; 'look into' → 'investigate'.",
+            },
+            {
+              id: "eb-l22-q4",
+              type: "mcq",
+              prompt: "Choose the formal equivalent of 'Thanks a lot for your help.'",
+              choices: [
+                "'Cheers mate!'",
+                "'Thank you very much for your assistance.'",
+                "'Thanks!!'",
+                "'Ta!'",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Full sentences, polite vocabulary, no slang.",
+            },
+            {
+              id: "eb-l22-q5",
+              type: "short",
+              prompt:
+                "Informal phrase for 'I am writing to inform you'. (three words)",
+              answer: "just letting you know",
+              keywords: ["just", "letting", "know"],
+              acceptable: ["just to let you know"],
+              explanation:
+                "'Just a quick note to let you know' = informal equivalent.",
+            },
+            {
+              id: "eb-l22-q6",
+              type: "short",
+              prompt:
+                "Formal verb replacing 'find out'. (one word)",
+              answer: "discover",
+              keywords: ["discover", "ascertain", "learn"],
+              acceptable: ["discover", "ascertain"],
+              explanation:
+                "Discover/ascertain are the formal equivalents.",
+            },
+          ],
+        },
+        {
+          id: "eb-l23",
+          title: "Listening and reading exam strategies",
+          questions: [
+            {
+              id: "eb-l23-q1",
+              type: "mcq",
+              prompt: "Before a listening text plays, you should",
+              choices: [
+                "close your eyes",
+                "read the questions and predict what to listen for",
+                "write your answers",
+                "skip the task",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Predicting content focuses your listening.",
+            },
+            {
+              id: "eb-l23-q2",
+              type: "mcq",
+              prompt: "When you miss an answer while listening, the best move is",
+              choices: [
+                "panic and replay mentally",
+                "keep listening — dwelling loses the next answer",
+                "stop",
+                "guess randomly now",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Move on; the recording continues.",
+            },
+            {
+              id: "eb-l23-q3",
+              type: "tf",
+              prompt:
+                "In Paper 2 reading, the questions usually follow the order of the text.",
+              answer: true,
+              explanation:
+                "Comprehension questions are typically sequential — a useful anchor.",
+            },
+            {
+              id: "eb-l23-q4",
+              type: "mcq",
+              prompt: "Skimming a text means reading",
+              choices: [
+                "every word",
+                "quickly for the gist",
+                "only the title",
+                "backwards",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Skim for gist, scan for specific detail.",
+            },
+            {
+              id: "eb-l23-q5",
+              type: "short",
+              prompt:
+                "Reading technique: searching a text for a specific fact or name. (one word)",
+              answer: "scanning",
+              keywords: ["scan"],
+              acceptable: ["scanning"],
+              explanation:
+                "Scanning = locating specific information fast.",
+            },
+            {
+              id: "eb-l23-q6",
+              type: "short",
+              prompt:
+                "How many pieces of writing does English B Paper 1 require? (number)",
+              answer: "1",
+              keywords: ["1"],
+              acceptable: ["one"],
+              explanation:
+                "One text from a choice of three tasks (450–600 words HL / 250–400 SL).",
             },
           ],
         },
@@ -954,6 +1869,168 @@ export const englishB: Subject = {
               keywords: ["argu", "seem", "could", "suggest", "tend"],
               explanation:
                 "Hedging (may, might, tend to, arguably) shows appropriate caution in formal writing.",
+            },
+          ],
+        },
+        {
+          id: "eb-l24",
+          title: "HL literary extract: analysing a short story",
+          level: "HL",
+          questions: [
+            {
+              id: "eb-l24-q1",
+              type: "mcq",
+              prompt:
+                "HL Paper 2 includes a literary extract. When analysing it, focus on",
+              choices: [
+                "summarising the plot",
+                "how language creates character, mood and theme",
+                "the author's biography",
+                "translating it",
+              ],
+              answerIndex: 1,
+              explanation:
+                "HL rewards analysis of authorial technique, not comprehension alone.",
+            },
+            {
+              id: "eb-l24-q2",
+              type: "mcq",
+              prompt:
+                "Read: 'The room held its breath; even the clock seemed to tick more softly.' — The effect is created mainly by",
+              choices: [
+                "personification",
+                "rhyme",
+                "statistics",
+                "a question",
+              ],
+              answerIndex: 0,
+              explanation:
+                "The room and clock are given human qualities — atmosphere through personification.",
+            },
+            {
+              id: "eb-l24-q3",
+              type: "tf",
+              prompt:
+                "A first-person narrator gives access to thoughts and feelings but may be unreliable.",
+              answer: true,
+              explanation:
+                "Narrative perspective shapes how we read events.",
+            },
+            {
+              id: "eb-l24-q4",
+              type: "mcq",
+              prompt: "The 'tone' of an extract refers to",
+              choices: [
+                "the volume",
+                "the writer's attitude conveyed through word choice",
+                "the font",
+                "the setting",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Tone = attitude (ironic, nostalgic, critical…) expressed by diction.",
+            },
+            {
+              id: "eb-l24-q5",
+              type: "short",
+              prompt:
+                "Name the literary device: 'He was a rock in the storm.' (one word)",
+              answer: "metaphor",
+              keywords: ["metaphor"],
+              acceptable: ["a metaphor"],
+              explanation:
+                "Direct comparison without 'like'/'as' = metaphor.",
+            },
+            {
+              id: "eb-l24-q6",
+              type: "short",
+              prompt:
+                "The person telling the story in a literary text is called the ___.",
+              answer: "narrator",
+              keywords: ["narrator"],
+              acceptable: ["narrator"],
+              explanation:
+                "Narrator ≠ author — a key HL distinction.",
+            },
+          ],
+        },
+        {
+          id: "eb-l25",
+          title: "HL writing: reviews, articles and the Paper 1 task",
+          level: "HL",
+          questions: [
+            {
+              id: "eb-l25-q1",
+              type: "mcq",
+              prompt: "HL Paper 1 requires a text of",
+              choices: [
+                "100–150 words",
+                "450–600 words",
+                "50 words",
+                "2000 words",
+              ],
+              answerIndex: 1,
+              explanation:
+                "HL: 450–600 words, one of three tasks; SL: 250–400.",
+            },
+            {
+              id: "eb-l25-q2",
+              type: "mcq",
+              prompt: "A review should include",
+              choices: [
+                "only a plot summary",
+                "a brief description, evaluation and a recommendation",
+                "no opinion",
+                "only criticism",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Describe → evaluate → recommend: the review's spine.",
+            },
+            {
+              id: "eb-l25-q3",
+              type: "tf",
+              prompt:
+                "An article for a school magazine can use an engaging, semi-formal tone.",
+              answer: true,
+              explanation:
+                "Register follows audience — magazine articles sit between formal and informal.",
+            },
+            {
+              id: "eb-l25-q4",
+              type: "mcq",
+              prompt: "Choosing the right text type in Paper 1 depends on",
+              choices: [
+                "the longest option",
+                "the audience and purpose stated in the task",
+                "your mood",
+                "word count only",
+              ],
+              answerIndex: 1,
+              explanation:
+                "The task defines context/audience/purpose — pick the text type that matches.",
+            },
+            {
+              id: "eb-l25-q5",
+              type: "short",
+              prompt:
+                "Name ONE evaluative adjective useful in a review (positive).",
+              answer: "compelling",
+              keywords: ["compelling", "gripping", "moving", "impressive", "enjoyable"],
+              acceptable: ["gripping", "impressive", "enjoyable"],
+              explanation:
+                "Compelling, gripping, moving, impressive…",
+            },
+            {
+              id: "eb-l25-q6",
+              type: "short",
+              prompt:
+                "Criterion for Paper 1: the quality of language and how well the text suits its ___. (one word)",
+              answer: "purpose",
+              keywords: ["purpose"],
+              acceptable: ["purpose", "audience"],
+              explanation:
+                "Conceptual understanding: does the text achieve its purpose for its audience?",
             },
           ],
         },

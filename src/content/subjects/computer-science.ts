@@ -184,6 +184,223 @@ export const computerScience: Subject = {
             },
           ],
         },
+        {
+          id: "cs-l11",
+          title: "Number bases and two's complement",
+          questions: [
+            {
+              id: "cs-l11-q1",
+              type: "mcq",
+              prompt: "Binary 1011 in decimal is",
+              choices: ["11", "9", "13", "10"],
+              answerIndex: 0,
+              explanation:
+                "8+0+2+1 = 11.",
+            },
+            {
+              id: "cs-l11-q2",
+              type: "mcq",
+              prompt: "Hexadecimal F equals binary",
+              choices: ["1001", "1110", "1111", "1010"],
+              answerIndex: 2,
+              explanation:
+                "F = 15 = 1111.",
+            },
+            {
+              id: "cs-l11-q3",
+              type: "tf",
+              prompt:
+                "In two's complement, the leftmost bit carries a negative place value.",
+              answer: true,
+              explanation:
+                "1000 in 4-bit two's complement = −8.",
+            },
+            {
+              id: "cs-l11-q4",
+              type: "mcq",
+              prompt: "The 8-bit two's complement representation of −1 is",
+              choices: ["10000001", "11111111", "11111110", "00000001"],
+              answerIndex: 1,
+              explanation:
+                "All 1s = −1; invert+1 gives a clean rule.",
+            },
+            {
+              id: "cs-l11-q5",
+              type: "short",
+              prompt:
+                "Decimal 13 in binary (4 or more bits).",
+              answer: "1101",
+              keywords: ["1101"],
+              acceptable: ["1101", "00001101"],
+              explanation:
+                "8+4+1 = 13.",
+            },
+            {
+              id: "cs-l11-q6",
+              type: "short",
+              prompt:
+                "Binary 11111010 in 8-bit two's complement = decimal ___ (negative).",
+              answer: "-6",
+              keywords: ["-6"],
+              acceptable: ["−6", "minus 6", "-6"],
+              explanation:
+                "Invert+1 → 00000110 = 6, so it's −6.",
+            },
+          ],
+        },
+        {
+          id: "cs-l12",
+          title: "Logic gates, truth tables and Boolean simplification",
+          questions: [
+            {
+              id: "cs-l12-q1",
+              type: "mcq",
+              prompt: "An AND gate outputs 1 when",
+              choices: [
+                "any input is 1",
+                "both inputs are 1",
+                "inputs differ",
+                "input is 0",
+              ],
+              answerIndex: 1,
+              explanation:
+                "AND = A·B — both must be true.",
+            },
+            {
+              id: "cs-l12-q2",
+              type: "mcq",
+              prompt: "XOR outputs 1 when",
+              choices: [
+                "inputs are equal",
+                "inputs differ",
+                "both are 1",
+                "both are 0",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Exclusive OR — exactly one input true.",
+            },
+            {
+              id: "cs-l12-q3",
+              type: "tf",
+              prompt:
+                "A NAND gate is universal: any Boolean function can be built from NANDs alone.",
+              answer: true,
+              explanation:
+                "NAND (and NOR) are functionally complete.",
+            },
+            {
+              id: "cs-l12-q4",
+              type: "mcq",
+              prompt: "The expression A·1 simplifies to",
+              choices: ["1", "A", "0", "A'"],
+              answerIndex: 1,
+              explanation:
+                "AND with 1 leaves A unchanged.",
+            },
+            {
+              id: "cs-l12-q5",
+              type: "short",
+              prompt:
+                "A + A·B simplifies to ___ (Boolean law).",
+              answer: "A",
+              keywords: ["a"],
+              acceptable: ["A"],
+              explanation:
+                "Absorption law: A + AB = A.",
+            },
+            {
+              id: "cs-l12-q6",
+              type: "short",
+              prompt:
+                "NOT (A AND B) equals A' ___ B' (operator, De Morgan).",
+              answer: "OR",
+              keywords: ["or", "+"],
+              acceptable: ["+", "or", "OR"],
+              explanation:
+                "De Morgan: ¬(A·B) = ¬A + ¬B.",
+            },
+          ],
+        },
+        {
+          id: "cs-l13",
+          title: "Operating systems and data compression",
+          questions: [
+            {
+              id: "cs-l13-q1",
+              type: "mcq",
+              prompt: "Key functions of an operating system include",
+              choices: [
+                "only running apps",
+                "memory management, process scheduling, file management, device drivers and security",
+                "writing code",
+                "cooling the CPU",
+              ],
+              answerIndex: 1,
+              explanation:
+                "The OS manages hardware resources and provides services.",
+            },
+            {
+              id: "cs-l13-q2",
+              type: "mcq",
+              prompt: "Lossless compression",
+              choices: [
+                "deletes data",
+                "reduces size with no information lost — original can be rebuilt",
+                "only works on video",
+                "is slower to store",
+              ],
+              answerIndex: 1,
+              explanation:
+                "e.g. run-length encoding, ZIP — vs lossy JPEG/MP3.",
+            },
+            {
+              id: "cs-l13-q3",
+              type: "tf",
+              prompt:
+                "Virtual memory lets the OS use disk space to extend RAM.",
+              answer: true,
+              explanation:
+                "Paging swaps inactive pages to disk — slower but effective.",
+            },
+            {
+              id: "cs-l13-q4",
+              type: "mcq",
+              prompt: "Run-length encoding compresses",
+              choices: [
+                "random data best",
+                "data with repeated values, storing value + count",
+                "encrypted files",
+                "only text",
+              ],
+              answerIndex: 1,
+              explanation:
+                "AAAABBB → 4A3B — great for runs, useless on random data.",
+            },
+            {
+              id: "cs-l13-q5",
+              type: "short",
+              prompt:
+                "JPEG and MP3 are examples of ___ compression.",
+              answer: "lossy",
+              keywords: ["lossy"],
+              acceptable: ["lossy"],
+              explanation:
+                "They discard detail humans barely notice.",
+            },
+            {
+              id: "cs-l13-q6",
+              type: "short",
+              prompt:
+                "The OS component deciding which process runs next = the ___.",
+              answer: "scheduler",
+              keywords: ["schedul"],
+              acceptable: ["scheduler", "CPU scheduler"],
+              explanation:
+                "The scheduler manages process execution order.",
+            },
+          ],
+        },
       ],
     },
     {
@@ -346,6 +563,238 @@ export const computerScience: Subject = {
               keywords: ["table", "relational", "redundan", "key"],
               explanation:
                 "Relational design splits data and joins it — flat files duplicate it.",
+            },
+          ],
+        },
+        {
+          id: "cs-l14",
+          title: "Network layers: OSI, TCP/IP, IP and DNS",
+          questions: [
+            {
+              id: "cs-l14-q1",
+              type: "mcq",
+              prompt: "The OSI model has",
+              choices: ["4 layers", "7 layers", "3 layers", "5 layers"],
+              answerIndex: 1,
+              explanation:
+                "7 layers: physical → application. TCP/IP condenses to 4.",
+            },
+            {
+              id: "cs-l14-q2",
+              type: "mcq",
+              prompt: "DNS translates",
+              choices: [
+                "IP to MAC",
+                "domain names into IP addresses",
+                "packets",
+                "passwords",
+              ],
+              answerIndex: 1,
+              explanation:
+                "The internet's phonebook — www.example.com → 93.184.x.x.",
+            },
+            {
+              id: "cs-l14-q3",
+              type: "tf",
+              prompt:
+                "TCP provides reliable, ordered delivery; UDP is faster but doesn't guarantee delivery.",
+              answer: true,
+              explanation:
+                "TCP for web/email; UDP for streaming/gaming.",
+            },
+            {
+              id: "cs-l14-q4",
+              type: "mcq",
+              prompt: "An IPv4 address is",
+              choices: [
+                "64 bits",
+                "32 bits, written as four 0–255 numbers",
+                "a domain name",
+                "hexadecimal only",
+              ],
+              answerIndex: 1,
+              explanation:
+                "e.g. 192.168.0.1 — IPv6 expands to 128 bits.",
+            },
+            {
+              id: "cs-l14-q5",
+              type: "short",
+              prompt:
+                "The wireless standard family for LANs (IEEE number).",
+              answer: "802.11",
+              keywords: ["802.11", "wifi", "wi-fi"],
+              acceptable: ["802.11", "WiFi", "IEEE 802.11"],
+              explanation:
+                "IEEE 802.11 = Wi-Fi standards.",
+            },
+            {
+              id: "cs-l14-q6",
+              type: "short",
+              prompt:
+                "The TCP/IP layer handling routing and addressing = the ___ layer.",
+              answer: "internet",
+              keywords: ["internet", "network"],
+              acceptable: ["internet layer", "network layer"],
+              explanation:
+                "Internet layer — equivalent to OSI layer 3.",
+            },
+          ],
+        },
+        {
+          id: "cs-l15",
+          title: "Network security: encryption, hashing, authentication",
+          questions: [
+            {
+              id: "cs-l15-q1",
+              type: "mcq",
+              prompt: "Symmetric encryption uses",
+              choices: [
+                "two keys",
+                "the same key to encrypt and decrypt",
+                "no key",
+                "public keys only",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Fast but requires secure key exchange — e.g. AES.",
+            },
+            {
+              id: "cs-l15-q2",
+              type: "mcq",
+              prompt: "Hashing passwords is preferred over encryption because hashing",
+              choices: [
+                "is reversible",
+                "is one-way — the password can't be recovered from the hash",
+                "is faster",
+                "uses keys",
+              ],
+              answerIndex: 1,
+              explanation:
+                "One-way function; salting defeats rainbow tables.",
+            },
+            {
+              id: "cs-l15-q3",
+              type: "tf",
+              prompt:
+                "Two-factor authentication combines two different factor types, e.g. password + phone code.",
+              answer: true,
+              explanation:
+                "Something you know / have / are — 2FA raises security.",
+            },
+            {
+              id: "cs-l15-q4",
+              type: "mcq",
+              prompt: "Asymmetric (public-key) encryption solves",
+              choices: [
+                "speed",
+                "secure communication without sharing a secret key first",
+                "compression",
+                "storage",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Public key encrypts, private key decrypts — foundation of TLS.",
+            },
+            {
+              id: "cs-l15-q5",
+              type: "short",
+              prompt:
+                "Adding random data to a password before hashing = ___.",
+              answer: "salting",
+              keywords: ["salt"],
+              acceptable: ["salting", "a salt"],
+              explanation:
+                "Salts make precomputed hash attacks useless.",
+            },
+            {
+              id: "cs-l15-q6",
+              type: "short",
+              prompt:
+                "A digital ___ binds a public key to an identity, issued by a CA.",
+              answer: "certificate",
+              keywords: ["certificate"],
+              acceptable: ["certificate", "cert"],
+              explanation:
+                "Certificates prove you hold the public key you claim.",
+            },
+          ],
+        },
+        {
+          id: "cs-l16",
+          title: "Databases: normalisation, joins, ACID and NoSQL",
+          questions: [
+            {
+              id: "cs-l16-q1",
+              type: "mcq",
+              prompt: "First normal form (1NF) requires",
+              choices: [
+                "foreign keys",
+                "atomic values — no repeating groups in a field",
+                "no nulls",
+                "one table",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Each cell holds a single value.",
+            },
+            {
+              id: "cs-l16-q2",
+              type: "mcq",
+              prompt: "An INNER JOIN returns",
+              choices: [
+                "all rows from both tables",
+                "only rows with matching keys in both tables",
+                "all left rows",
+                "nothing",
+              ],
+              answerIndex: 1,
+              explanation:
+                "INNER = intersection; LEFT keeps unmatched left rows.",
+            },
+            {
+              id: "cs-l16-q3",
+              type: "tf",
+              prompt:
+                "ACID transactions guarantee Atomicity, Consistency, Isolation and Durability.",
+              answer: true,
+              explanation:
+                "e.g. bank transfers must be all-or-nothing.",
+            },
+            {
+              id: "cs-l16-q4",
+              type: "mcq",
+              prompt: "A reason to choose NoSQL is",
+              choices: [
+                "SQL is broken",
+                "flexible schema and horizontal scaling for huge unstructured data",
+                "it needs no servers",
+                "it's always faster",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Document/key-value stores trade strict consistency for scale.",
+            },
+            {
+              id: "cs-l16-q5",
+              type: "short",
+              prompt:
+                "SQL aggregate returning the number of rows: ___.",
+              answer: "COUNT",
+              keywords: ["count"],
+              acceptable: ["COUNT()", "count"],
+              explanation:
+                "COUNT, SUM, AVG, MAX, MIN.",
+            },
+            {
+              id: "cs-l16-q6",
+              type: "short",
+              prompt:
+                "Removing partial dependencies on part of a composite key gives ___ normal form (abbrev).",
+              answer: "2NF",
+              keywords: ["2nf", "second"],
+              acceptable: ["2NF", "second normal form"],
+              explanation:
+                "2NF: 1NF + no partial dependency; 3NF removes transitive ones.",
             },
           ],
         },
@@ -522,6 +971,244 @@ export const computerScience: Subject = {
             },
           ],
         },
+        {
+          id: "cs-l17",
+          title: "ML: training, testing and overfitting",
+          questions: [
+            {
+              id: "cs-l17-q1",
+              type: "mcq",
+              prompt: "The training/test split exists to",
+              choices: [
+                "speed up training",
+                "evaluate the model on unseen data, revealing generalisation",
+                "reduce data",
+                "label data",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Typical splits: 80/20 — test performance estimates real-world skill.",
+            },
+            {
+              id: "cs-l17-q2",
+              type: "mcq",
+              prompt: "Overfitting means the model",
+              choices: [
+                "is too simple",
+                "memorises noise in the training set and fails on new data",
+                "can't train",
+                "generalises perfectly",
+              ],
+              answerIndex: 1,
+              explanation:
+                "High training accuracy, poor test accuracy = overfit.",
+            },
+            {
+              id: "cs-l17-q3",
+              type: "tf",
+              prompt:
+                "Regression predicts continuous values; classification predicts categories.",
+              answer: true,
+              explanation:
+                "House price → regression; spam/not-spam → classification.",
+            },
+            {
+              id: "cs-l17-q4",
+              type: "mcq",
+              prompt: "A remedy for overfitting is",
+              choices: [
+                "more layers always",
+                "more data, regularisation or a simpler model",
+                "longer training",
+                "removing test data",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Simplify the model or increase data — classic cures.",
+            },
+            {
+              id: "cs-l17-q5",
+              type: "short",
+              prompt:
+                "Data used to check a model's skill on unseen examples = the ___ set.",
+              answer: "test",
+              keywords: ["test", "testing"],
+              acceptable: ["test set", "testing set"],
+              explanation:
+                "Held-out test set — never trained on.",
+            },
+            {
+              id: "cs-l17-q6",
+              type: "short",
+              prompt:
+                "Predicting a continuous output like temperature is called ___.",
+              answer: "regression",
+              keywords: ["regression"],
+              acceptable: ["regression"],
+              explanation:
+                "Regression vs classification.",
+            },
+          ],
+        },
+        {
+          id: "cs-l18",
+          title: "ML algorithms: k-NN and decision trees",
+          questions: [
+            {
+              id: "cs-l18-q1",
+              type: "mcq",
+              prompt: "k-nearest neighbours classifies a point by",
+              choices: [
+                "building a tree",
+                "the majority class of its k closest training examples",
+                "a linear equation",
+                "random choice",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Lazy learning — no model, just distance to neighbours.",
+            },
+            {
+              id: "cs-l18-q2",
+              type: "mcq",
+              prompt: "A decision tree splits data by",
+              choices: [
+                "random cuts",
+                "the feature giving the best separation (e.g. information gain)",
+                "alphabetical order",
+                "row order",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Each node tests a feature; leaves hold predictions.",
+            },
+            {
+              id: "cs-l18-q3",
+              type: "tf",
+              prompt:
+                "Choosing k too small in k-NN makes the model sensitive to noise (overfitting).",
+              answer: true,
+              explanation:
+                "k=1 memorises; larger k smooths the boundary.",
+            },
+            {
+              id: "cs-l18-q4",
+              type: "mcq",
+              prompt: "Decision trees are valued because they",
+              choices: [
+                "are always most accurate",
+                "are interpretable — you can read the decision rules",
+                "need no data",
+                "can't overfit",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Readable rules — but deep trees overfit; pruning helps.",
+            },
+            {
+              id: "cs-l18-q5",
+              type: "short",
+              prompt:
+                "k-NN measures closeness usually with ___ distance.",
+              answer: "Euclidean",
+              keywords: ["euclidean", "distance"],
+              acceptable: ["euclidean", "Euclidean distance"],
+              explanation:
+                "Euclidean distance in feature space.",
+            },
+            {
+              id: "cs-l18-q6",
+              type: "short",
+              prompt:
+                "The end nodes of a decision tree holding predictions are called ___.",
+              answer: "leaves",
+              keywords: ["leav", "leaf"],
+              acceptable: ["leaf nodes", "leaves"],
+              explanation:
+                "Leaf nodes output the final class/value.",
+            },
+          ],
+        },
+        {
+          id: "cs-l19",
+          title: "HL: model evaluation metrics",
+          level: "HL",
+          questions: [
+            {
+              id: "cs-l19-q1",
+              type: "mcq",
+              prompt: "Precision measures",
+              choices: [
+                "all positives found",
+                "the share of predicted positives that are truly positive",
+                "overall accuracy",
+                "speed",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Precision = TP / (TP + FP).",
+            },
+            {
+              id: "cs-l19-q2",
+              type: "mcq",
+              prompt: "Recall (sensitivity) measures",
+              choices: [
+                "precision",
+                "the share of actual positives the model caught",
+                "false positives",
+                "accuracy",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Recall = TP / (TP + FN) — vital in medical screening.",
+            },
+            {
+              id: "cs-l19-q3",
+              type: "tf",
+              prompt:
+                "On imbalanced data (e.g. 1% fraud), accuracy alone is misleading — a trivial 'always negative' model scores 99%.",
+              answer: true,
+              explanation:
+                "Use precision, recall, F1 or a confusion matrix instead.",
+            },
+            {
+              id: "cs-l19-q4",
+              type: "mcq",
+              prompt: "The F1 score is",
+              choices: [
+                "the average of precision and recall",
+                "the harmonic mean of precision and recall",
+                "accuracy squared",
+                "a dataset",
+              ],
+              answerIndex: 1,
+              explanation:
+                "F1 = 2PR/(P+R) — balances the two metrics.",
+            },
+            {
+              id: "cs-l19-q5",
+              type: "short",
+              prompt:
+                "TP=40, FP=10. Precision = ___ (decimal).",
+              answer: "0.8",
+              keywords: ["0.8", "80"],
+              acceptable: ["0.8", "80%", "4/5"],
+              explanation:
+                "40/(40+10) = 0.8.",
+            },
+            {
+              id: "cs-l19-q6",
+              type: "short",
+              prompt:
+                "A table showing TP, FP, FN, TN for a classifier = a ___ matrix.",
+              answer: "confusion",
+              keywords: ["confusion"],
+              acceptable: ["confusion matrix"],
+              explanation:
+                "The confusion matrix breaks down all outcomes.",
+            },
+          ],
+        },
       ],
     },
     {
@@ -680,6 +1367,214 @@ export const computerScience: Subject = {
               keywords: ["change", "fixed", "value"],
               explanation:
                 "Constants prevent accidental mutation and document intent.",
+            },
+          ],
+        },
+        {
+          id: "cs-l20",
+          title: "Big-O, searching and sorting",
+          questions: [
+            {
+              id: "cs-l20-q1",
+              type: "mcq",
+              prompt: "Binary search on a sorted list of n items is",
+              choices: ["O(n)", "O(log n)", "O(n²)", "O(1)"],
+              answerIndex: 1,
+              explanation:
+                "Halves the search space each step — but requires sorted data.",
+            },
+            {
+              id: "cs-l20-q2",
+              type: "mcq",
+              prompt: "Bubble sort's worst-case complexity is",
+              choices: ["O(n)", "O(log n)", "O(n²)", "O(n log n)"],
+              answerIndex: 2,
+              explanation:
+                "Nested passes over the list — quadratic.",
+            },
+            {
+              id: "cs-l20-q3",
+              type: "tf",
+              prompt:
+                "Linear search works on unsorted data and is O(n).",
+              answer: true,
+              explanation:
+                "Checks every element — simple but slow at scale.",
+            },
+            {
+              id: "cs-l20-q4",
+              type: "mcq",
+              prompt: "Sorting [5,2,9,1] — after ONE bubble-sort pass (left-to-right swaps) you get",
+              choices: [
+                "[1,2,5,9]",
+                "[2,5,1,9]",
+                "[2,5,9,1]",
+                "[9,5,2,1]",
+              ],
+              answerIndex: 1,
+              explanation:
+                "5↔2? swap→[2,5,9,1]… 9 then bubbles to the end: [2,5,1,9].",
+            },
+            {
+              id: "cs-l20-q5",
+              type: "short",
+              prompt:
+                "Binary search on 1,024 sorted items needs at most ___ comparisons.",
+              answer: "10",
+              keywords: ["10"],
+              acceptable: ["10"],
+              explanation:
+                "log₂ 1024 = 10.",
+            },
+            {
+              id: "cs-l20-q6",
+              type: "short",
+              prompt:
+                "Merge sort's time complexity (big-O).",
+              answer: "O(n log n)",
+              keywords: ["n log n", "nlogn"],
+              acceptable: ["O(nlogn)", "n log n"],
+              explanation:
+                "Divide-and-conquer gives n log n reliably.",
+            },
+          ],
+        },
+        {
+          id: "cs-l21",
+          title: "Pseudocode, arrays and string handling",
+          questions: [
+            {
+              id: "cs-l21-q1",
+              type: "mcq",
+              prompt:
+                "Trace: TOTAL ← 0; loop I from 0 to 4; TOTAL ← TOTAL + A[I]; end loop. With A = [2,4,6,8,10], TOTAL =",
+              choices: ["10", "30", "20", "28"],
+              answerIndex: 1,
+              explanation:
+                "2+4+6+8+10 = 30 — a standard trace.",
+            },
+            {
+              id: "cs-l21-q2",
+              type: "mcq",
+              prompt: "A 2-D array A[3][4] holds",
+              choices: ["7 elements", "12 elements", "34 elements", "1 element"],
+              answerIndex: 1,
+              explanation:
+                "3 rows × 4 columns = 12 elements.",
+            },
+            {
+              id: "cs-l21-q3",
+              type: "tf",
+              prompt:
+                "In many languages, string indexes start at 0, so 'CAT'[1] is 'A'.",
+              answer: true,
+              explanation:
+                "Zero-based indexing — a frequent exam trace trap.",
+            },
+            {
+              id: "cs-l21-q4",
+              type: "mcq",
+              prompt: "Concatenation of 'IB' + 'OOST' produces",
+              choices: ["IB OOST", "IBOOST", "OSTIB", "error"],
+              answerIndex: 1,
+              explanation:
+                "Strings join end to end.",
+            },
+            {
+              id: "cs-l21-q5",
+              type: "short",
+              prompt:
+                "Trace: S ← 'HELLO'; output S[2] (0-indexed).",
+              answer: "L",
+              keywords: ["l"],
+              acceptable: ["L"],
+              explanation:
+                "H=0, E=1, L=2.",
+            },
+            {
+              id: "cs-l21-q6",
+              type: "short",
+              prompt:
+                "Array A = [1,2,3]; after A[1] ← 9, the array is ___.",
+              answer: "[1,9,3]",
+              keywords: ["1,9,3", "1 9 3"],
+              acceptable: ["1,9,3", "[1,9,3]", "1 9 3"],
+              explanation:
+                "Index 1 (second slot) becomes 9.",
+            },
+          ],
+        },
+        {
+          id: "cs-l22",
+          title: "Recursion, debugging and testing",
+          questions: [
+            {
+              id: "cs-l22-q1",
+              type: "mcq",
+              prompt: "A recursive function must have",
+              choices: [
+                "a loop",
+                "a base case that stops the recursion",
+                "no parameters",
+                "a global variable",
+              ],
+              answerIndex: 1,
+              explanation:
+                "No base case → infinite recursion → stack overflow.",
+            },
+            {
+              id: "cs-l22-q2",
+              type: "mcq",
+              prompt: "factorial(3) computed recursively returns",
+              choices: ["3", "6", "9", "1"],
+              answerIndex: 1,
+              explanation:
+                "3 × 2 × 1 = 6.",
+            },
+            {
+              id: "cs-l22-q3",
+              type: "tf",
+              prompt:
+                "A syntax error is caught before running; a logic error runs but gives wrong results.",
+              answer: true,
+              explanation:
+                "Syntax vs runtime vs logic — three error types to know.",
+            },
+            {
+              id: "cs-l22-q4",
+              type: "mcq",
+              prompt: "Boundary (edge-case) testing checks",
+              choices: [
+                "the average case",
+                "values at the extremes of valid input",
+                "the GUI",
+                "comments",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Test 0, max values, empty input — where bugs hide.",
+            },
+            {
+              id: "cs-l22-q5",
+              type: "short",
+              prompt:
+                "Dry-running code line by line with a table of variables = a ___ table/trace.",
+              answer: "trace",
+              keywords: ["trace", "dry run", "walkthrough"],
+              acceptable: ["trace table", "dry run"],
+              explanation:
+                "Trace tables expose logic errors manually.",
+            },
+            {
+              id: "cs-l22-q6",
+              type: "short",
+              prompt:
+                "In factorial(n): return n × factorial(n−1), the base case is n = ___ (number).",
+              answer: "0",
+              keywords: ["0", "1"],
+              acceptable: ["1", "0"],
+              explanation:
+                "factorial(0) = 1 (or stop at 1) — ends recursion.",
             },
           ],
         },
@@ -852,6 +1747,229 @@ export const computerScience: Subject = {
               keywords: ["implementation", "operations", "behaviour", "interface"],
               explanation:
                 "A stack can be built on an array or a linked list — the interface is what matters.",
+            },
+          ],
+        },
+        {
+          id: "cs-l23",
+          title: "OOP: classes, inheritance, polymorphism, UML",
+          questions: [
+            {
+              id: "cs-l23-q1",
+              type: "mcq",
+              prompt: "A class is",
+              choices: [
+                "an object",
+                "a blueprint defining attributes and methods for objects",
+                "a variable",
+                "a loop",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Objects are instances of classes.",
+            },
+            {
+              id: "cs-l23-q2",
+              type: "mcq",
+              prompt: "Inheritance lets a subclass",
+              choices: [
+                "hide data",
+                "reuse and extend a parent class's attributes and methods",
+                "run faster",
+                "avoid errors",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Dog extends Animal — 'is-a' relationship.",
+            },
+            {
+              id: "cs-l23-q3",
+              type: "tf",
+              prompt:
+                "Polymorphism means different classes can respond to the same method call differently (e.g. draw() on Circle vs Square).",
+              answer: true,
+              explanation:
+                "One interface, many implementations.",
+            },
+            {
+              id: "cs-l23-q4",
+              type: "mcq",
+              prompt: "In UML, a solid line with a hollow triangle arrowhead shows",
+              choices: [
+                "association",
+                "inheritance (generalisation)",
+                "composition",
+                "a comment",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Hollow triangle → parent = 'is-a' inheritance arrow.",
+            },
+            {
+              id: "cs-l23-q5",
+              type: "short",
+              prompt:
+                "Hiding internal state behind methods is called ___.",
+              answer: "encapsulation",
+              keywords: ["encapsulat"],
+              acceptable: ["encapsulation"],
+              explanation:
+                "Encapsulation — private fields, public methods.",
+            },
+            {
+              id: "cs-l23-q6",
+              type: "short",
+              prompt:
+                "The special method that runs when an object is created = the ___.",
+              answer: "constructor",
+              keywords: ["constructor"],
+              acceptable: ["constructor", "init", "__init__"],
+              explanation:
+                "Constructor (__init__ in Python).",
+            },
+          ],
+        },
+        {
+          id: "cs-l24",
+          title: "Data structures: stacks, queues, linked lists",
+          questions: [
+            {
+              id: "cs-l24-q1",
+              type: "mcq",
+              prompt: "A stack is accessed in",
+              choices: ["FIFO order", "LIFO order", "random order", "sorted order"],
+              answerIndex: 1,
+              explanation:
+                "Last In, First Out — push/pop at the top.",
+            },
+            {
+              id: "cs-l24-q2",
+              type: "mcq",
+              prompt: "A queue's removal operation happens at",
+              choices: ["the top", "the front (FIFO)", "the middle", "random"],
+              answerIndex: 1,
+              explanation:
+                "Enqueue at rear, dequeue at front.",
+            },
+            {
+              id: "cs-l24-q3",
+              type: "tf",
+              prompt:
+                "A linked list stores elements in nodes, each holding data plus a pointer to the next node.",
+              answer: true,
+              explanation:
+                "No contiguous memory needed — insertions are cheap.",
+            },
+            {
+              id: "cs-l24-q4",
+              type: "mcq",
+              prompt: "Undo functionality in an editor is typically implemented with a",
+              choices: ["queue", "stack", "tree", "graph"],
+              answerIndex: 1,
+              explanation:
+                "Most recent action pops first — LIFO.",
+            },
+            {
+              id: "cs-l24-q5",
+              type: "short",
+              prompt:
+                "Removing the top item of a stack is called ___.",
+              answer: "pop",
+              keywords: ["pop"],
+              acceptable: ["pop", "popping"],
+              explanation:
+                "push / pop.",
+            },
+            {
+              id: "cs-l24-q6",
+              type: "short",
+              prompt:
+                "The pointer in the last node of a singly linked list points to ___.",
+              answer: "null",
+              keywords: ["null", "none", "nothing"],
+              acceptable: ["null", "None", "nil", "nothing"],
+              explanation:
+                "Null marks the end of the list.",
+            },
+          ],
+        },
+        {
+          id: "cs-l25",
+          title: "HL: trees and graphs",
+          level: "HL",
+          questions: [
+            {
+              id: "cs-l25-q1",
+              type: "mcq",
+              prompt: "In a binary search tree, smaller values go",
+              choices: [
+                "to the right",
+                "to the left subtree",
+                "to the root",
+                "anywhere",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Left < node < right — enabling O(log n) search.",
+            },
+            {
+              id: "cs-l25-q2",
+              type: "mcq",
+              prompt: "An in-order traversal of a BST visits nodes in",
+              choices: [
+                "random order",
+                "ascending sorted order",
+                "level order",
+                "reverse",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Left → root → right = sorted output.",
+            },
+            {
+              id: "cs-l25-q3",
+              type: "tf",
+              prompt:
+                "A graph can contain cycles; a tree is a connected graph with no cycles.",
+              answer: true,
+              explanation:
+                "Trees are acyclic by definition.",
+            },
+            {
+              id: "cs-l25-q4",
+              type: "mcq",
+              prompt: "Breadth-first search explores a graph",
+              choices: [
+                "depth first",
+                "level by level using a queue",
+                "randomly",
+                "using a stack",
+              ],
+              answerIndex: 1,
+              explanation:
+                "BFS = queue; DFS = stack/recursion.",
+            },
+            {
+              id: "cs-l25-q5",
+              type: "short",
+              prompt:
+                "Traversal order visiting root first, then subtrees = ___-order.",
+              answer: "pre",
+              keywords: ["pre", "preorder"],
+              acceptable: ["pre-order", "preorder"],
+              explanation:
+                "Pre-order: root → left → right.",
+            },
+            {
+              id: "cs-l25-q6",
+              type: "short",
+              prompt:
+                "The top node of a tree is called the ___.",
+              answer: "root",
+              keywords: ["root"],
+              acceptable: ["root node"],
+              explanation:
+                "The root — every other node descends from it.",
             },
           ],
         },
