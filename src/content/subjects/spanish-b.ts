@@ -382,10 +382,10 @@ export const spanishB: Subject = {
               id: "sb-l5-q5",
               type: "short",
               prompt:
-                "Rewrite formally — replace «tú quieres»: «Quisiera saber si ___ (usted) recibió mi solicitud.»",
+                "Rewrite in formal register — conjugate for «usted»: «Quisiera saber si ___ (querer) recibir más información.»",
               answer: "quiere",
-              keywords: ["usted"],
-              acceptable: ["quiere", "desea"],
+              keywords: ["quiere"],
+              acceptable: ["quiere", "desea", "quisiera"],
               explanation:
                 "With «usted» use the third-person form: «quiere» (or more formally «desea»).",
             },
