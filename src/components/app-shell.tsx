@@ -12,14 +12,15 @@ import { useAuth } from "@/lib/auth";
 import { useProgressSync } from "@/lib/sync";
 
 const NAV = [
-  { href: "/", label: "Home", icon: Home },
+  { href: "/home", label: "Home", icon: Home },
   { href: "/subjects", label: "Subjects", icon: BookOpen },
   { href: "/flashcards", label: "Flashcards", icon: Layers },
   { href: "/profile", label: "Profile", icon: User },
 ];
 
 function isActive(pathname: string, href: string) {
-  if (href === "/") return pathname === "/" || pathname.startsWith("/learn");
+  if (href === "/home")
+    return pathname === "/home" || pathname.startsWith("/learn");
   return pathname.startsWith(href);
 }
 
@@ -33,7 +34,8 @@ export function AppShell({ children }: { children: React.ReactNode }) {
   const fullScreen =
     pathname.startsWith("/lesson/") ||
     pathname === "/onboarding" ||
-    pathname === "/login";
+    pathname === "/login" ||
+    pathname === "/";
 
   useEffect(() => {
     useProgress.getState().syncDaily();
@@ -44,7 +46,8 @@ export function AppShell({ children }: { children: React.ReactNode }) {
       hydrated &&
       !onboarded &&
       pathname !== "/onboarding" &&
-      pathname !== "/login"
+      pathname !== "/login" &&
+      pathname !== "/"
     ) {
       router.replace("/onboarding");
     }
@@ -56,7 +59,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
     <div className="min-h-screen md:flex">
       {/* Sidebar (md+) */}
       <aside className="hidden md:flex md:w-60 md:flex-col md:border-r md:p-4 md:gap-1 shrink-0">
-        <Link href="/" className="mb-6 px-2">
+        <Link href="/home" className="mb-6 px-2">
           <Logo />
         </Link>
         {NAV.map(({ href, label, icon: Icon }) => {

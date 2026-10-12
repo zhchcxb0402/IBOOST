@@ -272,6 +272,159 @@ export const businessManagement: Subject = {
             },
           ],
         },
+        {
+          id: "bm-l16",
+          title: "Business plans and strategic analysis (SWOT, STEEPLE)",
+          questions: [
+            {
+              id: "bm-l16-q1",
+              type: "mcq",
+              prompt: "A business plan mainly helps a start-up by",
+              choices: [
+                "guaranteeing profit",
+                "setting objectives, strategy and financial forecasts to attract finance",
+                "avoiding taxes",
+                "hiring staff",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Plans organise the idea and convince lenders/investors.",
+            },
+            {
+              id: "bm-l16-q2",
+              type: "mcq",
+              prompt: "In SWOT analysis, 'T' stands for",
+              choices: ["technology", "threats", "targets", "trends"],
+              answerIndex: 1,
+              explanation:
+                "Strengths, Weaknesses (internal); Opportunities, Threats (external).",
+            },
+            {
+              id: "bm-l16-q3",
+              type: "tf",
+              prompt:
+                "STEEPLE analysis examines external factors: Social, Technological, Economic, Environmental, Political, Legal, Ethical.",
+              answer: true,
+              explanation:
+                "STEEPLE = a full external/environmental scan.",
+            },
+            {
+              id: "bm-l16-q4",
+              type: "mcq",
+              prompt: "A new competitor entering the market is, in SWOT terms,",
+              choices: [
+                "a strength",
+                "a weakness",
+                "an opportunity",
+                "a threat",
+              ],
+              answerIndex: 3,
+              explanation:
+                "External and negative → a threat.",
+            },
+            {
+              id: "bm-l16-q5",
+              type: "short",
+              prompt:
+                "Name ONE section typically found in a business plan.",
+              answer: "marketing plan",
+              keywords: ["market", "financ", "executive", "operations", "product"],
+              acceptable: ["financial plan", "executive summary", "marketing plan", "operations plan"],
+              explanation:
+                "Executive summary, marketing plan, operations plan, financial plan…",
+            },
+            {
+              id: "bm-l16-q6",
+              type: "short",
+              prompt:
+                "SWOT's 'S' and 'W' analyse factors that are internal or external? (one word)",
+              answer: "internal",
+              keywords: ["internal"],
+              acceptable: ["internal"],
+              explanation:
+                "Strengths and weaknesses come from inside the firm.",
+            },
+          ],
+        },
+        {
+          id: "bm-l17",
+          title: "Stakeholder mapping, growth and Ansoff",
+          questions: [
+            {
+              id: "bm-l17-q1",
+              type: "mcq",
+              prompt: "Stakeholder mapping plots stakeholders by",
+              choices: [
+                "age and location",
+                "power and interest",
+                "salary and seniority",
+                "loyalty and spend",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Mendelow's matrix: power × interest → how to manage each group.",
+            },
+            {
+              id: "bm-l17-q2",
+              type: "mcq",
+              prompt: "In Ansoff's matrix, selling existing products to new markets is",
+              choices: [
+                "market penetration",
+                "market development",
+                "product development",
+                "diversification",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Existing product + new market = market development.",
+            },
+            {
+              id: "bm-l17-q3",
+              type: "tf",
+              prompt:
+                "Diversification (new products, new markets) is the riskiest Ansoff strategy.",
+              answer: true,
+              explanation:
+                "Both unknowns — highest risk, potentially highest reward.",
+            },
+            {
+              id: "bm-l17-q4",
+              type: "mcq",
+              prompt: "Internal (organic) growth includes",
+              choices: [
+                "a takeover",
+                "opening new branches and increasing output",
+                "a merger",
+                "franchising someone else's brand",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Organic growth = expanding with own resources, not acquisitions.",
+            },
+            {
+              id: "bm-l17-q5",
+              type: "short",
+              prompt:
+                "Ansoff strategy: existing product, existing market (two words).",
+              answer: "market penetration",
+              keywords: ["penetration"],
+              acceptable: ["penetration"],
+              explanation:
+                "Market penetration — lowest risk.",
+            },
+            {
+              id: "bm-l17-q6",
+              type: "short",
+              prompt:
+                "Name ONE external growth method.",
+              answer: "merger",
+              keywords: ["merger", "takeover", "acquisition", "joint venture", "franchis"],
+              acceptable: ["takeover", "acquisition", "joint venture", "franchising"],
+              explanation:
+                "Mergers, takeovers, joint ventures, franchising…",
+            },
+          ],
+        },
       ],
     },
     {
@@ -516,6 +669,164 @@ export const businessManagement: Subject = {
             },
           ],
         },
+        {
+          id: "bm-l18",
+          title: "Organisational structures and leadership styles",
+          questions: [
+            {
+              id: "bm-l18-q1",
+              type: "mcq",
+              prompt: "A 'flat' organisational structure has",
+              choices: [
+                "many management layers",
+                "few layers and a wide span of control",
+                "no employees",
+                "tall hierarchy",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Flat = few levels, wide span → faster communication, more delegation.",
+            },
+            {
+              id: "bm-l18-q2",
+              type: "mcq",
+              prompt: "An autocratic leadership style is best suited to",
+              choices: [
+                "creative teams",
+                "crisis situations needing quick decisions",
+                "flat structures",
+                "consultation",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Autocratic = decisions without consultation — useful in emergencies.",
+            },
+            {
+              id: "bm-l18-q3",
+              type: "tf",
+              prompt:
+                "Laissez-faire leadership gives employees almost complete freedom.",
+              answer: true,
+              explanation:
+                "Hands-off — works with highly skilled, self-motivated teams.",
+            },
+            {
+              id: "bm-l18-q4",
+              type: "mcq",
+              prompt: "Delegation means",
+              choices: [
+                "doing everything yourself",
+                "passing authority to a subordinate while retaining accountability",
+                "firing staff",
+                "merging departments",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Authority passes down; accountability stays with the manager.",
+            },
+            {
+              id: "bm-l18-q5",
+              type: "short",
+              prompt:
+                "Leadership style where staff are consulted before decisions: (one word)",
+              answer: "democratic",
+              keywords: ["democratic", "participative"],
+              acceptable: ["participative", "democratic"],
+              explanation:
+                "Democratic/participative leadership consults the team.",
+            },
+            {
+              id: "bm-l18-q6",
+              type: "short",
+              prompt:
+                "The number of employees a manager directly controls = 'span of ___'.",
+              answer: "control",
+              keywords: ["control"],
+              acceptable: ["control"],
+              explanation:
+                "Span of control — wide in flat structures, narrow in tall ones.",
+            },
+          ],
+        },
+        {
+          id: "bm-l19",
+          title: "Motivation theories and HRM practices",
+          questions: [
+            {
+              id: "bm-l19-q1",
+              type: "mcq",
+              prompt: "Maslow's hierarchy begins with",
+              choices: [
+                "self-actualisation",
+                "physiological needs",
+                "esteem needs",
+                "safety",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Physiological → safety → social → esteem → self-actualisation.",
+            },
+            {
+              id: "bm-l19-q2",
+              type: "mcq",
+              prompt: "Herzberg's 'hygiene factors' are",
+              choices: [
+                "things that motivate",
+                "conditions that cause dissatisfaction if absent but don't motivate when present",
+                "cleaning rules",
+                "bonuses",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Hygiene (pay, conditions) prevents dissatisfaction; motivators (achievement, recognition) satisfy.",
+            },
+            {
+              id: "bm-l19-q3",
+              type: "tf",
+              prompt:
+                "Daniel Pink's three drivers of motivation are autonomy, mastery and purpose.",
+              answer: true,
+              explanation:
+                "Pink: intrinsic motivation beats 'carrot and stick' for complex work.",
+            },
+            {
+              id: "bm-l19-q4",
+              type: "mcq",
+              prompt: "Non-financial motivators include",
+              choices: [
+                "piece-rate pay",
+                "job enrichment, teamwork and recognition",
+                "commission",
+                "profit-sharing",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Enrichment, rotation, empowerment — no money needed.",
+            },
+            {
+              id: "bm-l19-q5",
+              type: "short",
+              prompt:
+                "HRM practice: the process of attracting and selecting new staff. (one word)",
+              answer: "recruitment",
+              keywords: ["recruit", "selection"],
+              acceptable: ["recruitment", "selection"],
+              explanation:
+                "Recruitment & selection — a core HR function.",
+            },
+            {
+              id: "bm-l19-q6",
+              type: "short",
+              prompt:
+                "Maslow's top level, realising one's potential, is called ___.",
+              answer: "self-actualisation",
+              keywords: ["actual"],
+              acceptable: ["self actualisation", "self-actualization"],
+              explanation:
+                "Self-actualisation — the apex of the pyramid.",
+            },
+          ],
+        },
       ],
     },
     {
@@ -752,6 +1063,165 @@ export const businessManagement: Subject = {
               answerIndex: 0,
               explanation:
                 "ARR = average annual profit as % of investment.",
+            },
+          ],
+        },
+        {
+          id: "bm-l20",
+          title: "Ratio analysis and cash-flow forecasts",
+          questions: [
+            {
+              id: "bm-l20-q1",
+              type: "mcq",
+              prompt: "Gross profit margin equals",
+              choices: [
+                "net profit ÷ revenue",
+                "gross profit ÷ revenue × 100",
+                "revenue ÷ costs",
+                "assets ÷ liabilities",
+              ],
+              answerIndex: 1,
+              explanation:
+                "GPM = (gross profit / revenue) × 100 — profitability before overheads.",
+            },
+            {
+              id: "bm-l20-q2",
+              type: "mcq",
+              prompt: "The current ratio measures",
+              choices: [
+                "profitability",
+                "liquidity — ability to pay short-term debts",
+                "efficiency",
+                "gearing",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Current assets ÷ current liabilities; ~1.5–2 is healthy.",
+            },
+            {
+              id: "bm-l20-q3",
+              type: "tf",
+              prompt:
+                "The acid-test (quick) ratio excludes stock from current assets.",
+              answer: true,
+              explanation:
+                "Stock is the least liquid asset — removed for a stricter test.",
+            },
+            {
+              id: "bm-l20-q4",
+              type: "mcq",
+              prompt: "A cash-flow forecast predicts",
+              choices: [
+                "profit",
+                "inflows and outflows of cash over time",
+                "share prices",
+                "tax owed",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Cash ≠ profit — a profitable firm can still run out of cash.",
+            },
+            {
+              id: "bm-l20-q5",
+              type: "short",
+              prompt:
+                "Revenue $500,000; gross profit $200,000. GPM = ___%. (number)",
+              answer: "40",
+              keywords: ["40"],
+              acceptable: ["40%"],
+              explanation:
+                "200,000 / 500,000 × 100 = 40%.",
+            },
+            {
+              id: "bm-l20-q6",
+              type: "short",
+              prompt:
+                "Current assets $90,000; current liabilities $60,000. Current ratio = ___ (number).",
+              answer: "1.5",
+              keywords: ["1.5"],
+              acceptable: ["1.5:1", "1.5:1"],
+              explanation:
+                "90,000 / 60,000 = 1.5.",
+            },
+          ],
+        },
+        {
+          id: "bm-l21",
+          title: "Investment appraisal and HL finance ratios",
+          level: "HL",
+          questions: [
+            {
+              id: "bm-l21-q1",
+              type: "mcq",
+              prompt: "Payback period measures",
+              choices: [
+                "total profit",
+                "time to recover the initial investment",
+                "interest paid",
+                "share value",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Payback = cost ÷ annual net cash inflow — simple but ignores later flows.",
+            },
+            {
+              id: "bm-l21-q2",
+              type: "mcq",
+              prompt: "Net present value (NPV) discounts future cash flows because",
+              choices: [
+                "it's required by law",
+                "money today is worth more than money in the future",
+                "banks demand it",
+                "of inflation only",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Time value of money — accept projects with positive NPV.",
+            },
+            {
+              id: "bm-l21-q3",
+              type: "tf",
+              prompt:
+                "ARR (average rate of return) = average annual profit ÷ initial cost × 100.",
+              answer: true,
+              explanation:
+                "ARR expresses the return as a percentage of the investment.",
+            },
+            {
+              id: "bm-l21-q4",
+              type: "mcq",
+              prompt: "Gearing ratio measures",
+              choices: [
+                "liquidity",
+                "the proportion of finance from debt vs equity",
+                "efficiency",
+                "productivity",
+              ],
+              answerIndex: 1,
+              explanation:
+                "HL: gearing = loan capital ÷ total capital employed — high gearing = risky.",
+            },
+            {
+              id: "bm-l21-q5",
+              type: "short",
+              prompt:
+                "Investment $100,000; annual cash inflow $25,000. Payback = ___ years.",
+              answer: "4",
+              keywords: ["4"],
+              acceptable: ["4 years"],
+              explanation:
+                "100,000 / 25,000 = 4 years.",
+            },
+            {
+              id: "bm-l21-q6",
+              type: "short",
+              prompt:
+                "HL ratio: debtors (receivables) ÷ revenue × 365 = '___ days'.",
+              answer: "debtor",
+              keywords: ["debtor", "debtors", "receivable"],
+              acceptable: ["debtor days", "debtors days", "receivable days"],
+              explanation:
+                "Debtor days — how long customers take to pay.",
             },
           ],
         },
@@ -997,6 +1467,164 @@ export const businessManagement: Subject = {
             },
           ],
         },
+        {
+          id: "bm-l22",
+          title: "The marketing mix: 7Ps and market research",
+          questions: [
+            {
+              id: "bm-l22-q1",
+              type: "mcq",
+              prompt: "The extended 7Ps of marketing are Product, Price, Place, Promotion plus",
+              choices: [
+                "people, process, physical evidence",
+                "profit, planning, packaging",
+                "power, politics, PR",
+                "quality, quantity, questions",
+              ],
+              answerIndex: 0,
+              explanation:
+                "People, Process, Physical evidence extend the mix for services.",
+            },
+            {
+              id: "bm-l22-q2",
+              type: "mcq",
+              prompt: "Primary market research means",
+              choices: [
+                "reading published reports",
+                "collecting new data first-hand (surveys, focus groups)",
+                "using government statistics",
+                "searching the internet",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Primary = new data you gather; secondary = existing data.",
+            },
+            {
+              id: "bm-l22-q3",
+              type: "tf",
+              prompt:
+                "'Place' in the marketing mix covers distribution channels — how the product reaches customers.",
+              answer: true,
+              explanation:
+                "Retailers, wholesalers, e-commerce — the route to market.",
+            },
+            {
+              id: "bm-l22-q4",
+              type: "mcq",
+              prompt: "A focus group is",
+              choices: [
+                "a large questionnaire",
+                "a small group interviewed in depth about a product",
+                "a sales team",
+                "a government panel",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Qualitative primary research — discussion, not statistics.",
+            },
+            {
+              id: "bm-l22-q5",
+              type: "short",
+              prompt:
+                "Name ONE element of the promotion mix.",
+              answer: "advertising",
+              keywords: ["advert", "sales promotion", "personal", "public relations", "direct"],
+              acceptable: ["advertising", "personal selling", "sales promotion", "PR"],
+              explanation:
+                "Advertising, sales promotion, personal selling, PR, direct marketing.",
+            },
+            {
+              id: "bm-l22-q6",
+              type: "short",
+              prompt:
+                "Pricing a new product low to gain share quickly = '___ pricing'.",
+              answer: "penetration",
+              keywords: ["penetration"],
+              acceptable: ["penetration pricing"],
+              explanation:
+                "Penetration pricing — opposite of price skimming.",
+            },
+          ],
+        },
+        {
+          id: "bm-l23",
+          title: "Extended marketing mix and positioning",
+          questions: [
+            {
+              id: "bm-l23-q1",
+              type: "mcq",
+              prompt: "'Physical evidence' in the 7Ps refers to",
+              choices: [
+                "the product itself",
+                "the environment where service is delivered (décor, uniforms, packaging)",
+                "legal proof",
+                "stock levels",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Tangible cues of an intangible service — a hotel lobby, for example.",
+            },
+            {
+              id: "bm-l23-q2",
+              type: "mcq",
+              prompt: "Market segmentation means",
+              choices: [
+                "closing stores",
+                "dividing a market into groups with similar needs",
+                "merging competitors",
+                "raising prices",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Segment → target → position (STP marketing).",
+            },
+            {
+              id: "bm-l23-q3",
+              type: "tf",
+              prompt:
+                "A position map plots brands on two dimensions, e.g. price vs quality.",
+              answer: true,
+              explanation:
+                "Positioning maps reveal market gaps.",
+            },
+            {
+              id: "bm-l23-q4",
+              type: "mcq",
+              prompt: "'Process' (7th P) for an airline includes",
+              choices: [
+                "the seats",
+                "check-in, boarding and baggage handling procedures",
+                "the pilots",
+                "advertising",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Process = how the service is delivered to the customer.",
+            },
+            {
+              id: "bm-l23-q5",
+              type: "short",
+              prompt:
+                "Name ONE basis for segmenting a market (e.g. age).",
+              answer: "demographic",
+              keywords: ["demographic", "age", "income", "geographic", "lifestyle", "behaviour", "gender"],
+              acceptable: ["demographics", "geographic", "psychographic", "behavioural"],
+              explanation:
+                "Demographic, geographic, psychographic, behavioural.",
+            },
+            {
+              id: "bm-l23-q6",
+              type: "short",
+              prompt:
+                "The image customers hold of a brand relative to rivals = brand ___.",
+              answer: "positioning",
+              keywords: ["position", "image"],
+              acceptable: ["positioning", "position", "image"],
+              explanation:
+                "Brand positioning — how the brand sits in consumers' minds.",
+            },
+          ],
+        },
       ],
     },
     {
@@ -1235,6 +1863,160 @@ export const businessManagement: Subject = {
               keywords: ["contingenc", "plan", "cheap", "cost", "prevent", "prepar"],
               explanation:
                 "Preparation costs less than unplanned crisis damage and lost reputation.",
+            },
+          ],
+        },
+        {
+          id: "bm-l24",
+          title: "Operations methods, lean and break-even",
+          questions: [
+            {
+              id: "bm-l24-q1",
+              type: "mcq",
+              prompt: "Job production means",
+              choices: [
+                "mass production",
+                "producing one-off products to customer specification",
+                "continuous flow",
+                "outsourcing",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Job (weddings cakes, bridges) vs batch vs flow/mass production.",
+            },
+            {
+              id: "bm-l24-q2",
+              type: "mcq",
+              prompt: "Break-even output equals",
+              choices: [
+                "price × quantity",
+                "fixed costs ÷ (price − variable cost per unit)",
+                "revenue − costs",
+                "margin of safety",
+              ],
+              answerIndex: 1,
+              explanation:
+                "BE = FC ÷ contribution per unit.",
+            },
+            {
+              id: "bm-l24-q3",
+              type: "tf",
+              prompt:
+                "Lean production aims to eliminate waste (muda) — just-in-time is one tool.",
+              answer: true,
+              explanation:
+                "JIT holds minimal stock; kaizen = continuous improvement.",
+            },
+            {
+              id: "bm-l24-q4",
+              type: "mcq",
+              prompt: "Quality assurance differs from quality control because QA",
+              choices: [
+                "checks finished goods",
+                "builds quality into every stage of production",
+                "costs more",
+                "uses inspectors",
+              ],
+              answerIndex: 1,
+              explanation:
+                "QC inspects at the end; QA prevents defects throughout.",
+            },
+            {
+              id: "bm-l24-q5",
+              type: "short",
+              prompt:
+                "Fixed costs $50,000; price $15; variable cost $5. Break-even output = ___ units.",
+              answer: "5000",
+              keywords: ["5000"],
+              acceptable: ["5,000", "5000 units"],
+              explanation:
+                "50,000 ÷ (15 − 5) = 5,000 units.",
+            },
+            {
+              id: "bm-l24-q6",
+              type: "short",
+              prompt:
+                "Actual output 8,000; break-even 5,000. Margin of safety = ___ units.",
+              answer: "3000",
+              keywords: ["3000"],
+              acceptable: ["3,000", "3000 units"],
+              explanation:
+                "Margin of safety = actual − break-even = 3,000.",
+            },
+          ],
+        },
+        {
+          id: "bm-l25",
+          title: "The BM toolkit, decision trees and the Business Research Project",
+          level: "HL",
+          questions: [
+            {
+              id: "bm-l25-q1",
+              type: "mcq",
+              prompt: "In the BCG matrix, a product with high share in a low-growth market is a",
+              choices: ["star", "cash cow", "question mark", "dog"],
+              answerIndex: 1,
+              explanation:
+                "Cash cows generate cash to fund stars and question marks.",
+            },
+            {
+              id: "bm-l25-q2",
+              type: "mcq",
+              prompt: "Force-field analysis weighs",
+              choices: [
+                "competitors",
+                "driving forces for change vs restraining forces against it",
+                "imports vs exports",
+                "strengths vs weaknesses",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Change succeeds when driving forces outweigh restraining forces.",
+            },
+            {
+              id: "bm-l25-q3",
+              type: "tf",
+              prompt:
+                "In a decision tree, expected value = Σ (probability × outcome) for each branch.",
+              answer: true,
+              explanation:
+                "HL tool: compare expected values net of costs.",
+            },
+            {
+              id: "bm-l25-q4",
+              type: "mcq",
+              prompt: "Porter's generic strategies are",
+              choices: [
+                "SWOT and PEST",
+                "cost leadership, differentiation and focus",
+                "penetration and skimming",
+                "push and pull",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Compete on low cost, uniqueness, or a focused niche.",
+            },
+            {
+              id: "bm-l25-q5",
+              type: "short",
+              prompt:
+                "HL: the framework analysing national culture via six dimensions (e.g. power distance) = ___.",
+              answer: "Hofstede",
+              keywords: ["hofstede"],
+              acceptable: ["Hofstede", "Hofstede's dimensions"],
+              explanation:
+                "Hofstede's cultural dimensions — HL toolkit item.",
+            },
+            {
+              id: "bm-l25-q6",
+              type: "short",
+              prompt:
+                "The HL Business Research Project is based on a real ___ facing an organisation. (one word)",
+              answer: "issue",
+              keywords: ["issue", "problem", "decision", "question"],
+              acceptable: ["issue", "problem", "decision"],
+              explanation:
+                "The BRP (HL IA) investigates a real issue or decision using secondary research + toolkit concepts.",
             },
           ],
         },

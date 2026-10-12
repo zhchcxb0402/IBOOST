@@ -69,6 +69,10 @@ for (const s of subjects) {
   const by = t => qs.filter(q=>q.type===t).length;
   const deck = decks.find(d=>d.subjectSlug===s.slug);
   console.log(s.slug + (s.comingSoon ? " (comingSoon)" : "") + ": " + units + " units, " + lessons + " lessons (" + hlOnly + " HL-only), " + qs.length + " questions [mcq " + by("mcq") + ", tf " + by("tf") + ", short " + by("short") + "]" + (deck ? ", deck " + deck.cards.length + " cards" : ""));
+  if (!s.comingSoon)
+    for (const u of s.units)
+      if (u.lessons.length < 5)
+        console.log("  WARNING " + s.slug + " " + u.id + " has only " + u.lessons.length + " lessons");
   // sanity: SL filtering hides all HL-only lessons
   if (unitsForLevel(s, "SL").flatMap(u=>u.lessons).some(l=>l.level==="HL"))
     errors.push("SL leak " + s.slug);

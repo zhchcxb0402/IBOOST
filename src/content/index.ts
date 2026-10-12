@@ -8,6 +8,14 @@ import { economics } from "./subjects/economics";
 import { biology } from "./subjects/biology";
 import { computerScience } from "./subjects/computer-science";
 import { englishB } from "./subjects/english-b";
+import { history } from "./subjects/history";
+import { psychology } from "./subjects/psychology";
+import { ess } from "./subjects/ess";
+import { geography } from "./subjects/geography";
+import { mathAi } from "./subjects/math-ai";
+import { spanishB } from "./subjects/spanish-b";
+import { germanB } from "./subjects/german-b";
+import { frenchB } from "./subjects/french-b";
 import { decks } from "./decks";
 
 export const subjects: Subject[] = [
@@ -20,6 +28,14 @@ export const subjects: Subject[] = [
   computerScience,
   englishB,
   economics,
+  history,
+  psychology,
+  ess,
+  geography,
+  mathAi,
+  spanishB,
+  germanB,
+  frenchB,
 ];
 export { decks };
 

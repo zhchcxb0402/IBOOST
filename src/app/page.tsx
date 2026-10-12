@@ -1,114 +1,193 @@
-"use client";
-
+import type { Metadata } from "next";
 import Link from "next/link";
-import { ChevronRight, Layers, Plus } from "lucide-react";
+import { Flame, Layers, ListChecks, Sparkles } from "lucide-react";
+import { Logo, LogoMark } from "@/components/logo";
+import { LandingCta } from "@/components/landing-cta";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
-import { Progress } from "@/components/ui/progress";
-import { StatsPills } from "@/components/stats-pills";
-import { lessonCount, subjects, unitsForLevel } from "@/content";
-import { useHydrated } from "@/lib/use-hydrated";
-import { useProgress } from "@/store/progress";
-import { useAuth } from "@/lib/auth";
+import { decks, lessonCount, subjects } from "@/content";
 
-export default function HomePage() {
-  const hydrated = useHydrated();
-  const completedLessons = useProgress((s) => s.completedLessons);
-  const selectedSubjects = useProgress((s) => s.selectedSubjects);
-  const { user } = useAuth();
+export const metadata: Metadata = {
+  title: "IBOOST — IB revision, gamified",
+  description:
+    "Duolingo-style lessons and Quizlet-style flashcards for IB Diploma subjects, HL and SL. Free.",
+};
 
-  const selected = subjects.filter((s) =>
-    hydrated ? selectedSubjects[s.slug] : false
+export default function LandingPage() {
+  const built = subjects.filter((s) => !s.comingSoon);
+  const questionCount = built.reduce(
+    (n, s) =>
+      n +
+      s.units.reduce(
+        (m, u) => m + u.lessons.reduce((k, l) => k + l.questions.length, 0),
+        0,
+      ),
+    0,
   );
+  const cardCount = decks
+    .filter((d) => built.some((s) => s.slug === d.subjectSlug))
+    .reduce((n, d) => n + d.cards.length, 0);
+  const groups = [...new Set(built.map((s) => s.group))];
+
+  const stats = [
+    { value: built.length, label: "subjects" },
+    { value: questionCount.toLocaleString(), label: "questions" },
+    { value: cardCount.toLocaleString(), label: "flashcards" },
+  ];
+
+  const steps = [
+    {
+      icon: ListChecks,
+      title: "Pick your subjects & HL/SL",
+      body: `Choose from ${built.length} IB Diploma subjects and set your level — lessons adapt to your syllabus.`,
+    },
+    {
+      icon: Flame,
+      title: "Short lessons, real stakes",
+      body: "Bite-size practice with hearts, XP and streaks to keep you coming back every day.",
+    },
+    {
+      icon: Layers,
+      title: "Flashcards with spaced repetition",
+      body: "Quizlet-style decks per subject, scheduled so you review right before you forget.",
+    },
+  ];
 
   return (
-    <div className="pt-4 space-y-6">
-      <header className="flex items-center justify-between">
-        <span className="text-xl font-extrabold tracking-tight">Learn</span>
-        <div className="flex items-center gap-2">
-          <StatsPills />
-          {!user && (
-            <Link
-              href="/login"
-              className="rounded-full border-2 border-border px-3 py-1 text-xs font-extrabold text-muted-foreground hover:text-foreground hover:border-foreground/30 transition-colors"
+    <div className="mx-auto max-w-4xl px-6 py-10 md:py-16">
+      {/* Hero */}
+      <header className="flex flex-col items-center gap-6 text-center">
+        <Logo size={40} />
+        <h1 className="text-4xl font-extrabold tracking-tight md:text-5xl">
+          Revise the IB like it&apos;s a game
+        </h1>
+        <p className="max-w-xl text-lg text-muted-foreground">
+          Duolingo-style lessons and Quizlet-style flashcards for{" "}
+          {built.length} IB subjects, HL and SL. Free.
+        </p>
+        <LandingCta />
+        <div className="mt-2 flex flex-wrap items-center justify-center gap-3">
+          {stats.map((s) => (
+            <div
+              key={s.label}
+              className="rounded-2xl bg-brand-soft px-5 py-3 text-center"
             >
-              Sign in
-            </Link>
-          )}
+              <div className="text-2xl font-extrabold text-brand">
+                {s.value}
+              </div>
+              <div className="text-xs font-bold uppercase tracking-wide text-muted-foreground">
+                {s.label}
+              </div>
+            </div>
+          ))}
         </div>
       </header>
 
-      <section className="grid grid-cols-1 gap-3 sm:grid-cols-2">
-        {selected.map((s) => {
-          const level = selectedSubjects[s.slug] ?? "HL";
-          const total = lessonCount(s, level);
-          const done = hydrated
-            ? unitsForLevel(s, level)
-                .flatMap((u) => u.lessons)
-                .filter((l) => completedLessons[`${s.slug}/${l.id}`]).length
-            : 0;
-          return (
-            <Link key={s.slug} href={`/learn/${s.slug}`}>
-              <Card className="border-2 transition-transform hover:-translate-y-0.5">
-                <CardContent className="flex flex-col gap-3 p-4">
-                  <div className="flex items-center gap-3">
-                    <div
-                      className="flex size-12 items-center justify-center rounded-2xl text-2xl"
-                      style={{ backgroundColor: `${s.color}22` }}
-                    >
-                      {s.emoji}
-                    </div>
-                    <div className="flex-1">
-                      <p className="font-extrabold">
-                        {s.name}{" "}
-                        <Badge className="ml-1 border-0 bg-brand-soft font-extrabold text-brand-dark align-middle">
-                          {level}
-                        </Badge>
-                      </p>
-                      <p className="text-xs font-bold text-muted-foreground">
-                        {done}/{total} lessons done
-                      </p>
-                    </div>
-                    <ChevronRight className="size-5 text-muted-foreground" />
-                  </div>
-                  <Progress value={(done / total) * 100} className="h-2.5" />
-                </CardContent>
-              </Card>
-            </Link>
-          );
-        })}
-
-        <Link href="/subjects">
-          <Card className="border-2 border-dashed transition-transform hover:-translate-y-0.5">
-            <CardContent className="flex items-center gap-3 p-4">
-              <div className="flex size-12 items-center justify-center rounded-2xl bg-muted">
-                <Plus className="size-6 text-muted-foreground" />
-              </div>
-              <p className="flex-1 font-extrabold text-muted-foreground">
-                Add subject
-              </p>
-              <ChevronRight className="size-5 text-muted-foreground" />
-            </CardContent>
-          </Card>
-        </Link>
+      {/* How it works */}
+      <section className="mt-20">
+        <h2 className="text-center text-2xl font-extrabold">How it works</h2>
+        <div className="mt-8 grid gap-4 sm:grid-cols-3">
+          {steps.map((s) => (
+            <Card key={s.title}>
+              <CardContent className="flex flex-col items-center gap-3 p-6 text-center">
+                <div className="flex size-12 items-center justify-center rounded-2xl bg-brand-soft">
+                  <s.icon className="size-6 text-brand" />
+                </div>
+                <h3 className="font-extrabold">{s.title}</h3>
+                <p className="text-sm text-muted-foreground">{s.body}</p>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
       </section>
 
-      <Link href="/flashcards">
-        <Card className="border-2 border-brand/40 bg-brand/5 transition-transform hover:-translate-y-0.5">
-          <CardContent className="flex items-center gap-3 p-4">
-            <div className="flex size-12 items-center justify-center rounded-2xl bg-brand/15">
-              <Layers className="size-6 text-brand" />
+      {/* Subjects */}
+      <section className="mt-20">
+        <h2 className="text-center text-2xl font-extrabold">
+          All {built.length} subjects
+        </h2>
+        {groups.map((g) => (
+          <div key={g} className="mt-10">
+            <h3 className="mb-4 text-sm font-extrabold uppercase tracking-wide text-muted-foreground">
+              {g}
+            </h3>
+            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              {built
+                .filter((s) => s.group === g)
+                .map((s) => (
+                  <Link key={s.slug} href={`/learn/${s.slug}`}>
+                    <Card className="h-full transition-colors hover:border-brand/50">
+                      <CardContent className="flex items-center gap-4 p-5">
+                        <span
+                          className="flex size-12 shrink-0 items-center justify-center rounded-2xl text-2xl"
+                          style={{ backgroundColor: `${s.color}1A` }}
+                        >
+                          {s.emoji}
+                        </span>
+                        <div className="min-w-0">
+                          <div className="truncate font-extrabold">
+                            {s.name}
+                          </div>
+                          <div className="mt-1 flex items-center gap-2">
+                            <Badge
+                              variant="secondary"
+                              className="text-[0.65rem]"
+                            >
+                              {lessonCount(s)} lessons
+                            </Badge>
+                            <span className="text-xs text-muted-foreground">
+                              SL + HL
+                            </span>
+                          </div>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </Link>
+                ))}
             </div>
-            <div className="flex-1">
-              <p className="font-extrabold">Flashcards</p>
-              <p className="text-xs font-bold text-muted-foreground">
-                Review key terms with spaced repetition
-              </p>
-            </div>
-            <ChevronRight className="size-5 text-muted-foreground" />
-          </CardContent>
-        </Card>
-      </Link>
+          </div>
+        ))}
+      </section>
+
+      {/* AI strip */}
+      <section className="mt-20 rounded-3xl bg-brand-soft p-8 md:p-10">
+        <div className="flex flex-col items-start gap-4 md:flex-row md:items-center">
+          <div className="flex size-12 shrink-0 items-center justify-center rounded-2xl bg-brand">
+            <Sparkles className="size-6 text-white" />
+          </div>
+          <div>
+            <h2 className="text-xl font-extrabold">Answers checked by AI</h2>
+            <p className="mt-1 text-muted-foreground">
+              Open-ended answers accept paraphrases, not just exact wording —
+              and when you get one wrong, IBOOST explains your mistake.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="mt-20 border-t pt-8 pb-4">
+        <div className="flex flex-col items-center gap-4 text-center">
+          <LogoMark size={32} />
+          <p className="max-w-lg text-xs text-muted-foreground">
+            IBOOST is an independent study tool and is not affiliated with or
+            endorsed by the International Baccalaureate Organization.
+          </p>
+          <nav className="flex items-center gap-6 text-sm font-bold">
+            <Link href="/login" className="text-brand hover:underline">
+              Sign in
+            </Link>
+            <a
+              href="https://github.com/zhchcxb0402/IBOOST"
+              target="_blank"
+              rel="noreferrer"
+              className="text-muted-foreground hover:text-foreground"
+            >
+              GitHub
+            </a>
+          </nav>
+        </div>
+      </footer>
     </div>
   );
 }
