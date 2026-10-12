@@ -197,6 +197,228 @@ export const history: Subject = {
             },
           ],
         },
+        {
+          id: "hi-l12",
+          title: "Civil rights: Montgomery and Little Rock",
+          questions: [
+            {
+              id: "hi-l12-q1",
+              type: "mcq",
+              prompt: "The Montgomery Bus Boycott (1955–56) was sparked by",
+              choices: [
+                "a Supreme Court ruling",
+                "Rosa Parks' arrest for refusing to give up her seat",
+                "a march on Washington",
+                "a bus crash",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Her arrest triggered a 381-day boycott led by a young Martin Luther King.",
+            },
+            {
+              id: "hi-l12-q2",
+              type: "mcq",
+              prompt: "Little Rock 1957 is significant because",
+              choices: [
+                "it ended slavery",
+                "federal troops enforced desegregation of Central High against state resistance",
+                "it was peaceful",
+                "it started the KKK",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Eisenhower sent the 101st Airborne — federal power vs Governor Faubus.",
+            },
+            {
+              id: "hi-l12-q3",
+              type: "tf",
+              prompt:
+                "Brown v. Board of Education (1954) declared school segregation unconstitutional.",
+              answer: true,
+              explanation:
+                "Overturned 'separate but equal' (Plessy v. Ferguson).",
+            },
+            {
+              id: "hi-l12-q4",
+              type: "mcq",
+              prompt: "The boycott's success rested mainly on",
+              choices: [
+                "violence",
+                "mass non-violent economic pressure",
+                "foreign aid",
+                "court orders alone",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Black residents were most bus passengers — economic leverage.",
+            },
+            {
+              id: "hi-l12-q5",
+              type: "short",
+              prompt:
+                "Name the organisation MLK led during the boycott (initials, SCLC forerunner was the MIA — either accepted).",
+              answer: "MIA",
+              keywords: ["mia", "sclc", "montgomery improvement"],
+              acceptable: ["SCLC", "Montgomery Improvement Association"],
+              explanation:
+                "The Montgomery Improvement Association coordinated the boycott.",
+            },
+            {
+              id: "hi-l12-q6",
+              type: "short",
+              prompt:
+                "The nine African-American students at Central High became known as the Little Rock ___.",
+              answer: "Nine",
+              keywords: ["nine"],
+              acceptable: ["9"],
+              explanation:
+                "The Little Rock Nine.",
+            },
+          ],
+        },
+        {
+          id: "hi-l13",
+          title: "Civil rights: Freedom Rides, legislation and apartheid resistance",
+          questions: [
+            {
+              id: "hi-l13-q1",
+              type: "mcq",
+              prompt: "The Freedom Rides (1961) tested",
+              choices: [
+                "school desegregation",
+                "enforcement of desegregated interstate transport in the South",
+                "voting laws",
+                "housing",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Riders were beaten and buses firebombed — forcing federal intervention.",
+            },
+            {
+              id: "hi-l13-q2",
+              type: "mcq",
+              prompt: "The Civil Rights Act 1964 mainly",
+              choices: [
+                "gave the vote",
+                "outlawed discrimination in public places and employment",
+                "ended the war",
+                "created the NAACP",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Voting rights came in 1965's Voting Rights Act.",
+            },
+            {
+              id: "hi-l13-q3",
+              type: "tf",
+              prompt:
+                "The Sharpeville massacre (1960) saw South African police kill peaceful pass-law protesters.",
+              answer: true,
+              explanation:
+                "69 killed — turned world opinion and pushed resistance underground.",
+            },
+            {
+              id: "hi-l13-q4",
+              type: "mcq",
+              prompt: "The Soweto uprising (1976) was triggered by",
+              choices: [
+                "pass laws",
+                "compulsory Afrikaans in schools",
+                "Mandela's arrest",
+                "sanctions",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Students protesting Afrikaans-medium teaching were shot.",
+            },
+            {
+              id: "hi-l13-q5",
+              type: "short",
+              prompt:
+                "The ANC's armed wing, co-founded by Mandela, was 'Umkhonto we ___'.",
+              answer: "Sizwe",
+              keywords: ["sizwe"],
+              acceptable: ["Sizwe", "MK"],
+              explanation:
+                "MK — Spear of the Nation, sabotage from 1961.",
+            },
+            {
+              id: "hi-l13-q6",
+              type: "short",
+              prompt:
+                "Year Mandela was released from prison (number).",
+              answer: "1990",
+              keywords: ["1990"],
+              acceptable: ["1990"],
+              explanation:
+                "February 1990 — apartheid negotiations followed.",
+            },
+          ],
+        },
+        {
+          id: "hi-l14",
+          title: "The move to global war: Japanese, Italian and German expansion",
+          questions: [
+            {
+              id: "hi-l14-q1",
+              type: "mcq",
+              prompt: "Japan's 1931 expansion began with the invasion of",
+              choices: ["Korea", "Manchuria", "China proper", "the Philippines"],
+              answerIndex: 1,
+              explanation:
+                "The Mukden 'incident' justified seizing Manchuria — the League protested but did nothing.",
+            },
+            {
+              id: "hi-l14-q2",
+              type: "mcq",
+              prompt: "Italy invaded Abyssinia (Ethiopia) in",
+              choices: ["1931", "1935", "1939", "1922"],
+              answerIndex: 1,
+              explanation:
+                "1935–36 conquest exposed the League's weakness — sanctions failed.",
+            },
+            {
+              id: "hi-l14-q3",
+              type: "tf",
+              prompt:
+                "The remilitarisation of the Rhineland (1936) violated the Treaty of Versailles.",
+              answer: true,
+              explanation:
+                "Hitler gambled successfully — France and Britain did not act.",
+            },
+            {
+              id: "hi-l14-q4",
+              type: "mcq",
+              prompt: "The policy of conceding demands to avoid war is called",
+              choices: ["containment", "appeasement", "détente", "isolationism"],
+              answerIndex: 1,
+              explanation:
+                "Munich 1938 is the classic example.",
+            },
+            {
+              id: "hi-l14-q5",
+              type: "short",
+              prompt:
+                "The 1939 pact between Germany and the USSR (names).",
+              answer: "Nazi-Soviet Pact",
+              keywords: ["nazi-soviet", "molotov", "ribbentrop", "non-aggression"],
+              acceptable: ["Molotov-Ribbentrop", "Nazi-Soviet non-aggression pact"],
+              explanation:
+                "Molotov–Ribbentrop Pact — cleared the way to invade Poland.",
+            },
+            {
+              id: "hi-l14-q6",
+              type: "short",
+              prompt:
+                "Germany's 1938 union with Austria is called the ___.",
+              answer: "Anschluss",
+              keywords: ["anschluss"],
+              acceptable: ["Anschluss"],
+              explanation:
+                "The Anschluss — forbidden by Versailles, unopposed in 1938.",
+            },
+          ],
+        },
       ],
     },
     {
@@ -365,6 +587,243 @@ export const history: Subject = {
               keywords: ["versailles", "resent", "revision", "reparation", "grievance"],
               explanation:
                 "Unresolved grievances — territory, reparations, war guilt — gave Hitler his platform.",
+            },
+          ],
+        },
+        {
+          id: "hi-l15",
+          title: "Authoritarian states: methods of consolidating power",
+          questions: [
+            {
+              id: "hi-l15-q1",
+              type: "mcq",
+              prompt: "The Reichstag Fire Decree (1933) allowed Hitler to",
+              choices: [
+                "abolish elections",
+                "suspend civil liberties and arrest opponents",
+                "invade Poland",
+                "print money",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Emergency powers → legal destruction of democracy.",
+            },
+            {
+              id: "hi-l15-q2",
+              type: "mcq",
+              prompt: "Mao's methods of consolidation included",
+              choices: [
+                "free elections",
+                "land reform, thought reform campaigns and purges of 'class enemies'",
+                "restoring the emperor",
+                "joining the UN",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Campaigns like land reform and the Three-anti/Five-anti movements eliminated opposition.",
+            },
+            {
+              id: "hi-l15-q3",
+              type: "tf",
+              prompt:
+                "The Night of the Long Knives (1934) removed Hitler's rivals within the Nazi movement (the SA leadership).",
+              answer: true,
+              explanation:
+                "Röhm and the SA were purged — winning army support.",
+            },
+            {
+              id: "hi-l15-q4",
+              type: "mcq",
+              prompt: "A common consolidation method across Hitler, Mao and Castro was",
+              choices: [
+                "power-sharing",
+                "propaganda plus elimination of political opposition",
+                "decentralisation",
+                "free press",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Control of the message + removal of rivals = the standard playbook.",
+            },
+            {
+              id: "hi-l15-q5",
+              type: "short",
+              prompt:
+                "Castro's 1959 movement that overthrew Batista was the '26th of ___ Movement'.",
+              answer: "July",
+              keywords: ["july"],
+              acceptable: ["July Movement", "M-26-7"],
+              explanation:
+                "Named for the 1953 Moncada Barracks attack.",
+            },
+            {
+              id: "hi-l15-q6",
+              type: "short",
+              prompt:
+                "Hitler's 1933 law giving him power to rule by decree for four years = the ___ Act.",
+              answer: "Enabling",
+              keywords: ["enabling"],
+              acceptable: ["Enabling Act"],
+              explanation:
+                "The Enabling Act — democracy legislated itself away.",
+            },
+          ],
+        },
+        {
+          id: "hi-l16",
+          title: "Authoritarian policies in practice",
+          questions: [
+            {
+              id: "hi-l16-q1",
+              type: "mcq",
+              prompt: "The Nuremberg Laws (1935) did what?",
+              choices: [
+                "legalised unions",
+                "stripped Jews of citizenship and banned intermarriage",
+                "ended the war",
+                "created the SS",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Institutionalised racial persecution.",
+            },
+            {
+              id: "hi-l16-q2",
+              type: "mcq",
+              prompt: "Mao's Great Leap Forward (1958) aimed to",
+              choices: [
+                "restore capitalism",
+                "rapidly industrialise via communes — it caused catastrophic famine",
+                "join the West",
+                "free the press",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Tens of millions died in the resulting famine (1959–61).",
+            },
+            {
+              id: "hi-l16-q3",
+              type: "tf",
+              prompt:
+                "Castro's literacy campaign (1961) sharply reduced illiteracy in Cuba.",
+              answer: true,
+              explanation:
+                "Often cited as the revolution's genuine social achievement.",
+            },
+            {
+              id: "hi-l16-q4",
+              type: "mcq",
+              prompt: "Nazi economic policy reduced unemployment mainly through",
+              choices: [
+                "free trade",
+                "public works (autobahns) and rearmament",
+                "tax cuts for all",
+                "immigration",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Rearmament drove the recovery — and prepared for war.",
+            },
+            {
+              id: "hi-l16-q5",
+              type: "short",
+              prompt:
+                "Mao's 1966 campaign mobilising youth against 'capitalist roaders' = the ___ Revolution.",
+              answer: "Cultural",
+              keywords: ["cultural"],
+              acceptable: ["Cultural Revolution"],
+              explanation:
+                "The Cultural Revolution — Red Guards, chaos, persecution.",
+            },
+            {
+              id: "hi-l16-q6",
+              type: "short",
+              prompt:
+                "The Nazi organisation controlling youth (male) was 'Hitler ___'.",
+              answer: "Youth",
+              keywords: ["youth", "jugend"],
+              acceptable: ["Youth", "Jugend", "Hitler Jugend"],
+              explanation:
+                "Hitler Youth — indoctrination of the next generation.",
+            },
+          ],
+        },
+        {
+          id: "hi-l17",
+          title: "20th-century wars: causes and effects",
+          questions: [
+            {
+              id: "hi-l17-q1",
+              type: "mcq",
+              prompt: "A 'total war' means",
+              choices: [
+                "a short war",
+                "one involving whole economies and civilian populations",
+                "a war at sea",
+                "a civil war",
+              ],
+              answerIndex: 1,
+              explanation:
+                "WWI and WWII blurred the front line and the home front.",
+            },
+            {
+              id: "hi-l17-q2",
+              type: "mcq",
+              prompt: "The Spanish Civil War (1936–39) mattered to WWII because it",
+              choices: [
+                "ended fascism",
+                "let Germany and Italy test weapons and tactics",
+                "united Europe",
+                "started WWI",
+              ],
+              answerIndex: 1,
+              explanation:
+                "A 'dress rehearsal' — Guernica showed aerial bombing of civilians.",
+            },
+            {
+              id: "hi-l17-q3",
+              type: "tf",
+              prompt:
+                "Economic causes of 20th-century wars include competition for resources and the effects of the Great Depression.",
+              answer: true,
+              explanation:
+                "Depression fuelled extremism and expansionism.",
+            },
+            {
+              id: "hi-l17-q4",
+              type: "mcq",
+              prompt: "A major social effect of WWII in the USA was",
+              choices: [
+                "fewer women working",
+                "women entering industrial jobs (Rosie the Riveter) and civil rights momentum",
+                "return to isolation permanently",
+                "abolition of the draft",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Wartime mobilisation shifted gender roles and expectations.",
+            },
+            {
+              id: "hi-l17-q5",
+              type: "short",
+              prompt:
+                "Germany's lightning-war tactic of combined air and armour = ___.",
+              answer: "Blitzkrieg",
+              keywords: ["blitzkrieg"],
+              acceptable: ["Blitzkrieg"],
+              explanation:
+                "Blitzkrieg — rapid combined-arms attack.",
+            },
+            {
+              id: "hi-l17-q6",
+              type: "short",
+              prompt:
+                "The civilian bombing of this Basque town (1937) became a symbol of modern war: ___.",
+              answer: "Guernica",
+              keywords: ["guernica"],
+              acceptable: ["Guernica"],
+              explanation:
+                "Guernica — immortalised by Picasso.",
             },
           ],
         },
@@ -539,6 +998,243 @@ export const history: Subject = {
             },
           ],
         },
+        {
+          id: "hi-l18",
+          title: "Cold War crises: Berlin",
+          questions: [
+            {
+              id: "hi-l18-q1",
+              type: "mcq",
+              prompt: "The Berlin Blockade (1948–49) was Stalin's attempt to",
+              choices: [
+                "build a wall",
+                "force the Western allies out of West Berlin by cutting land access",
+                "invade France",
+                "test atomic weapons",
+              ],
+              answerIndex: 1,
+              explanation:
+                "The Western airlift kept 2 million West Berliners supplied — a propaganda victory.",
+            },
+            {
+              id: "hi-l18-q2",
+              type: "mcq",
+              prompt: "The Berlin Wall (1961) was built primarily to",
+              choices: [
+                "defend against NATO invasion",
+                "stop East Germans fleeing to the West",
+                "divide Germany permanently by treaty",
+                "protect trade",
+              ],
+              answerIndex: 1,
+              explanation:
+                "The brain drain embarrassed the GDR — the wall sealed the border.",
+            },
+            {
+              id: "hi-l18-q3",
+              type: "tf",
+              prompt:
+                "Berlin became a Cold War flashpoint because it lay deep inside Soviet-controlled East Germany yet was divided among the four powers.",
+              answer: true,
+              explanation:
+                "An island of West inside the East — inherently unstable.",
+            },
+            {
+              id: "hi-l18-q4",
+              type: "mcq",
+              prompt: "The fall of the Berlin Wall (1989) symbolised",
+              choices: [
+                "the start of the Cold War",
+                "the collapse of communist control in Eastern Europe",
+                "German rearmament",
+                "the end of WWII",
+              ],
+              answerIndex: 1,
+              explanation:
+                "9 November 1989 — reunification followed in 1990.",
+            },
+            {
+              id: "hi-l18-q5",
+              type: "short",
+              prompt:
+                "The Western response supplying Berlin by air 1948–49 = the Berlin ___.",
+              answer: "Airlift",
+              keywords: ["airlift"],
+              acceptable: ["Airlift", "air lift"],
+              explanation:
+                "The Berlin Airlift — ~278,000 flights.",
+            },
+            {
+              id: "hi-l18-q6",
+              type: "short",
+              prompt:
+                "The East German state's German abbreviation (three letters).",
+              answer: "GDR",
+              keywords: ["gdr", "ddr"],
+              acceptable: ["DDR"],
+              explanation:
+                "GDR (English) / DDR (German Democratic Republic).",
+            },
+          ],
+        },
+        {
+          id: "hi-l19",
+          title: "Cold War crises: Cuba and the missile crisis",
+          questions: [
+            {
+              id: "hi-l19-q1",
+              type: "mcq",
+              prompt: "The Bay of Pigs (1961) was",
+              choices: [
+                "a Soviet invasion",
+                "a failed US-backed invasion of Cuba by exiles",
+                "a naval blockade",
+                "a missile site",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Its failure pushed Castro closer to the USSR.",
+            },
+            {
+              id: "hi-l19-q2",
+              type: "mcq",
+              prompt: "The Cuban Missile Crisis (1962) was resolved when",
+              choices: [
+                "the US invaded",
+                "the USSR withdrew missiles in exchange for a US no-invasion pledge and secret removal of Turkish missiles",
+                "NATO surrendered",
+                "Cuba was partitioned",
+              ],
+              answerIndex: 1,
+              explanation:
+                "The secret Jupiter-missile deal let both sides claim success.",
+            },
+            {
+              id: "hi-l19-q3",
+              type: "tf",
+              prompt:
+                "The crisis led to a direct 'hotline' between Washington and Moscow.",
+              answer: true,
+              explanation:
+                "Plus the 1963 Partial Test Ban Treaty — cautious lessons learned.",
+            },
+            {
+              id: "hi-l19-q4",
+              type: "mcq",
+              prompt: "Kennedy's public response was a naval 'quarantine', chosen because it",
+              choices: [
+                "was a declaration of war",
+                "pressured the USSR without immediate military escalation",
+                "avoided publicity",
+                "pleased Castro",
+              ],
+              answerIndex: 1,
+              explanation:
+                "A blockade under another name — escalation controlled.",
+            },
+            {
+              id: "hi-l19-q5",
+              type: "short",
+              prompt:
+                "Soviet leader during the missile crisis (surname).",
+              answer: "Khrushchev",
+              keywords: ["khrushchev", "krushchev"],
+              acceptable: ["Krushchev"],
+              explanation:
+                "Nikita Khrushchev.",
+            },
+            {
+              id: "hi-l19-q6",
+              type: "short",
+              prompt:
+                "The missile crisis lasted '___ days' in October 1962 (number).",
+              answer: "13",
+              keywords: ["13"],
+              acceptable: ["thirteen"],
+              explanation:
+                "The 'thirteen days' of October 1962.",
+            },
+          ],
+        },
+        {
+          id: "hi-l20",
+          title: "Détente and the end of the Cold War",
+          questions: [
+            {
+              id: "hi-l20-q1",
+              type: "mcq",
+              prompt: "Détente refers to",
+              choices: [
+                "escalation",
+                "the easing of Cold War tensions in the 1970s",
+                "the arms race",
+                "decolonisation",
+              ],
+              answerIndex: 1,
+              explanation:
+                "SALT treaties, Nixon's China visit, Helsinki Accords.",
+            },
+            {
+              id: "hi-l20-q2",
+              type: "mcq",
+              prompt: "Gorbachev's policies of glasnost and perestroika meant",
+              choices: [
+                "secrecy and expansion",
+                "openness and restructuring of the Soviet system",
+                "war and peace",
+                "walls and weapons",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Reforms loosened control — unintendedly accelerating collapse.",
+            },
+            {
+              id: "hi-l20-q3",
+              type: "tf",
+              prompt:
+                "The Soviet invasion of Afghanistan (1979) effectively ended détente.",
+              answer: true,
+              explanation:
+                "Carter boycotted the Moscow Olympics; the 'Second Cold War' began.",
+            },
+            {
+              id: "hi-l20-q4",
+              type: "mcq",
+              prompt: "Historians debate the Cold War's end — a key 'triumphalist' claim is that",
+              choices: [
+                "the USSR won",
+                "Reagan's military build-up forced Soviet collapse",
+                "it never ended",
+                "the UN ended it",
+              ],
+              answerIndex: 1,
+              explanation:
+                "vs 'Gorbachevist' and structural/economic-collapse interpretations.",
+            },
+            {
+              id: "hi-l20-q5",
+              type: "short",
+              prompt:
+                "The 1975 agreement on borders and human rights = the ___ Accords.",
+              answer: "Helsinki",
+              keywords: ["helsinki"],
+              acceptable: ["Helsinki"],
+              explanation:
+                "Helsinki Final Act — détente's high point.",
+            },
+            {
+              id: "hi-l20-q6",
+              type: "short",
+              prompt:
+                "Year the USSR formally dissolved (number).",
+              answer: "1991",
+              keywords: ["1991"],
+              acceptable: ["1991"],
+              explanation:
+                "December 1991 — the Cold War ended.",
+            },
+          ],
+        },
       ],
     },
     {
@@ -707,6 +1403,244 @@ export const history: Subject = {
               keywords: ["source", "investigat", "reflect"],
               explanation:
                 "Section 1: two sources evaluated (OPCVL); Section 2: the investigation; Section 3: reflection on methods.",
+            },
+          ],
+        },
+        {
+          id: "hi-l21",
+          title: "Source skills: applying OPCVL",
+          questions: [
+            {
+              id: "hi-l21-q1",
+              type: "mcq",
+              prompt: "In OPCVL, 'P' (purpose) asks",
+              choices: [
+                "who wrote it",
+                "why the source was produced and for whom",
+                "what it says",
+                "when it was made",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Purpose drives content — propaganda aims to persuade, diaries to record.",
+            },
+            {
+              id: "hi-l21-q2",
+              type: "mcq",
+              prompt:
+                "Source: a 1936 Soviet poster showing Stalin with happy workers. Its VALUE to a historian of Stalin's propaganda is that it",
+              choices: [
+                "shows working conditions accurately",
+                "reveals the image the regime wanted to project",
+                "proves prosperity",
+                "is unbiased",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Sources are valuable for what they reveal about purpose — not literal truth.",
+            },
+            {
+              id: "hi-l21-q3",
+              type: "tf",
+              prompt:
+                "A source's limitation might be that it was produced for a purpose that distorts its content (e.g. an official speech).",
+              answer: true,
+              explanation:
+                "Link limitation to origin/purpose — that's high-level OPCVL.",
+            },
+            {
+              id: "hi-l21-q4",
+              type: "mcq",
+              prompt: "A memoir written 30 years after an event is limited because",
+              choices: [
+                "it is secondary",
+                "memory distorts and hindsight reshapes the account",
+                "it is long",
+                "it is typed",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Retrospective distance = limitation; personal experience = value.",
+            },
+            {
+              id: "hi-l21-q5",
+              type: "short",
+              prompt:
+                "The 'O' in OPCVL stands for ___ (who/what/when/type).",
+              answer: "origin",
+              keywords: ["origin"],
+              acceptable: ["origin"],
+              explanation:
+                "Origin — author, type of source, date, place.",
+            },
+            {
+              id: "hi-l21-q6",
+              type: "short",
+              prompt:
+                "Paper 1 asks you to evaluate a source's value and ___ (the 'L').",
+              answer: "limitations",
+              keywords: ["limitation"],
+              acceptable: ["limitations"],
+              explanation:
+                "Value AND limitations — both required.",
+            },
+          ],
+        },
+        {
+          id: "hi-l22",
+          title: "Essay planning for Paper 2",
+          questions: [
+            {
+              id: "hi-l22-q1",
+              type: "mcq",
+              prompt: "The best Paper 2 essay structure is",
+              choices: [
+                "chronological narrative",
+                "thematic paragraphs each addressing the question",
+                "source by source",
+                "a single long paragraph",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Analyse by theme/factor, not narrative.",
+            },
+            {
+              id: "hi-l22-q2",
+              type: "mcq",
+              prompt: "'To what extent' questions require you to",
+              choices: [
+                "list facts",
+                "weigh the stated factor against alternatives and reach a judgement",
+                "describe events",
+                "agree fully",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Evaluation + judgement = top-band essays.",
+            },
+            {
+              id: "hi-l22-q3",
+              type: "tf",
+              prompt:
+                "An introduction should define key terms, establish the argument and give a line of reasoning.",
+              answer: true,
+              explanation:
+                "Set up the debate, state your position, outline the case.",
+            },
+            {
+              id: "hi-l22-q4",
+              type: "mcq",
+              prompt: "Supporting a point with precise dates, names and statistics is called",
+              choices: [
+                "padding",
+                "substantiating with detailed historical knowledge",
+                "plagiarism",
+                "opinion",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Specific, relevant evidence is what separates bands.",
+            },
+            {
+              id: "hi-l22-q5",
+              type: "short",
+              prompt:
+                "An essay weighing causes should end each paragraph by linking back to the ___ (one word).",
+              answer: "question",
+              keywords: ["question", "argument", "thesis"],
+              acceptable: ["question", "thesis"],
+              explanation:
+                "Every paragraph answers the set question explicitly.",
+            },
+            {
+              id: "hi-l22-q6",
+              type: "short",
+              prompt:
+                "Planning technique: ranking causes from most to least important = establishing a ___.",
+              answer: "hierarchy",
+              keywords: ["hierarch", "priorit", "rank"],
+              acceptable: ["hierarchy", "prioritisation", "ranking"],
+              explanation:
+                "A hierarchy of factors enables a sustained judgement.",
+            },
+          ],
+        },
+        {
+          id: "hi-l23",
+          title: "The Internal Assessment: investigation skills",
+          questions: [
+            {
+              id: "hi-l23-q1",
+              type: "mcq",
+              prompt: "The History IA consists of",
+              choices: [
+                "one long essay",
+                "three sections: identification/evaluation of sources, investigation, reflection",
+                "a presentation",
+                "a source exam",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Section 1 (sources), Section 2 (investigation ~1,300 words), Section 3 (reflection).",
+            },
+            {
+              id: "hi-l23-q2",
+              type: "mcq",
+              prompt: "A good IA research question is",
+              choices: [
+                "broad and descriptive",
+                "focused, arguable and answerable within 2,200 words",
+                "unanswerable",
+                "opinion-based",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Focus enables depth — narrow scope, clear question.",
+            },
+            {
+              id: "hi-l23-q3",
+              type: "tf",
+              prompt:
+                "Section 1 requires OPCVL analysis of two key sources used in the investigation.",
+              answer: true,
+              explanation:
+                "Two sources evaluated for origin, purpose, content, value, limitations.",
+            },
+            {
+              id: "hi-l23-q4",
+              type: "mcq",
+              prompt: "Section 3 (reflection) asks you to discuss",
+              choices: [
+                "your findings",
+                "the methods and challenges historians face, learned through doing the IA",
+                "your grade",
+                "your favourite sources",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Reflection on historiographical method — what historians DO.",
+            },
+            {
+              id: "hi-l23-q5",
+              type: "short",
+              prompt:
+                "Total word limit for the History IA (number).",
+              answer: "2200",
+              keywords: ["2200", "2,200"],
+              acceptable: ["2,200"],
+              explanation:
+                "2,200 words across all three sections.",
+            },
+            {
+              id: "hi-l23-q6",
+              type: "short",
+              prompt:
+                "The IA counts for ___% of the SL grade (number).",
+              answer: "25",
+              keywords: ["25"],
+              acceptable: ["25%"],
+              explanation:
+                "SL 25% / HL 20%.",
             },
           ],
         },
@@ -964,6 +1898,166 @@ export const history: Subject = {
               keywords: ["evidence", "depth", "analysis", "narrative"],
               explanation:
                 "Specific detail earns marks for knowledge — only when it serves an argument.",
+            },
+          ],
+        },
+        {
+          id: "hi-l24",
+          title: "HL Paper 3: European depth",
+          level: "HL",
+          questions: [
+            {
+              id: "hi-l24-q1",
+              type: "mcq",
+              prompt: "HL Paper 3 demands",
+              choices: [
+                "narrative answers",
+                "detailed regional knowledge across three essays with evaluation",
+                "source analysis only",
+                "no examples",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Three essays in 2h30 — depth and argument required.",
+            },
+            {
+              id: "hi-l24-q2",
+              type: "mcq",
+              prompt: "For 'Interwar domestic developments' (European option), a strong essay on Weimar might weigh",
+              choices: [
+                "only Hitler",
+                "political instability vs genuine achievements of the 'golden twenties'",
+                "the Cold War",
+                "medieval history",
+              ],
+              answerIndex: 1,
+              explanation:
+                "HL depth = evaluating competing interpretations with specific evidence.",
+            },
+            {
+              id: "hi-l24-q3",
+              type: "tf",
+              prompt:
+                "Paper 3 essays benefit from naming historians and schools of interpretation.",
+              answer: true,
+              explanation:
+                "e.g. intentionalist vs structuralist debates on the Third Reich.",
+            },
+            {
+              id: "hi-l24-q4",
+              type: "mcq",
+              prompt: "A 'to what extent was the Versailles settlement responsible for WWII' essay should",
+              choices: [
+                "blame Versailles entirely",
+                "weigh Versailles against appeasement, the Depression and Hitler's agency",
+                "describe the treaty",
+                "discuss WWI only",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Multi-causal evaluation is the HL standard.",
+            },
+            {
+              id: "hi-l24-q5",
+              type: "short",
+              prompt:
+                "Number of essays required in HL Paper 3 (number).",
+              answer: "3",
+              keywords: ["3"],
+              acceptable: ["three"],
+              explanation:
+                "Three essays, one per section, in 2h30.",
+            },
+            {
+              id: "hi-l24-q6",
+              type: "short",
+              prompt:
+                "The debate blaming Hitler's deliberate plan vs circumstances/structure = intentionalism vs ___.",
+              answer: "structuralism",
+              keywords: ["structural"],
+              acceptable: ["structuralism", "functionalism"],
+              explanation:
+                "Intentionalist vs structuralist/functionalist interpretations.",
+            },
+          ],
+        },
+        {
+          id: "hi-l25",
+          title: "HL Paper 3: Americas depth and comparing interpretations",
+          level: "HL",
+          questions: [
+            {
+              id: "hi-l25-q1",
+              type: "mcq",
+              prompt: "For the Americas option, an essay on the New Deal should",
+              choices: [
+                "describe programmes only",
+                "evaluate its successes and limitations with named evidence and historians",
+                "cover Europe",
+                "list presidents",
+              ],
+              answerIndex: 1,
+              explanation:
+                "e.g. did it end the Depression? (war spending did) — evaluate.",
+            },
+            {
+              id: "hi-l25-q2",
+              type: "mcq",
+              prompt: "Comparing interpretations means",
+              choices: [
+                "quoting one historian",
+                "contrasting how different historians explain the same event and judging which is stronger",
+                "ignoring historians",
+                "summarising textbooks",
+              ],
+              answerIndex: 1,
+              explanation:
+                "e.g. orthodox vs revisionist vs post-revisionist Cold War views.",
+            },
+            {
+              id: "hi-l25-q3",
+              type: "tf",
+              prompt:
+                "'Post-revisionist' Cold War historians spread responsibility between both superpowers.",
+              answer: true,
+              explanation:
+                "Gaddis-style synthesis — neither side solely to blame.",
+            },
+            {
+              id: "hi-l25-q4",
+              type: "mcq",
+              prompt: "An essay on US civil rights might credit",
+              choices: [
+                "only MLK",
+                "grassroots activism, federal action, legal cases and shifting public opinion together",
+                "nobody",
+                "foreign pressure only",
+              ],
+              answerIndex: 1,
+              explanation:
+                "HL depth integrates top-down and bottom-up explanations.",
+            },
+            {
+              id: "hi-l25-q5",
+              type: "short",
+              prompt:
+                "Historians blaming US expansionism for the Cold War are the ___ school.",
+              answer: "revisionist",
+              keywords: ["revisionist"],
+              acceptable: ["revisionists", "revisionism"],
+              explanation:
+                "Revisionists (Williams) vs orthodox vs post-revisionist.",
+            },
+            {
+              id: "hi-l25-q6",
+              type: "short",
+              prompt:
+                "HL Paper 3 duration (hours and minutes).",
+              answer: "2 hours 30 minutes",
+              keywords: ["2", "30", "150"],
+              acceptable: ["2h30", "150 minutes", "2.5 hours"],
+              explanation:
+                "2h30 for three essays — ~50 minutes each.",
             },
           ],
         },

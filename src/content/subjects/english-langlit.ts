@@ -282,6 +282,162 @@ export const englishLangLit: Subject = {
             },
           ],
         },
+        {
+          id: "ell-l11",
+          title: "Stylistic devices and their effects",
+          questions: [
+            {
+              id: "ell-l11-q1",
+              type: "mcq",
+              prompt:
+                "'The city swallowed him whole' is an example of",
+              choices: ["simile", "personification", "hyperbole only", "alliteration"],
+              answerIndex: 1,
+              explanation:
+                "The city is given human agency — personification creating an overwhelming effect.",
+            },
+            {
+              id: "ell-l11-q2",
+              type: "mcq",
+              prompt:
+                "A short declarative sentence after several long ones usually creates",
+              choices: [
+                "confusion",
+                "emphasis and a change of pace",
+                "irony",
+                "ambiguity",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Sentence-length contrast foregrounds the short sentence — a key structural effect to analyse.",
+            },
+            {
+              id: "ell-l11-q3",
+              type: "tf",
+              prompt:
+                "Juxtaposition places contrasting ideas close together to highlight their difference.",
+              answer: true,
+              explanation:
+                "The contrast does the meaning-making — wealth next to poverty, innocence next to violence.",
+            },
+            {
+              id: "ell-l11-q4",
+              type: "mcq",
+              prompt:
+                "Anaphora is the repetition of",
+              choices: [
+                "a sound",
+                "a word or phrase at the start of successive clauses",
+                "rhyme",
+                "consonants",
+              ],
+              answerIndex: 1,
+              explanation:
+                "'We shall fight on the beaches, we shall fight…' — builds rhythm and insistence.",
+            },
+            {
+              id: "ell-l11-q5",
+              type: "short",
+              prompt:
+                "Name the device: 'His words cut deeper than any knife.'",
+              answer: "metaphor",
+              keywords: ["metaphor", "simil"],
+              acceptable: ["simile", "metaphorical"],
+              explanation:
+                "Strictly a simile ('than') or metaphoric comparison — accept either with reasoning.",
+            },
+            {
+              id: "ell-l11-q6",
+              type: "short",
+              prompt:
+                "Name ONE effect of addressing the reader directly as 'you' in a persuasive text.",
+              answer: "creates involvement / implicates the reader",
+              keywords: ["involv", "implicat", "direct", "personal", "engag"],
+              acceptable: ["direct address", "personal involvement", "engages the reader"],
+              explanation:
+                "Direct address makes the message feel personal and hard to ignore.",
+            },
+          ],
+        },
+        {
+          id: "ell-l12",
+          title: "Text-type conventions: op-ed, speech, advert, memoir",
+          questions: [
+            {
+              id: "ell-l12-q1",
+              type: "mcq",
+              prompt: "An op-ed (opinion editorial) typically features",
+              choices: [
+                "neutral reporting",
+                "a clear argued viewpoint with a named author",
+                "advertising slogans",
+                "fiction",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Op-eds argue a position with evidence and a persuasive voice.",
+            },
+            {
+              id: "ell-l12-q2",
+              type: "mcq",
+              prompt: "A speech differs from an article mainly through",
+              choices: [
+                "shorter sentences",
+                "direct audience address and rhetorical devices for listening",
+                "more data",
+                "no structure",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Speeches are written for the ear — address, repetition, pauses, calls to action.",
+            },
+            {
+              id: "ell-l12-q3",
+              type: "tf",
+              prompt:
+                "An infographic relies on visual hierarchy and chunked data more than continuous prose.",
+              answer: true,
+              explanation:
+                "Meaning is made through layout, icons and minimal text.",
+            },
+            {
+              id: "ell-l12-q4",
+              type: "mcq",
+              prompt: "A memoir differs from an autobiography because it",
+              choices: [
+                "covers the whole life",
+                "focuses on a themed slice of life with reflective voice",
+                "is always fictional",
+                "has no first person",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Memoir selects and reflects; autobiography aims at complete chronology.",
+            },
+            {
+              id: "ell-l12-q5",
+              type: "short",
+              prompt:
+                "Name ONE visual convention of an advertisement.",
+              answer: "a slogan or dominant image",
+              keywords: ["slogan", "image", "logo", "colour", "headline"],
+              acceptable: ["slogan", "large image", "logo"],
+              explanation:
+                "Slogans, dominant visuals, brand marks, imperative verbs.",
+            },
+            {
+              id: "ell-l12-q6",
+              type: "short",
+              prompt:
+                "Name the structural feature a speech usually ends with to motivate listeners. (one phrase)",
+              answer: "call to action",
+              keywords: ["call", "action"],
+              acceptable: ["a call to action", "call for action"],
+              explanation:
+                "Speeches conventionally close by asking the audience to act.",
+            },
+          ],
+        },
       ],
     },
     {
@@ -525,6 +681,164 @@ export const englishLangLit: Subject = {
             },
           ],
         },
+        {
+          id: "ell-l13",
+          title: "Paper 1: the guiding question and essay structure",
+          questions: [
+            {
+              id: "ell-l13-q1",
+              type: "mcq",
+              prompt: "The Paper 1 guiding question's purpose is to",
+              choices: [
+                "limit your analysis",
+                "anchor analysis on authorial choices and their effects",
+                "test your opinion of the text",
+                "ask for a summary",
+              ],
+              answerIndex: 1,
+              explanation:
+                "It directs you to HOW the text creates meaning — not what it says.",
+            },
+            {
+              id: "ell-l13-q2",
+              type: "mcq",
+              prompt: "A strong Paper 1 analysis paragraph contains",
+              choices: [
+                "summary, quote, repeat",
+                "point about a feature, embedded evidence, analysis of effect",
+                "only quotations",
+                "personal opinion",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Point → evidence → analysis of effect: the PEA structure examiners reward.",
+            },
+            {
+              id: "ell-l13-q3",
+              type: "tf",
+              prompt:
+                "You must cover every feature of the text to score well on Paper 1.",
+              answer: false,
+              explanation:
+                "Depth on well-chosen features beats shallow coverage of everything.",
+            },
+            {
+              id: "ell-l13-q4",
+              type: "mcq",
+              prompt: "'Authorial choices' refers to",
+              choices: [
+                "the plot",
+                "deliberate decisions about language, structure and style",
+                "the author's biography",
+                "printing errors",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Frame analysis as choices with effects, not 'the author makes us feel…'.",
+            },
+            {
+              id: "ell-l13-q5",
+              type: "short",
+              prompt:
+                "Give the three-part structure of an analysis paragraph (three words).",
+              answer: "point evidence analysis",
+              keywords: ["point", "evidence", "analy"],
+              acceptable: ["point evidence explanation"],
+              explanation:
+                "Point about a choice → embedded quotation → analysis of its effect.",
+            },
+            {
+              id: "ell-l13-q6",
+              type: "short",
+              prompt:
+                "How long is the SL Paper 1 exam (minutes)?",
+              answer: "75",
+              keywords: ["75"],
+              acceptable: ["75 minutes", "1h15"],
+              explanation:
+                "SL: 75 min for one text; HL: 135 min for two (each analysed separately).",
+            },
+          ],
+        },
+        {
+          id: "ell-l14",
+          title: "Paper 1: reading and annotating under time",
+          questions: [
+            {
+              id: "ell-l14-q1",
+              type: "mcq",
+              prompt: "The best first step when you receive the unseen text is",
+              choices: [
+                "start writing immediately",
+                "identify text type, audience and purpose, then annotate choices",
+                "count the words",
+                "translate difficult words",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Text-type/Audience/Purpose first — it frames every later observation.",
+            },
+            {
+              id: "ell-l14-q2",
+              type: "mcq",
+              prompt: "Annotating 'tone shifts' means marking where",
+              choices: [
+                "the font changes",
+                "the writer's attitude or mood changes",
+                "paragraphs end",
+                "sentences are short",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Tone shifts are high-value analysis points — they signal development.",
+            },
+            {
+              id: "ell-l14-q3",
+              type: "tf",
+              prompt:
+                "Spending 15–20 minutes planning/annotating before writing is considered good practice.",
+              answer: true,
+              explanation:
+                "A planned response scores better than a rushed stream of observations.",
+            },
+            {
+              id: "ell-l14-q4",
+              type: "mcq",
+              prompt: "In an advert, the most analytical observation is about",
+              choices: [
+                "what is being sold",
+                "how visual and verbal choices position the reader to desire it",
+                "the price",
+                "the company name",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Analyse positioning techniques, not the product.",
+            },
+            {
+              id: "ell-l14-q5",
+              type: "short",
+              prompt:
+                "Name the three contextual questions to ask of any text (TAP).",
+              answer: "text type, audience, purpose",
+              keywords: ["audience", "purpose"],
+              acceptable: ["type audience purpose"],
+              explanation:
+                "Text type, Audience, Purpose — the annotation frame.",
+            },
+            {
+              id: "ell-l14-q6",
+              type: "short",
+              prompt:
+                "Give ONE structural feature (not a language device) worth analysing.",
+              answer: "sentence length variation",
+              keywords: ["sentence", "structure", "paragraph", "shift", "order"],
+              acceptable: ["paragraphing", "sentence length", "chronology"],
+              explanation:
+                "Structure = order of ideas, paragraphing, sentence form, narrative perspective.",
+            },
+          ],
+        },
       ],
     },
     {
@@ -690,6 +1004,243 @@ export const englishLangLit: Subject = {
             },
           ],
         },
+        {
+          id: "ell-l15",
+          title: "Paper 2: choosing and pairing works",
+          questions: [
+            {
+              id: "ell-l15-q1",
+              type: "mcq",
+              prompt: "When choosing works for a Paper 2 question you should",
+              choices: [
+                "always use your favourites",
+                "pick works whose themes directly address the question's focus",
+                "pick the longest",
+                "pick works by the same author",
+              ],
+              answerIndex: 1,
+              explanation:
+                "The question drives selection — works must give you comparative material on its terms.",
+            },
+            {
+              id: "ell-l15-q2",
+              type: "mcq",
+              prompt: "Comparing works means",
+              choices: [
+                "describing each in turn",
+                "evaluating similarities AND differences in how they treat the topic",
+                "saying which is better",
+                "summarising plots",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Paper 2 rewards interwoven comparison, not parallel summaries.",
+            },
+            {
+              id: "ell-l15-q3",
+              type: "tf",
+              prompt:
+                "You may discuss a work in Paper 2 that you also analysed in Paper 1 prep or the IO.",
+              answer: false,
+              explanation:
+                "Works must not overlap between assessment components.",
+            },
+            {
+              id: "ell-l15-q4",
+              type: "mcq",
+              prompt: "A comparative thesis should",
+              choices: [
+                "state both plots",
+                "make an arguable claim about how the works relate on the topic",
+                "list features",
+                "avoid opinion",
+              ],
+              answerIndex: 1,
+              explanation:
+                "The thesis frames the comparison — e.g. 'both condemn X, but through contrasting methods'.",
+            },
+            {
+              id: "ell-l15-q5",
+              type: "short",
+              prompt:
+                "Name ONE dimension you can compare across two works (besides theme).",
+              answer: "authorial methods / techniques",
+              keywords: ["technique", "style", "structure", "character", "context", "narrative"],
+              acceptable: ["techniques", "structure", "characterisation", "context"],
+              explanation:
+                "Compare methods, characters, contexts, narrative voices, endings…",
+            },
+            {
+              id: "ell-l15-q6",
+              type: "short",
+              prompt:
+                "How many works must you discuss in Paper 2? (one number)",
+              answer: "2",
+              keywords: ["2"],
+              acceptable: ["two"],
+              explanation:
+                "Two studied works compared in response to one question.",
+            },
+          ],
+        },
+        {
+          id: "ell-l16",
+          title: "Paper 2: structure and exam technique",
+          questions: [
+            {
+              id: "ell-l16-q1",
+              type: "mcq",
+              prompt: "The most effective Paper 2 structure is",
+              choices: [
+                "work A fully then work B",
+                "thematically organised points comparing both works throughout",
+                "chronological summary",
+                "no plan",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Point-by-point comparison integrates the works and scores higher.",
+            },
+            {
+              id: "ell-l16-q2",
+              type: "mcq",
+              prompt: "Referring to context in Paper 2 should",
+              choices: [
+                "be avoided",
+                "support points about meaning, not dominate the essay",
+                "be the whole essay",
+                "list historical dates",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Context informs interpretation — it isn't assessed alone.",
+            },
+            {
+              id: "ell-l16-q3",
+              type: "tf",
+              prompt:
+                "Both works deserve roughly balanced coverage in the essay.",
+              answer: true,
+              explanation:
+                "Marking penalises heavily unbalanced treatment.",
+            },
+            {
+              id: "ell-l16-q4",
+              type: "mcq",
+              prompt: "A useful way to open a comparative paragraph is",
+              choices: [
+                "'In book one…'",
+                "a comparative claim: 'While A does X, B instead…'",
+                "'This book is about…'",
+                "a quotation",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Comparative topic sentences force the contrast upfront.",
+            },
+            {
+              id: "ell-l16-q5",
+              type: "short",
+              prompt:
+                "Give ONE comparative connective useful in Paper 2 (e.g. 'whereas').",
+              answer: "whereas",
+              keywords: ["whereas", "while", "unlike", "similarly", "contrast"],
+              acceptable: ["while", "in contrast", "similarly", "unlike"],
+              explanation:
+                "Whereas / unlike / similarly / in contrast — the vocabulary of comparison.",
+            },
+            {
+              id: "ell-l16-q6",
+              type: "short",
+              prompt:
+                "How long is the Paper 2 exam (minutes)?",
+              answer: "105",
+              keywords: ["105"],
+              acceptable: ["105 minutes", "1h45"],
+              explanation:
+                "Paper 2 is 1 hour 45 minutes for both SL and HL.",
+            },
+          ],
+        },
+        {
+          id: "ell-l17",
+          title: "Paper 2: common pitfalls and the learner portfolio",
+          questions: [
+            {
+              id: "ell-l17-q1",
+              type: "mcq",
+              prompt: "The most common Paper 2 mistake is",
+              choices: [
+                "comparing too much",
+                "retelling plots instead of analysing",
+                "using quotations",
+                "writing too little",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Narrative summary earns almost no marks — analysis of choices does.",
+            },
+            {
+              id: "ell-l17-q2",
+              type: "mcq",
+              prompt: "The learner portfolio's role is to",
+              choices: [
+                "be a marked notebook",
+                "collect reflections, responses and connections that feed assessments",
+                "replace essays",
+                "record grades",
+              ],
+              answerIndex: 1,
+              explanation:
+                "It's a workspace — unassessed but central to the course's philosophy.",
+            },
+            {
+              id: "ell-l17-q3",
+              type: "tf",
+              prompt:
+                "Learner portfolio entries can include creative responses, questions and connections, not just essays.",
+              answer: true,
+              explanation:
+                "Reflection in varied forms — journals, mind maps, pastiches — builds interpretive skill.",
+            },
+            {
+              id: "ell-l17-q4",
+              type: "mcq",
+              prompt: "Using a memorised essay in Paper 2 fails because",
+              choices: [
+                "it's too long",
+                "it won't answer the specific question asked",
+                "essays are banned",
+                "markers know it",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Every question is different — prepared answers rarely fit.",
+            },
+            {
+              id: "ell-l17-q5",
+              type: "short",
+              prompt:
+                "Name ONE thing a learner portfolio reflection might connect a text to.",
+              answer: "a global issue or personal response",
+              keywords: ["issue", "response", "context", "connect"],
+              acceptable: ["global issue", "personal response", "another text"],
+              explanation:
+                "Text ↔ issue, text ↔ text, text ↔ self — connections are the point.",
+            },
+            {
+              id: "ell-l17-q6",
+              type: "short",
+              prompt:
+                "Instead of summarising a scene, what should a Paper 2 sentence do? (one phrase)",
+              answer: "analyse the author's choices",
+              keywords: ["analy", "choice", "effect"],
+              acceptable: ["analyse the effect", "explain authorial choices"],
+              explanation:
+                "Every reference should serve an analytical point.",
+            },
+          ],
+        },
       ],
     },
     {
@@ -773,6 +1324,324 @@ export const englishLangLit: Subject = {
               answer: false,
               explanation:
                 "The essay is your own analysis; sources are optional, not required.",
+            },
+          ],
+        },
+        {
+          id: "ell-l18",
+          title: "HL essay: choosing your text and focus",
+          level: "HL",
+          questions: [
+            {
+              id: "ell-l18-q1",
+              type: "mcq",
+              prompt: "The best HL essay text choice is one that",
+              choices: [
+                "you know offers rich, arguable material on a focused feature",
+                "is the longest",
+                "you haven't read",
+                "is easiest to summarise",
+              ],
+              answerIndex: 0,
+              explanation:
+                "Depth of analysable material beats familiarity or length.",
+            },
+            {
+              id: "ell-l18-q2",
+              type: "mcq",
+              prompt: "A 'broad' line of inquiry risks",
+              choices: [
+                "too much analysis",
+                "superficial coverage and summary",
+                "high marks",
+                "originality",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Broad topics collapse into plot summary within 1200–1500 words.",
+            },
+            {
+              id: "ell-l18-q3",
+              type: "tf",
+              prompt:
+                "The HL essay question can be refined as your analysis develops.",
+              answer: true,
+              explanation:
+                "Iterating the inquiry while drafting is normal and encouraged.",
+            },
+            {
+              id: "ell-l18-q4",
+              type: "mcq",
+              prompt: "A 'focused' inquiry targets",
+              choices: [
+                "the whole book",
+                "a specific feature, motif or technique and its contribution to meaning",
+                "the author's life",
+                "the film version",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Feature → meaning: the narrower the feature, the deeper the analysis.",
+            },
+            {
+              id: "ell-l18-q5",
+              type: "short",
+              prompt:
+                "Complete the inquiry formula: 'How does [feature] contribute to [___] in [text]?' (one word)",
+              answer: "theme",
+              keywords: ["theme", "meaning"],
+              acceptable: ["the theme", "meaning"],
+              explanation:
+                "Feature → theme/meaning is the classic inquiry shape.",
+            },
+            {
+              id: "ell-l18-q6",
+              type: "short",
+              prompt:
+                "The HL essay word count is 1200–___ words.",
+              answer: "1500",
+              keywords: ["1500"],
+              explanation:
+                "1200–1500 words — exceeding it loses marks.",
+            },
+          ],
+        },
+        {
+          id: "ell-l19",
+          title: "HL essay: argument, structure and evidence",
+          level: "HL",
+          questions: [
+            {
+              id: "ell-l19-q1",
+              type: "mcq",
+              prompt: "The essay's argument should develop",
+              choices: [
+                "randomly",
+                "through logically ordered points building the thesis",
+                "chronologically through the plot",
+                "alphabetically",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Each paragraph advances the argument — order by logic, not page order.",
+            },
+            {
+              id: "ell-l19-q2",
+              type: "mcq",
+              prompt: "Quotations in the HL essay should be",
+              choices: [
+                "as long as possible",
+                "short, embedded and analysed",
+                "listed at the end",
+                "avoided",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Brief embedded evidence keeps your voice dominant.",
+            },
+            {
+              id: "ell-l19-q3",
+              type: "tf",
+              prompt:
+                "Considering a counter-reading can strengthen an HL essay argument.",
+              answer: true,
+              explanation:
+                "Acknowledging alternative interpretations shows evaluative thinking (Criterion B).",
+            },
+            {
+              id: "ell-l19-q4",
+              type: "mcq",
+              prompt: "The conclusion should",
+              choices: [
+                "introduce new evidence",
+                "synthesise how the feature produces the argued meaning",
+                "repeat the introduction",
+                "summarise the plot",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Answer your inquiry directly — no new material.",
+            },
+            {
+              id: "ell-l19-q5",
+              type: "short",
+              prompt:
+                "Name the term for borrowed ideas/words that must be cited to avoid plagiarism.",
+              answer: "sources",
+              keywords: ["source", "citation", "reference"],
+              acceptable: ["secondary sources", "references"],
+              explanation:
+                "Any secondary material must be referenced — academic honesty rules apply.",
+            },
+            {
+              id: "ell-l19-q6",
+              type: "short",
+              prompt:
+                "Each body paragraph should open with a ___ sentence stating its point. (one word)",
+              answer: "topic",
+              keywords: ["topic"],
+              acceptable: ["topic sentence"],
+              explanation:
+                "Topic sentences keep the argument's logic visible.",
+            },
+          ],
+        },
+        {
+          id: "ell-l20",
+          title: "HL essay: academic integrity and criteria",
+          level: "HL",
+          questions: [
+            {
+              id: "ell-l20-q1",
+              type: "mcq",
+              prompt: "Using a critic's idea without citation is",
+              choices: [
+                "acceptable",
+                "plagiarism",
+                "encouraged",
+                "required",
+              ],
+              answerIndex: 1,
+              explanation:
+                "All borrowed ideas need referencing, whatever the source.",
+            },
+            {
+              id: "ell-l20-q2",
+              type: "mcq",
+              prompt: "Criterion C of the HL essay assesses",
+              choices: [
+                "knowledge only",
+                "focus, organisation and development of the argument",
+                "grammar",
+                "creativity",
+              ],
+              answerIndex: 1,
+              explanation:
+                "A: knowledge/interpretation, B: analysis/evaluation, C: focus & organisation, D: language.",
+            },
+            {
+              id: "ell-l20-q3",
+              type: "tf",
+              prompt:
+                "You may get feedback on drafts, but the submitted essay must be entirely your own work.",
+              answer: true,
+              explanation:
+                "One round of teacher feedback is permitted; the writing is yours.",
+            },
+            {
+              id: "ell-l20-q4",
+              type: "mcq",
+              prompt: "The essay must use a work",
+              choices: [
+                "also used in the IO",
+                "studied in the course and not used for other components",
+                "from the internet",
+                "of your own invention",
+              ],
+              answerIndex: 1,
+              explanation:
+                "No overlap with IO, Paper 1 prep texts or Paper 2 works.",
+            },
+            {
+              id: "ell-l20-q5",
+              type: "short",
+              prompt:
+                "Name the referencing style commonly required for the HL essay bibliography.",
+              answer: "MLA",
+              keywords: ["mla", "reference", "bibliograph"],
+              acceptable: ["MLA", "any consistent style"],
+              explanation:
+                "Schools usually require MLA — consistency matters more than the specific style.",
+            },
+            {
+              id: "ell-l20-q6",
+              type: "short",
+              prompt:
+                "What percentage of the HL grade does the HL essay carry? (number)",
+              answer: "20",
+              keywords: ["20"],
+              acceptable: ["20%"],
+              explanation: "20% of the HL English A grade.",
+            },
+          ],
+        },
+        {
+          id: "ell-l21",
+          title: "HL essay: drafting and refining the inquiry",
+          level: "HL",
+          questions: [
+            {
+              id: "ell-l21-q1",
+              type: "mcq",
+              prompt: "If your draft exceeds the word limit, the best fix is",
+              choices: [
+                "smaller font",
+                "cut redundant summary and tighten analysis",
+                "remove the conclusion",
+                "ignore it",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Cut description, keep analysis — every sentence must earn its place.",
+            },
+            {
+              id: "ell-l21-q2",
+              type: "mcq",
+              prompt: "A sign your inquiry needs narrowing is",
+              choices: [
+                "too much evidence",
+                "you are summarising large sections to cover the topic",
+                "a clear thesis",
+                "short paragraphs",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Summary creep signals the scope is too wide for 1500 words.",
+            },
+            {
+              id: "ell-l21-q3",
+              type: "tf",
+              prompt:
+                "A strong essay links every analytical point back to the central inquiry.",
+              answer: true,
+              explanation:
+                "Relevance to the inquiry is what 'focus' means in Criterion C.",
+            },
+            {
+              id: "ell-l21-q4",
+              type: "mcq",
+              prompt: "When revising, check that each paragraph",
+              choices: [
+                "has a quotation",
+                "advances the argument rather than repeating or describing",
+                "is the same length",
+                "mentions the title",
+              ],
+              answerIndex: 1,
+              explanation:
+                "If a paragraph doesn't move the argument forward, cut or rewrite it.",
+            },
+            {
+              id: "ell-l21-q5",
+              type: "short",
+              prompt:
+                "Drafting reveals your thesis is wrong. The best action is to ___ it. (one word)",
+              answer: "revise",
+              keywords: ["revise", "refine", "change", "rewrite", "adjust"],
+              acceptable: ["refine", "rewrite", "change"],
+              explanation:
+                "Refining the inquiry in light of evidence is expected scholarly practice.",
+            },
+            {
+              id: "ell-l21-q6",
+              type: "short",
+              prompt:
+                "What should appear on the essay's title page beside the inquiry question? (one item)",
+              answer: "the work and author",
+              keywords: ["work", "author", "title"],
+              acceptable: ["the text", "title of work"],
+              explanation:
+                "Title page: inquiry question, work, author, word count.",
             },
           ],
         },
@@ -867,6 +1736,327 @@ export const englishLangLit: Subject = {
               ],
               explanation:
                 "Any transnational issue with local impact works, e.g. gender inequality, climate justice.",
+            },
+          ],
+        },
+        {
+          id: "ell-l22",
+          title: "The Individual Oral: global issues in depth",
+          questions: [
+            {
+              id: "ell-l22-q1",
+              type: "mcq",
+              prompt: "A 'global issue' for the IO must be",
+              choices: [
+                "any topic you like",
+                "transnational in scale, felt locally, and relevant today",
+                "only about climate",
+                "historical only",
+              ],
+              answerIndex: 1,
+              explanation:
+                "The three criteria: transnational, everyday local impact, contemporary relevance.",
+            },
+            {
+              id: "ell-l22-q2",
+              type: "mcq",
+              prompt: "The IO connects the global issue to",
+              choices: [
+                "two random texts",
+                "how a literary work and a non-literary body of work each present it",
+                "the news",
+                "your opinion only",
+              ],
+              answerIndex: 1,
+              explanation:
+                "One literary work + one non-literary body of work (BOW), 10 min + 5 min questions.",
+            },
+            {
+              id: "ell-l22-q3",
+              type: "tf",
+              prompt:
+                "The extract you analyse must be about 40 lines from the literary work.",
+              answer: true,
+              explanation:
+                "~40 lines literary extract + a chosen non-literary extract, both linked to the issue.",
+            },
+            {
+              id: "ell-l22-q4",
+              type: "mcq",
+              prompt: "A weak global issue would be",
+              choices: [
+                "the criminalisation of migration",
+                "'love'",
+                "racial discrimination in policing",
+                "censorship of dissenting voices",
+              ],
+              answerIndex: 1,
+              explanation:
+                "'Love' is a theme, not an issue — issues are framed as problems/claims about the world.",
+            },
+            {
+              id: "ell-l22-q5",
+              type: "short",
+              prompt:
+                "Name the five IB fields of inquiry the IO issue must fit under (any one field).",
+              answer: "culture, identity and community",
+              keywords: ["culture", "identity", "politic", "justice", "science"],
+              acceptable: [
+                "politics, power and justice",
+                "art, creativity and the imagination",
+                "science, technology and the environment",
+                "beliefs, values and education",
+              ],
+              explanation:
+                "Culture/identity/community; beliefs/values/education; politics/power/justice; art/creativity/imagination; science/technology/environment.",
+            },
+            {
+              id: "ell-l22-q6",
+              type: "short",
+              prompt:
+                "How many minutes is the prepared talk in the IO? (number)",
+              answer: "10",
+              keywords: ["10"],
+              acceptable: ["10 minutes"],
+              explanation:
+                "10 minutes prepared + 5 minutes of questions (SL also 15 total).",
+            },
+          ],
+        },
+        {
+          id: "ell-l23",
+          title: "IO: extracts, authorial choices and structure",
+          questions: [
+            {
+              id: "ell-l23-q1",
+              type: "mcq",
+              prompt: "In the IO you should spend most time on",
+              choices: [
+                "describing the issue",
+                "analysing how authorial choices present the global issue",
+                "summarising the plot",
+                "quoting critics",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Criterion C focuses on analysis of choices in relation to the issue.",
+            },
+            {
+              id: "ell-l23-q2",
+              type: "mcq",
+              prompt: "A strong IO structure",
+              choices: [
+                "works chronologically",
+                "moves from broader work-level analysis to the extract and back",
+                "covers only the extract",
+                "is improvised",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Zoom out (whole work) → zoom in (extract) → zoom out = coherent arc.",
+            },
+            {
+              id: "ell-l23-q3",
+              type: "tf",
+              prompt:
+                "The literary and non-literary parts of the talk should each get roughly half the time.",
+              answer: true,
+              explanation:
+                "Balance matters — about 5 minutes each.",
+            },
+            {
+              id: "ell-l23-q4",
+              type: "mcq",
+              prompt: "For the non-literary extract you could use",
+              choices: [
+                "a novel chapter",
+                "a speech, advert or photograph from a studied BOW",
+                "a poem",
+                "a play scene",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Non-literary BOW = speeches, campaigns, journalism, photography etc.",
+            },
+            {
+              id: "ell-l23-q5",
+              type: "short",
+              prompt:
+                "Give the three global-issue criteria (first letters: T, L, C).",
+              answer: "transnational, local, contemporary",
+              keywords: ["transnational", "local", "contemporar"],
+              explanation:
+                "Transnational scale, local everyday impact, contemporary relevance.",
+            },
+            {
+              id: "ell-l23-q6",
+              type: "short",
+              prompt:
+                "Name ONE thing an IO examiner looks for in the 5-minute questions.",
+              answer: "ability to extend analysis",
+              keywords: ["extend", "develop", "analy", "understand", "clarif"],
+              acceptable: ["extending ideas", "further analysis"],
+              explanation:
+                "Questions probe whether you can go beyond the prepared talk.",
+            },
+          ],
+        },
+        {
+          id: "ell-l24",
+          title: "Learner portfolio: reflection and connection",
+          questions: [
+            {
+              id: "ell-l24-q1",
+              type: "mcq",
+              prompt: "The learner portfolio is",
+              choices: [
+                "externally marked",
+                "an unassessed personal record of your engagement with texts",
+                "a textbook",
+                "a final exam",
+              ],
+              answerIndex: 1,
+              explanation:
+                "It's the foundation for IO/HL essay ideas — personal, unassessed, ongoing.",
+            },
+            {
+              id: "ell-l24-q2",
+              type: "mcq",
+              prompt: "A good portfolio reflection asks",
+              choices: [
+                "'what happened?'",
+                "'how did this text change or challenge my thinking?'",
+                "'who is the author?'",
+                "'what grade did I get?'",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Reflect on your response and evolving interpretation, not plot.",
+            },
+            {
+              id: "ell-l24-q3",
+              type: "tf",
+              prompt:
+                "Portfolio entries can feed directly into the IO and HL essay planning.",
+              answer: true,
+              explanation:
+                "Teachers use portfolio work to help students select extracts and inquiries.",
+            },
+            {
+              id: "ell-l24-q4",
+              type: "mcq",
+              prompt: "Intertextual portfolio work means",
+              choices: [
+                "copying texts",
+                "connecting a text to other texts, media and contexts it echoes",
+                "summarising",
+                "translating",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Tracing echoes and transformations between texts is intertextuality.",
+            },
+            {
+              id: "ell-l24-q5",
+              type: "short",
+              prompt:
+                "Name ONE non-essay portfolio entry type.",
+              answer: "a mind map",
+              keywords: ["mind", "letter", "pastiche", "journal", "creative", "diary", "art"],
+              acceptable: ["pastiche", "letter to author", "creative response", "journal"],
+              explanation:
+                "Journals, pastiches, mind maps, letters, found poetry — variety is encouraged.",
+            },
+            {
+              id: "ell-l24-q6",
+              type: "short",
+              prompt:
+                "How often should the portfolio be updated? (one phrase)",
+              answer: "regularly throughout the course",
+              keywords: ["regular", "ongoing", "throughout", "continual"],
+              acceptable: ["ongoing", "continuously"],
+              explanation:
+                "It's a living document across the two years, not a rush job.",
+            },
+          ],
+        },
+        {
+          id: "ell-l25",
+          title: "Intertextuality: how texts speak to each other",
+          level: "HL",
+          questions: [
+            {
+              id: "ell-l25-q1",
+              type: "mcq",
+              prompt: "Intertextuality means",
+              choices: [
+                "comparing plot summaries",
+                "the way texts create meaning through echoes of and responses to other texts",
+                "reading two books",
+                "quoting sources",
+              ],
+              answerIndex: 1,
+              explanation:
+                "HL area of exploration: no text exists in isolation.",
+            },
+            {
+              id: "ell-l25-q2",
+              type: "mcq",
+              prompt: "A modern novel rewriting a Greek myth is an example of",
+              choices: [
+                "plagiarism",
+                "intertextual transformation",
+                "coincidence",
+                "translation",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Retelling transforms the original's meaning for a new context.",
+            },
+            {
+              id: "ell-l25-q3",
+              type: "tf",
+              prompt:
+                "Allusion requires the reader to recognise the referenced text for full effect.",
+              answer: true,
+              explanation:
+                "Allusions carry meaning only if the reader catches the echo.",
+            },
+            {
+              id: "ell-l25-q4",
+              type: "mcq",
+              prompt: "Analysing intertextuality in an essay adds value because it",
+              choices: [
+                "pads the word count",
+                "shows how meaning is shaped by literary and cultural tradition",
+                "replaces analysis",
+                "is required",
+              ],
+              answerIndex: 1,
+              explanation:
+                "It explains how authors position their work within or against tradition.",
+            },
+            {
+              id: "ell-l25-q5",
+              type: "short",
+              prompt:
+                "Name the intertextual device: a brief indirect reference to another text. (one word)",
+              answer: "allusion",
+              keywords: ["allusion"],
+              acceptable: ["an allusion"],
+              explanation:
+                "Allusion — e.g. calling a rival 'my Brutus' references Julius Caesar.",
+            },
+            {
+              id: "ell-l25-q6",
+              type: "short",
+              prompt:
+                "A text that imitates another's style to mock or critique it is a ___.",
+              answer: "parody",
+              keywords: ["parod", "pastiche", "satire"],
+              acceptable: ["pastiche", "parody"],
+              explanation:
+                "Parody mocks; pastiche imitates — both are intertextual strategies.",
             },
           ],
         },
