@@ -197,6 +197,243 @@ export const psychology: Subject = {
             },
           ],
         },
+        {
+          id: "ps-l13",
+          title: "Localisation and plasticity: HM, Milner, Maguire",
+          questions: [
+            {
+              id: "ps-l13-q1",
+              type: "mcq",
+              prompt: "Patient HM's case showed that",
+              choices: [
+                "memory is one system",
+                "removing the hippocampus impaired new long-term memories while procedural memory survived",
+                "language lives in the amygdala",
+                "the brain can't change",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Milner's studies of HM distinguished declarative from procedural memory.",
+            },
+            {
+              id: "ps-l13-q2",
+              type: "mcq",
+              prompt: "Maguire's taxi-driver study found",
+              choices: [
+                "no brain differences",
+                "larger posterior hippocampi in London cabbies — evidence of plasticity",
+                "smaller brains",
+                "damage to the frontal lobe",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Years of 'the Knowledge' reshaped the hippocampus — neuroplasticity.",
+            },
+            {
+              id: "ps-l13-q3",
+              type: "tf",
+              prompt:
+                "A limitation of case studies like HM is that findings from one unusual brain may not generalise.",
+              answer: true,
+              explanation:
+                "N=1 cases give rich detail but weak generalisability.",
+            },
+            {
+              id: "ps-l13-q4",
+              type: "mcq",
+              prompt: "Brenda Milner contributed to psychology by",
+              choices: [
+                "inventing fMRI",
+                "demonstrating multiple memory systems through HM's preserved procedural learning",
+                "discovering DNA",
+                "training rats",
+              ],
+              answerIndex: 1,
+              explanation:
+                "HM improved at mirror-drawing he couldn't remember practising — different memory systems.",
+            },
+            {
+              id: "ps-l13-q5",
+              type: "short",
+              prompt:
+                "The brain's ability to reorganise after experience or injury is called ___.",
+              answer: "neuroplasticity",
+              keywords: ["plastic"],
+              acceptable: ["plasticity", "brain plasticity"],
+              explanation:
+                "Neuroplasticity — Maguire's key concept.",
+            },
+            {
+              id: "ps-l13-q6",
+              type: "short",
+              prompt:
+                "The brain structure critical for forming new declarative memories, removed in HM: the ___.",
+              answer: "hippocampus",
+              keywords: ["hippocamp"],
+              acceptable: ["hippocampus"],
+              explanation:
+                "Bilateral hippocampectomy left HM with anterograde amnesia.",
+            },
+          ],
+        },
+        {
+          id: "ps-l14",
+          title: "Hormones, pheromones and the environment: Antonova, Newcomer, Rosenzweig",
+          questions: [
+            {
+              id: "ps-l14-q1",
+              type: "mcq",
+              prompt: "Rosenzweig's rat studies showed that",
+              choices: [
+                "genes fix brain size",
+                "enriched environments produce heavier cortexes — environment shapes the brain",
+                "isolation improves learning",
+                "rats can't learn",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Enriched vs deprived cages → measurable cortical differences.",
+            },
+            {
+              id: "ps-l14-q2",
+              type: "mcq",
+              prompt: "Newcomer et al. investigated cortisol and found high doses",
+              choices: [
+                "improved memory",
+                "impaired verbal declarative memory — stress hormones affect recall",
+                "had no effect",
+                "cured amnesia",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Supports the role of cortisol in stress-related memory problems.",
+            },
+            {
+              id: "ps-l14-q3",
+              type: "tf",
+              prompt:
+                "Antonova et al. found that scopolamine, which blocks acetylcholine, impaired spatial memory in a virtual-reality task.",
+              answer: true,
+              explanation:
+                "Supports the role of acetylcholine in spatial memory formation.",
+            },
+            {
+              id: "ps-l14-q4",
+              type: "mcq",
+              prompt: "A strength of hormone studies using drug administration is",
+              choices: [
+                "no control",
+                "experimental control allows cause-effect claims",
+                "large natural samples",
+                "no ethics issues",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Controlled manipulation = stronger causal inference.",
+            },
+            {
+              id: "ps-l14-q5",
+              type: "short",
+              prompt:
+                "The neurotransmitter linked to memory that Antonova's drug blocked: ___.",
+              answer: "acetylcholine",
+              keywords: ["acetylcholine"],
+              acceptable: ["acetylcholine", "ACh"],
+              explanation:
+                "Scopolamine antagonises acetylcholine receptors.",
+            },
+            {
+              id: "ps-l14-q6",
+              type: "short",
+              prompt:
+                "The stress hormone studied by Newcomer: ___.",
+              answer: "cortisol",
+              keywords: ["cortisol"],
+              acceptable: ["cortisol"],
+              explanation:
+                "Cortisol — released by the adrenal cortex under stress.",
+            },
+          ],
+        },
+        {
+          id: "ps-l15",
+          title: "Genetics, evolution and the biological approach evaluation",
+          questions: [
+            {
+              id: "ps-l15-q1",
+              type: "mcq",
+              prompt: "Twin studies estimate heritability by comparing",
+              choices: [
+                "random strangers",
+                "concordance in identical (MZ) vs fraternal (DZ) twins",
+                "parents and children only",
+                "siblings' ages",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Higher MZ concordance suggests genetic contribution.",
+            },
+            {
+              id: "ps-l15-q2",
+              type: "mcq",
+              prompt: "Caspi et al. (2003) showed that",
+              choices: [
+                "genes alone cause depression",
+                "a serotonin-transporter gene variant interacts with stressful life events to predict depression",
+                "serotonin cures depression",
+                "environment doesn't matter",
+              ],
+              answerIndex: 1,
+              explanation:
+                "A classic gene × environment interaction study.",
+            },
+            {
+              id: "ps-l15-q3",
+              type: "tf",
+              prompt:
+                "A criticism of the biological approach is that it is reductionist — it simplifies complex behaviour to biology.",
+              answer: true,
+              explanation:
+                "Ignores cognition and culture — a standard evaluation.",
+            },
+            {
+              id: "ps-l15-q4",
+              type: "mcq",
+              prompt: "Evolutionary explanations argue behaviours persist because they",
+              choices: [
+                "feel good",
+                "improved survival or reproductive success",
+                "are fashionable",
+                "are taught",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Adaptive traits are selected for across generations.",
+            },
+            {
+              id: "ps-l15-q5",
+              type: "short",
+              prompt:
+                "The percentage of genes identical twins share (number).",
+              answer: "100",
+              keywords: ["100"],
+              acceptable: ["100%"],
+              explanation:
+                "MZ twins share ~100%; DZ share ~50%.",
+            },
+            {
+              id: "ps-l15-q6",
+              type: "short",
+              prompt:
+                "Name ONE strength of the biological approach.",
+              answer: "it is scientific / testable",
+              keywords: ["scientific", "testable", "objective", "measurable", "falsif"],
+              acceptable: ["scientific", "objective and measurable"],
+              explanation:
+                "Empirical, falsifiable, uses brain imaging and controlled experiments.",
+            },
+          ],
+        },
       ],
     },
     {
@@ -368,6 +605,243 @@ export const psychology: Subject = {
             },
           ],
         },
+        {
+          id: "ps-l16",
+          title: "Reconstructive memory: Loftus & Palmer, Bartlett",
+          questions: [
+            {
+              id: "ps-l16-q1",
+              type: "mcq",
+              prompt: "Loftus & Palmer (1974) showed that",
+              choices: [
+                "memory is perfect",
+                "the verb used in a question ('smashed' vs 'hit') changed speed estimates and later memory of glass",
+                "people lie",
+                "videos are unreliable",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Leading questions distort memory — eyewitnesses are reconstructive.",
+            },
+            {
+              id: "ps-l16-q2",
+              type: "mcq",
+              prompt: "Bartlett's 'War of the Ghosts' study demonstrated",
+              choices: [
+                "photographic memory",
+                "reconstructive memory shaped by cultural schemas",
+                "short-term memory capacity",
+                "forgetting curves",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Participants reshaped an unfamiliar story to fit their schemas.",
+            },
+            {
+              id: "ps-l16-q3",
+              type: "tf",
+              prompt:
+                "Schema theory says memory is actively rebuilt using prior knowledge — not replayed like a recording.",
+              answer: true,
+              explanation:
+                "Reconstruction explains both efficiency and error.",
+            },
+            {
+              id: "ps-l16-q4",
+              type: "mcq",
+              prompt: "A strength of Loftus & Palmer's experiments is",
+              choices: [
+                "high ecological validity",
+                "controlled manipulation allowing cause-effect conclusions",
+                "large scale",
+                "real crashes",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Lab control = strong internal validity; artificial stimuli = the trade-off.",
+            },
+            {
+              id: "ps-l16-q5",
+              type: "short",
+              prompt:
+                "The mental framework organising knowledge and guiding reconstruction = a ___.",
+              answer: "schema",
+              keywords: ["schema"],
+              acceptable: ["schema", "schemata"],
+              explanation:
+                "Schemas fill gaps and distort recall.",
+            },
+            {
+              id: "ps-l16-q6",
+              type: "short",
+              prompt:
+                "In Loftus & Palmer, 'smashed' produced estimates around ___ mph (nearest 5).",
+              answer: "41",
+              keywords: ["41", "40"],
+              acceptable: ["40", "40.8", "41"],
+              explanation:
+                "~40.8 mph vs ~34 for 'contacted' — wording shifted estimates.",
+            },
+          ],
+        },
+        {
+          id: "ps-l17",
+          title: "Flashbulb memory: Brown & Kulik, Kulkofsky",
+          questions: [
+            {
+              id: "ps-l17-q1",
+              type: "mcq",
+              prompt: "Brown & Kulik (1977) proposed flashbulb memories are",
+              choices: [
+                "always accurate",
+                "vivid memories of learning about shocking events",
+                "photographic",
+                "short-term",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Special mechanism claimed for surprising, consequential events.",
+            },
+            {
+              id: "ps-l17-q2",
+              type: "mcq",
+              prompt: "Later research found flashbulb memories",
+              choices: [
+                "are immune to error",
+                "feel vivid but still contain inaccuracies over time",
+                "don't exist",
+                "only occur in children",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Confidence ≠ accuracy — key evaluation.",
+            },
+            {
+              id: "ps-l17-q3",
+              type: "tf",
+              prompt:
+                "Kulkofsky et al. found cultural differences in flashbulb memory formation and rehearsal.",
+              answer: true,
+              explanation:
+                "Collectivist vs individualist rehearsal shapes the memories.",
+            },
+            {
+              id: "ps-l17-q4",
+              type: "mcq",
+              prompt: "Emotion affects memory partly via",
+              choices: [
+                "the liver",
+                "amygdala activation enhancing consolidation",
+                "slower thinking",
+                "less attention",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Amygdala-driven arousal strengthens encoding — a biological link.",
+            },
+            {
+              id: "ps-l17-q5",
+              type: "short",
+              prompt:
+                "Brown & Kulik studied memories of events like JFK's ___ (one word).",
+              answer: "assassination",
+              keywords: ["assassin", "death", "shooting"],
+              acceptable: ["assassination", "death"],
+              explanation:
+                "JFK's assassination and similar public shocks.",
+            },
+            {
+              id: "ps-l17-q6",
+              type: "short",
+              prompt:
+                "Repeatedly retelling an event strengthens memory via ___.",
+              answer: "rehearsal",
+              keywords: ["rehearsal", "retelling"],
+              acceptable: ["rehearsal"],
+              explanation:
+                "Rehearsal — and culture shapes how often we rehearse.",
+            },
+          ],
+        },
+        {
+          id: "ps-l18",
+          title: "Thinking, biases and evaluating the cognitive approach",
+          questions: [
+            {
+              id: "ps-l18-q1",
+              type: "mcq",
+              prompt: "The availability heuristic leads people to",
+              choices: [
+                "think rationally",
+                "judge probability by how easily examples come to mind",
+                "use statistics",
+                "avoid errors",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Vivid events feel more common — a systematic bias.",
+            },
+            {
+              id: "ps-l18-q2",
+              type: "mcq",
+              prompt: "The anchoring bias means estimates are pulled toward",
+              choices: [
+                "the truth",
+                "an initial reference value",
+                "the highest option",
+                "the group's view",
+              ],
+              answerIndex: 1,
+              explanation:
+                "First numbers anchor later judgements.",
+            },
+            {
+              id: "ps-l18-q3",
+              type: "tf",
+              prompt:
+                "A strength of the cognitive approach is that it uses controlled experiments and produces testable models.",
+              answer: true,
+              explanation:
+                "Scientific method + real-world application (eyewitness testimony).",
+            },
+            {
+              id: "ps-l18-q4",
+              type: "mcq",
+              prompt: "A limitation of cognitive lab experiments is",
+              choices: [
+                "no control",
+                "artificial tasks may lack ecological validity",
+                "they're unethical",
+                "no data",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Word lists ≠ real memory — a standard evaluation.",
+            },
+            {
+              id: "ps-l18-q5",
+              type: "short",
+              prompt:
+                "The model describing memory as sensory → short-term → long-term stores = the multi-___ model.",
+              answer: "store",
+              keywords: ["store"],
+              acceptable: ["store", "stores"],
+              explanation:
+                "Atkinson & Shiffrin's multi-store model.",
+            },
+            {
+              id: "ps-l18-q6",
+              type: "short",
+              prompt:
+                "Name ONE real-world application of memory research.",
+              answer: "eyewitness testimony",
+              keywords: ["eyewitness", "court", "therapy", "education", "interview"],
+              acceptable: ["eyewitness testimony", "cognitive interview", "courtroom"],
+              explanation:
+                "Cognitive interviews, education techniques, therapy.",
+            },
+          ],
+        },
       ],
     },
     {
@@ -536,6 +1010,238 @@ export const psychology: Subject = {
               keywords: ["schema", "categor", "efficient", "bias", "effort"],
               explanation:
                 "Stereotypes are mental shortcuts — fast but error-prone social cognition.",
+            },
+          ],
+        },
+        {
+          id: "ps-l19",
+          title: "Social identity and conformity: Tajfel, Asch",
+          questions: [
+            {
+              id: "ps-l19-q1",
+              type: "mcq",
+              prompt: "Tajfel's minimal group experiments showed that",
+              choices: [
+                "groups need conflict",
+                "mere categorisation into groups produces in-group favouritism",
+                "prejudice needs teaching",
+                "boys cooperate",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Random groups → discrimination — social identity theory.",
+            },
+            {
+              id: "ps-l19-q2",
+              type: "mcq",
+              prompt: "Asch's line study found participants conformed on about",
+              choices: ["1%", "one third of critical trials", "90%", "never"],
+              answerIndex: 1,
+              explanation:
+                "~37% conformity on unambiguous lines — normative influence.",
+            },
+            {
+              id: "ps-l19-q3",
+              type: "tf",
+              prompt:
+                "Informational social influence means conforming because we believe the group is right (ambiguous situations).",
+              answer: true,
+              explanation:
+                "Normative = to be liked; informational = to be right.",
+            },
+            {
+              id: "ps-l19-q4",
+              type: "mcq",
+              prompt: "Asch's conformity dropped sharply when",
+              choices: [
+                "the group grew",
+                "one confederate gave the correct answer — breaking unanimity",
+                "lines got longer",
+                "rewards were offered",
+              ],
+              answerIndex: 1,
+              explanation:
+                "A single ally dramatically reduces conformity.",
+            },
+            {
+              id: "ps-l19-q5",
+              type: "short",
+              prompt:
+                "Tajfel: favouring your own group = in-group ___.",
+              answer: "favouritism",
+              keywords: ["favouritism", "favoritism", "bias"],
+              acceptable: ["favoritism", "bias"],
+              explanation:
+                "In-group favouritism — SIT's key finding.",
+            },
+            {
+              id: "ps-l19-q6",
+              type: "short",
+              prompt:
+                "Conforming to gain approval/avoid rejection = ___ social influence.",
+              answer: "normative",
+              keywords: ["normative"],
+              acceptable: ["normative"],
+              explanation:
+                "Normative influence — Asch's classic explanation.",
+            },
+          ],
+        },
+        {
+          id: "ps-l20",
+          title: "Learning and culture: Bandura, Berry",
+          questions: [
+            {
+              id: "ps-l20-q1",
+              type: "mcq",
+              prompt: "Bandura's Bobo doll study showed children",
+              choices: [
+                "can't imitate",
+                "imitated observed adult aggression, especially when it was rewarded",
+                "were always aggressive",
+                "ignored models",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Observational learning — vicarious reinforcement matters.",
+            },
+            {
+              id: "ps-l20-q2",
+              type: "mcq",
+              prompt: "Social learning theory adds to behaviourism the idea of",
+              choices: [
+                "genes",
+                "vicarious reinforcement — learning by watching consequences for others",
+                "punishment only",
+                "instinct",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Cognitive mediation + observation — beyond simple conditioning.",
+            },
+            {
+              id: "ps-l20-q3",
+              type: "tf",
+              prompt:
+                "Berry's acculturation model includes integration, assimilation, separation and marginalisation.",
+              answer: true,
+              explanation:
+                "Four strategies: keep/lose heritage culture × engage/isolate from host culture.",
+            },
+            {
+              id: "ps-l20-q4",
+              type: "mcq",
+              prompt: "Berry's 'integration' acculturation strategy means",
+              choices: [
+                "abandoning your culture",
+                "maintaining heritage culture while engaging with the new one",
+                "avoiding everyone",
+                "returning home",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Integration is linked to the best psychological outcomes.",
+            },
+            {
+              id: "ps-l20-q5",
+              type: "short",
+              prompt:
+                "Bandura: learning by watching others = ___ learning (one word).",
+              answer: "observational",
+              keywords: ["observational", "social", "vicarious"],
+              acceptable: ["observational", "social learning", "vicarious"],
+              explanation:
+                "Observational/social learning.",
+            },
+            {
+              id: "ps-l20-q6",
+              type: "short",
+              prompt:
+                "Berry's acculturation strategy of keeping heritage culture and avoiding the host culture = ___.",
+              answer: "separation",
+              keywords: ["separation"],
+              acceptable: ["separation"],
+              explanation:
+                "Separation — one of the four strategies.",
+            },
+          ],
+        },
+        {
+          id: "ps-l21",
+          title: "Stereotypes and the sociocultural approach evaluated",
+          questions: [
+            {
+              id: "ps-l21-q1",
+              type: "mcq",
+              prompt: "A stereotype is best defined as",
+              choices: [
+                "an accurate description",
+                "a schema generalising about a social group",
+                "a fact",
+                "a personality type",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Group schemas simplify but distort social perception.",
+            },
+            {
+              id: "ps-l21-q2",
+              type: "mcq",
+              prompt: "Stereotype threat occurs when",
+              choices: [
+                "people feel threatened by strangers",
+                "awareness of a group stereotype impairs performance on a related task",
+                "stereotypes are discussed",
+                "groups compete",
+              ],
+              answerIndex: 1,
+              explanation:
+                "e.g. performance drops when a negative group stereotype is salient.",
+            },
+            {
+              id: "ps-l21-q3",
+              type: "tf",
+              prompt:
+                "A strength of the sociocultural approach is that it explains behaviour the biological approach misses — context and culture.",
+              answer: true,
+              explanation:
+                "Complements individual-level explanations.",
+            },
+            {
+              id: "ps-l21-q4",
+              type: "mcq",
+              prompt: "A limitation of sociocultural research is that",
+              choices: [
+                "it uses labs",
+                "cultural variables are hard to isolate and measure",
+                "it is never useful",
+                "it ignores groups",
+              ],
+              answerIndex: 1,
+              explanation:
+                "'Culture' is complex and operationalising it is difficult.",
+            },
+            {
+              id: "ps-l21-q5",
+              type: "short",
+              prompt:
+                "Stereotypes may become self-fulfilling through a self-fulfilling ___.",
+              answer: "prophecy",
+              keywords: ["prophecy"],
+              acceptable: ["prophecy"],
+              explanation:
+                "Expectations shape behaviour toward the stereotype.",
+            },
+            {
+              id: "ps-l21-q6",
+              type: "short",
+              prompt:
+                "Name ONE factor that reduces conformity in Asch's studies.",
+              answer: "an ally / dissenter",
+              keywords: ["ally", "dissent", "unanimity", "private", "task difficulty"],
+              acceptable: ["a dissenter", "private responding", "broken unanimity"],
+              explanation:
+                "An ally, private answers, harder tasks — all reduce conformity.",
             },
           ],
         },
@@ -793,6 +1499,165 @@ export const psychology: Subject = {
             },
           ],
         },
+        {
+          id: "ps-l22",
+          title: "Ethics and evaluating research methods",
+          questions: [
+            {
+              id: "ps-l22-q1",
+              type: "mcq",
+              prompt: "Informed consent means participants",
+              choices: [
+                "are paid",
+                "agree to take part knowing the study's nature and their rights",
+                "are deceived",
+                "can't withdraw",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Plus the right to withdraw and confidentiality.",
+            },
+            {
+              id: "ps-l22-q2",
+              type: "mcq",
+              prompt: "Deception is sometimes permitted when",
+              choices: [
+                "it's convenient",
+                "knowledge of aims would change behaviour — if it causes no harm and is followed by debriefing",
+                "researchers feel like it",
+                "participants are students",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Demand characteristics justify deception; debriefing is mandatory.",
+            },
+            {
+              id: "ps-l22-q3",
+              type: "tf",
+              prompt:
+                "Reliability means getting consistent results; validity means measuring what you claim to measure.",
+              answer: true,
+              explanation:
+                "A study can be reliable but invalid — e.g. a biased task given twice.",
+            },
+            {
+              id: "ps-l22-q4",
+              type: "mcq",
+              prompt: "Opportunity sampling means",
+              choices: [
+                "random selection",
+                "using whoever is available and willing",
+                "volunteers from adverts",
+                "a balanced design",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Easy but unrepresentative — a common IA method.",
+            },
+            {
+              id: "ps-l22-q5",
+              type: "short",
+              prompt:
+                "Participants changing behaviour because they guess the study's aim = ___ characteristics.",
+              answer: "demand",
+              keywords: ["demand"],
+              acceptable: ["demand characteristics"],
+              explanation:
+                "Demand characteristics threaten validity.",
+            },
+            {
+              id: "ps-l22-q6",
+              type: "short",
+              prompt:
+                "Protecting participants' identity by anonymising data = ___.",
+              answer: "confidentiality",
+              keywords: ["confidential", "anonym"],
+              acceptable: ["confidentiality", "anonymity"],
+              explanation:
+                "Confidentiality/anonymity — a core ethical protection.",
+            },
+          ],
+        },
+        {
+          id: "ps-l23",
+          title: "HL: qualitative methods and the IA write-up",
+          level: "HL",
+          questions: [
+            {
+              id: "ps-l23-q1",
+              type: "mcq",
+              prompt: "HL: a semi-structured interview",
+              choices: [
+                "reads a fixed script",
+                "uses prepared questions but allows follow-ups and flexibility",
+                "has no questions",
+                "is quantitative",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Balance of comparability and depth.",
+            },
+            {
+              id: "ps-l23-q2",
+              type: "mcq",
+              prompt: "HL: the purpose of triangulation in qualitative research is",
+              choices: [
+                "statistics",
+                "cross-checking findings from multiple sources/methods for credibility",
+                "random sampling",
+                "longer interviews",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Triangulation strengthens qualitative trustworthiness.",
+            },
+            {
+              id: "ps-l23-q3",
+              type: "tf",
+              prompt:
+                "In the psychology IA you replicate and modify a published study — originality is not required.",
+              answer: true,
+              explanation:
+                "The IA assesses method and analysis, not novelty.",
+            },
+            {
+              id: "ps-l23-q4",
+              type: "mcq",
+              prompt: "In the IA, descriptive statistics to report include",
+              choices: [
+                "only raw data",
+                "means/medians and measures of spread (range, SD)",
+                "p-values only",
+                "graphs only",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Central tendency + spread before inferential tests.",
+            },
+            {
+              id: "ps-l23-q5",
+              type: "short",
+              prompt:
+                "HL: analysing interview transcripts for recurring themes = ___ analysis (or thematic).",
+              answer: "thematic",
+              keywords: ["thematic", "content", "inductive"],
+              acceptable: ["thematic analysis", "content analysis"],
+              explanation:
+                "Thematic/inductive content analysis.",
+            },
+            {
+              id: "ps-l23-q6",
+              type: "short",
+              prompt:
+                "The IA section where you justify design, controls and procedures = the ___ section.",
+              answer: "method",
+              keywords: ["method"],
+              acceptable: ["method", "methodology"],
+              explanation:
+                "Design, participants, materials, procedure, ethics.",
+            },
+          ],
+        },
       ],
     },
     {
@@ -1045,6 +1910,165 @@ export const psychology: Subject = {
               keywords: ["community", "support", "connect", "identity"],
               explanation:
                 "Connectivity can buffer isolation and enable hybrid identities.",
+            },
+          ],
+        },
+        {
+          id: "ps-l24",
+          title: "Abnormal psychology: prevalence, explanations, treatment",
+          questions: [
+            {
+              id: "ps-l24-q1",
+              type: "mcq",
+              prompt: "'Prevalence' of a disorder means",
+              choices: [
+                "its severity",
+                "the proportion of a population with the disorder at a given time",
+                "its cause",
+                "its cure rate",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Prevalence rates vary by culture and gender — key discussion material.",
+            },
+            {
+              id: "ps-l24-q2",
+              type: "mcq",
+              prompt: "Biological explanations of depression focus on",
+              choices: [
+                "dreams",
+                "neurotransmitter imbalances and genetic vulnerability",
+                "punishment",
+                "stereotypes",
+              ],
+              answerIndex: 1,
+              explanation:
+                "e.g. low serotonin; twin studies show heritability — evaluate alongside cognition.",
+            },
+            {
+              id: "ps-l24-q3",
+              type: "tf",
+              prompt:
+                "Cognitive explanations of depression include Beck's negative triad — negative views of self, world and future.",
+              answer: true,
+              explanation:
+                "CBT targets these distorted thought patterns.",
+            },
+            {
+              id: "ps-l24-q4",
+              type: "mcq",
+              prompt: "CBT treats depression by",
+              choices: [
+                "prescribing drugs",
+                "identifying and challenging maladaptive thoughts and behaviours",
+                "hospitalisation",
+                "hypnosis",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Cognitive restructuring + behavioural activation.",
+            },
+            {
+              id: "ps-l24-q5",
+              type: "short",
+              prompt:
+                "Drug class commonly used to treat depression by increasing serotonin availability (acronym).",
+              answer: "SSRI",
+              keywords: ["ssri", "antidepressant", "prozac"],
+              acceptable: ["SSRIs", "antidepressants"],
+              explanation:
+                "SSRIs (e.g. fluoxetine) — evaluate efficacy vs CBT.",
+            },
+            {
+              id: "ps-l24-q6",
+              type: "short",
+              prompt:
+                "Explaining disorders by combining biology, psychology and social factors = the ___ model (diathesis-stress accepted).",
+              answer: "biopsychosocial",
+              keywords: ["biopsychosocial", "diathesis", "vulnerability"],
+              acceptable: ["diathesis-stress", "biopsychosocial model"],
+              explanation:
+                "Integrative models — good evaluation anchor.",
+            },
+          ],
+        },
+        {
+          id: "ps-l25",
+          title: "HL extensions: animal research, technology and globalisation",
+          level: "HL",
+          questions: [
+            {
+              id: "ps-l25-q1",
+              type: "mcq",
+              prompt: "HL: a key ethical issue in animal research is",
+              choices: [
+                "cost",
+                "whether harm to animals is justified by the potential human benefit",
+                "speed",
+                "sample size",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Bateson's cube weighs certainty of benefit vs suffering vs quality of research.",
+            },
+            {
+              id: "ps-l25-q2",
+              type: "mcq",
+              prompt: "HL: research on cognition in the digital world suggests heavy media multitasking",
+              choices: [
+                "improves memory",
+                "is associated with reduced attention control in some studies",
+                "has no effects",
+                "increases IQ",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Correlational evidence — evaluate causality carefully.",
+            },
+            {
+              id: "ps-l25-q3",
+              type: "tf",
+              prompt:
+                "HL: globalisation may increase acculturative stress while also spreading universalist psychological theories.",
+              answer: true,
+              explanation:
+                "A tension between emic (culture-specific) and etic (universal) claims.",
+            },
+            {
+              id: "ps-l25-q4",
+              type: "mcq",
+              prompt: "The 'etic' approach in psychology assumes",
+              choices: [
+                "all behaviour is cultural",
+                "psychological principles apply universally across cultures",
+                "nothing is universal",
+                "only animals matter",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Etic = universal claims; emic = culture-specific understanding.",
+            },
+            {
+              id: "ps-l25-q5",
+              type: "short",
+              prompt:
+                "HL: name ONE ethical safeguard used in animal research.",
+              answer: "minimising suffering / housing standards",
+              keywords: ["suffering", "housing", "anaesthet", "ethics", "committee", "reduce", "replace", "refine"],
+              acceptable: ["the 3Rs", "ethical review", "anaesthesia"],
+              explanation:
+                "The 3Rs: replace, reduce, refine.",
+            },
+            {
+              id: "ps-l25-q6",
+              type: "short",
+              prompt:
+                "Culture-specific (inside) understanding of behaviour = the ___ approach.",
+              answer: "emic",
+              keywords: ["emic"],
+              acceptable: ["emic approach"],
+              explanation:
+                "Emic vs etic — the HL globalisation debate.",
             },
           ],
         },

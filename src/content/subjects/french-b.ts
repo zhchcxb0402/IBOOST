@@ -177,6 +177,205 @@ export const frenchB: Subject = {
             },
           ],
         },
+        {
+          id: "fb-l12",
+          title: "Identités : lecture et vocabulaire",
+          questions: [
+            {
+              id: "fb-l12-q1",
+              type: "mcq",
+              prompt:
+                "Lis : « Bien qu'elle soit née à Dakar, Aïcha a grandi à Montréal. Elle se sent chez elle dans les deux cultures. » — « a grandi » signifie",
+              choices: ["was born", "grew up", "studied", "travelled"],
+              answerIndex: 1,
+              explanation:
+                "« grandir » = to grow up (passé composé : a grandi).",
+            },
+            {
+              id: "fb-l12-q2",
+              type: "mcq",
+              prompt: "« se sentir chez soi » signifie",
+              choices: [
+                "to stay at home",
+                "to feel at home / to belong",
+                "to be homesick",
+                "to work from home",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Se sentir chez soi = feel at home, feel you belong.",
+            },
+            {
+              id: "fb-l12-q3",
+              type: "tf",
+              prompt:
+                "« Je m'entends bien avec ma sœur » — « s'entendre avec » means 'to get along with'.",
+              answer: true,
+              explanation:
+                "S'entendre (bien/mal) avec quelqu'un.",
+            },
+            {
+              id: "fb-l12-q4",
+              type: "mcq",
+              prompt:
+                "« Elle est fière de ses racines. » — « les racines » refers to",
+              choices: ["hair", "family trees", "cultural origins", "plants"],
+              answerIndex: 2,
+              explanation:
+                "Racines = roots — vocabulaire de l'identité.",
+            },
+            {
+              id: "fb-l12-q5",
+              type: "short",
+              prompt:
+                "Traduis : 'self-esteem' (deux mots en français).",
+              answer: "l'estime de soi",
+              keywords: ["estime"],
+              acceptable: ["estime de soi", "la confiance en soi"],
+              explanation:
+                "L'estime de soi — also « la confiance en soi ».",
+            },
+            {
+              id: "fb-l12-q6",
+              type: "short",
+              prompt:
+                "Complète : « Je suis fière de mes ___ » (origines/racines).",
+              answer: "racines",
+              keywords: ["racines", "origines"],
+              acceptable: ["origines"],
+              explanation:
+                "Ses racines = her roots.",
+            },
+          ],
+        },
+        {
+          id: "fb-l13",
+          title: "Les pronoms relatifs : qui, que, dont",
+          questions: [
+            {
+              id: "fb-l13-q1",
+              type: "mcq",
+              prompt: "« Le garçon ___ habite à côté est médecin. »",
+              choices: ["que", "qui", "dont", "où"],
+              answerIndex: 1,
+              explanation:
+                "Subject of the relative clause → « qui ».",
+            },
+            {
+              id: "fb-l13-q2",
+              type: "mcq",
+              prompt: "« Le livre ___ je lis est passionnant. »",
+              choices: ["qui", "que", "dont", "lequel"],
+              answerIndex: 1,
+              explanation:
+                "Direct object of « lire » → « que ».",
+            },
+            {
+              id: "fb-l13-q3",
+              type: "tf",
+              prompt:
+                "« Le film dont je t'ai parlé » uses « dont » to replace « de + noun ».",
+              answer: true,
+              explanation:
+                "« parler de » → « dont » in the relative clause.",
+            },
+            {
+              id: "fb-l13-q4",
+              type: "mcq",
+              prompt: "« La ville ___ je suis né est très petite. »",
+              choices: ["que", "qui", "où", "dont"],
+              answerIndex: 2,
+              explanation:
+                "Place (or time) → « où ».",
+            },
+            {
+              id: "fb-l13-q5",
+              type: "short",
+              prompt:
+                "Complète : « C'est l'ami ___ je t'ai parlé. » (parler DE)",
+              answer: "dont",
+              keywords: ["dont"],
+              acceptable: ["dont"],
+              explanation:
+                "de + l'ami → « dont ».",
+            },
+            {
+              id: "fb-l13-q6",
+              type: "short",
+              prompt:
+                "Complète : « la fille ___ chante » (subject = she who sings).",
+              answer: "qui",
+              keywords: ["qui"],
+              acceptable: ["qui chante"],
+              explanation:
+                "Subject relative pronoun → « qui ».",
+            },
+          ],
+        },
+        {
+          id: "fb-l14",
+          title: "Conditionnel, futur simple et impératif",
+          questions: [
+            {
+              id: "fb-l14-q1",
+              type: "mcq",
+              prompt: "« Demain, j'___ chez le médecin. » (aller, futur)",
+              choices: ["vais", "irai", "allais", "suis allé"],
+              answerIndex: 1,
+              explanation:
+                "Futur simple d'« aller », je → irai (radical irrégulier ir-).",
+            },
+            {
+              id: "fb-l14-q2",
+              type: "mcq",
+              prompt: "« J'___ vivre à la campagne. » (aimer, conditionnel)",
+              choices: ["aime", "aimais", "aimerais", "aimerai"],
+              answerIndex: 2,
+              explanation:
+                "Conditionnel « aimerais » = would like.",
+            },
+            {
+              id: "fb-l14-q3",
+              type: "tf",
+              prompt:
+                "The futur simple uses infinitive + endings (-ai, -as, -a…); the conditional uses the same stem + imparfait endings.",
+              answer: true,
+              explanation:
+                "je finirai (futur) vs je finirais (conditionnel).",
+            },
+            {
+              id: "fb-l14-q4",
+              type: "mcq",
+              prompt: "Impératif (tu) de « finir » :",
+              choices: ["finis", "finit", "finissez", "finissons"],
+              answerIndex: 0,
+              explanation:
+                "Tu-imperative = tu-form without -s for -ir verbs: « finis ».",
+            },
+            {
+              id: "fb-l14-q5",
+              type: "short",
+              prompt:
+                "Conjugue (futur, elle) : « être » → ___.",
+              answer: "sera",
+              keywords: ["sera"],
+              acceptable: ["sera"],
+              explanation:
+                "Radical irrégulier ser- : elle sera.",
+            },
+            {
+              id: "fb-l14-q6",
+              type: "short",
+              prompt:
+                "Impératif (nous) de « manger » : « ___ ensemble ! »",
+              answer: "mangeons",
+              keywords: ["mangeons"],
+              acceptable: ["Mangeons"],
+              explanation:
+                "Nous-form without subject = imperative: mangeons !",
+            },
+          ],
+        },
       ],
     },
     {
@@ -306,6 +505,219 @@ export const frenchB: Subject = {
               keywords: ["belles"],
               explanation:
                 "beau → belle → belles (feminine plural).",
+            },
+          ],
+        },
+        {
+          id: "fb-l15",
+          title: "Expériences : lecture d'un récit de voyage",
+          questions: [
+            {
+              id: "fb-l15-q1",
+              type: "mcq",
+              prompt:
+                "Lis : « L'année dernière, j'ai décidé de voyager seule en Amérique du Sud. Au début, j'avais peur, mais j'ai vite rencontré des gens incroyables. » — La narratrice",
+              choices: [
+                "travelled with friends",
+                "travelled alone",
+                "never left home",
+                "was never afraid",
+              ],
+              answerIndex: 1,
+              explanation:
+                "« voyager seule » = travel alone (feminine agreement).",
+            },
+            {
+              id: "fb-l15-q2",
+              type: "mcq",
+              prompt: "« au début » signifie",
+              choices: ["at the end", "at first", "however", "therefore"],
+              answerIndex: 1,
+              explanation:
+                "« au début » = at the beginning.",
+            },
+            {
+              id: "fb-l15-q3",
+              type: "tf",
+              prompt:
+                "« j'ai vite rencontré » uses the passé composé for a completed past action.",
+              answer: true,
+              explanation:
+                "Passé composé = completed event; imparfait = background/habit.",
+            },
+            {
+              id: "fb-l15-q4",
+              type: "mcq",
+              prompt: "« Ce voyage a changé ma vie » means the trip",
+              choices: [
+                "cost a lot",
+                "changed her life",
+                "was boring",
+                "ended early",
+              ],
+              answerIndex: 1,
+              explanation:
+                "« changer » = to change.",
+            },
+            {
+              id: "fb-l15-q5",
+              type: "short",
+              prompt:
+                "Traduis : 'I met amazing people' (rencontrer, passé composé).",
+              answer: "j'ai rencontré des gens incroyables",
+              keywords: ["rencontré", "rencontre"],
+              acceptable: ["ai rencontré des gens incroyables", "j'ai rencontre des gens incroyables"],
+              explanation:
+                "Passé composé : j'ai rencontré.",
+            },
+            {
+              id: "fb-l15-q6",
+              type: "short",
+              prompt:
+                "Complète : « faire un ___ » (to take a trip).",
+              answer: "voyage",
+              keywords: ["voyage"],
+              acceptable: ["un voyage"],
+              explanation:
+                "« Faire un voyage » = take a trip.",
+            },
+          ],
+        },
+        {
+          id: "fb-l16",
+          title: "La négation et les comparaisons",
+          questions: [
+            {
+              id: "fb-l16-q1",
+              type: "mcq",
+              prompt: "« Je ne mange ___ viande. » (I no longer eat meat)",
+              choices: ["pas de", "jamais de", "plus de", "rien de"],
+              answerIndex: 2,
+              explanation:
+                "« ne…plus » = no longer / not any more.",
+            },
+            {
+              id: "fb-l16-q2",
+              type: "mcq",
+              prompt: "« Personne n'est venu. » — « personne » here means",
+              choices: ["somebody", "nobody", "everybody", "a person"],
+              answerIndex: 1,
+              explanation:
+                "« ne…personne » / « personne ne… » = nobody.",
+            },
+            {
+              id: "fb-l16-q3",
+              type: "tf",
+              prompt:
+                "« plus…que » makes a comparison of superiority: « Paris est plus grand que Lyon. »",
+              answer: true,
+              explanation:
+                "plus/moins/aussi + adjective + que = comparative.",
+            },
+            {
+              id: "fb-l16-q4",
+              type: "mcq",
+              prompt: "« Mon frère est ___ moi. » (as tall as)",
+              choices: [
+                "plus grand que",
+                "aussi grand que",
+                "moins grand",
+                "le plus grand",
+              ],
+              answerIndex: 1,
+              explanation:
+                "« aussi…que » = equality (as…as).",
+            },
+            {
+              id: "fb-l16-q5",
+              type: "short",
+              prompt:
+                "Traduis : 'nothing' in a negative sentence — « Je ne vois ___. »",
+              answer: "rien",
+              keywords: ["rien"],
+              acceptable: ["rien"],
+              explanation:
+                "« ne…rien » = nothing.",
+            },
+            {
+              id: "fb-l16-q6",
+              type: "short",
+              prompt:
+                "Superlatif : « le ___ grand pays du monde » (the biggest).",
+              answer: "plus",
+              keywords: ["plus"],
+              acceptable: ["le plus grand"],
+              explanation:
+                "« le plus + adjective » = superlative.",
+            },
+          ],
+        },
+        {
+          id: "fb-l17",
+          title: "Passé composé ou imparfait : révision",
+          questions: [
+            {
+              id: "fb-l17-q1",
+              type: "mcq",
+              prompt: "« Quand j'___ enfant, je jouais dehors. » (être)",
+              choices: ["ai été", "étais", "étais allé", "suis"],
+              answerIndex: 1,
+              explanation:
+                "Background state in the past → imparfait « j'étais ».",
+            },
+            {
+              id: "fb-l17-q2",
+              type: "mcq",
+              prompt: "« Soudain, le téléphone ___ . » (sonner — sudden event)",
+              choices: ["sonnait", "a sonné", "sonne", "sonnera"],
+              answerIndex: 1,
+              explanation:
+                "Sudden completed event → passé composé.",
+            },
+            {
+              id: "fb-l17-q3",
+              type: "tf",
+              prompt:
+                "« Tous les jours » (every day) signals a habit → imparfait.",
+              answer: true,
+              explanation:
+                "Time markers: « toujours, souvent, tous les jours » → imparfait.",
+            },
+            {
+              id: "fb-l17-q4",
+              type: "mcq",
+              prompt: "« Il pleuvait quand nous ___ . » (partir)",
+              choices: [
+                "partions",
+                "sommes partis",
+                "partons",
+                "partirons",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Ongoing rain (imparfait) interrupted by departure (passé composé).",
+            },
+            {
+              id: "fb-l17-q5",
+              type: "short",
+              prompt:
+                "Passé composé of « aller » (je): « je ___ allé ».",
+              answer: "suis",
+              keywords: ["suis"],
+              acceptable: ["suis allé", "je suis allé(e)"],
+              explanation:
+                "aller uses être : je suis allé(e).",
+            },
+            {
+              id: "fb-l17-q6",
+              type: "short",
+              prompt:
+                "Imparfait of « faire » (nous): « nous ___ ».",
+              answer: "faisions",
+              keywords: ["faisions"],
+              acceptable: ["faisions"],
+              explanation:
+                "Radical fais- + -ions.",
             },
           ],
         },
@@ -475,6 +887,231 @@ export const frenchB: Subject = {
             },
           ],
         },
+        {
+          id: "fb-l18",
+          title: "Organisation sociale : lecture et connecteurs",
+          questions: [
+            {
+              id: "fb-l18-q1",
+              type: "mcq",
+              prompt:
+                "Lis : « La mairie a lancé un programme de bénévolat. Les habitants peuvent s'inscrire gratuitement le samedi matin. » — Le programme est",
+              choices: [
+                "payant",
+                "gratuit pour les habitants",
+                "réservé aux étudiants",
+                "annulé",
+              ],
+              answerIndex: 1,
+              explanation:
+                "« s'inscrire gratuitement » = sign up free.",
+            },
+            {
+              id: "fb-l18-q2",
+              type: "mcq",
+              prompt: "« lancer un programme » signifie",
+              choices: ["to cancel", "to launch", "to close", "to delay"],
+              answerIndex: 1,
+              explanation:
+                "Lancer = to launch/start.",
+            },
+            {
+              id: "fb-l18-q3",
+              type: "tf",
+              prompt:
+                "« la mairie » means the town hall — local government.",
+              answer: true,
+              explanation:
+                "La mairie / l'hôtel de ville.",
+            },
+            {
+              id: "fb-l18-q4",
+              type: "mcq",
+              prompt: "Connecteur d'ajout : « ___ c'est gratuit, c'est amusant. »",
+              choices: ["Mais", "De plus", "Cependant", "Parce que"],
+              answerIndex: 1,
+              explanation:
+                "« De plus » / « en plus » = furthermore.",
+            },
+            {
+              id: "fb-l18-q5",
+              type: "short",
+              prompt:
+                "Traduis : 'a volunteer' (un mot).",
+              answer: "un bénévole",
+              keywords: ["bénévole", "benevole", "volontaire"],
+              acceptable: ["benevole", "un volontaire", "volontaire"],
+              explanation:
+                "Un bénévole / un volontaire.",
+            },
+            {
+              id: "fb-l18-q6",
+              type: "short",
+              prompt:
+                "Traduis : 'to sign up / register' (verbe pronominal).",
+              answer: "s'inscrire",
+              keywords: ["inscrire", "inscire"],
+              acceptable: ["s'inscrire", "s'inscire", "s’inscrire"],
+              explanation:
+                "S'inscrire (à quelque chose).",
+            },
+          ],
+        },
+        {
+          id: "fb-l19",
+          title: "Partager la planète : l'environnement",
+          questions: [
+            {
+              id: "fb-l19-q1",
+              type: "mcq",
+              prompt:
+                "« Il faut réduire la consommation de plastique à usage unique. » — « à usage unique » means",
+              choices: [
+                "reusable",
+                "single-use",
+                "recycled",
+                "expensive",
+              ],
+              answerIndex: 1,
+              explanation:
+                "« à usage unique » = disposable / single-use.",
+            },
+            {
+              id: "fb-l19-q2",
+              type: "mcq",
+              prompt: "« le changement climatique » signifie",
+              choices: [
+                "the weather forecast",
+                "climate change",
+                "a season",
+                "a storm",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Vocabulaire environnemental clé.",
+            },
+            {
+              id: "fb-l19-q3",
+              type: "tf",
+              prompt:
+                "« les énergies renouvelables » include solar and wind power.",
+              answer: true,
+              explanation:
+                "Solaire, éolienne, hydraulique.",
+            },
+            {
+              id: "fb-l19-q4",
+              type: "mcq",
+              prompt: "« l'empreinte carbone » est",
+              choices: [
+                "a shoe brand",
+                "the carbon footprint",
+                "a type of fuel",
+                "a forest",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Empreinte = footprint.",
+            },
+            {
+              id: "fb-l19-q5",
+              type: "short",
+              prompt:
+                "Traduis : 'to recycle' (infinitif).",
+              answer: "recycler",
+              keywords: ["recycler", "recicler"],
+              acceptable: ["recicler"],
+              explanation:
+                "Recycler — verbe régulier en -er.",
+            },
+            {
+              id: "fb-l19-q6",
+              type: "short",
+              prompt:
+                "Complète : « Nous devons ___ la planète » (protéger).",
+              answer: "protéger",
+              keywords: ["protéger", "proteger", "sauver"],
+              acceptable: ["proteger", "sauver"],
+              explanation:
+                "Protéger / sauver la planète.",
+            },
+          ],
+        },
+        {
+          id: "fb-l20",
+          title: "Lecture : « Un quartier durable »",
+          questions: [
+            {
+              id: "fb-l20-q1",
+              type: "mcq",
+              prompt:
+                "Lis : « Dans notre quartier, nous avons installé des panneaux solaires et un jardin partagé. Grâce à cela, la facture d'électricité a baissé de 30 %. » — La facture",
+              choices: [
+                "a augmenté",
+                "a diminué",
+                "n'a pas changé",
+                "a été annulée",
+              ],
+              answerIndex: 1,
+              explanation:
+                "« a baissé » = went down.",
+            },
+            {
+              id: "fb-l20-q2",
+              type: "mcq",
+              prompt: "« un jardin partagé » est",
+              choices: [
+                "a private garden",
+                "a community garden",
+                "a shopping centre",
+                "a school",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Partagé = shared.",
+            },
+            {
+              id: "fb-l20-q3",
+              type: "tf",
+              prompt:
+                "« grâce à » introduces a positive cause — 'thanks to'.",
+              answer: true,
+              explanation:
+                "Grâce à = positive; à cause de = negative.",
+            },
+            {
+              id: "fb-l20-q4",
+              type: "mcq",
+              prompt: "« les panneaux solaires » produisent",
+              choices: ["du vent", "de l'électricité", "de l'eau", "du gaz"],
+              answerIndex: 1,
+              explanation:
+                "L'énergie solaire.",
+            },
+            {
+              id: "fb-l20-q5",
+              type: "short",
+              prompt:
+                "De combien a baissé la facture ? (un nombre avec %)",
+              answer: "30%",
+              keywords: ["30"],
+              acceptable: ["30", "30 pour cent", "30 %"],
+              explanation:
+                "« a baissé de 30 % ».",
+            },
+            {
+              id: "fb-l20-q6",
+              type: "short",
+              prompt:
+                "Traduis : 'the electricity bill' (deux mots).",
+              answer: "la facture d'électricité",
+              keywords: ["facture", "électricité", "electricite"],
+              acceptable: ["la facture", "la facture d'electricite"],
+              explanation:
+                "La facture d'électricité.",
+            },
+          ],
+        },
       ],
     },
     {
@@ -638,6 +1275,238 @@ export const frenchB: Subject = {
               acceptable: ["a quotation", "the proving sentence"],
               explanation:
                 "Cite the textual evidence — not just true/false.",
+            },
+          ],
+        },
+        {
+          id: "fb-l21",
+          title: "Types de texte : courriel, article, discours",
+          questions: [
+            {
+              id: "fb-l21-q1",
+              type: "mcq",
+              prompt: "Un courriel formel commence par",
+              choices: [
+                "« Salut ! »",
+                "« Madame, » ou « Monsieur, » / « Cher Monsieur Dupont, »",
+                "« Coucou, »",
+                "« Yo, »",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Registre formel : « Madame, / Monsieur, » ou « Cher/Chère + nom ».",
+            },
+            {
+              id: "fb-l21-q2",
+              type: "mcq",
+              prompt: "Un article de magazine scolaire a généralement",
+              choices: [
+                "pas de titre",
+                "un titre accrocheur, des paragraphes et un ton semi-formel",
+                "seulement des opinions",
+                "des chiffres",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Article : titre, introduction, développement, conclusion.",
+            },
+            {
+              id: "fb-l21-q3",
+              type: "tf",
+              prompt:
+                "Un discours s'adresse directement au public et utilise des questions rhétoriques.",
+              answer: true,
+              explanation:
+                "« Chers camarades », questions rhétoriques, appel à l'action.",
+            },
+            {
+              id: "fb-l21-q4",
+              type: "mcq",
+              prompt: "Une brochure informative contient",
+              choices: [
+                "de longs chapitres",
+                "du texte court, des sections, des données et souvent des images",
+                "une interview",
+                "de la poésie",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Brochure : information visuelle, langage persuasif.",
+            },
+            {
+              id: "fb-l21-q5",
+              type: "short",
+              prompt:
+                "Formule de politesse pour finir une lettre formelle : « Je vous prie d'agréer… » ou « Cordialement » — écris-en une.",
+              answer: "cordialement",
+              keywords: ["cordialement", "agréer", "salutations"],
+              acceptable: ["cordialement", "veuillez agréer", "salutations distinguées"],
+              explanation:
+                "« Cordialement » / formules de politesse.",
+            },
+            {
+              id: "fb-l21-q6",
+              type: "short",
+              prompt:
+                "Dans une critique (review), la partie finale qui recommande s'appelle la ___.",
+              answer: "conclusion",
+              keywords: ["conclusion", "recommandation"],
+              acceptable: ["la conclusion", "recommandation"],
+              explanation:
+                "La conclusion/recommandation clôt la critique.",
+            },
+          ],
+        },
+        {
+          id: "fb-l22",
+          title: "Interview et critique : conventions",
+          questions: [
+            {
+              id: "fb-l22-q1",
+              type: "mcq",
+              prompt: "Une interview écrite est généralement au format",
+              choices: [
+                "de longs paragraphes",
+                "questions-réponses (interviewer/interviewé)",
+                "d'une lettre",
+                "d'une liste",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Format Q&R avec le nom de qui parle.",
+            },
+            {
+              id: "fb-l22-q2",
+              type: "mcq",
+              prompt: "Une critique de livre doit inclure",
+              choices: [
+                "seulement le résumé",
+                "une brève description, une évaluation et une recommandation",
+                "aucune opinion",
+                "seulement le prix",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Critique = décrire + évaluer + recommander.",
+            },
+            {
+              id: "fb-l22-q3",
+              type: "tf",
+              prompt:
+                "Dans une interview formelle on utilise « vous » ; « tu » pour l'informel.",
+              answer: true,
+              explanation:
+                "Tu/vous — choix de registre essentiel.",
+            },
+            {
+              id: "fb-l22-q4",
+              type: "mcq",
+              prompt: "Adjectif positif pour une critique :",
+              choices: ["ennuyeux", "passionnant", "terrible", "médiocre"],
+              answerIndex: 1,
+              explanation:
+                "« passionnant », « impressionnant », « émouvant » = positifs.",
+            },
+            {
+              id: "fb-l22-q5",
+              type: "short",
+              prompt:
+                "Traduis : 'an interview' (le nom, féminin).",
+              answer: "une interview",
+              keywords: ["interview", "entretien", "entrevue"],
+              acceptable: ["interview", "un entretien", "une entrevue"],
+              explanation:
+                "Une interview / un entretien.",
+            },
+            {
+              id: "fb-l22-q6",
+              type: "short",
+              prompt:
+                "Traduis : 'I would recommend this film' (recommander, conditionnel).",
+              answer: "je recommanderais",
+              keywords: ["recommanderais", "conseillerais", "recommande"],
+              acceptable: ["recommanderais", "je conseillerais"],
+              explanation:
+                "« Je recommanderais ce film. »",
+            },
+          ],
+        },
+        {
+          id: "fb-l23",
+          title: "Stratégies d'examen : écoute et lecture",
+          questions: [
+            {
+              id: "fb-l23-q1",
+              type: "mcq",
+              prompt: "Avant d'écouter l'audio à l'examen, il faut",
+              choices: [
+                "fermer les yeux",
+                "lire les questions et prédire le contenu",
+                "écrire les réponses",
+                "attendre",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Prédire le vocabulaire aide à capter l'essentiel.",
+            },
+            {
+              id: "fb-l23-q2",
+              type: "mcq",
+              prompt: "Si tu ne comprends pas un mot en lisant, d'abord",
+              choices: [
+                "utiliser le dictionnaire",
+                "déduire le sens du contexte",
+                "sauter la question",
+                "le traduire",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Le contexte révèle souvent le sens.",
+            },
+            {
+              id: "fb-l23-q3",
+              type: "tf",
+              prompt:
+                "En compréhension orale, les questions suivent généralement l'ordre du texte.",
+              answer: true,
+              explanation:
+                "Les réponses apparaissent séquentiellement.",
+            },
+            {
+              id: "fb-l23-q4",
+              type: "mcq",
+              prompt: "« Distinguer les faits des opinions » est une compétence de",
+              choices: [
+                "l'écriture",
+                "la lecture critique",
+                "la prononciation",
+                "la grammaire",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Fait vs opinion = lecture critique (Paper 2).",
+            },
+            {
+              id: "fb-l23-q5",
+              type: "short",
+              prompt:
+                "Combien de tâches d'écriture faut-il faire au Paper 1 de French B ? (un chiffre)",
+              answer: "1",
+              keywords: ["1"],
+              acceptable: ["une", "un"],
+              explanation:
+                "Un texte choisi parmi trois.",
+            },
+            {
+              id: "fb-l23-q6",
+              type: "short",
+              prompt:
+                "Technique : lire vite pour l'idée générale (en anglais 'skimming').",
+              answer: "lecture rapide",
+              keywords: ["rapide", "survol", "skim"],
+              acceptable: ["survoler le texte", "skimming", "lecture globale"],
+              explanation:
+                "Survoler le texte = skimming.",
             },
           ],
         },
@@ -881,6 +1750,168 @@ export const frenchB: Subject = {
               acceptable: ["en revanche", "par contre", "d'un autre côté", "cependant"],
               explanation:
                 "«En revanche», «par contre», «d'un autre côté» — contrast signposts.",
+            },
+          ],
+        },
+        {
+          id: "fb-l24",
+          title: "HL : analyse d'un extrait littéraire",
+          level: "HL",
+          questions: [
+            {
+              id: "fb-l24-q1",
+              type: "mcq",
+              prompt:
+                "Au Paper 2 de HL, un extrait littéraire peut apparaître. L'analyse porte sur",
+              choices: [
+                "seulement l'intrigue",
+                "comment la langue crée personnages, atmosphère et thème",
+                "la biographie de l'auteur",
+                "la traduction",
+              ],
+              answerIndex: 1,
+              explanation:
+                "HL exige l'analyse des techniques de l'auteur.",
+            },
+            {
+              id: "fb-l24-q2",
+              type: "mcq",
+              prompt:
+                "Lis : « La maison respirait le silence ; même l'horloge semblait battre plus doucement. » — L'effet principal est",
+              choices: [
+                "la personnification",
+                "la rime",
+                "les statistiques",
+                "une question",
+              ],
+              answerIndex: 0,
+              explanation:
+                "La maison « respire », l'horloge « bat » — personnification.",
+            },
+            {
+              id: "fb-l24-q3",
+              type: "tf",
+              prompt:
+                "Un narrateur à la première personne donne accès à ses pensées mais peut être peu fiable.",
+              answer: true,
+              explanation:
+                "La perspective narrative façonne notre lecture.",
+            },
+            {
+              id: "fb-l24-q4",
+              type: "mcq",
+              prompt: "Le « ton » d'un extrait renvoie à",
+              choices: [
+                "le volume",
+                "l'attitude de l'auteur exprimée par le choix des mots",
+                "la police",
+                "le décor",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Ton = attitude (ironique, nostalgique, critique…) par la diction.",
+            },
+            {
+              id: "fb-l24-q5",
+              type: "short",
+              prompt:
+                "Nomme la figure de style : « Il était un rocher dans la tempête. » (un mot)",
+              answer: "métaphore",
+              keywords: ["métaphore", "metaphore"],
+              acceptable: ["metaphore", "une métaphore"],
+              explanation:
+                "Comparaison directe sans « comme » = métaphore.",
+            },
+            {
+              id: "fb-l24-q6",
+              type: "short",
+              prompt:
+                "La personne qui raconte l'histoire s'appelle le/la ___.",
+              answer: "narrateur/narratrice",
+              keywords: ["narrateur", "narratrice"],
+              acceptable: ["narrateur", "narratrice", "le narrateur"],
+              explanation:
+                "Narrateur ≠ auteur — distinction clé en HL.",
+            },
+          ],
+        },
+        {
+          id: "fb-l25",
+          title: "HL : planification du Paper 1",
+          level: "HL",
+          questions: [
+            {
+              id: "fb-l25-q1",
+              type: "mcq",
+              prompt: "Au Paper 1 de HL, il faut écrire un texte de",
+              choices: [
+                "100–150 mots",
+                "450–600 mots",
+                "50 mots",
+                "2000 mots",
+              ],
+              answerIndex: 1,
+              explanation:
+                "HL : 450–600 mots, une tâche parmi trois ; SL : 250–400.",
+            },
+            {
+              id: "fb-l25-q2",
+              type: "mcq",
+              prompt: "Avant d'écrire, la première étape est",
+              choices: [
+                "commencer à écrire",
+                "identifier le public, le but et le type de texte",
+                "compter les mots",
+                "recopier la tâche",
+              ],
+              answerIndex: 1,
+              explanation:
+                "La tâche définit contexte/public/but — on planifie à partir de là.",
+            },
+            {
+              id: "fb-l25-q3",
+              type: "tf",
+              prompt:
+                "Un plan de 5 minutes améliore la cohérence du texte final.",
+              answer: true,
+              explanation:
+                "Idées → structure → connecteurs = meilleure cohérence.",
+            },
+            {
+              id: "fb-l25-q4",
+              type: "mcq",
+              prompt: "Le critère « Message » au Paper 1 évalue",
+              choices: [
+                "l'écriture",
+                "si le texte remplit son but communicatif",
+                "la vitesse",
+                "la grammaire seulement",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Le texte atteint-il son objectif pour ce public ?",
+            },
+            {
+              id: "fb-l25-q5",
+              type: "short",
+              prompt:
+                "Nomme UN connecteur pour donner un exemple (en français).",
+              answer: "par exemple",
+              keywords: ["exemple", "comme", "ainsi", "notamment"],
+              acceptable: ["par exemple", "comme", "notamment"],
+              explanation:
+                "« Par exemple », « notamment », « comme »…",
+            },
+            {
+              id: "fb-l25-q6",
+              type: "short",
+              prompt:
+                "Le premier paragraphe d'un article doit capter l'___ du lecteur. (un mot)",
+              answer: "attention",
+              keywords: ["attention", "intérêt", "interet"],
+              acceptable: ["attention", "intérêt", "interet"],
+              explanation:
+                "L'introduction accroche le lecteur.",
             },
           ],
         },
