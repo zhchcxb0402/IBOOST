@@ -290,6 +290,153 @@ export const mathAA: Subject = {
             },
           ],
         },
+        {
+          id: "maa-l14",
+          title: "Binomial theorem",
+          questions: [
+            {
+              id: "maa-l14-q1",
+              type: "mcq",
+              prompt: "The expansion of (a + b)³ is",
+              choices: [
+                "a³ + 3a²b + 3ab² + b³",
+                "a³ + a²b + ab² + b³",
+                "a³ + b³",
+                "a³ + 3ab + b³",
+              ],
+              answerIndex: 0,
+              explanation:
+                "Row 3 of Pascal's triangle: 1 3 3 1.",
+            },
+            {
+              id: "maa-l14-q2",
+              type: "mcq",
+              prompt: "The binomial coefficient C(5, 2) equals",
+              choices: ["10", "20", "7", "5"],
+              answerIndex: 0,
+              explanation: "5!/(2!·3!) = 20/2 = 10.",
+            },
+            {
+              id: "maa-l14-q3",
+              type: "tf",
+              prompt:
+                "At this level, the binomial theorem applies to positive integer powers n.",
+              answer: true,
+              explanation:
+                "The finite (n+1)-term expansion requires n ∈ ℤ⁺ (fractional powers give infinite series).",
+            },
+            {
+              id: "maa-l14-q4",
+              type: "mcq",
+              prompt:
+                "How many terms are in the expansion of (a + b)ⁿ?",
+              choices: ["n", "n + 1", "n − 1", "2n"],
+              answerIndex: 1,
+              explanation:
+                "Terms run from k = 0 to k = n: n + 1 terms.",
+            },
+            {
+              id: "maa-l14-q5",
+              type: "short",
+              prompt:
+                "Give the coefficient of x² in the expansion of (1 + x)⁵.",
+              answer: "10",
+              keywords: ["10"],
+              explanation: "C(5,2) = 10.",
+            },
+            {
+              id: "maa-l14-q6",
+              type: "short",
+              prompt:
+                "Give the coefficient of x² in the expansion of (2 + x)⁴.",
+              answer: "24",
+              keywords: ["24"],
+              explanation:
+                "C(4,2)·2²·x² = 6·4·x² → coefficient 24.",
+            },
+          ],
+        },
+        {
+          id: "maa-l15",
+          title: "Proof by contradiction",
+          level: "HL",
+          questions: [
+            {
+              id: "maa-l15-q1",
+              type: "mcq",
+              prompt: "Proof by contradiction begins by",
+              choices: [
+                "assuming the statement is true",
+                "assuming the negation of the statement is true",
+                "testing examples",
+                "drawing a diagram",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Assume the negation; deriving a contradiction proves the original statement.",
+            },
+            {
+              id: "maa-l15-q2",
+              type: "mcq",
+              prompt:
+                "The classic proof that √2 is irrational first assumes",
+              choices: [
+                "√2 is irrational",
+                "√2 = p/q where p/q is a fraction in lowest terms",
+                "2 is prime",
+                "p and q are both even",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Assume rational: √2 = p/q in lowest terms, then show both p and q must be even — contradiction.",
+            },
+            {
+              id: "maa-l15-q3",
+              type: "tf",
+              prompt:
+                "If the assumption leads to a contradiction, the original statement must be true.",
+              answer: true,
+              explanation:
+                "The contradiction means the negation is impossible, so the statement holds.",
+            },
+            {
+              id: "maa-l15-q4",
+              type: "mcq",
+              prompt:
+                "The contrapositive of 'if p then q' is",
+              choices: [
+                "if q then p",
+                "if not p then not q",
+                "if not q then not p",
+                "p and q",
+              ],
+              answerIndex: 2,
+              explanation:
+                "Contrapositive: ¬q ⇒ ¬p — logically equivalent to the original.",
+            },
+            {
+              id: "maa-l15-q5",
+              type: "short",
+              prompt:
+                "To prove 'there is no smallest positive rational number' by contradiction, what do you assume exists? (one phrase)",
+              answer: "a smallest positive rational number",
+              keywords: ["smallest", "rational"],
+              acceptable: ["the smallest positive rational"],
+              explanation:
+                "Assume the negation: a smallest positive rational exists (then halving it contradicts smallestness).",
+            },
+            {
+              id: "maa-l15-q6",
+              type: "short",
+              prompt:
+                "In the √2 proof, p² = 2q² means p² is even, so p must be ___.",
+              answer: "even",
+              keywords: ["even"],
+              explanation:
+                "If p² is even then p is even — which forces q to be even too, contradicting lowest terms.",
+            },
+          ],
+        },
       ],
     },
     {
@@ -426,6 +573,241 @@ export const mathAA: Subject = {
               choices: ["−b/a", "c/a", "−c/a", "b/a"],
               answerIndex: 0,
               explanation: "Vieta's formulas: sum = −b/a, product = c/a.",
+            },
+          ],
+        },
+        {
+          id: "maa-l16",
+          title: "Inverse and composite functions",
+          questions: [
+            {
+              id: "maa-l16-q1",
+              type: "mcq",
+              prompt: "The inverse of f(x) = 2x + 3 is",
+              choices: [
+                "f⁻¹(x) = (x − 3)/2",
+                "f⁻¹(x) = (x + 3)/2",
+                "f⁻¹(x) = 2x − 3",
+                "f⁻¹(x) = x/2 − 3",
+              ],
+              answerIndex: 0,
+              explanation:
+                "Swap x and y then solve: x = 2y + 3 → y = (x − 3)/2.",
+            },
+            {
+              id: "maa-l16-q2",
+              type: "mcq",
+              prompt: "The domain of f⁻¹ equals",
+              choices: [
+                "the domain of f",
+                "the range of f",
+                "all real numbers",
+                "zero",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Inverse functions swap domain and range.",
+            },
+            {
+              id: "maa-l16-q3",
+              type: "tf",
+              prompt: "For any invertible f, f⁻¹(f(x)) = x.",
+              answer: true,
+              explanation:
+                "Applying a function and its inverse returns the input.",
+            },
+            {
+              id: "maa-l16-q4",
+              type: "mcq",
+              prompt:
+                "If f(x) = x² and g(x) = x + 1, then f(g(x)) equals",
+              choices: [
+                "x² + 1",
+                "(x + 1)²",
+                "x² + x",
+                "x² − 1",
+              ],
+              answerIndex: 1,
+              explanation:
+                "f(g(x)) = f(x + 1) = (x + 1)².",
+            },
+            {
+              id: "maa-l16-q5",
+              type: "short",
+              prompt: "If f(x) = 3x − 6, give f⁻¹(6).",
+              answer: "4",
+              keywords: ["4"],
+              explanation:
+                "f⁻¹(x) = (x + 6)/3 → f⁻¹(6) = 12/3 = 4. Check: f(4) = 6. ✓",
+            },
+            {
+              id: "maa-l16-q6",
+              type: "short",
+              prompt:
+                "f(x) = x² + 1 for x ≥ 0. Give f⁻¹(10).",
+              answer: "3",
+              keywords: ["3"],
+              explanation: "x² + 1 = 10 → x = √9 = 3 (taking x ≥ 0).",
+            },
+          ],
+        },
+        {
+          id: "maa-l17",
+          title: "Transformations of graphs",
+          questions: [
+            {
+              id: "maa-l17-q1",
+              type: "mcq",
+              prompt: "The graph of y = f(x) + 2 is f(x) shifted",
+              choices: [
+                "up 2 units",
+                "down 2 units",
+                "left 2 units",
+                "right 2 units",
+              ],
+              answerIndex: 0,
+              explanation:
+                "Adding outside the function moves vertically: +2 up.",
+            },
+            {
+              id: "maa-l17-q2",
+              type: "mcq",
+              prompt: "y = f(x − 3) shifts f(x)",
+              choices: [
+                "left 3",
+                "right 3",
+                "up 3",
+                "down 3",
+              ],
+              answerIndex: 1,
+              explanation:
+                "x → x − 3 moves the graph RIGHT by 3 (counter-intuitive sign).",
+            },
+            {
+              id: "maa-l17-q3",
+              type: "tf",
+              prompt: "y = −f(x) reflects the graph of f in the x-axis.",
+              answer: true,
+              explanation:
+                "Every y-value changes sign — reflection across the x-axis.",
+            },
+            {
+              id: "maa-l17-q4",
+              type: "mcq",
+              prompt:
+                "y = f(2x) applies to f a horizontal",
+              choices: [
+                "stretch by factor 2",
+                "compression by factor 1/2",
+                "shift of 2",
+                "reflection",
+              ],
+              answerIndex: 1,
+              explanation:
+                "x → 2x compresses horizontally by factor 1/2.",
+            },
+            {
+              id: "maa-l17-q5",
+              type: "short",
+              prompt:
+                "f(x) = x² is transformed to y = (x − 2)² + 1. Give the vertex coordinates.",
+              answer: "(2, 1)",
+              keywords: ["2", "1"],
+              acceptable: ["2,1", "x=2 y=1"],
+              explanation:
+                "Shift right 2, up 1: vertex (2, 1).",
+            },
+            {
+              id: "maa-l17-q6",
+              type: "short",
+              prompt:
+                "f(x) = x³. For y = f(x + 1) − 4, give y when x = −1.",
+              answer: "-4",
+              keywords: ["-4"],
+              acceptable: ["−4"],
+              explanation: "y = f(0) − 4 = 0 − 4 = −4.",
+            },
+          ],
+        },
+        {
+          id: "maa-l18",
+          title: "Partial fractions",
+          level: "HL",
+          questions: [
+            {
+              id: "maa-l18-q1",
+              type: "mcq",
+              prompt:
+                "To decompose 1/((x − 1)(x + 1)) you write it as",
+              choices: [
+                "A/(x − 1) + B/(x + 1)",
+                "A/(x − 1) − B/(x + 1)",
+                "(A + B)/((x − 1)(x + 1))",
+                "A·B/(x² − 1)",
+              ],
+              answerIndex: 0,
+              explanation:
+                "One linear fraction per distinct linear factor.",
+            },
+            {
+              id: "maa-l18-q2",
+              type: "mcq",
+              prompt:
+                "A repeated factor (x − 1)² in the denominator requires terms",
+              choices: [
+                "A/(x − 1)² only",
+                "A/(x − 1) + B/(x − 1)²",
+                "A/(x − 1) + A/(x − 1)",
+                "A(x − 1)",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Repeated linear factors need one term per power.",
+            },
+            {
+              id: "maa-l18-q3",
+              type: "tf",
+              prompt:
+                "Partial fractions require a proper fraction — the numerator's degree must be less than the denominator's.",
+              answer: true,
+              explanation:
+                "If not, do polynomial long division first.",
+            },
+            {
+              id: "maa-l18-q4",
+              type: "mcq",
+              prompt:
+                "The main reason for decomposing into partial fractions is to",
+              choices: [
+                "make the expression longer",
+                "allow term-by-term integration",
+                "remove the variable",
+                "factor the numerator",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Each simple fraction integrates to a logarithm — splitting enables integration.",
+            },
+            {
+              id: "maa-l18-q5",
+              type: "short",
+              prompt:
+                "Decompose (3x + 3)/((x − 1)(x + 2)) = A/(x − 1) + B/(x + 2). Give the value of A.",
+              answer: "2",
+              keywords: ["2"],
+              explanation:
+                "3x + 3 = A(x + 2) + B(x − 1). Set x = 1: 6 = 3A → A = 2 (B = 1).",
+            },
+            {
+              id: "maa-l18-q6",
+              type: "short",
+              prompt:
+                "4/(x(x + 2)) = A/x + B/(x + 2). Give the value of B.",
+              answer: "-2",
+              keywords: ["-2"],
+              acceptable: ["−2"],
+              explanation:
+                "4 = A(x + 2) + Bx. Set x = −2: 4 = −2B → B = −2 (A = 2).",
             },
           ],
         },
@@ -568,6 +950,195 @@ export const mathAA: Subject = {
               ],
               answerIndex: 0,
               explanation: "Unit vectors point in a direction with |v| = 1.",
+            },
+          ],
+        },
+        {
+          id: "maa-l19",
+          title: "Radians: arcs, sectors and circles",
+          questions: [
+            {
+              id: "maa-l19-q1",
+              type: "mcq",
+              prompt: "π radians equals",
+              choices: ["90°", "180°", "270°", "360°"],
+              answerIndex: 1,
+              explanation: "π rad = 180°.",
+            },
+            {
+              id: "maa-l19-q2",
+              type: "mcq",
+              prompt:
+                "The arc length subtended by angle θ (radians) in a circle of radius r is",
+              choices: ["r²θ/2", "rθ", "2πr/θ", "r/θ"],
+              answerIndex: 1,
+              explanation: "Arc length s = rθ (θ in radians).",
+            },
+            {
+              id: "maa-l19-q3",
+              type: "tf",
+              prompt: "The area of a sector is ½r²θ with θ in radians.",
+              answer: true,
+              explanation: "A = ½r²θ.",
+            },
+            {
+              id: "maa-l19-q4",
+              type: "mcq",
+              prompt: "60° expressed in radians is",
+              choices: ["π/6", "π/3", "π/4", "π/2"],
+              answerIndex: 1,
+              explanation: "60° × π/180° = π/3.",
+            },
+            {
+              id: "maa-l19-q5",
+              type: "short",
+              prompt:
+                "A sector has radius 10 cm and angle 1.2 rad. Give the arc length in cm.",
+              answer: "12",
+              keywords: ["12"],
+              acceptable: ["12 cm"],
+              explanation: "s = rθ = 10 × 1.2 = 12 cm.",
+            },
+            {
+              id: "maa-l19-q6",
+              type: "short",
+              prompt:
+                "Radius 6, angle π/3. Give the sector area exactly (in terms of π).",
+              answer: "6π",
+              keywords: ["6π", "18.8"],
+              acceptable: ["18.85", "18.8", "6 pi"],
+              explanation: "A = ½ × 36 × π/3 = 6π ≈ 18.85.",
+            },
+          ],
+        },
+        {
+          id: "maa-l20",
+          title: "Trigonometric equations",
+          questions: [
+            {
+              id: "maa-l20-q1",
+              type: "mcq",
+              prompt: "On [0, 2π], the solutions of sin x = 0.5 are",
+              choices: [
+                "π/6 only",
+                "π/6 and 5π/6",
+                "π/3 and 2π/3",
+                "π/6 and 7π/6",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Sine is positive in quadrants I and II: π/6 and 5π/6.",
+            },
+            {
+              id: "maa-l20-q2",
+              type: "mcq",
+              prompt: "cos x = −1 has solution x =",
+              choices: ["0", "π/2", "π", "3π/2"],
+              answerIndex: 2,
+              explanation: "cos π = −1.",
+            },
+            {
+              id: "maa-l20-q3",
+              type: "tf",
+              prompt: "The period of tan x is π.",
+              answer: true,
+              explanation:
+                "tan repeats every π, unlike sin/cos (2π).",
+            },
+            {
+              id: "maa-l20-q4",
+              type: "mcq",
+              prompt:
+                "How many solutions does sin x = 1/2 have on [0, 2π]?",
+              choices: ["1", "2", "3", "4"],
+              answerIndex: 1,
+              explanation:
+                "Two — one in each of quadrants I and II.",
+            },
+            {
+              id: "maa-l20-q5",
+              type: "short",
+              prompt:
+                "Give the smallest positive solution (in radians, exact) of sin x = 1.",
+              answer: "π/2",
+              keywords: ["π/2", "1.57"],
+              acceptable: ["pi/2", "1.57", "1.5708"],
+              explanation: "sin x = 1 at x = π/2.",
+            },
+            {
+              id: "maa-l20-q6",
+              type: "short",
+              prompt:
+                "Give the smallest positive solution of cos x = 0 (exact, radians).",
+              answer: "π/2",
+              keywords: ["π/2", "1.57"],
+              acceptable: ["pi/2", "1.57"],
+              explanation: "cos x = 0 first at x = π/2.",
+            },
+          ],
+        },
+        {
+          id: "maa-l21",
+          title: "3-D vectors and geometry",
+          level: "HL",
+          questions: [
+            {
+              id: "maa-l21-q1",
+              type: "mcq",
+              prompt: "The magnitude of a = (3, 4, 0) is",
+              choices: ["7", "5", "12", "25"],
+              answerIndex: 1,
+              explanation: "|a| = √(9 + 16 + 0) = 5.",
+            },
+            {
+              id: "maa-l21-q2",
+              type: "mcq",
+              prompt:
+                "Two vectors are perpendicular when their dot product is",
+              choices: ["1", "−1", "0", "the angle between them"],
+              answerIndex: 2,
+              explanation:
+                "a·b = |a||b|cosθ = 0 ⇔ θ = 90°.",
+            },
+            {
+              id: "maa-l21-q3",
+              type: "tf",
+              prompt:
+                "In the vector line equation r = a + λb, b is the direction vector.",
+              answer: true,
+              explanation:
+                "a is a point on the line, b gives its direction.",
+            },
+            {
+              id: "maa-l21-q4",
+              type: "mcq",
+              prompt: "Skew lines in 3-D are lines that",
+              choices: [
+                "are parallel",
+                "intersect",
+                "are not parallel and do not intersect",
+                "lie in the same plane",
+              ],
+              answerIndex: 2,
+              explanation:
+                "Skew = non-parallel, non-intersecting — only possible in 3-D.",
+            },
+            {
+              id: "maa-l21-q5",
+              type: "short",
+              prompt: "Give |a| for a = (1, 2, 2).",
+              answer: "3",
+              keywords: ["3"],
+              explanation: "|a| = √(1 + 4 + 4) = √9 = 3.",
+            },
+            {
+              id: "maa-l21-q6",
+              type: "short",
+              prompt:
+                "Give the dot product of a = (1, 0, 1) and b = (2, 3, 1).",
+              answer: "3",
+              keywords: ["3"],
+              explanation: "a·b = 2 + 0 + 1 = 3.",
             },
           ],
         },
@@ -719,6 +1290,215 @@ export const mathAA: Subject = {
               acceptable: ["0.67", "0.667"],
               explanation:
                 "P(red) = 0.5·1 + 0.5·0.5 = 0.75; P(Box1|red) = 0.5/0.75 = 2/3.",
+            },
+          ],
+        },
+        {
+          id: "maa-l22",
+          title: "Binomial distribution",
+          questions: [
+            {
+              id: "maa-l22-q1",
+              type: "mcq",
+              prompt: "For X ~ B(10, 0.5), the expected value E(X) is",
+              choices: ["2.5", "5", "10", "0.5"],
+              answerIndex: 1,
+              explanation: "E(X) = np = 10 × 0.5 = 5.",
+            },
+            {
+              id: "maa-l22-q2",
+              type: "mcq",
+              prompt:
+                "The binomial distribution applies when there is",
+              choices: [
+                "a varying probability",
+                "a fixed number of independent trials with two outcomes and constant p",
+                "an unlimited number of trials",
+                "a continuous outcome",
+              ],
+              answerIndex: 1,
+              explanation:
+                "BInS: Binary outcomes, Independent trials, fixed Number, same probability.",
+            },
+            {
+              id: "maa-l22-q3",
+              type: "tf",
+              prompt:
+                "P(X = k) = C(n, k)·p^k·(1 − p)^(n − k) for a binomial variable.",
+              answer: true,
+              explanation:
+                "Each arrangement of k successes has probability p^k(1−p)^(n−k).",
+            },
+            {
+              id: "maa-l22-q4",
+              type: "mcq",
+              prompt: "For X ~ B(4, 0.5), P(X = 4) equals",
+              choices: ["0.5", "0.25", "0.0625", "0.125"],
+              answerIndex: 2,
+              explanation: "P(X=4) = 0.5⁴ = 1/16 = 0.0625.",
+            },
+            {
+              id: "maa-l22-q5",
+              type: "short",
+              prompt:
+                "For X ~ B(3, 1/3), give P(X = 2) as a fraction or decimal.",
+              answer: "2/9",
+              keywords: ["2/9", "0.22"],
+              acceptable: ["0.222", "0.22"],
+              explanation:
+                "C(3,2)·(1/3)²·(2/3) = 3·(1/9)·(2/3) = 2/9 ≈ 0.222.",
+            },
+            {
+              id: "maa-l22-q6",
+              type: "short",
+              prompt: "Give the variance of B(20, 0.25).",
+              answer: "3.75",
+              keywords: ["3.75"],
+              acceptable: ["15/4"],
+              explanation:
+                "Var = np(1 − p) = 20 × 0.25 × 0.75 = 3.75.",
+            },
+          ],
+        },
+        {
+          id: "maa-l23",
+          title: "Normal and inverse normal",
+          questions: [
+            {
+              id: "maa-l23-q1",
+              type: "mcq",
+              prompt:
+                "Approximately what percentage of a normal distribution lies within 1σ of the mean?",
+              choices: ["50%", "68%", "95%", "99.7%"],
+              answerIndex: 1,
+              explanation: "68/95/99.7 rule: ~68% within μ ± σ.",
+            },
+            {
+              id: "maa-l23-q2",
+              type: "mcq",
+              prompt:
+                "The inverse normal function on a GDC finds",
+              choices: [
+                "a probability from x",
+                "the x-value for a given tail probability",
+                "the mean",
+                "the standard deviation",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Inverse normal: probability → x-value (e.g. find the 95th percentile).",
+            },
+            {
+              id: "maa-l23-q3",
+              type: "tf",
+              prompt:
+                "The normal curve is symmetric about its mean μ.",
+              answer: true,
+              explanation:
+                "Mean = median = mode for a normal distribution.",
+            },
+            {
+              id: "maa-l23-q4",
+              type: "mcq",
+              prompt: "The standardised z-score of x is",
+              choices: [
+                "z = (x − μ)/σ",
+                "z = (μ − x)/σ",
+                "z = x·σ/μ",
+                "z = x − μ − σ",
+              ],
+              answerIndex: 0,
+              explanation: "z = (x − μ)/σ measures standard deviations from the mean.",
+            },
+            {
+              id: "maa-l23-q5",
+              type: "short",
+              prompt:
+                "X ~ N(100, 15²). Give the z-score of x = 130.",
+              answer: "2",
+              keywords: ["2"],
+              explanation: "z = (130 − 100)/15 = 2.",
+            },
+            {
+              id: "maa-l23-q6",
+              type: "short",
+              prompt:
+                "Using the 68/95/99.7 rule, give the approximate probability P(X < 130) for N(100, 15²) as a decimal.",
+              answer: "0.975",
+              keywords: ["0.97"],
+              acceptable: ["0.975", "0.977", "0.98"],
+              explanation:
+                "x = 130 is z = 2 → ~97.5% below (50% + 95%/2). GDC gives 0.977.",
+            },
+          ],
+        },
+        {
+          id: "maa-l24",
+          title: "Expectation and combined events",
+          questions: [
+            {
+              id: "maa-l24-q1",
+              type: "mcq",
+              prompt: "The expected value E(X) of a discrete variable is",
+              choices: [
+                "the most likely outcome",
+                "Σ x·P(X = x)",
+                "the middle value",
+                "Σ P(X = x)",
+              ],
+              answerIndex: 1,
+              explanation:
+                "E(X) = Σ x·p(x) — the long-run average.",
+            },
+            {
+              id: "maa-l24-q2",
+              type: "mcq",
+              prompt: "For independent events A and B, P(A ∩ B) equals",
+              choices: [
+                "P(A) + P(B)",
+                "P(A)·P(B)",
+                "P(A)/P(B)",
+                "P(A) − P(B)",
+              ],
+              answerIndex: 1,
+              explanation: "Independence means probabilities multiply.",
+            },
+            {
+              id: "maa-l24-q3",
+              type: "tf",
+              prompt:
+                "For mutually exclusive events, P(A ∪ B) = P(A) + P(B).",
+              answer: true,
+              explanation:
+                "No overlap, so probabilities add.",
+            },
+            {
+              id: "maa-l24-q4",
+              type: "mcq",
+              prompt: "E(X) for a fair die roll is",
+              choices: ["3", "3.5", "4", "6"],
+              answerIndex: 1,
+              explanation: "(1 + 2 + 3 + 4 + 5 + 6)/6 = 3.5.",
+            },
+            {
+              id: "maa-l24-q5",
+              type: "short",
+              prompt:
+                "Give the probability of two heads in two fair coin tosses (decimal).",
+              answer: "0.25",
+              keywords: ["0.25"],
+              acceptable: ["1/4"],
+              explanation: "0.5 × 0.5 = 0.25.",
+            },
+            {
+              id: "maa-l24-q6",
+              type: "short",
+              prompt:
+                "X has P(0) = 0.5, P(1) = 0.3, P(2) = 0.2. Give E(X).",
+              answer: "0.7",
+              keywords: ["0.7"],
+              explanation:
+                "E(X) = 0×0.5 + 1×0.3 + 2×0.2 = 0.7.",
             },
           ],
         },
@@ -934,6 +1714,227 @@ export const mathAA: Subject = {
               answer: "1",
               keywords: ["1"],
               explanation: "eˣ/1 → e⁰ = 1.",
+            },
+          ],
+        },
+        {
+          id: "maa-l25",
+          title: "Integration by substitution and parts",
+          level: "HL",
+          questions: [
+            {
+              id: "maa-l25-q1",
+              type: "mcq",
+              prompt: "∫ x·eˣ dx equals",
+              choices: [
+                "(x − 1)eˣ + C",
+                "eˣ(x + 1) + C",
+                "xeˣ + C",
+                "eˣ + C",
+              ],
+              answerIndex: 0,
+              explanation:
+                "Parts with u = x, dv = eˣ: ∫xeˣ = xeˣ − eˣ + C.",
+            },
+            {
+              id: "maa-l25-q2",
+              type: "mcq",
+              prompt:
+                "For ∫ 2x(x² + 1)³ dx the natural substitution is",
+              choices: ["u = 2x", "u = x² + 1", "u = x³", "u = (x² + 1)³"],
+              answerIndex: 1,
+              explanation:
+                "u = x² + 1 gives du = 2x dx → ∫ u³ du.",
+            },
+            {
+              id: "maa-l25-q3",
+              type: "tf",
+              prompt: "Integration by parts states ∫ u dv = uv − ∫ v du.",
+              answer: true,
+              explanation:
+                "The product rule integrated and rearranged.",
+            },
+            {
+              id: "maa-l25-q4",
+              type: "mcq",
+              prompt:
+                "When integrating x·ln x by parts, the best choice for u is",
+              choices: ["x", "ln x", "dx", "eˣ"],
+              answerIndex: 1,
+              explanation:
+                "Choose u = ln x (it simplifies when differentiated) — LIATE.",
+            },
+            {
+              id: "maa-l25-q5",
+              type: "short",
+              prompt:
+                "Evaluate ∫₀¹ 2x·e^(x²) dx (exact or decimal).",
+              answer: "e - 1",
+              keywords: ["e", "1.71"],
+              acceptable: ["e-1", "1.718", "1.72"],
+              explanation:
+                "u = x² → ∫ eᵘ du = eˣ²; evaluated 0→1: e − 1 ≈ 1.718.",
+            },
+            {
+              id: "maa-l25-q6",
+              type: "short",
+              prompt: "Evaluate ∫₁^e ln x dx.",
+              answer: "1",
+              keywords: ["1"],
+              explanation:
+                "∫ ln x = x ln x − x; at e: 0, at 1: −1 → difference 1.",
+            },
+          ],
+        },
+        {
+          id: "maa-l26",
+          title: "Implicit differentiation, related rates and kinematics",
+          level: "HL",
+          questions: [
+            {
+              id: "maa-l26-q1",
+              type: "mcq",
+              prompt: "Differentiating y² with respect to x gives",
+              choices: ["2y", "2y·dy/dx", "dy/dx", "y·dy/dx"],
+              answerIndex: 1,
+              explanation:
+                "Chain rule: d/dx(y²) = 2y·dy/dx.",
+            },
+            {
+              id: "maa-l26-q2",
+              type: "mcq",
+              prompt:
+                "For the circle x² + y² = 25, dy/dx equals",
+              choices: ["−x/y", "−y/x", "x/y", "−2x"],
+              answerIndex: 0,
+              explanation:
+                "2x + 2y·y′ = 0 → y′ = −x/y.",
+            },
+            {
+              id: "maa-l26-q3",
+              type: "tf",
+              prompt:
+                "In kinematics, acceleration a = dv/dt and velocity v = ∫ a dt.",
+              answer: true,
+              explanation:
+                "Differentiation and integration link displacement, velocity and acceleration.",
+            },
+            {
+              id: "maa-l26-q4",
+              type: "mcq",
+              prompt:
+                "For a sphere V = (4/3)πr³, the rate dV/dt equals",
+              choices: [
+                "4πr²·dr/dt",
+                "4πr²",
+                "(4/3)πr²·dr/dt",
+                "πr²·dr/dt",
+              ],
+              answerIndex: 0,
+              explanation:
+                "Chain rule: dV/dt = (dV/dr)(dr/dt) = 4πr²·dr/dt.",
+            },
+            {
+              id: "maa-l26-q5",
+              type: "short",
+              prompt:
+                "For x² + y² = 25, give dy/dx at the point (3, 4).",
+              answer: "-0.75",
+              keywords: ["-0.75", "-3/4"],
+              acceptable: ["−3/4", "-3/4", "−0.75"],
+              explanation: "y′ = −x/y = −3/4 = −0.75.",
+            },
+            {
+              id: "maa-l26-q6",
+              type: "short",
+              prompt:
+                "Displacement s = t³ − 6t². Give the positive time t when velocity is zero.",
+              answer: "4",
+              keywords: ["4"],
+              explanation:
+                "v = 3t² − 12t = 3t(t − 4) = 0 → t = 4 (t > 0).",
+            },
+          ],
+        },
+        {
+          id: "maa-l27",
+          title: "Volumes of revolution",
+          level: "HL",
+          questions: [
+            {
+              id: "maa-l27-q1",
+              type: "mcq",
+              prompt:
+                "The volume when y = f(x) is rotated about the x-axis on [a, b] is",
+              choices: [
+                "V = π∫ₐᵇ y² dx",
+                "V = ∫ₐᵇ y dx",
+                "V = 2π∫ₐᵇ y dx",
+                "V = π∫ₐᵇ y dy",
+              ],
+              answerIndex: 0,
+              explanation:
+                "Disc method: circular slices of area πy².",
+            },
+            {
+              id: "maa-l27-q2",
+              type: "mcq",
+              prompt:
+                "Rotating a region about the y-axis integrates",
+              choices: [
+                "πx² with respect to y",
+                "πy² with respect to x",
+                "y with respect to x",
+                "πr² with respect to θ",
+              ],
+              answerIndex: 0,
+              explanation:
+                "About the y-axis: V = π∫ x² dy over the y-range.",
+            },
+            {
+              id: "maa-l27-q3",
+              type: "tf",
+              prompt:
+                "Rotating y = x on [0, 2] about the x-axis produces a cone.",
+              answer: true,
+              explanation:
+                "A straight line through the origin sweeps out a cone of radius 2 and height 2.",
+            },
+            {
+              id: "maa-l27-q4",
+              type: "mcq",
+              prompt:
+                "The disc method is essentially summing",
+              choices: [
+                "rectangles",
+                "cylindrical discs of thickness dx",
+                "shells only",
+                "triangles",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Each slice is a thin cylinder of volume πy² dx.",
+            },
+            {
+              id: "maa-l27-q5",
+              type: "short",
+              prompt:
+                "y = x rotated about the x-axis on [0, 1]. Give the volume (in terms of π).",
+              answer: "π/3",
+              keywords: ["π/3", "1.04"],
+              acceptable: ["pi/3", "1.047", "1.05"],
+              explanation: "V = π∫₀¹ x² dx = π/3 ≈ 1.05.",
+            },
+            {
+              id: "maa-l27-q6",
+              type: "short",
+              prompt:
+                "y = √x rotated about the x-axis on [0, 4]. Give the volume (in terms of π).",
+              answer: "8π",
+              keywords: ["8π", "25.1"],
+              acceptable: ["8 pi", "25.13", "25.1"],
+              explanation:
+                "V = π∫₀⁴ x dx = π[x²/2]₀⁴ = 8π ≈ 25.13.",
             },
           ],
         },

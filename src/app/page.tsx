@@ -10,7 +10,7 @@ import { decks, lessonCount, subjects } from "@/content";
 export const metadata: Metadata = {
   title: "IBOOST — IB revision, gamified",
   description:
-    "Duolingo-style lessons and Quizlet-style flashcards for 13 IB Diploma subjects, HL and SL. Free.",
+    "Duolingo-style lessons and Quizlet-style flashcards for IB Diploma subjects, HL and SL. Free.",
 };
 
 export default function LandingPage() {
@@ -39,7 +39,7 @@ export default function LandingPage() {
     {
       icon: ListChecks,
       title: "Pick your subjects & HL/SL",
-      body: "Choose from 13 IB Diploma subjects and set your level — lessons adapt to your syllabus.",
+      body: `Choose from ${built.length} IB Diploma subjects and set your level — lessons adapt to your syllabus.`,
     },
     {
       icon: Flame,
@@ -103,7 +103,9 @@ export default function LandingPage() {
 
       {/* Subjects */}
       <section className="mt-20">
-        <h2 className="text-center text-2xl font-extrabold">All 13 subjects</h2>
+        <h2 className="text-center text-2xl font-extrabold">
+          All {built.length} subjects
+        </h2>
         {groups.map((g) => (
           <div key={g} className="mt-10">
             <h3 className="mb-4 text-sm font-extrabold uppercase tracking-wide text-muted-foreground">

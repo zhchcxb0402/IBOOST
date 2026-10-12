@@ -269,6 +269,159 @@ export const physics: Subject = {
             },
           ],
         },
+        {
+          id: "ph-l12",
+          title: "Projectile motion calculations",
+          questions: [
+            {
+              id: "ph-l12-q1",
+              type: "mcq",
+              prompt:
+                "In projectile motion (no air resistance), the horizontal velocity",
+              choices: [
+                "increases",
+                "decreases",
+                "stays constant",
+                "is zero",
+              ],
+              answerIndex: 2,
+              explanation:
+                "No horizontal force → constant horizontal velocity; only the vertical component changes.",
+            },
+            {
+              id: "ph-l12-q2",
+              type: "mcq",
+              prompt:
+                "The time of flight of a projectile depends primarily on its",
+              choices: [
+                "mass",
+                "horizontal velocity",
+                "vertical velocity component",
+                "shape",
+              ],
+              answerIndex: 2,
+              explanation:
+                "Flight time is set by vertical motion: t = 2u_y/g for level launch.",
+            },
+            {
+              id: "ph-l12-q3",
+              type: "tf",
+              prompt:
+                "At the highest point of a projectile's path, its vertical velocity is zero.",
+              answer: true,
+              explanation:
+                "Vertical velocity is momentarily zero at the apex; horizontal velocity continues.",
+            },
+            {
+              id: "ph-l12-q4",
+              type: "mcq",
+              prompt:
+                "Maximum range on level ground occurs at launch angle",
+              choices: ["30°", "45°", "60°", "90°"],
+              answerIndex: 1,
+              explanation:
+                "R = v²sin2θ/g peaks when sin2θ = 1 → θ = 45°.",
+            },
+            {
+              id: "ph-l12-q5",
+              type: "short",
+              prompt:
+                "A ball is thrown horizontally at 10 m/s from a 20 m cliff (g = 10 m/s²). Give the horizontal range in metres.",
+              answer: "20",
+              keywords: ["20"],
+              acceptable: ["20 m"],
+              explanation:
+                "Fall time t = √(2×20/10) = 2 s; range = 10 × 2 = 20 m.",
+            },
+            {
+              id: "ph-l12-q6",
+              type: "short",
+              prompt:
+                "A ball is launched straight up at 20 m/s (g = 10). Give the maximum height in metres.",
+              answer: "20",
+              keywords: ["20"],
+              acceptable: ["20 m"],
+              explanation: "h = v²/2g = 400/20 = 20 m.",
+            },
+          ],
+        },
+        {
+          id: "ph-l13",
+          title: "Work, energy, power and circular motion",
+          questions: [
+            {
+              id: "ph-l13-q1",
+              type: "mcq",
+              prompt: "The work done by a force is",
+              choices: [
+                "W = Fd cos θ",
+                "W = F/d",
+                "W = Fd sin θ always",
+                "W = F + d",
+              ],
+              answerIndex: 0,
+              explanation:
+                "Only the force component along the displacement does work.",
+            },
+            {
+              id: "ph-l13-q2",
+              type: "mcq",
+              prompt:
+                "In uniform circular motion, the centripetal acceleration points",
+              choices: [
+                "tangent to the circle",
+                "away from the centre",
+                "towards the centre",
+                "downwards",
+              ],
+              answerIndex: 2,
+              explanation:
+                "a = v²/r directed inward — it changes direction, not speed.",
+            },
+            {
+              id: "ph-l13-q3",
+              type: "tf",
+              prompt:
+                "The work–energy theorem states that net work equals the change in kinetic energy.",
+              answer: true,
+              explanation: "W_net = ΔE_k.",
+            },
+            {
+              id: "ph-l13-q4",
+              type: "mcq",
+              prompt: "Power is defined as",
+              choices: [
+                "work × time",
+                "work per unit time",
+                "force × distance",
+                "energy × speed",
+              ],
+              answerIndex: 1,
+              explanation: "P = W/t (also = Fv).",
+            },
+            {
+              id: "ph-l13-q5",
+              type: "short",
+              prompt:
+                "A 2 kg mass is raised 5 m (g = 9.8). Give the gain in potential energy in joules.",
+              answer: "98",
+              keywords: ["98"],
+              acceptable: ["98 J", "100", "100 J"],
+              explanation:
+                "E_p = mgh = 2 × 9.8 × 5 = 98 J (≈100 J if g = 10).",
+            },
+            {
+              id: "ph-l13-q6",
+              type: "short",
+              prompt:
+                "A mass moves in a circle at v = 4 m/s with r = 2 m. Give the centripetal acceleration in m/s².",
+              answer: "8",
+              keywords: ["8"],
+              acceptable: ["8 m/s²", "8 m/s^2"],
+              explanation: "a = v²/r = 16/2 = 8 m/s².",
+            },
+          ],
+        },
       ],
     },
     {
@@ -431,6 +584,227 @@ export const physics: Subject = {
               keywords: ["work", "cycle", "area", "net"],
               explanation:
                 "Area inside the loop = net work output per cycle of the engine.",
+            },
+          ],
+        },
+        {
+          id: "ph-l14",
+          title: "Specific and latent heat calculations",
+          questions: [
+            {
+              id: "ph-l14-q1",
+              type: "mcq",
+              prompt: "The heat needed to warm a substance is",
+              choices: [
+                "Q = mcΔT",
+                "Q = m/c",
+                "Q = cT²",
+                "Q = mT",
+              ],
+              answerIndex: 0,
+              explanation: "Q = mcΔT.",
+            },
+            {
+              id: "ph-l14-q2",
+              type: "mcq",
+              prompt:
+                "During a phase change, adding latent heat changes the substance's",
+              choices: [
+                "temperature",
+                "internal energy without changing temperature",
+                "mass",
+                "volume only",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Latent heat breaks/reforms bonds — temperature stays constant.",
+            },
+            {
+              id: "ph-l14-q3",
+              type: "tf",
+              prompt:
+                "Specific heat capacity has units J kg⁻¹ K⁻¹.",
+              answer: true,
+              explanation:
+                "Energy per kilogram per kelvin.",
+            },
+            {
+              id: "ph-l14-q4",
+              type: "mcq",
+              prompt:
+                "Equal heat is added to equal masses of water (c = 4200) and sand (c ≈ 800). Which warms more?",
+              choices: [
+                "water",
+                "sand",
+                "they warm equally",
+                "neither",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Smaller c → bigger ΔT for the same Q and m.",
+            },
+            {
+              id: "ph-l14-q5",
+              type: "short",
+              prompt:
+                "Heat needed to warm 0.5 kg of water by 20°C (c = 4200 J/kg·K). Give Q in joules.",
+              answer: "42000",
+              keywords: ["42000"],
+              acceptable: ["42,000", "42 kJ", "42000 J"],
+              explanation: "Q = 0.5 × 4200 × 20 = 42,000 J.",
+            },
+            {
+              id: "ph-l14-q6",
+              type: "short",
+              prompt:
+                "Energy to melt 0.1 kg of ice at 0°C (L_f = 334,000 J/kg). Give Q in joules.",
+              answer: "33400",
+              keywords: ["33400", "33.4"],
+              acceptable: ["33,400", "33.4 kJ", "33400 J"],
+              explanation: "Q = mL = 0.1 × 334,000 = 33,400 J.",
+            },
+          ],
+        },
+        {
+          id: "ph-l15",
+          title: "Gas laws calculations",
+          questions: [
+            {
+              id: "ph-l15-q1",
+              type: "mcq",
+              prompt: "Boyle's law states that at constant temperature",
+              choices: [
+                "pV = constant",
+                "p/T = constant",
+                "V/T = constant",
+                "pV/T = 0",
+              ],
+              answerIndex: 0,
+              explanation: "Isothermal: p₁V₁ = p₂V₂.",
+            },
+            {
+              id: "ph-l15-q2",
+              type: "mcq",
+              prompt:
+                "For a fixed volume of gas, p/T is constant provided T is measured in",
+              choices: ["°C", "kelvin", "°F", "any unit"],
+              answerIndex: 1,
+              explanation:
+                "Gas laws require absolute temperature (kelvin).",
+            },
+            {
+              id: "ph-l15-q3",
+              type: "tf",
+              prompt:
+                "The ideal gas law is pV = nRT.",
+              answer: true,
+              explanation:
+                "n = moles, R = 8.31 J mol⁻¹ K⁻¹, T in kelvin.",
+            },
+            {
+              id: "ph-l15-q4",
+              type: "mcq",
+              prompt:
+                "A gas at constant volume is heated. Its pressure",
+              choices: [
+                "decreases",
+                "stays the same",
+                "increases proportionally with absolute temperature",
+                "becomes zero",
+              ],
+              answerIndex: 2,
+              explanation: "p ∝ T (kelvin) at constant V.",
+            },
+            {
+              id: "ph-l15-q5",
+              type: "short",
+              prompt:
+                "2 L of gas at constant temperature is compressed from 100 kPa to 200 kPa. Give the new volume in litres.",
+              answer: "1",
+              keywords: ["1"],
+              acceptable: ["1 L"],
+              explanation: "V₂ = p₁V₁/p₂ = 100×2/200 = 1 L.",
+            },
+            {
+              id: "ph-l15-q6",
+              type: "short",
+              prompt:
+                "A sealed gas at 300 K and 100 kPa is heated to 600 K. Give the new pressure in kPa.",
+              answer: "200",
+              keywords: ["200"],
+              acceptable: ["200 kPa"],
+              explanation: "p₂ = p₁T₂/T₁ = 100 × 2 = 200 kPa.",
+            },
+          ],
+        },
+        {
+          id: "ph-l16",
+          title: "Kinetic theory and thermal exam practice",
+          questions: [
+            {
+              id: "ph-l16-q1",
+              type: "mcq",
+              prompt:
+                "In kinetic theory, the average kinetic energy of molecules is proportional to",
+              choices: [
+                "pressure",
+                "volume",
+                "absolute temperature",
+                "density",
+              ],
+              answerIndex: 2,
+              explanation:
+                "Temperature IS a measure of average molecular KE.",
+            },
+            {
+              id: "ph-l16-q2",
+              type: "mcq",
+              prompt: "Absolute zero is approximately",
+              choices: ["0°C", "−273°C", "−100°C", "273 K"],
+              answerIndex: 1,
+              explanation: "0 K = −273.15°C.",
+            },
+            {
+              id: "ph-l16-q3",
+              type: "tf",
+              prompt:
+                "Internal energy is the sum of the kinetic and potential energies of a substance's molecules.",
+              answer: true,
+              explanation:
+                "Both molecular motion (KE) and intermolecular bonds (PE) count.",
+            },
+            {
+              id: "ph-l16-q4",
+              type: "mcq",
+              prompt: "Evaporation cools a liquid because",
+              choices: [
+                "slow molecules escape",
+                "the fastest molecules escape, lowering the average KE",
+                "heat is created",
+                "pressure increases",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Losing the most energetic molecules drops the average — cooling.",
+            },
+            {
+              id: "ph-l16-q5",
+              type: "short",
+              prompt: "Convert 27°C to kelvin.",
+              answer: "300",
+              keywords: ["300"],
+              acceptable: ["300 K"],
+              explanation: "T = 27 + 273 = 300 K.",
+            },
+            {
+              id: "ph-l16-q6",
+              type: "short",
+              prompt:
+                "Heat needed to raise 0.2 kg of water by 10°C (c = 4200). Give Q in joules.",
+              answer: "8400",
+              keywords: ["8400"],
+              acceptable: ["8,400", "8.4 kJ"],
+              explanation: "Q = 0.2 × 4200 × 10 = 8,400 J.",
             },
           ],
         },
@@ -598,6 +972,241 @@ export const physics: Subject = {
             },
           ],
         },
+        {
+          id: "ph-l17",
+          title: "Standing waves and the Doppler effect",
+          questions: [
+            {
+              id: "ph-l17-q1",
+              type: "mcq",
+              prompt: "A node on a standing wave is a point of",
+              choices: [
+                "maximum amplitude",
+                "zero displacement",
+                "maximum energy",
+                "varying phase",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Nodes never move; antinodes oscillate maximally.",
+            },
+            {
+              id: "ph-l17-q2",
+              type: "mcq",
+              prompt:
+                "An observer hears a HIGHER frequency than emitted when the source is",
+              choices: [
+                "stationary",
+                "moving away",
+                "approaching",
+                "oscillating",
+              ],
+              answerIndex: 2,
+              explanation:
+                "Doppler effect: waves bunch up ahead of an approaching source → higher f.",
+            },
+            {
+              id: "ph-l17-q3",
+              type: "tf",
+              prompt:
+                "A standing wave transfers no net energy along the medium.",
+              answer: true,
+              explanation:
+                "Two equal opposite travelling waves — energy is stored, not transported.",
+            },
+            {
+              id: "ph-l17-q4",
+              type: "mcq",
+              prompt:
+                "For a string fixed at both ends, the fundamental wavelength is",
+              choices: ["λ = L", "λ = 2L", "λ = L/2", "λ = 4L"],
+              answerIndex: 1,
+              explanation:
+                "Fundamental = half a wavelength on length L → λ = 2L.",
+            },
+            {
+              id: "ph-l17-q5",
+              type: "short",
+              prompt:
+                "A string fixed at both ends is 0.5 m long. Give its fundamental wavelength in metres.",
+              answer: "1",
+              keywords: ["1"],
+              acceptable: ["1 m"],
+              explanation: "λ = 2L = 1 m.",
+            },
+            {
+              id: "ph-l17-q6",
+              type: "short",
+              prompt:
+                "A 500 Hz source approaches at half the wave speed. Give the observed frequency in Hz (f′ = f·v/(v − v_s)).",
+              answer: "1000",
+              keywords: ["1000"],
+              acceptable: ["1000 Hz"],
+              explanation:
+                "f′ = 500·v/(v − 0.5v) = 500/0.5 = 1000 Hz.",
+            },
+          ],
+        },
+        {
+          id: "ph-l18",
+          title: "Diffraction, interference and the double slit",
+          questions: [
+            {
+              id: "ph-l18-q1",
+              type: "mcq",
+              prompt:
+                "Double-slit fringe spacing is given by",
+              choices: [
+                "Δy = λd/D",
+                "Δy = λD/d",
+                "Δy = dD/λ",
+                "Δy = λ/(Dd)",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Δy = λD/d — bigger screen distance or smaller slit gap → wider fringes.",
+            },
+            {
+              id: "ph-l18-q2",
+              type: "mcq",
+              prompt:
+                "Diffraction is most noticeable when the gap size is",
+              choices: [
+                "much larger than λ",
+                "comparable to λ",
+                "zero",
+                "irrelevant",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Significant spreading occurs when aperture ≈ wavelength.",
+            },
+            {
+              id: "ph-l18-q3",
+              type: "tf",
+              prompt:
+                "Constructive interference occurs when the path difference is a whole number of wavelengths.",
+              answer: true,
+              explanation:
+                "Δ = nλ → in phase; Δ = (n + ½)λ → destructive.",
+            },
+            {
+              id: "ph-l18-q4",
+              type: "mcq",
+              prompt: "Coherent sources have",
+              choices: [
+                "the same amplitude",
+                "a constant phase relationship",
+                "different frequencies",
+                "random phases",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Stable interference needs a fixed phase difference — same frequency.",
+            },
+            {
+              id: "ph-l18-q5",
+              type: "short",
+              prompt:
+                "Double slit: λ = 600 nm, D = 2 m, d = 1 mm. Give the fringe spacing in mm.",
+              answer: "1.2",
+              keywords: ["1.2"],
+              acceptable: ["1.2 mm"],
+              explanation:
+                "Δy = 600×10⁻⁹ × 2 / 10⁻³ = 1.2×10⁻³ m = 1.2 mm.",
+            },
+            {
+              id: "ph-l18-q6",
+              type: "short",
+              prompt:
+                "Give the path difference (in wavelengths) for the first DARK fringe in a double slit.",
+              answer: "λ/2",
+              keywords: ["half", "0.5", "1/2", "λ/2"],
+              acceptable: ["half a wavelength", "0.5λ", "lambda/2"],
+              explanation:
+                "Destructive interference needs Δ = (n + ½)λ; first dark = λ/2.",
+            },
+          ],
+        },
+        {
+          id: "ph-l19",
+          title: "Refraction and Snell's law",
+          questions: [
+            {
+              id: "ph-l19-q1",
+              type: "mcq",
+              prompt: "The refractive index n equals",
+              choices: [
+                "v/c",
+                "c/v",
+                "c × v",
+                "sin i × sin r",
+              ],
+              answerIndex: 1,
+              explanation:
+                "n = c/v — light slows in the medium.",
+            },
+            {
+              id: "ph-l19-q2",
+              type: "mcq",
+              prompt: "Snell's law states",
+              choices: [
+                "n₁sinθ₁ = n₂sinθ₂",
+                "n₁/n₂ = θ₁/θ₂",
+                "sinθ₁ = sinθ₂",
+                "nθ = constant",
+              ],
+              answerIndex: 0,
+              explanation:
+                "n₁ sinθ₁ = n₂ sinθ₂ at the boundary.",
+            },
+            {
+              id: "ph-l19-q3",
+              type: "tf",
+              prompt:
+                "Total internal reflection requires light travelling from a denser to a less dense medium beyond the critical angle.",
+              answer: true,
+              explanation:
+                "Both conditions: n₁ > n₂ AND θ > θ_c.",
+            },
+            {
+              id: "ph-l19-q4",
+              type: "mcq",
+              prompt:
+                "Entering an optically denser medium, light bends",
+              choices: [
+                "away from the normal",
+                "towards the normal",
+                "not at all",
+                "backwards",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Slower medium → ray bends toward the normal.",
+            },
+            {
+              id: "ph-l19-q5",
+              type: "short",
+              prompt:
+                "Light speed in a medium with n = 1.5 (c = 3 × 10⁸ m/s). Give v in m/s.",
+              answer: "2 × 10^8",
+              keywords: ["2", "10^8"],
+              acceptable: ["2e8", "200000000", "2×10⁸"],
+              explanation: "v = c/n = 3×10⁸/1.5 = 2×10⁸ m/s.",
+            },
+            {
+              id: "ph-l19-q6",
+              type: "short",
+              prompt:
+                "Give the critical angle for n = 1.5 into air (sin θ_c = 1/n), in degrees to 1 d.p.",
+              answer: "41.8",
+              keywords: ["41"],
+              acceptable: ["41.8", "42"],
+              explanation:
+                "sin θ_c = 0.667 → θ_c = sin⁻¹(0.667) ≈ 41.8°.",
+            },
+          ],
+        },
       ],
     },
     {
@@ -754,6 +1363,236 @@ export const physics: Subject = {
               keywords: ["6"],
               explanation:
                 "ε = N ΔΦ/Δt = 200 × 3.0e-3 / 0.10 = 6 V.",
+            },
+          ],
+        },
+        {
+          id: "ph-l20",
+          title: "Coulomb's law and electric fields",
+          questions: [
+            {
+              id: "ph-l20-q1",
+              type: "mcq",
+              prompt: "Coulomb's law gives the force between charges as",
+              choices: [
+                "F = kq₁q₂/r²",
+                "F = kq₁q₂r²",
+                "F = k(q₁ + q₂)/r",
+                "F = qE/r",
+              ],
+              answerIndex: 0,
+              explanation:
+                "Inverse-square law, k ≈ 8.99 × 10⁹ N·m²/C².",
+            },
+            {
+              id: "ph-l20-q2",
+              type: "mcq",
+              prompt:
+                "Electric field lines around a positive point charge point",
+              choices: [
+                "inwards",
+                "outwards",
+                "in circles",
+                "nowhere",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Field direction = force on a positive test charge → away from +.",
+            },
+            {
+              id: "ph-l20-q3",
+              type: "tf",
+              prompt:
+                "Doubling the separation between two charges reduces the force to one quarter.",
+              answer: true,
+              explanation: "F ∝ 1/r².",
+            },
+            {
+              id: "ph-l20-q4",
+              type: "mcq",
+              prompt: "Electric field strength E is defined as",
+              choices: [
+                "F × q",
+                "F/q",
+                "q/F",
+                "F·r",
+              ],
+              answerIndex: 1,
+              explanation:
+                "E = F/q — force per unit charge (N/C).",
+            },
+            {
+              id: "ph-l20-q5",
+              type: "short",
+              prompt:
+                "Force between two 1 C charges 1 m apart (k = 9 × 10⁹). Give F in newtons.",
+              answer: "9 × 10^9",
+              keywords: ["9", "10^9"],
+              acceptable: ["9e9", "9000000000", "9×10⁹"],
+              explanation: "F = 9×10⁹ × 1 × 1 / 1 = 9×10⁹ N.",
+            },
+            {
+              id: "ph-l20-q6",
+              type: "short",
+              prompt:
+                "Field strength 1 m from a 2 × 10⁻⁶ C charge (k = 9 × 10⁹). Give E in N/C.",
+              answer: "18000",
+              keywords: ["18000", "1.8"],
+              acceptable: ["1.8e4", "18,000", "1.8×10⁴"],
+              explanation: "E = kq/r² = 9×10⁹ × 2×10⁻⁶ = 1.8×10⁴ N/C.",
+            },
+          ],
+        },
+        {
+          id: "ph-l21",
+          title: "Circuits: Kirchhoff and internal resistance",
+          questions: [
+            {
+              id: "ph-l21-q1",
+              type: "mcq",
+              prompt: "Kirchhoff's junction rule says current is",
+              choices: [
+                "created at junctions",
+                "conserved: total in = total out",
+                "always equal in all branches",
+                "zero",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Charge conservation: ΣI_in = ΣI_out.",
+            },
+            {
+              id: "ph-l21-q2",
+              type: "mcq",
+              prompt:
+                "Kirchhoff's loop rule is essentially conservation of",
+              choices: ["charge", "energy", "momentum", "mass"],
+              answerIndex: 1,
+              explanation:
+                "Σ emf = Σ p.d. around a loop — energy conservation.",
+            },
+            {
+              id: "ph-l21-q3",
+              type: "tf",
+              prompt:
+                "A cell's terminal voltage drops below its emf when it delivers current, due to internal resistance.",
+              answer: true,
+              explanation:
+                "V = ε − Ir: some voltage is 'lost' across the internal resistance.",
+            },
+            {
+              id: "ph-l21-q4",
+              type: "mcq",
+              prompt:
+                "Two identical resistors in parallel have a combined resistance of",
+              choices: [
+                "2R",
+                "R/2",
+                "R",
+                "R²",
+              ],
+              answerIndex: 1,
+              explanation: "1/R_t = 2/R → R_t = R/2.",
+            },
+            {
+              id: "ph-l21-q5",
+              type: "short",
+              prompt:
+                "emf = 12 V, internal r = 1 Ω, load R = 5 Ω. Give the terminal voltage in volts.",
+              answer: "10",
+              keywords: ["10"],
+              acceptable: ["10 V"],
+              explanation:
+                "I = 12/6 = 2 A; V = 12 − 2×1 = 10 V.",
+            },
+            {
+              id: "ph-l21-q6",
+              type: "short",
+              prompt:
+                "Two 4 Ω resistors in parallel. Give the total resistance in ohms.",
+              answer: "2",
+              keywords: ["2"],
+              acceptable: ["2 Ω", "2 ohms"],
+              explanation: "R_t = 4/2 = 2 Ω.",
+            },
+          ],
+        },
+        {
+          id: "ph-l22",
+          title: "Magnetic fields and forces",
+          questions: [
+            {
+              id: "ph-l22-q1",
+              type: "mcq",
+              prompt:
+                "The force on a charge moving through a magnetic field is",
+              choices: [
+                "F = qvB sin θ",
+                "F = qB/v",
+                "F = mvB",
+                "F = qv/B",
+              ],
+              answerIndex: 0,
+              explanation: "F = qvB sinθ.",
+            },
+            {
+              id: "ph-l22-q2",
+              type: "mcq",
+              prompt:
+                "The magnetic force on a moving charge acts",
+              choices: [
+                "along v",
+                "along B",
+                "perpendicular to both v and B",
+                "opposite to B",
+              ],
+              answerIndex: 2,
+              explanation:
+                "F ⊥ plane of v and B — Fleming's left-hand rule (for conventional current).",
+            },
+            {
+              id: "ph-l22-q3",
+              type: "tf",
+              prompt:
+                "The magnetic force does no work on a moving charge because it is perpendicular to the velocity.",
+              answer: true,
+              explanation:
+                "It changes direction, not speed — that's why particles circle.",
+            },
+            {
+              id: "ph-l22-q4",
+              type: "mcq",
+              prompt:
+                "The radius of a charged particle's circular path in a magnetic field is",
+              choices: [
+                "r = qB/mv",
+                "r = mv/qB",
+                "r = qvB",
+                "r = mB/qv",
+              ],
+              answerIndex: 1,
+              explanation:
+                "qvB = mv²/r → r = mv/qB.",
+            },
+            {
+              id: "ph-l22-q5",
+              type: "short",
+              prompt:
+                "q = 1 × 10⁻⁶ C, v = 100 m/s, B = 0.5 T, θ = 90°. Give the force in newtons.",
+              answer: "5 × 10^-5",
+              keywords: ["5", "10^-5"],
+              acceptable: ["5e-5", "0.00005", "5×10⁻⁵"],
+              explanation: "F = 10⁻⁶ × 100 × 0.5 = 5×10⁻⁵ N.",
+            },
+            {
+              id: "ph-l22-q6",
+              type: "short",
+              prompt:
+                "Force on a wire: B = 0.2 T, I = 5 A, L = 0.3 m (wire ⟂ to field). Give F in newtons.",
+              answer: "0.3",
+              keywords: ["0.3"],
+              acceptable: ["0.3 N"],
+              explanation: "F = BIL = 0.2 × 5 × 0.3 = 0.3 N.",
             },
           ],
         },
@@ -925,6 +1764,241 @@ export const physics: Subject = {
               keywords: ["slow", "dilat", "clock", "time"],
               explanation:
                 "Δt = γΔt₀: the moving (proper-time) interval appears longer, i.e. the moving clock runs slow.",
+            },
+          ],
+        },
+        {
+          id: "ph-l23",
+          title: "Half-life and decay calculations",
+          questions: [
+            {
+              id: "ph-l23-q1",
+              type: "mcq",
+              prompt: "The half-life of a radioactive isotope is",
+              choices: [
+                "the time for all atoms to decay",
+                "the time for half the undecayed nuclei to decay",
+                "the activity",
+                "constant for all isotopes",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Half the remaining nuclei decay per half-life — exponential decay.",
+            },
+            {
+              id: "ph-l23-q2",
+              type: "mcq",
+              prompt: "After time t, the remaining nuclei number",
+              choices: [
+                "N = N₀(1/2)^(t/T½)",
+                "N = N₀ − t",
+                "N = N₀·t/T½",
+                "N = N₀²",
+              ],
+              answerIndex: 0,
+              explanation:
+                "N = N₀(1/2)^(t/T½) — equivalent to N₀e^(−λt).",
+            },
+            {
+              id: "ph-l23-q3",
+              type: "tf",
+              prompt:
+                "Activity is proportional to the number of undecayed nuclei present.",
+              answer: true,
+              explanation:
+                "A = λN — as N falls, so does the count rate.",
+            },
+            {
+              id: "ph-l23-q4",
+              type: "mcq",
+              prompt:
+                "After 3 half-lives, the fraction remaining is",
+              choices: ["1/3", "1/6", "1/8", "1/9"],
+              answerIndex: 2,
+              explanation: "(1/2)³ = 1/8.",
+            },
+            {
+              id: "ph-l23-q5",
+              type: "short",
+              prompt:
+                "An isotope has T½ = 5 years. Starting with 100 g, give the mass remaining after 15 years, in grams.",
+              answer: "12.5",
+              keywords: ["12.5"],
+              acceptable: ["12.5 g"],
+              explanation:
+                "3 half-lives: 100 → 50 → 25 → 12.5 g.",
+            },
+            {
+              id: "ph-l23-q6",
+              type: "short",
+              prompt:
+                "A sample falls from 800 to 100 counts. T½ = 2 hours. Give the elapsed time in hours.",
+              answer: "6",
+              keywords: ["6"],
+              acceptable: ["6 h", "6 hours"],
+              explanation:
+                "800 → 400 → 200 → 100 is 3 half-lives → 3 × 2 = 6 h.",
+            },
+          ],
+        },
+        {
+          id: "ph-l24",
+          title: "Photoelectric effect and energy levels",
+          level: "HL",
+          questions: [
+            {
+              id: "ph-l24-q1",
+              type: "mcq",
+              prompt: "The energy of a photon is",
+              choices: [
+                "E = h/f",
+                "E = hf",
+                "E = mc² only",
+                "E = λf",
+              ],
+              answerIndex: 1,
+              explanation:
+                "E = hf, h = 6.63 × 10⁻³⁴ J·s.",
+            },
+            {
+              id: "ph-l24-q2",
+              type: "mcq",
+              prompt:
+                "Einstein's photoelectric equation gives the maximum electron KE as",
+              choices: [
+                "hf + φ",
+                "hf − φ",
+                "φ − hf",
+                "hf/φ",
+              ],
+              answerIndex: 1,
+              explanation:
+                "KE_max = hf − φ: photon energy minus the work function.",
+            },
+            {
+              id: "ph-l24-q3",
+              type: "tf",
+              prompt:
+                "Below the threshold frequency, no electrons are emitted no matter how intense the light.",
+              answer: true,
+              explanation:
+                "One photon interacts with one electron — intensity can't compensate for low frequency. Evidence for photons.",
+            },
+            {
+              id: "ph-l24-q4",
+              type: "mcq",
+              prompt:
+                "In the Bohr model, photons are emitted when electrons",
+              choices: [
+                "jump to higher levels",
+                "drop to lower energy levels",
+                "orbit",
+                "stop moving",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Downward transitions release photons with E = h f = ΔE.",
+            },
+            {
+              id: "ph-l24-q5",
+              type: "short",
+              prompt:
+                "Light of energy 5 eV hits a metal with work function 2 eV. Give the maximum electron KE in eV.",
+              answer: "3",
+              keywords: ["3"],
+              acceptable: ["3 eV"],
+              explanation: "KE_max = 5 − 2 = 3 eV.",
+            },
+            {
+              id: "ph-l24-q6",
+              type: "short",
+              prompt:
+                "An electron drops from −3.4 eV to −13.6 eV. Give the emitted photon energy in eV.",
+              answer: "10.2",
+              keywords: ["10.2"],
+              acceptable: ["10.2 eV"],
+              explanation:
+                "ΔE = −3.4 − (−13.6) = 10.2 eV.",
+            },
+          ],
+        },
+        {
+          id: "ph-l25",
+          title: "Binding energy, fission and fusion",
+          level: "HL",
+          questions: [
+            {
+              id: "ph-l25-q1",
+              type: "mcq",
+              prompt: "The binding energy of a nucleus is",
+              choices: [
+                "energy released when it splits",
+                "the energy needed to separate it into nucleons",
+                "its mass",
+                "the electron energy",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Work required to pull the nucleus apart into protons and neutrons.",
+            },
+            {
+              id: "ph-l25-q2",
+              type: "mcq",
+              prompt:
+                "The mass defect Δm relates to binding energy through",
+              choices: [
+                "E = Δm·c²",
+                "E = mc only",
+                "E = Δm²",
+                "E = hΔm",
+              ],
+              answerIndex: 0,
+              explanation:
+                "E = Δmc² — the missing mass became binding energy.",
+            },
+            {
+              id: "ph-l25-q3",
+              type: "tf",
+              prompt:
+                "Iron has approximately the highest binding energy per nucleon, making it the most stable nucleus.",
+              answer: true,
+              explanation:
+                "The binding-energy curve peaks around iron/nickel — fission helps heavy nuclei, fusion helps light ones.",
+            },
+            {
+              id: "ph-l25-q4",
+              type: "mcq",
+              prompt:
+                "Fission and fusion release energy because the products have",
+              choices: [
+                "lower binding energy",
+                "higher binding energy per nucleon",
+                "more mass",
+                "no mass defect",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Products sit higher on the binding-energy-per-nucleon curve — the difference is released.",
+            },
+            {
+              id: "ph-l25-q5",
+              type: "short",
+              prompt:
+                "A mass defect of 0.001 u gives roughly how much energy in MeV? (1 u = 931.5 MeV)",
+              answer: "0.93",
+              keywords: ["0.93"],
+              acceptable: ["0.9", "0.9315", "0.93 MeV"],
+              explanation: "0.001 × 931.5 ≈ 0.93 MeV.",
+            },
+            {
+              id: "ph-l25-q6",
+              type: "short",
+              prompt:
+                "A nucleus of 200 nucleons has binding energy 8 MeV per nucleon. Give the total binding energy in MeV.",
+              answer: "1600",
+              keywords: ["1600"],
+              acceptable: ["1,600", "1600 MeV"],
+              explanation: "200 × 8 = 1,600 MeV.",
             },
           ],
         },
