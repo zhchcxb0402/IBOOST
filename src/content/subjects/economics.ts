@@ -201,6 +201,220 @@ export const economics: Subject = {
             },
           ],
         },
+        {
+          id: "ec-l15",
+          title: "Demand, supply and market equilibrium in depth",
+          questions: [
+            {
+              id: "ec-l15-q1",
+              type: "mcq",
+              prompt: "A rise in consumer income (normal good) shifts",
+              choices: [
+                "supply right",
+                "demand right",
+                "demand left",
+                "supply left",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Normal goods: demand rises with income — demand curve shifts right.",
+            },
+            {
+              id: "ec-l15-q2",
+              type: "mcq",
+              prompt: "A fall in the price of a key input causes",
+              choices: [
+                "demand to shift",
+                "supply to increase — lower price, higher quantity",
+                "a movement along the curve",
+                "shortage",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Cheaper inputs → supply shifts right.",
+            },
+            {
+              id: "ec-l15-q3",
+              type: "tf",
+              prompt:
+                "A shortage pushes price up towards equilibrium; a surplus pushes it down.",
+              answer: true,
+              explanation:
+                "Market forces correct disequilibrium automatically.",
+            },
+            {
+              id: "ec-l15-q4",
+              type: "mcq",
+              prompt: "If both demand and supply increase, equilibrium",
+              choices: [
+                "price definitely rises",
+                "quantity rises; price change is indeterminate",
+                "price definitely falls",
+                "quantity falls",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Same-direction shifts: quantity clear, price ambiguous.",
+            },
+            {
+              id: "ec-l15-q5",
+              type: "short",
+              prompt:
+                "Demand rises while supply falls: price ___ (one word).",
+              answer: "rises",
+              keywords: ["rise", "increase", "up"],
+              acceptable: ["increases", "goes up"],
+              explanation:
+                "Both effects push price upward — unambiguous rise.",
+            },
+            {
+              id: "ec-l15-q6",
+              type: "short",
+              prompt:
+                "A good whose demand falls when income rises is an ___ good.",
+              answer: "inferior",
+              keywords: ["inferior"],
+              acceptable: ["inferior good"],
+              explanation:
+                "Inferior goods: YED < 0.",
+            },
+          ],
+        },
+        {
+          id: "ec-l16",
+          title: "Elasticity calculations: PED, PES, YED, XED",
+          questions: [
+            {
+              id: "ec-l16-q1",
+              type: "mcq",
+              prompt:
+                "Price rises 10%, quantity demanded falls 20%. PED =",
+              choices: ["0.5", "2", "-0.5", "5"],
+              answerIndex: 1,
+              explanation:
+                "PED = %ΔQd ÷ %ΔP = 20/10 = 2 (absolute value) — elastic.",
+            },
+            {
+              id: "ec-l16-q2",
+              type: "mcq",
+              prompt: "A PED of 0.4 means demand is",
+              choices: ["elastic", "inelastic", "unit elastic", "perfectly elastic"],
+              answerIndex: 1,
+              explanation:
+                "PED < 1 → inelastic — quantity responds little to price.",
+            },
+            {
+              id: "ec-l16-q3",
+              type: "tf",
+              prompt:
+                "A positive cross-price elasticity (XED) means the goods are substitutes.",
+              answer: true,
+              explanation:
+                "XED > 0 = substitutes; XED < 0 = complements.",
+            },
+            {
+              id: "ec-l16-q4",
+              type: "mcq",
+              prompt:
+                "For an inelastic good, a price rise causes total revenue to",
+              choices: ["fall", "rise", "stay the same", "become zero"],
+              answerIndex: 1,
+              explanation:
+                "Quantity falls proportionally less than price rises → revenue up.",
+            },
+            {
+              id: "ec-l16-q5",
+              type: "short",
+              prompt:
+                "Income rises 5%, demand rises 10%. YED = ___ (number).",
+              answer: "2",
+              keywords: ["2"],
+              acceptable: ["2.0", "+2"],
+              explanation:
+                "YED = 10/5 = 2 — income-elastic normal good.",
+            },
+            {
+              id: "ec-l16-q6",
+              type: "short",
+              prompt:
+                "Price of tea rises 8%, demand for coffee rises 4%. XED = ___ (number).",
+              answer: "0.5",
+              keywords: ["0.5"],
+              acceptable: ["+0.5", "0.5"],
+              explanation:
+                "XED = 4/8 = 0.5 — positive, so substitutes.",
+            },
+          ],
+        },
+        {
+          id: "ec-l17",
+          title: "Price controls and subsidies",
+          questions: [
+            {
+              id: "ec-l17-q1",
+              type: "mcq",
+              prompt: "A maximum price (price ceiling) set below equilibrium causes",
+              choices: ["a surplus", "a shortage", "equilibrium", "higher prices"],
+              answerIndex: 1,
+              explanation:
+                "e.g. rent control — Qd exceeds Qs → shortages and queues.",
+            },
+            {
+              id: "ec-l17-q2",
+              type: "mcq",
+              prompt: "A minimum price set above equilibrium (e.g. minimum wage, farm price floors) causes",
+              choices: ["a shortage", "a surplus", "scarcity", "lower supply"],
+              answerIndex: 1,
+              explanation:
+                "Qs > Qd at the floor → surplus stock or unemployment.",
+            },
+            {
+              id: "ec-l17-q3",
+              type: "tf",
+              prompt:
+                "A subsidy shifts the supply curve to the right, lowering the price consumers pay.",
+              answer: true,
+              explanation:
+                "Subsidy = government payment per unit → supply shifts right/down.",
+            },
+            {
+              id: "ec-l17-q4",
+              type: "mcq",
+              prompt: "Who benefits most from a subsidy when demand is inelastic?",
+              choices: [
+                "producers only",
+                "consumers — price falls by a large share of the subsidy",
+                "no one",
+                "the government",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Inelastic demand passes most of the subsidy to consumers via lower price.",
+            },
+            {
+              id: "ec-l17-q5",
+              type: "short",
+              prompt:
+                "A price ceiling set BELOW equilibrium creates a ___ (one word).",
+              answer: "shortage",
+              keywords: ["shortage"],
+              acceptable: ["shortage", "excess demand"],
+              explanation:
+                "Excess demand — quantity demanded exceeds supplied.",
+            },
+            {
+              id: "ec-l17-q6",
+              type: "short",
+              prompt:
+                "An illegal market emerging from price controls is called a ___ market (or black market).",
+              answer: "parallel",
+              keywords: ["parallel", "black", "underground"],
+              acceptable: ["black", "black market", "parallel market"],
+              explanation:
+                "Parallel/black markets arise when official prices are capped.",
+            },
+          ],
+        },
       ],
     },
     {
@@ -535,6 +749,81 @@ export const economics: Subject = {
             },
           ],
         },
+        {
+          id: "ec-l18",
+          title: "Market failure: taxes, externalities and market power",
+          level: "HL",
+          questions: [
+            {
+              id: "ec-l18-q1",
+              type: "mcq",
+              prompt: "An indirect tax on a good shifts",
+              choices: [
+                "demand left",
+                "supply left — price rises, quantity falls",
+                "supply right",
+                "demand right",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Tax adds to cost → supply shifts up/left.",
+            },
+            {
+              id: "ec-l18-q2",
+              type: "mcq",
+              prompt: "When demand is inelastic, the tax burden falls mainly on",
+              choices: ["producers", "consumers", "government", "no one"],
+              answerIndex: 1,
+              explanation:
+                "Inelastic demanders keep buying → they pay most of the tax.",
+            },
+            {
+              id: "ec-l18-q3",
+              type: "tf",
+              prompt:
+                "A negative production externality means social cost exceeds private cost — the market overproduces.",
+              answer: true,
+              explanation:
+                "MSC > MPC → welfare loss triangle; Qmarket > Qoptimum.",
+            },
+            {
+              id: "ec-l18-q4",
+              type: "mcq",
+              prompt: "HL: a profit-maximising monopoly produces where",
+              choices: [
+                "P = MC",
+                "MR = MC",
+                "AR = AC",
+                "TR is highest",
+              ],
+              answerIndex: 1,
+              explanation:
+                "All firms max profit at MC = MR; monopolies charge P > MC.",
+            },
+            {
+              id: "ec-l18-q5",
+              type: "short",
+              prompt:
+                "A tax equal to the external cost, internalising the externality, is a ___ tax.",
+              answer: "Pigouvian",
+              keywords: ["pigouvian", "pigovian", "corrective"],
+              acceptable: ["corrective", "Pigovian"],
+              explanation:
+                "Named after Pigou — forces producers to face the full social cost.",
+            },
+            {
+              id: "ec-l18-q6",
+              type: "short",
+              prompt:
+                "HL: compared to perfect competition, monopoly price is higher and output is ___ (one word).",
+              answer: "lower",
+              keywords: ["lower", "smaller", "less"],
+              acceptable: ["lower", "reduced"],
+              explanation:
+                "Monopoly restricts output to raise price — deadweight loss results.",
+            },
+          ],
+        },
       ],
     },
     {
@@ -778,6 +1067,160 @@ export const economics: Subject = {
               keywords: ["sav", "tax", "import"],
               explanation:
                 "S, T, M are withdrawals — each reduces re-spending of income domestically.",
+            },
+          ],
+        },
+        {
+          id: "ec-l19",
+          title: "AD/AS shifts and the multiplier",
+          level: "HL",
+          questions: [
+            {
+              id: "ec-l19-q1",
+              type: "mcq",
+              prompt: "A rise in government spending shifts",
+              choices: [
+                "SRAS left",
+                "AD right",
+                "AD left",
+                "LRAS right",
+              ],
+              answerIndex: 1,
+              explanation:
+                "G is a component of AD — expansionary fiscal shifts AD right.",
+            },
+            {
+              id: "ec-l19-q2",
+              type: "mcq",
+              prompt: "An increase in oil prices shifts",
+              choices: [
+                "AD right",
+                "SRAS left — stagflation pressure",
+                "SRAS right",
+                "AD left",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Cost-push shock: higher price level, lower output.",
+            },
+            {
+              id: "ec-l19-q3",
+              type: "tf",
+              prompt:
+                "HL: the Keynesian multiplier equals 1 ÷ (1 − MPC).",
+              answer: true,
+              explanation:
+                "k = 1/(1−MPC) = 1/MPW — injections multiply through the economy.",
+            },
+            {
+              id: "ec-l19-q4",
+              type: "mcq",
+              prompt: "If MPC = 0.8, the multiplier is",
+              choices: ["0.8", "1.25", "5", "4"],
+              answerIndex: 2,
+              explanation:
+                "1/(1−0.8) = 1/0.2 = 5.",
+            },
+            {
+              id: "ec-l19-q5",
+              type: "short",
+              prompt:
+                "MPC = 0.75. A $10bn injection raises national income by $___ bn. (number)",
+              answer: "40",
+              keywords: ["40"],
+              acceptable: ["40 billion", "$40bn"],
+              explanation:
+                "k = 1/0.25 = 4 → 4 × $10bn = $40bn.",
+            },
+            {
+              id: "ec-l19-q6",
+              type: "short",
+              prompt:
+                "Long-run AS shifts right when the economy gains productive ___ (one word).",
+              answer: "capacity",
+              keywords: ["capacity", "potential", "output"],
+              acceptable: ["capacity", "potential output"],
+              explanation:
+                "More/better factors of production → LRAS right.",
+            },
+          ],
+        },
+        {
+          id: "ec-l20",
+          title: "Unemployment, inflation and the Phillips curve",
+          questions: [
+            {
+              id: "ec-l20-q1",
+              type: "mcq",
+              prompt: "Structural unemployment is caused by",
+              choices: [
+                "seasonal demand",
+                "a mismatch between workers' skills and job requirements",
+                "job searching",
+                "recessions only",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Technology/globalisation make some skills obsolete.",
+            },
+            {
+              id: "ec-l20-q2",
+              type: "mcq",
+              prompt: "The CPI measures inflation by tracking",
+              choices: [
+                "all output",
+                "a representative basket of consumer goods",
+                "wages only",
+                "house prices only",
+              ],
+              answerIndex: 1,
+              explanation:
+                "CPI = weighted basket index; inflation = %Δ in CPI.",
+            },
+            {
+              id: "ec-l20-q3",
+              type: "tf",
+              prompt:
+                "HL: the short-run Phillips curve shows an inverse relationship between inflation and unemployment.",
+              answer: true,
+              explanation:
+                "SRPC: lower unemployment ↔ higher inflation (demand-side trade-off).",
+            },
+            {
+              id: "ec-l20-q4",
+              type: "mcq",
+              prompt: "Cyclical unemployment is associated with",
+              choices: [
+                "friction in job search",
+                "the downturn phase of the business cycle",
+                "technology",
+                "seasons",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Demand-deficient unemployment in recessions.",
+            },
+            {
+              id: "ec-l20-q5",
+              type: "short",
+              prompt:
+                "CPI rises from 120 to 126. Inflation rate = ___%. (number)",
+              answer: "5",
+              keywords: ["5"],
+              acceptable: ["5%"],
+              explanation:
+                "(126−120)/120 × 100 = 5%.",
+            },
+            {
+              id: "ec-l20-q6",
+              type: "short",
+              prompt:
+                "Unemployment type: workers between jobs searching for a better match. (one word)",
+              answer: "frictional",
+              keywords: ["frictional"],
+              acceptable: ["frictional unemployment"],
+              explanation:
+                "Frictional — normal turnover, shortest duration.",
             },
           ],
         },
@@ -1031,6 +1474,165 @@ export const economics: Subject = {
             },
           ],
         },
+        {
+          id: "ec-l21",
+          title: "Exchange rates and the balance of payments",
+          questions: [
+            {
+              id: "ec-l21-q1",
+              type: "mcq",
+              prompt: "In a floating system, an appreciation of the dollar means",
+              choices: [
+                "$1 buys fewer euros",
+                "$1 buys more foreign currency",
+                "inflation falls to zero",
+                "exports rise",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Appreciation = currency value rises against others.",
+            },
+            {
+              id: "ec-l21-q2",
+              type: "mcq",
+              prompt: "An appreciation typically makes exports",
+              choices: [
+                "cheaper",
+                "more expensive abroad — export demand falls",
+                "unaffected",
+                "subsidised",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Stronger currency → exports pricier, imports cheaper.",
+            },
+            {
+              id: "ec-l21-q3",
+              type: "tf",
+              prompt:
+                "The balance of payments' current account records trade in goods and services, income and transfers.",
+              answer: true,
+              explanation:
+                "Current account = trade balance + net income + net transfers.",
+            },
+            {
+              id: "ec-l21-q4",
+              type: "mcq",
+              prompt: "Higher domestic interest rates tend to",
+              choices: [
+                "depreciate the currency",
+                "attract capital inflows and appreciate the currency",
+                "cause a deficit",
+                "lower exports permanently",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Hot money flows in → demand for the currency rises.",
+            },
+            {
+              id: "ec-l21-q5",
+              type: "short",
+              prompt:
+                "The account recording FDI, portfolio investment and reserves is the ___ account.",
+              answer: "financial",
+              keywords: ["financial", "capital"],
+              acceptable: ["financial account", "capital account"],
+              explanation:
+                "Financial (and capital) account — capital flows.",
+            },
+            {
+              id: "ec-l21-q6",
+              type: "short",
+              prompt:
+                "A currency losing value in a float is a ___ (one word).",
+              answer: "depreciation",
+              keywords: ["depreciation"],
+              acceptable: ["depreciation", "depreciating"],
+              explanation:
+                "Depreciation (market-driven) vs devaluation (policy).",
+            },
+          ],
+        },
+        {
+          id: "ec-l22",
+          title: "Marshall-Lerner, J-curve and economic integration",
+          level: "HL",
+          questions: [
+            {
+              id: "ec-l22-q1",
+              type: "mcq",
+              prompt: "HL: the Marshall-Lerner condition says depreciation improves the trade balance if",
+              choices: [
+                "demand is inelastic",
+                "PED of exports + PED of imports > 1",
+                "interest rates are low",
+                "income rises",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Sum of export + import price elasticities must exceed 1.",
+            },
+            {
+              id: "ec-l22-q2",
+              type: "mcq",
+              prompt: "The J-curve shows that after depreciation the trade balance",
+              choices: [
+                "improves immediately",
+                "worsens before improving as contracts adjust",
+                "stays flat",
+                "worsens forever",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Short-run inelasticity → deficit grows, then recovers.",
+            },
+            {
+              id: "ec-l22-q3",
+              type: "tf",
+              prompt:
+                "A customs union adds a common external tariff to a free trade area.",
+              answer: true,
+              explanation:
+                "FTA → customs union → common market → monetary union — increasing integration.",
+            },
+            {
+              id: "ec-l22-q4",
+              type: "mcq",
+              prompt: "Trade creation in a bloc occurs when",
+              choices: [
+                "trade shifts to higher-cost producers",
+                "consumption switches from high-cost domestic to lower-cost partner producers",
+                "tariffs rise",
+                "quotas apply",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Efficiency gain — vs trade diversion (welfare loss).",
+            },
+            {
+              id: "ec-l22-q5",
+              type: "short",
+              prompt:
+                "Deepest form of integration with shared currency and central bank = economic and ___ union.",
+              answer: "monetary",
+              keywords: ["monetary"],
+              acceptable: ["monetary union"],
+              explanation:
+                "e.g. the Eurozone.",
+            },
+            {
+              id: "ec-l22-q6",
+              type: "short",
+              prompt:
+                "A tax on imports to protect domestic industry is a ___.",
+              answer: "tariff",
+              keywords: ["tariff"],
+              acceptable: ["a tariff"],
+              explanation:
+                "Tariffs raise import prices — trade protection.",
+            },
+          ],
+        },
       ],
     },
     {
@@ -1199,6 +1801,238 @@ export const economics: Subject = {
               keywords: ["infrastructure", "depend", "corrupt", "condition"],
               explanation:
                 "Aid can fill saving gaps but may create dependency or be tied to donor interests.",
+            },
+          ],
+        },
+        {
+          id: "ec-l23",
+          title: "Inequality: Lorenz curve and Gini coefficient",
+          questions: [
+            {
+              id: "ec-l23-q1",
+              type: "mcq",
+              prompt: "The Lorenz curve plots",
+              choices: [
+                "prices vs output",
+                "cumulative % of income against cumulative % of population",
+                "unemployment vs inflation",
+                "imports vs exports",
+              ],
+              answerIndex: 1,
+              explanation:
+                "The further from the 45° equality line, the more unequal the distribution.",
+            },
+            {
+              id: "ec-l23-q2",
+              type: "mcq",
+              prompt: "A Gini coefficient of 0 means",
+              choices: [
+                "maximum inequality",
+                "perfect equality",
+                "high poverty",
+                "low growth",
+              ],
+              answerIndex: 1,
+              explanation:
+                "0 = everyone equal; 1 = one person has everything.",
+            },
+            {
+              id: "ec-l23-q3",
+              type: "tf",
+              prompt:
+                "A progressive tax takes a higher percentage from higher incomes.",
+              answer: true,
+              explanation:
+                "Progressive = average rate rises with income — reduces inequality.",
+            },
+            {
+              id: "ec-l23-q4",
+              type: "mcq",
+              prompt: "Which is a direct tax?",
+              choices: ["VAT", "income tax", "import duty", "excise duty"],
+              answerIndex: 1,
+              explanation:
+                "Direct = on income/wealth; indirect = on spending.",
+            },
+            {
+              id: "ec-l23-q5",
+              type: "short",
+              prompt:
+                "Gini formula: area between Lorenz curve and equality line ÷ ___. (one phrase)",
+              answer: "the total area under the line",
+              keywords: ["total area", "0.5", "whole area", "a+b"],
+              acceptable: ["total area under the equality line", "A/(A+B)", "0.5"],
+              explanation:
+                "Gini = A/(A+B) where A is the gap area, A+B the whole triangle.",
+            },
+            {
+              id: "ec-l23-q6",
+              type: "short",
+              prompt:
+                "Transfer payments to the poorest households are an example of income ___.",
+              answer: "redistribution",
+              keywords: ["redistribution"],
+              acceptable: ["redistribution"],
+              explanation:
+                "Taxes + transfers redistribute income, shifting Lorenz toward equality.",
+            },
+          ],
+        },
+        {
+          id: "ec-l24",
+          title: "Evaluating fiscal, monetary and supply-side policy",
+          questions: [
+            {
+              id: "ec-l24-q1",
+              type: "mcq",
+              prompt: "A strength of fiscal policy is that it",
+              choices: [
+                "works instantly",
+                "can be targeted at specific groups/regions",
+                "has no side effects",
+                "is set by central banks",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Targeting is a plus; time lags and crowding out are weaknesses.",
+            },
+            {
+              id: "ec-l24-q2",
+              type: "mcq",
+              prompt: "A key limitation of monetary policy is",
+              choices: [
+                "it's too fast",
+                "low rates may not stimulate demand if confidence is low (liquidity trap)",
+                "it targets the poor",
+                "it raises taxes",
+              ],
+              answerIndex: 1,
+              explanation:
+                "You can't force borrowing — evaluation point in recessions.",
+            },
+            {
+              id: "ec-l24-q3",
+              type: "tf",
+              prompt:
+                "Supply-side policies (education, infrastructure, deregulation) take a long time to work.",
+              answer: true,
+              explanation:
+                "Long time lags but they raise potential output — a key evaluation.",
+            },
+            {
+              id: "ec-l24-q4",
+              type: "mcq",
+              prompt: "Market-based supply-side policies include",
+              choices: [
+                "more government spending on schools",
+                "privatisation and labour-market deregulation",
+                "higher benefits",
+                "price controls",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Market-based vs interventionist supply-side policies.",
+            },
+            {
+              id: "ec-l24-q5",
+              type: "short",
+              prompt:
+                "Name ONE disadvantage of using demand-side policy to reduce inflation.",
+              answer: "it may cause unemployment / lower growth",
+              keywords: ["unemployment", "recession", "growth", "conflict"],
+              acceptable: ["higher unemployment", "slower growth"],
+              explanation:
+                "Policy conflicts — disinflation costs output.",
+            },
+            {
+              id: "ec-l24-q6",
+              type: "short",
+              prompt:
+                "When government borrowing raises interest rates and reduces private investment = ___ out.",
+              answer: "crowding",
+              keywords: ["crowding"],
+              acceptable: ["crowding out"],
+              explanation:
+                "Crowding out — a standard fiscal-policy evaluation.",
+            },
+          ],
+        },
+        {
+          id: "ec-l25",
+          title: "Development: measures, strategies, debt and aid",
+          questions: [
+            {
+              id: "ec-l25-q1",
+              type: "mcq",
+              prompt: "The HDI combines",
+              choices: [
+                "GDP only",
+                "income (GNI per capita), education and life expectancy",
+                "trade and aid",
+                "inflation and unemployment",
+              ],
+              answerIndex: 1,
+              explanation:
+                "HDI is a composite development measure — more than income alone.",
+            },
+            {
+              id: "ec-l25-q2",
+              type: "mcq",
+              prompt: "Microfinance primarily helps development by",
+              choices: [
+                "building dams",
+                "giving small loans to poor entrepreneurs, often women",
+                "raising tariffs",
+                "buying weapons",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Small credit access where banks won't lend.",
+            },
+            {
+              id: "ec-l25-q3",
+              type: "tf",
+              prompt:
+                "Export-oriented growth and import substitution are two contrasting development strategies.",
+              answer: true,
+              explanation:
+                "East Asian Tigers = export-led; Latin America tried import substitution.",
+            },
+            {
+              id: "ec-l25-q4",
+              type: "mcq",
+              prompt: "'Tied aid' requires the recipient to",
+              choices: [
+                "repay immediately",
+                "spend the aid on goods/services from the donor country",
+                "change government",
+                "join a trade bloc",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Tied aid benefits the donor too — an evaluation point.",
+            },
+            {
+              id: "ec-l25-q5",
+              type: "short",
+              prompt:
+                "Name ONE barrier to economic development.",
+              answer: "poverty cycle / lack of infrastructure",
+              keywords: ["poverty", "infrastructure", "corruption", "debt", "education", "institution", "capital"],
+              acceptable: ["poverty trap", "corruption", "poor infrastructure", "debt burden"],
+              explanation:
+                "Poverty cycles, weak institutions, infrastructure gaps, debt.",
+            },
+            {
+              id: "ec-l25-q6",
+              type: "short",
+              prompt:
+                "Forgiving a developing country's repayments is called debt ___.",
+              answer: "relief",
+              keywords: ["relief", "cancellation", "forgiveness"],
+              acceptable: ["relief", "cancellation", "debt cancellation"],
+              explanation:
+                "Debt relief/cancellation (e.g. HIPC initiative).",
             },
           ],
         },

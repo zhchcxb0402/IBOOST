@@ -183,6 +183,220 @@ export const mathAi: Subject = {
             },
           ],
         },
+        {
+          id: "mai-l13",
+          title: "Annuities, amortisation and TVM practice",
+          questions: [
+            {
+              id: "mai-l13-q1",
+              type: "mcq",
+              prompt:
+                "In TVM solvers, PV is usually entered as a NEGATIVE number because",
+              choices: [
+                "it is a debt",
+                "it represents money paid out (cash flow convention)",
+                "the calculator is wrong",
+                "interest is negative",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Sign convention: outflows negative, inflows positive.",
+            },
+            {
+              id: "mai-l13-q2",
+              type: "mcq",
+              prompt:
+                "To find monthly loan repayments on a GDC you solve TVM for",
+              choices: ["FV", "PMT", "I%", "PV"],
+              answerIndex: 1,
+              explanation:
+                "PMT is the periodic payment; set N = months, FV = 0.",
+            },
+            {
+              id: "mai-l13-q3",
+              type: "tf",
+              prompt:
+                "In the early years of an amortised loan, most of each payment is interest.",
+              answer: true,
+              explanation:
+                "The balance is largest early on, so interest dominates; principal share grows later.",
+            },
+            {
+              id: "mai-l13-q4",
+              type: "mcq",
+              prompt:
+                "The future value of an annuity paying PMT per period at rate i for n periods contains the factor",
+              choices: [
+                "(1 + i)ⁿ − 1) / i",
+                "(1 + i)^−n",
+                "iⁿ",
+                "n·i",
+              ],
+              answerIndex: 0,
+              explanation:
+                "FV = PMT·((1 + i)ⁿ − 1)/i — each payment compounds for a different number of periods.",
+            },
+            {
+              id: "mai-l13-q5",
+              type: "short",
+              prompt:
+                "$1,000 at 12% per year compounded monthly. Give its value after 1 year to 2 decimal places.",
+              answer: "1126.83",
+              keywords: ["1126"],
+              acceptable: ["1126.8", "1126.83"],
+              explanation:
+                "1000 × 1.01¹² = 1000 × 1.126825 ≈ $1,126.83.",
+            },
+            {
+              id: "mai-l13-q6",
+              type: "short",
+              prompt:
+                "$100 is deposited at the END of each year for 3 years at 5%. Give the future value to 2 decimal places.",
+              answer: "315.25",
+              keywords: ["315"],
+              acceptable: ["315.25"],
+              explanation:
+                "FV = 100·(1.05³ − 1)/0.05 = 100 × 3.1525 = $315.25.",
+            },
+          ],
+        },
+        {
+          id: "mai-l14",
+          title: "Sequences, sigma notation and approximation",
+          questions: [
+            {
+              id: "mai-l14-q1",
+              type: "mcq",
+              prompt:
+                "The nth term of an arithmetic sequence with first term a and difference d is",
+              choices: [
+                "a + nd",
+                "a + (n − 1)d",
+                "a·dⁿ",
+                "a + d(n + 1)",
+              ],
+              answerIndex: 1,
+              explanation: "uₙ = a + (n − 1)d.",
+            },
+            {
+              id: "mai-l14-q2",
+              type: "mcq",
+              prompt:
+                "The sum of the first n terms of a geometric series (r ≠ 1) is",
+              choices: [
+                "a(rⁿ − 1)/(r − 1)",
+                "a·rⁿ",
+                "n·a·r",
+                "a/(1 − r)",
+              ],
+              answerIndex: 0,
+              explanation: "Sₙ = a(rⁿ − 1)/(r − 1).",
+            },
+            {
+              id: "mai-l14-q3",
+              type: "tf",
+              prompt: "Σ (sigma) notation means 'add the terms'.",
+              answer: true,
+              explanation:
+                "Σ_{k=1}^{n} u_k = u₁ + u₂ + … + uₙ.",
+            },
+            {
+              id: "mai-l14-q4",
+              type: "mcq",
+              prompt: "The 5th term of 3, 7, 11, … is",
+              choices: ["15", "19", "23", "17"],
+              answerIndex: 1,
+              explanation: "u₅ = 3 + 4×4 = 19.",
+            },
+            {
+              id: "mai-l14-q5",
+              type: "short",
+              prompt: "Give the sum of the first 10 positive integers.",
+              answer: "55",
+              keywords: ["55"],
+              explanation: "S₁₀ = 10×11/2 = 55.",
+            },
+            {
+              id: "mai-l14-q6",
+              type: "short",
+              prompt: "Give the 4th term of the geometric sequence 2, 6, 18, …",
+              answer: "54",
+              keywords: ["54"],
+              explanation: "u₄ = 2 × 3³ = 54.",
+            },
+          ],
+        },
+        {
+          id: "mai-l15",
+          title: "Number and algebra: exam practice",
+          questions: [
+            {
+              id: "mai-l15-q1",
+              type: "mcq",
+              prompt: "How many significant figures does 0.00450 have?",
+              choices: ["2", "3", "5", "6"],
+              answerIndex: 1,
+              explanation:
+                "Leading zeros don't count; the trailing zero does → 4, 5, 0 = 3 s.f.",
+            },
+            {
+              id: "mai-l15-q2",
+              type: "mcq",
+              prompt:
+                "Over a long period, compound interest compared to simple interest on the same principal and rate",
+              choices: [
+                "earns less",
+                "earns the same",
+                "earns more, and the gap widens",
+                "depends on the bank",
+              ],
+              answerIndex: 2,
+              explanation:
+                "Interest-on-interest compounds — the gap grows exponentially.",
+            },
+            {
+              id: "mai-l15-q3",
+              type: "tf",
+              prompt:
+                "In exams, final answers are generally expected to 3 significant figures unless stated otherwise.",
+              answer: true,
+              explanation:
+                "IB default: 3 s.f. (or as specified in the question).",
+            },
+            {
+              id: "mai-l15-q4",
+              type: "mcq",
+              prompt: "The absolute error of an approximation is",
+              choices: [
+                "approx − exact",
+                "|approx − exact|",
+                "approx/exact",
+                "exact/approx",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Absolute error is the magnitude of the difference.",
+            },
+            {
+              id: "mai-l15-q5",
+              type: "short",
+              prompt:
+                "$1,000 invested at 5% SIMPLE interest for 3 years. Give the final value in dollars.",
+              answer: "1150",
+              keywords: ["1150"],
+              acceptable: ["1,150"],
+              explanation: "Interest = 1000×0.05×3 = 150 → $1,150.",
+            },
+            {
+              id: "mai-l15-q6",
+              type: "short",
+              prompt: "Round 234.567 to 3 significant figures.",
+              answer: "235",
+              keywords: ["235"],
+              explanation: "234.567 → first 3 s.f. are 234, next digit 5 rounds up → 235.",
+            },
+          ],
+        },
       ],
     },
     {
@@ -321,6 +535,226 @@ export const mathAi: Subject = {
               keywords: ["3.7"],
               explanation:
                 "Max = midline + amplitude = 2.5 + 1.2 = 3.7 m.",
+            },
+          ],
+        },
+        {
+          id: "mai-l16",
+          title: "Logistic and piecewise models",
+          questions: [
+            {
+              id: "mai-l16-q1",
+              type: "mcq",
+              prompt:
+                "In the logistic model P = L/(1 + Ce^(−kt)), the carrying capacity is",
+              choices: ["C", "k", "L", "e"],
+              answerIndex: 2,
+              explanation:
+                "As t → ∞ the denominator → 1, so P → L.",
+            },
+            {
+              id: "mai-l16-q2",
+              type: "mcq",
+              prompt: "A piecewise function is one that",
+              choices: [
+                "is always linear",
+                "uses different rules on different parts of its domain",
+                "has no domain",
+                "is always continuous",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Different formula per interval — e.g. tax brackets.",
+            },
+            {
+              id: "mai-l16-q3",
+              type: "tf",
+              prompt:
+                "A logistic curve grows rapidly then levels off at the carrying capacity.",
+              answer: true,
+              explanation:
+                "The signature S-shape of constrained growth.",
+            },
+            {
+              id: "mai-l16-q4",
+              type: "mcq",
+              prompt:
+                "Which scenario best fits a LOGISTIC model?",
+              choices: [
+                "free-fall speed",
+                "population growth with limited resources",
+                "simple interest",
+                "constant speed",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Limited resources cap growth — logistic not exponential.",
+            },
+            {
+              id: "mai-l16-q5",
+              type: "short",
+              prompt:
+                "A logistic model has L = 1000. Give the long-term (maximum) population.",
+              answer: "1000",
+              keywords: ["1000"],
+              acceptable: ["1,000"],
+              explanation: "P → L = 1000 as t → ∞.",
+            },
+            {
+              id: "mai-l16-q6",
+              type: "short",
+              prompt:
+                "f(x) = x + 1 for x < 2, and f(x) = 5 for x ≥ 2. Give f(3).",
+              answer: "5",
+              keywords: ["5"],
+              explanation: "3 ≥ 2 → second branch: f(3) = 5.",
+            },
+          ],
+        },
+        {
+          id: "mai-l17",
+          title: "Choosing and validating models",
+          questions: [
+            {
+              id: "mai-l17-q1",
+              type: "mcq",
+              prompt: "A residual is defined as",
+              choices: [
+                "predicted − observed",
+                "observed − predicted",
+                "observed + predicted",
+                "the mean of the data",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Residual = observed − predicted; patterns in residuals reveal poor fits.",
+            },
+            {
+              id: "mai-l17-q2",
+              type: "mcq",
+              prompt: "A coefficient of determination r² close to 1 indicates",
+              choices: [
+                "a poor fit",
+                "a good fit",
+                "no correlation",
+                "negative correlation",
+              ],
+              answerIndex: 1,
+              explanation:
+                "r² ≈ 1 means the model explains almost all variation.",
+            },
+            {
+              id: "mai-l17-q3",
+              type: "tf",
+              prompt:
+                "A model is only as reliable as the assumptions it is built on.",
+              answer: true,
+              explanation:
+                "Changing conditions (new data range, external factors) can break a model.",
+            },
+            {
+              id: "mai-l17-q4",
+              type: "mcq",
+              prompt:
+                "If residuals show a clear curved pattern, the chosen model is",
+              choices: [
+                "perfect",
+                "probably the wrong shape for the data",
+                "too accurate",
+                "linear",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Random residuals = good fit; systematic pattern = model mismatch.",
+            },
+            {
+              id: "mai-l17-q5",
+              type: "short",
+              prompt:
+                "Observed value 12, predicted 11.5. Give the residual.",
+              answer: "0.5",
+              keywords: ["0.5"],
+              explanation: "Residual = 12 − 11.5 = 0.5.",
+            },
+            {
+              id: "mai-l17-q6",
+              type: "short",
+              prompt:
+                "Name the model type for a quantity that DOUBLES every year.",
+              answer: "exponential",
+              keywords: ["exponential"],
+              explanation:
+                "Constant multiplicative factor → exponential growth.",
+            },
+          ],
+        },
+        {
+          id: "mai-l18",
+          title: "Functions: exam practice",
+          questions: [
+            {
+              id: "mai-l18-q1",
+              type: "mcq",
+              prompt: "The domain of f(x) = √x is",
+              choices: [
+                "all real numbers",
+                "x ≥ 0",
+                "x > 0",
+                "x ≠ 0",
+              ],
+              answerIndex: 1,
+              explanation: "Square root needs x ≥ 0.",
+            },
+            {
+              id: "mai-l18-q2",
+              type: "mcq",
+              prompt:
+                "The graph of an inverse function is the original graph reflected in",
+              choices: [
+                "the x-axis",
+                "the y-axis",
+                "the line y = x",
+                "the origin",
+              ],
+              answerIndex: 2,
+              explanation:
+                "Inverting swaps x and y → reflection in y = x.",
+            },
+            {
+              id: "mai-l18-q3",
+              type: "tf",
+              prompt:
+                "The vertical line test checks whether a graph represents a function.",
+              answer: true,
+              explanation:
+                "If a vertical line hits twice, x maps to two y's — not a function.",
+            },
+            {
+              id: "mai-l18-q4",
+              type: "mcq",
+              prompt:
+                "The horizontal asymptote of y = 1/x + 2 is",
+              choices: ["y = 0", "x = 0", "y = 2", "x = 2"],
+              answerIndex: 2,
+              explanation: "1/x → 0, so y → 2.",
+            },
+            {
+              id: "mai-l18-q5",
+              type: "short",
+              prompt: "f(x) = 2x². Give f(3).",
+              answer: "18",
+              keywords: ["18"],
+              explanation: "2 × 9 = 18.",
+            },
+            {
+              id: "mai-l18-q6",
+              type: "short",
+              prompt:
+                "Give the vertical asymptote of f(x) = 1/(x − 2).",
+              answer: "x = 2",
+              keywords: ["2"],
+              acceptable: ["x=2"],
+              explanation: "Denominator zero at x = 2.",
             },
           ],
         },
@@ -478,6 +912,318 @@ export const mathAi: Subject = {
               acceptable: ["0.25", "0.5", "1/4 1/2"],
               explanation:
                 "Inverse of a diagonal matrix: reciprocals on the diagonal — 1/2 and 1/4.",
+            },
+          ],
+        },
+        {
+          id: "mai-l19",
+          title: "Voronoi: nearest neighbour and largest empty circle",
+          questions: [
+            {
+              id: "mai-l19-q1",
+              type: "mcq",
+              prompt:
+                "In nearest-neighbour interpolation, every point in a Voronoi cell takes",
+              choices: [
+                "the average value",
+                "the value of the site it contains",
+                "a random value",
+                "the farthest site's value",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Each cell inherits its site's value — e.g. rainfall maps.",
+            },
+            {
+              id: "mai-l19-q2",
+              type: "mcq",
+              prompt:
+                "The largest empty circle in a Voronoi diagram is centred at",
+              choices: [
+                "a site",
+                "a Voronoi vertex (or the diagram edge)",
+                "the midpoint of an edge",
+                "the origin",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Voronoi vertices are the points farthest from all sites — candidates for e.g. a new facility location.",
+            },
+            {
+              id: "mai-l19-q3",
+              type: "tf",
+              prompt:
+                "A Voronoi vertex is equidistant from the three nearest sites.",
+              answer: true,
+              explanation:
+                "Vertices are where three cells meet — equal distance to all three sites.",
+            },
+            {
+              id: "mai-l19-q4",
+              type: "mcq",
+              prompt:
+                "The radius of the largest empty circle equals",
+              choices: [
+                "the distance to the nearest site",
+                "the diameter of the region",
+                "half the cell perimeter",
+                "zero",
+              ],
+              answerIndex: 0,
+              explanation:
+                "The circle just touches the nearest sites before containing one.",
+            },
+            {
+              id: "mai-l19-q5",
+              type: "short",
+              prompt:
+                "Sites at A(0, 0) and B(4, 0). Give the equation of their Voronoi boundary line.",
+              answer: "x = 2",
+              keywords: ["x", "2"],
+              acceptable: ["x=2"],
+              explanation:
+                "Perpendicular bisector of AB: the vertical line x = 2.",
+            },
+            {
+              id: "mai-l19-q6",
+              type: "short",
+              prompt:
+                "A Voronoi vertex is 3 units from each of its three sites. Give the radius of the largest empty circle centred there.",
+              answer: "3",
+              keywords: ["3"],
+              acceptable: ["3 units"],
+              explanation:
+                "Radius = distance from vertex to the nearest sites = 3.",
+            },
+          ],
+        },
+        {
+          id: "mai-l20",
+          title: "Perpendicular bisectors and Voronoi construction",
+          questions: [
+            {
+              id: "mai-l20-q1",
+              type: "mcq",
+              prompt: "The perpendicular bisector of a segment",
+              choices: [
+                "passes through one endpoint",
+                "passes through the midpoint at right angles",
+                "is parallel to the segment",
+                "has gradient 0",
+              ],
+              answerIndex: 1,
+              explanation:
+                "It cuts the segment in half at 90° — the locus of points equidistant from both ends.",
+            },
+            {
+              id: "mai-l20-q2",
+              type: "mcq",
+              prompt: "The midpoint of (0, 0) and (6, 0) is",
+              choices: ["(6, 0)", "(3, 0)", "(0, 3)", "(3, 3)"],
+              answerIndex: 1,
+              explanation: "Midpoint = average of coordinates: (3, 0).",
+            },
+            {
+              id: "mai-l20-q3",
+              type: "tf",
+              prompt:
+                "Every edge of a Voronoi diagram lies on the perpendicular bisector of two sites.",
+              answer: true,
+              explanation:
+                "Edges = locus of points equidistant from a pair of sites.",
+            },
+            {
+              id: "mai-l20-q4",
+              type: "mcq",
+              prompt:
+                "The gradient of a perpendicular bisector is the original segment's",
+              choices: [
+                "same gradient",
+                "negative reciprocal",
+                "double",
+                "half",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Perpendicular gradients multiply to −1: m₁·m₂ = −1.",
+            },
+            {
+              id: "mai-l20-q5",
+              type: "short",
+              prompt: "Give the midpoint of (2, 4) and (6, 8).",
+              answer: "(4, 6)",
+              keywords: ["4", "6"],
+              acceptable: ["4,6"],
+              explanation: "((2+6)/2, (4+8)/2) = (4, 6).",
+            },
+            {
+              id: "mai-l20-q6",
+              type: "short",
+              prompt:
+                "A segment has gradient 2. Give the gradient of its perpendicular bisector.",
+              answer: "-1/2",
+              keywords: ["-0.5", "-1/2"],
+              acceptable: ["−0.5", "-0.5", "−1/2"],
+              explanation: "Negative reciprocal of 2 is −1/2.",
+            },
+          ],
+        },
+        {
+          id: "mai-l21",
+          title: "Graph theory: adjacency matrices and walks",
+          level: "HL",
+          questions: [
+            {
+              id: "mai-l21-q1",
+              type: "mcq",
+              prompt:
+                "In an adjacency matrix, the entry aᵢⱼ counts",
+              choices: [
+                "the distance i to j",
+                "the number of edges from vertex i to vertex j",
+                "the degree of i",
+                "the weight of edge i",
+              ],
+              answerIndex: 1,
+              explanation:
+                "aᵢⱼ = number of direct edges i → j.",
+            },
+            {
+              id: "mai-l21-q2",
+              type: "mcq",
+              prompt:
+                "The entry (A²)ᵢⱼ of a squared adjacency matrix counts",
+              choices: [
+                "edges",
+                "walks of length 2 from i to j",
+                "vertices",
+                "cycles",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Aⁿ counts walks of length n — key result in graph theory.",
+            },
+            {
+              id: "mai-l21-q3",
+              type: "tf",
+              prompt:
+                "The adjacency matrix of an undirected graph is symmetric.",
+              answer: true,
+              explanation:
+                "Edge i–j counts in both directions: aᵢⱼ = aⱼᵢ.",
+            },
+            {
+              id: "mai-l21-q4",
+              type: "mcq",
+              prompt:
+                "The degree of a vertex equals its adjacency matrix",
+              choices: [
+                "row/column sum",
+                "determinant",
+                "trace",
+                "diagonal entry",
+              ],
+              answerIndex: 0,
+              explanation:
+                "Summing a row gives the number of edges at that vertex.",
+            },
+            {
+              id: "mai-l21-q5",
+              type: "short",
+              prompt:
+                "Graph with only edges A–B and B–C. Give the number of length-2 walks from A to C.",
+              answer: "1",
+              keywords: ["1"],
+              explanation:
+                "The only walk is A→B→C.",
+            },
+            {
+              id: "mai-l21-q6",
+              type: "short",
+              prompt:
+                "A = [[0, 1], [1, 0]]. Give the (1,1) entry of A².",
+              answer: "1",
+              keywords: ["1"],
+              explanation:
+                "A² = [[1, 0], [0, 1]] — one length-2 walk back to each vertex.",
+            },
+          ],
+        },
+        {
+          id: "mai-l22",
+          title: "Minimum spanning trees: Kruskal and Prim",
+          level: "HL",
+          questions: [
+            {
+              id: "mai-l22-q1",
+              type: "mcq",
+              prompt: "Kruskal's algorithm builds the MST by",
+              choices: [
+                "adding the largest edges first",
+                "adding the smallest edge that doesn't create a cycle",
+                "starting from a random vertex",
+                "removing edges",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Sort edges ascending; add each if it doesn't form a cycle.",
+            },
+            {
+              id: "mai-l22-q2",
+              type: "mcq",
+              prompt: "Prim's algorithm works by",
+              choices: [
+                "sorting all edges first",
+                "growing one tree from a start vertex, always adding the cheapest connecting edge",
+                "removing the heaviest edges",
+                "random walks",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Prim grows a single connected tree; Kruskal can grow a forest.",
+            },
+            {
+              id: "mai-l22-q3",
+              type: "tf",
+              prompt:
+                "A spanning tree on n vertices always has exactly n − 1 edges.",
+              answer: true,
+              explanation:
+                "Tree = connected with no cycles → n − 1 edges.",
+            },
+            {
+              id: "mai-l22-q4",
+              type: "mcq",
+              prompt:
+                "A minimum spanning tree minimises the total",
+              choices: [
+                "number of edges",
+                "edge weight",
+                "number of vertices",
+                "diameter",
+              ],
+              answerIndex: 1,
+              explanation:
+                "MST = minimum total weight, e.g. cheapest cable network.",
+            },
+            {
+              id: "mai-l22-q5",
+              type: "short",
+              prompt:
+                "A triangle graph has edge weights 3, 5, 7. Give the MST total weight.",
+              answer: "8",
+              keywords: ["8"],
+              explanation:
+                "Take the two cheapest: 3 + 5 = 8.",
+            },
+            {
+              id: "mai-l22-q6",
+              type: "short",
+              prompt:
+                "Give the number of edges in any spanning tree of 5 vertices.",
+              answer: "4",
+              keywords: ["4"],
+              explanation: "n − 1 = 4.",
             },
           ],
         },
@@ -721,6 +1467,145 @@ export const mathAi: Subject = {
             },
           ],
         },
+        {
+          id: "mai-l23",
+          title: "Normal and binomial distributions",
+          questions: [
+            {
+              id: "mai-l23-q1",
+              type: "mcq",
+              prompt:
+                "For a normal distribution, about 95% of data lies within how many standard deviations of the mean?",
+              choices: ["1", "2", "3", "0.5"],
+              answerIndex: 1,
+              explanation: "68/95/99.7 rule: ~95% within 2σ.",
+            },
+            {
+              id: "mai-l23-q2",
+              type: "mcq",
+              prompt:
+                "The binomial model requires all EXCEPT",
+              choices: [
+                "a fixed number of trials",
+                "independent trials",
+                "constant probability",
+                "a continuous outcome",
+              ],
+              answerIndex: 3,
+              explanation:
+                "Binomial counts discrete successes — not continuous.",
+            },
+            {
+              id: "mai-l23-q3",
+              type: "tf",
+              prompt:
+                "The normal distribution is continuous while the binomial is discrete.",
+              answer: true,
+              explanation:
+                "Binomial counts 0,1,2,…; normal takes any real value.",
+            },
+            {
+              id: "mai-l23-q4",
+              type: "mcq",
+              prompt: "The mean of B(20, 0.3) is",
+              choices: ["0.3", "6", "14", "20"],
+              answerIndex: 1,
+              explanation: "E(X) = np = 6.",
+            },
+            {
+              id: "mai-l23-q5",
+              type: "short",
+              prompt:
+                "X ~ N(50, 10²). Give the z-score of x = 70.",
+              answer: "2",
+              keywords: ["2"],
+              explanation: "z = (70 − 50)/10 = 2.",
+            },
+            {
+              id: "mai-l23-q6",
+              type: "short",
+              prompt:
+                "For X ~ B(3, 0.5), give P(X = 3) as a decimal.",
+              answer: "0.125",
+              keywords: ["0.125"],
+              acceptable: ["1/8"],
+              explanation: "0.5³ = 0.125.",
+            },
+          ],
+        },
+        {
+          id: "mai-l24",
+          title: "Chi-squared GOF vs independence and t-test interpretation",
+          questions: [
+            {
+              id: "mai-l24-q1",
+              type: "mcq",
+              prompt:
+                "A goodness-of-fit test differs from a test of independence because GOF uses",
+              choices: [
+                "two categorical variables",
+                "one categorical variable compared to an expected distribution",
+                "two means",
+                "paired data only",
+              ],
+              answerIndex: 1,
+              explanation:
+                "GOF: one variable vs expected (e.g. is a die fair?); independence: two variables in a table.",
+            },
+            {
+              id: "mai-l24-q2",
+              type: "mcq",
+              prompt: "A t-test is used to compare",
+              choices: [
+                "frequencies",
+                "means",
+                "correlations",
+                "proportions of categories",
+              ],
+              answerIndex: 1,
+              explanation:
+                "t-tests compare a mean to a value, or two means.",
+            },
+            {
+              id: "mai-l24-q3",
+              type: "tf",
+              prompt:
+                "A large χ² statistic (far above the critical value) suggests rejecting H₀.",
+              answer: true,
+              explanation:
+                "Large χ² = observed counts far from expected.",
+            },
+            {
+              id: "mai-l24-q4",
+              type: "mcq",
+              prompt:
+                "Degrees of freedom for a GOF test with 5 categories is",
+              choices: ["5", "4", "6", "10"],
+              answerIndex: 1,
+              explanation: "df = categories − 1 = 4.",
+            },
+            {
+              id: "mai-l24-q5",
+              type: "short",
+              prompt:
+                "Observed 15, expected 10. Give the χ² cell contribution.",
+              answer: "2.5",
+              keywords: ["2.5"],
+              explanation: "(15−10)²/10 = 2.5.",
+            },
+            {
+              id: "mai-l24-q6",
+              type: "short",
+              prompt:
+                "A test gives p = 0.08 at the 5% level. State the decision (reject / fail to reject H₀).",
+              answer: "fail to reject H₀",
+              keywords: ["fail", "reject"],
+              acceptable: ["do not reject", "not reject", "fail to reject"],
+              explanation:
+                "p = 0.08 > 0.05 → insufficient evidence against H₀.",
+            },
+          ],
+        },
       ],
     },
     {
@@ -946,6 +1831,155 @@ export const mathAi: Subject = {
               keywords: ["13"],
               explanation:
                 "y = x³ + C; C = 5; y(2) = 8 + 5 = 13.",
+            },
+          ],
+        },
+        {
+          id: "mai-l25",
+          title: "Trapezoidal rule error and optimisation modelling",
+          questions: [
+            {
+              id: "mai-l25-q1",
+              type: "mcq",
+              prompt:
+                "For a curve that is concave UP (curving upward), the trapezoidal rule typically gives an",
+              choices: [
+                "underestimate",
+                "overestimate",
+                "exact value",
+                "negative result",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Trapezoids lie above a convex (concave-up) curve → overestimate.",
+            },
+            {
+              id: "mai-l25-q2",
+              type: "mcq",
+              prompt:
+                "The trapezoidal rule error is roughly proportional to",
+              choices: ["h", "h²", "h³", "1/h"],
+              answerIndex: 1,
+              explanation:
+                "Error ~ O(h²) — halving the strip width quarters the error.",
+            },
+            {
+              id: "mai-l25-q3",
+              type: "tf",
+              prompt:
+                "Building an optimisation model starts with identifying variables, an objective function and constraints.",
+              answer: true,
+              explanation:
+                "The modelling cycle: define → model → solve → interpret → validate.",
+            },
+            {
+              id: "mai-l25-q4",
+              type: "mcq",
+              prompt:
+                "The trapezoidal rule is EXACT for functions that are",
+              choices: ["quadratic", "linear", "exponential", "sinusoidal"],
+              answerIndex: 1,
+              explanation:
+                "A straight line coincides with its chords — zero error.",
+            },
+            {
+              id: "mai-l25-q5",
+              type: "short",
+              prompt:
+                "One trapezoid: f(0) = 1, f(2) = 9, width 2. Give the integral estimate.",
+              answer: "10",
+              keywords: ["10"],
+              explanation: "h/2·(f₀+f₁) = 1 × 10 = 10.",
+            },
+            {
+              id: "mai-l25-q6",
+              type: "short",
+              prompt:
+                "Give the trapezoidal estimate of ∫₀² 3x dx using 2 strips (x = 0, 1, 2).",
+              answer: "6",
+              keywords: ["6"],
+              explanation:
+                "0.5·(0 + 2·3 + 6) = 6 — exact, since 3x is linear.",
+            },
+          ],
+        },
+        {
+          id: "mai-l26",
+          title: "Coupled systems and Euler's method",
+          level: "HL",
+          questions: [
+            {
+              id: "mai-l26-q1",
+              type: "mcq",
+              prompt:
+                "A 'coupled' system of differential equations is one where",
+              choices: [
+                "each equation is independent",
+                "dx/dt and dy/dt depend on both variables",
+                "there is only one variable",
+                "the solutions are straight lines",
+              ],
+              answerIndex: 1,
+              explanation:
+                "The rates are interlocked — each variable affects the other.",
+            },
+            {
+              id: "mai-l26-q2",
+              type: "mcq",
+              prompt:
+                "Predator–prey systems typically produce solutions that",
+              choices: [
+                "grow forever",
+                "decay to zero",
+                "oscillate cyclically",
+                "stay constant",
+              ],
+              answerIndex: 2,
+              explanation:
+                "Prey rise → predators rise → prey fall → predators fall → repeat.",
+            },
+            {
+              id: "mai-l26-q3",
+              type: "tf",
+              prompt:
+                "Euler's method approximates each step with a local straight-line segment along the slope.",
+              answer: true,
+              explanation:
+                "yₙ₊₁ = yₙ + h·f(xₙ, yₙ) — a tangent-line step.",
+            },
+            {
+              id: "mai-l26-q4",
+              type: "mcq",
+              prompt:
+                "Decreasing the step size h in Euler's method",
+              choices: [
+                "increases error",
+                "decreases error but needs more steps",
+                "has no effect",
+                "makes the method exact",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Smaller steps track the curve better at the cost of computation.",
+            },
+            {
+              id: "mai-l26-q5",
+              type: "short",
+              prompt:
+                "System: dx/dt = x, dy/dt = −y, starting x₀ = 1, y₀ = 1, h = 0.5. Give x₁ after one Euler step.",
+              answer: "1.5",
+              keywords: ["1.5"],
+              explanation: "x₁ = 1 + 0.5×1 = 1.5.",
+            },
+            {
+              id: "mai-l26-q6",
+              type: "short",
+              prompt:
+                "dy/dx = 1 with y(0) = 0, h = 0.5. Give y after two Euler steps.",
+              answer: "1",
+              keywords: ["1"],
+              explanation:
+                "Each step adds 0.5 → y₂ = 1 (exact, since the slope is constant).",
             },
           ],
         },

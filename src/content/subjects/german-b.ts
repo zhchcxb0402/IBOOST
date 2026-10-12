@@ -183,6 +183,205 @@ export const germanB: Subject = {
             },
           ],
         },
+        {
+          id: "db-l12",
+          title: "Identitäten: Lektüre und Wortschatz",
+          questions: [
+            {
+              id: "db-l12-q1",
+              type: "mcq",
+              prompt:
+                "Lies: „Obwohl sie in München geboren wurde, ist Lena in Wien aufgewachsen. Sie vermisst manchmal das Essen ihrer Großmutter.“ — „aufgewachsen“ bedeutet",
+              choices: ["was born", "grew up", "studied", "travelled"],
+              answerIndex: 1,
+              explanation:
+                "„aufwachsen“ = to grow up (Perfekt: ist aufgewachsen).",
+            },
+            {
+              id: "db-l12-q2",
+              type: "mcq",
+              prompt: "„vermissen“ bedeutet",
+              choices: ["to hate", "to miss", "to lose", "to forget"],
+              answerIndex: 1,
+              explanation:
+                "„vermissen“ = to miss someone/something.",
+            },
+            {
+              id: "db-l12-q3",
+              type: "tf",
+              prompt:
+                "„Ich komme gut mit meinem Bruder aus“ — „auskommen mit“ means 'to get along with'.",
+              answer: true,
+              explanation:
+                "„mit jdm. auskommen“ = get along with somebody.",
+            },
+            {
+              id: "db-l12-q4",
+              type: "mcq",
+              prompt:
+                "„Sie fühlt sich in beiden Kulturen zu Hause.“ — „zu Hause fühlen“ means",
+              choices: [
+                "to stay at home",
+                "to feel at home / belong",
+                "to be homesick",
+                "to work from home",
+              ],
+              answerIndex: 1,
+              explanation:
+                "„sich zu Hause fühlen“ = to feel at home — belonging.",
+            },
+            {
+              id: "db-l12-q5",
+              type: "short",
+              prompt:
+                "Übersetze: 'self-confidence' (ein deutsches Wort).",
+              answer: "Selbstvertrauen",
+              keywords: ["selbstvertrauen", "selbstbewusstsein"],
+              acceptable: ["Selbstbewusstsein", "selbstvertrauen"],
+              explanation:
+                "Das Selbstvertrauen / das Selbstbewusstsein.",
+            },
+            {
+              id: "db-l12-q6",
+              type: "short",
+              prompt:
+                "Ergänze: „Meine ___ liegen in der Türkei“ (Wurzeln).",
+              answer: "Wurzeln",
+              keywords: ["wurzeln"],
+              acceptable: ["wurzeln", "meine Wurzeln"],
+              explanation:
+                "„Wurzeln“ = roots — Herkunftsvokabular.",
+            },
+          ],
+        },
+        {
+          id: "db-l13",
+          title: "Präpositionen mit Dativ und Akkusativ",
+          questions: [
+            {
+              id: "db-l13-q1",
+              type: "mcq",
+              prompt: "„Ich gehe ___ Schule.“ (zu — Dativ)",
+              choices: ["zu die", "zur", "zu der Schule (falsch)", "zum Schule"],
+              answerIndex: 1,
+              explanation:
+                "„zu + der Schule“ → „zur Schule“.",
+            },
+            {
+              id: "db-l13-q2",
+              type: "mcq",
+              prompt: "Wechselpräposition: „Ich hänge das Bild an ___ Wand.“",
+              choices: ["die", "der", "dem", "den"],
+              answerIndex: 0,
+              explanation:
+                "Bewegung (wohin?) → Akkusativ: „an die Wand“.",
+            },
+            {
+              id: "db-l13-q3",
+              type: "tf",
+              prompt:
+                "„mit“, „von“, „zu“, „bei“, „nach“, „aus“, „seit“ govern the dative case.",
+              answer: true,
+              explanation:
+                "Standard Dativ-Präpositionen.",
+            },
+            {
+              id: "db-l13-q4",
+              type: "mcq",
+              prompt: "„Das Bild hängt an ___ Wand.“ (Wo? — location)",
+              choices: ["die", "der", "das", "den"],
+              answerIndex: 1,
+              explanation:
+                "Position (wo?) → Dativ: „an der Wand“.",
+            },
+            {
+              id: "db-l13-q5",
+              type: "short",
+              prompt:
+                "Ergänze: „Er fährt ___ dem Bus zur Arbeit“ (with = ?)",
+              answer: "mit",
+              keywords: ["mit"],
+              acceptable: ["mit dem Bus"],
+              explanation:
+                "„mit dem Bus“ — mit + Dativ.",
+            },
+            {
+              id: "db-l13-q6",
+              type: "short",
+              prompt:
+                "Ergänze: „Ich warte ___ den Bus“ (auf + Akkusativ).",
+              answer: "auf",
+              keywords: ["auf"],
+              acceptable: ["auf den Bus"],
+              explanation:
+                "„warten auf“ + Akkusativ.",
+            },
+          ],
+        },
+        {
+          id: "db-l14",
+          title: "Relativsätze",
+          questions: [
+            {
+              id: "db-l14-q1",
+              type: "mcq",
+              prompt: "„Der Mann, ___ nebenan wohnt, ist Arzt.“",
+              choices: ["die", "der", "das", "den"],
+              answerIndex: 1,
+              explanation:
+                "Masculine nominative relative pronoun → „der“.",
+            },
+            {
+              id: "db-l14-q2",
+              type: "mcq",
+              prompt: "„Das Buch, ___ ich lese, ist spannend.“",
+              choices: ["der", "die", "das", "den"],
+              answerIndex: 2,
+              explanation:
+                "Neuter accusative → „das“.",
+            },
+            {
+              id: "db-l14-q3",
+              type: "tf",
+              prompt:
+                "In a German relative clause, the conjugated verb goes to the end.",
+              answer: true,
+              explanation:
+                "„die Frau, die ich gestern gesehen habe“ — verb-final.",
+            },
+            {
+              id: "db-l14-q4",
+              type: "mcq",
+              prompt: "„Die Freundin, mit ___ ich wohne, kommt aus Bern.“",
+              choices: ["die", "der", "dem", "den"],
+              answerIndex: 1,
+              explanation:
+                "„mit“ + Dativ feminine → „der“.",
+            },
+            {
+              id: "db-l14-q5",
+              type: "short",
+              prompt:
+                "Ergänze: „Das Mädchen, ___ Hund entlaufen ist, weint.“ (whose)",
+              answer: "dessen",
+              keywords: ["dessen"],
+              acceptable: ["dessen Hund"],
+              explanation:
+                "Genitive relative „dessen“ = whose (for masculine/neuter antecedent... here 'das Mädchen' — neuter → dessen).",
+            },
+            {
+              id: "db-l14-q6",
+              type: "short",
+              prompt:
+                "Ergänze: „Die Stadt, ___ ich geboren bin, ist klein.“ (in which)",
+              answer: "in der",
+              keywords: ["in der", "wo"],
+              acceptable: ["wo", "in der ich geboren bin"],
+              explanation:
+                "„in der“ (Dativ) or „wo“ for places.",
+            },
+          ],
+        },
       ],
     },
     {
@@ -313,6 +512,214 @@ export const germanB: Subject = {
               acceptable: ["ich möchte mehr reisen", "ich wuerde gerne mehr reisen"],
               explanation:
                 "„würde + infinitive“ or the modal „möchte“. Accept „wuerde“ without umlaut.",
+            },
+          ],
+        },
+        {
+          id: "db-l15",
+          title: "Erlebnisse: Lektüre eines Reiseberichts",
+          questions: [
+            {
+              id: "db-l15-q1",
+              type: "mcq",
+              prompt:
+                "Lies: „Letztes Jahr bin ich allein durch die Schweiz gewandert. Am Anfang hatte ich Angst, aber bald habe ich tolle Leute kennengelernt.“ — Die Erzählerin",
+              choices: [
+                "travelled with friends",
+                "travelled alone",
+                "never left home",
+                "was never afraid",
+              ],
+              answerIndex: 1,
+              explanation:
+                "„allein“ = alone; Perfekt mit „bin…gewandert“.",
+            },
+            {
+              id: "db-l15-q2",
+              type: "mcq",
+              prompt: "„am Anfang“ bedeutet",
+              choices: ["at the end", "at first", "however", "therefore"],
+              answerIndex: 1,
+              explanation:
+                "„am Anfang“ = at the beginning — contrast „am Ende“.",
+            },
+            {
+              id: "db-l15-q3",
+              type: "tf",
+              prompt:
+                "„wandern“ uses „sein“ as its perfect auxiliary: „ich bin gewandert“.",
+              answer: true,
+              explanation:
+                "Verbs of movement take „sein“ in the Perfekt.",
+            },
+            {
+              id: "db-l15-q4",
+              type: "mcq",
+              prompt: "„Diese Reise hat mein Leben verändert“ means the trip",
+              choices: [
+                "cost a lot",
+                "changed her life",
+                "was boring",
+                "ended early",
+              ],
+              answerIndex: 1,
+              explanation:
+                "„verändern“ = to change.",
+            },
+            {
+              id: "db-l15-q5",
+              type: "short",
+              prompt:
+                "Übersetze: 'I got to know great people' (kennenlernen, Perfekt).",
+              answer: "ich habe tolle Leute kennengelernt",
+              keywords: ["kennengelernt", "habe"],
+              acceptable: ["habe tolle Leute kennengelernt", "ich habe tolle Leute kennen gelernt"],
+              explanation:
+                "Separable verb: „kennengelernt“ at the end.",
+            },
+            {
+              id: "db-l15-q6",
+              type: "short",
+              prompt:
+                "Ergänze: „Wir sind bei Sonnenaufgang ___“ (losgehen = set off).",
+              answer: "losgegangen",
+              keywords: ["losgegangen"],
+              acceptable: ["los gegangen"],
+              explanation:
+                "„losgehen“ (sein) → „sind losgegangen“.",
+            },
+          ],
+        },
+        {
+          id: "db-l16",
+          title: "Futur, Konditional und Passiv",
+          questions: [
+            {
+              id: "db-l16-q1",
+              type: "mcq",
+              prompt: "„Morgen ___ ich zum Arzt gehen.“ (future)",
+              choices: ["gehe", "werde", "ging", "würde"],
+              answerIndex: 1,
+              explanation:
+                "Futur I = werden + infinitive: „werde…gehen“.",
+            },
+            {
+              id: "db-l16-q2",
+              type: "mcq",
+              prompt: "„Ich ___ gern auf dem Land wohnen.“ (would like)",
+              choices: ["will", "würde", "werde", "wollte"],
+              answerIndex: 1,
+              explanation:
+                "Konjunktiv II „würde“ + infinitive = would.",
+            },
+            {
+              id: "db-l16-q3",
+              type: "tf",
+              prompt:
+                "„Das Haus wurde 1980 gebaut“ is a passive sentence (wurde + Partizip II).",
+              answer: true,
+              explanation:
+                "Passiv = werden + Partizip II.",
+            },
+            {
+              id: "db-l16-q4",
+              type: "mcq",
+              prompt: "Passive of „Man repariert das Auto“:",
+              choices: [
+                "Das Auto repariert.",
+                "Das Auto wird repariert.",
+                "Das Auto hat repariert.",
+                "Das Auto war reparieren.",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Aktiv → Passiv: subject receives the action.",
+            },
+            {
+              id: "db-l16-q5",
+              type: "short",
+              prompt:
+                "Bilde das Futur: „ich ___ (kommen)“.",
+              answer: "werde kommen",
+              keywords: ["werde kommen", "werde"],
+              acceptable: ["ich werde kommen"],
+              explanation:
+                "werde + Infinitiv am Ende.",
+            },
+            {
+              id: "db-l16-q6",
+              type: "short",
+              prompt:
+                "Konjunktiv II von „haben“ (ich): ___.",
+              answer: "hätte",
+              keywords: ["hätte", "haette"],
+              acceptable: ["haette"],
+              explanation:
+                "ich hätte — irregular Konjunktiv II.",
+            },
+          ],
+        },
+        {
+          id: "db-l17",
+          title: "Imperativ und Adjektivendungen",
+          questions: [
+            {
+              id: "db-l17-q1",
+              type: "mcq",
+              prompt: "Du-Imperativ von „kommen“:",
+              choices: ["kommst", "komm", "komme", "kommt"],
+              answerIndex: 1,
+              explanation:
+                "Du-Imperativ = verb stem: „Komm!“",
+            },
+            {
+              id: "db-l17-q2",
+              type: "mcq",
+              prompt: "Sie-Imperativ von „nehmen“:",
+              choices: ["nimm", "nehmen Sie", "nimmt", "nimmst"],
+              answerIndex: 1,
+              explanation:
+                "Sie-Imperativ = infinitive + Sie: „Nehmen Sie!“",
+            },
+            {
+              id: "db-l17-q3",
+              type: "tf",
+              prompt:
+                "„ein guter Freund“ — after ein-words the adjective takes -er (masculine nominative).",
+              answer: true,
+              explanation:
+                "ein + gut + er Freund — mixed declension.",
+            },
+            {
+              id: "db-l17-q4",
+              type: "mcq",
+              prompt: "„Ich trinke ___ Kaffee.“ (heiß, accusative masculine after „einen“)",
+              choices: ["heiß", "heißen", "heißer", "heiße"],
+              answerIndex: 1,
+              explanation:
+                "einen + adjective (masc. acc.) → -en: „heißen“.",
+            },
+            {
+              id: "db-l17-q5",
+              type: "short",
+              prompt:
+                "Du-Imperativ von „mitbringen“: „___ bitte Wasser ___!“",
+              answer: "bring mit",
+              keywords: ["bring", "mit"],
+              acceptable: ["Bring Wasser mit", "bring mit"],
+              explanation:
+                "Separable: „Bring … mit!“",
+            },
+            {
+              id: "db-l17-q6",
+              type: "short",
+              prompt:
+                "Adjektivendung: „die klein___ Stadt“ (nominative feminine after „die“).",
+              answer: "e",
+              keywords: ["e", "kleine"],
+              acceptable: ["kleine", "-e"],
+              explanation:
+                "Definite article + nominative feminine → -e: „die kleine Stadt“.",
             },
           ],
         },
@@ -482,6 +889,231 @@ export const germanB: Subject = {
             },
           ],
         },
+        {
+          id: "db-l18",
+          title: "Soziale Organisation: Lektüre und Konnektoren",
+          questions: [
+            {
+              id: "db-l18-q1",
+              type: "mcq",
+              prompt:
+                "Lies: „Die Stadt hat ein Freiwilligenprogramm gestartet. Anwohner können sich samstags kostenlos anmelden.“ — Das Programm ist",
+              choices: [
+                "paid",
+                "free for residents",
+                "only for students",
+                "cancelled",
+              ],
+              answerIndex: 1,
+              explanation:
+                "„kostenlos anmelden“ = sign up free of charge.",
+            },
+            {
+              id: "db-l18-q2",
+              type: "mcq",
+              prompt: "„starten“ / „gestartet“ bedeutet",
+              choices: ["to cancel", "to launch/start", "to close", "to delay"],
+              answerIndex: 1,
+              explanation:
+                "Ein Programm starten = launch a programme.",
+            },
+            {
+              id: "db-l18-q3",
+              type: "tf",
+              prompt:
+                "„die Anwohner“ means local residents — people who live in the area.",
+              answer: true,
+              explanation:
+                "Anwohner = residents; Nachbar = neighbour.",
+            },
+            {
+              id: "db-l18-q4",
+              type: "mcq",
+              prompt: "Konnektor für einen Zusatz: „___ ist es kostenlos, macht es auch Spaß.“",
+              choices: ["Aber", "Außerdem", "Jedoch", "Weil"],
+              answerIndex: 1,
+              explanation:
+                "„Außerdem“ = furthermore / besides — addition.",
+            },
+            {
+              id: "db-l18-q5",
+              type: "short",
+              prompt:
+                "Übersetze: 'the town hall' (ein deutsches Wort).",
+              answer: "das Rathaus",
+              keywords: ["rathaus"],
+              acceptable: ["Rathaus"],
+              explanation:
+                "Das Rathaus — kommunale Vokabel.",
+            },
+            {
+              id: "db-l18-q6",
+              type: "short",
+              prompt:
+                "Übersetze: 'to sign up' (reflexives Verb).",
+              answer: "sich anmelden",
+              keywords: ["anmelden"],
+              acceptable: ["anmelden", "sich anmelden"],
+              explanation:
+                "„sich anmelden“ = to register/sign up.",
+            },
+          ],
+        },
+        {
+          id: "db-l19",
+          title: "Unser Planet: die Umwelt",
+          questions: [
+            {
+              id: "db-l19-q1",
+              type: "mcq",
+              prompt:
+                "„Man muss den Verbrauch von Einwegplastik reduzieren.“ — „Einwegplastik“ bedeutet",
+              choices: [
+                "reusable plastic",
+                "single-use plastic",
+                "recycled plastic",
+                "expensive plastic",
+              ],
+              answerIndex: 1,
+              explanation:
+                "„Einweg-“ = single-use / disposable; „Mehrweg-“ = reusable.",
+            },
+            {
+              id: "db-l19-q2",
+              type: "mcq",
+              prompt: "„der Klimawandel“ bedeutet",
+              choices: [
+                "the weather forecast",
+                "climate change",
+                "a season",
+                "a storm",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Zentrale Umweltvokabel.",
+            },
+            {
+              id: "db-l19-q3",
+              type: "tf",
+              prompt:
+                "„erneuerbare Energien“ include solar and wind power.",
+              answer: true,
+              explanation:
+                "Solar-, Wind-, Wasserkraft = erneuerbare Energien.",
+            },
+            {
+              id: "db-l19-q4",
+              type: "mcq",
+              prompt: "„der ökologische Fußabdruck“ ist",
+              choices: [
+                "a shoe brand",
+                "the ecological footprint",
+                "a type of fuel",
+                "a forest",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Fußabdruck = footprint.",
+            },
+            {
+              id: "db-l19-q5",
+              type: "short",
+              prompt:
+                "Übersetze: 'to recycle' (deutscher Infinitiv).",
+              answer: "recyceln",
+              keywords: ["recyceln", "wiederverwerten"],
+              acceptable: ["wiederverwerten", "recyceln"],
+              explanation:
+                "recyceln / wiederverwerten.",
+            },
+            {
+              id: "db-l19-q6",
+              type: "short",
+              prompt:
+                "Ergänze: „Wir müssen den Planeten ___“ (schützen).",
+              answer: "schützen",
+              keywords: ["schützen", "schuetzen", "retten"],
+              acceptable: ["schuetzen", "retten"],
+              explanation:
+                "„den Planeten schützen/retten“.",
+            },
+          ],
+        },
+        {
+          id: "db-l20",
+          title: "Lektüre: „Ein nachhaltiges Viertel“",
+          questions: [
+            {
+              id: "db-l20-q1",
+              type: "mcq",
+              prompt:
+                "Lies: „In unserem Viertel haben wir Solarpanels und einen Gemeinschaftsgarten angelegt. Dadurch ist die Stromrechnung um 30 % gesunken.“ — Die Rechnung",
+              choices: [
+                "has risen",
+                "has gone down",
+                "stayed the same",
+                "was cancelled",
+              ],
+              answerIndex: 1,
+              explanation:
+                "„gesunken“ = sunk/gone down.",
+            },
+            {
+              id: "db-l20-q2",
+              type: "mcq",
+              prompt: "„ein Gemeinschaftsgarten“ ist",
+              choices: [
+                "a private garden",
+                "a community garden",
+                "a shopping centre",
+                "a school",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Gemeinschafts- = shared/community.",
+            },
+            {
+              id: "db-l20-q3",
+              type: "tf",
+              prompt:
+                "„dadurch“ introduces a result — 'thereby / as a result'.",
+              answer: true,
+              explanation:
+                "„Dadurch“ = by that means / consequently.",
+            },
+            {
+              id: "db-l20-q4",
+              type: "mcq",
+              prompt: "„Solarpanels“ erzeugen",
+              choices: ["wind", "electricity from the sun", "water", "gas"],
+              answerIndex: 1,
+              explanation:
+                "Solarenergie = solar power.",
+            },
+            {
+              id: "db-l20-q5",
+              type: "short",
+              prompt:
+                "Um wie viel ist die Rechnung gesunken? (Zahl mit %)",
+              answer: "30%",
+              keywords: ["30"],
+              acceptable: ["30", "30 Prozent", "30 %"],
+              explanation:
+                "„um 30 % gesunken“.",
+            },
+            {
+              id: "db-l20-q6",
+              type: "short",
+              prompt:
+                "Übersetze: 'the electricity bill' (ein Wort).",
+              answer: "die Stromrechnung",
+              keywords: ["stromrechnung"],
+              acceptable: ["Stromrechnung", "die Rechnung"],
+              explanation:
+                "Strom (electricity) + Rechnung (bill).",
+            },
+          ],
+        },
       ],
     },
     {
@@ -647,6 +1279,238 @@ export const germanB: Subject = {
               acceptable: ["a quotation", "the proving sentence"],
               explanation:
                 "Cite the part of the text that proves your true/false judgement.",
+            },
+          ],
+        },
+        {
+          id: "db-l21",
+          title: "Textsorten: E-Mail, Artikel, Rede",
+          questions: [
+            {
+              id: "db-l21-q1",
+              type: "mcq",
+              prompt: "Eine formelle E-Mail beginnt mit",
+              choices: [
+                "„Hallo!“",
+                "„Sehr geehrte Frau Müller,“ oder „Sehr geehrte Damen und Herren,“",
+                "„Hey,“",
+                "„Na,“",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Formelle Anrede: „Sehr geehrte/r…“.",
+            },
+            {
+              id: "db-l21-q2",
+              type: "mcq",
+              prompt: "Ein Artikel für die Schülerzeitung hat meist",
+              choices: [
+                "keine Überschrift",
+                "eine Überschrift, Absätze mit Zwischenüberschriften und einen halbformellen Ton",
+                "nur Meinungen",
+                "nur Zahlen",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Artikel: Überschrift, Einleitung, Hauptteil, Schluss.",
+            },
+            {
+              id: "db-l21-q3",
+              type: "tf",
+              prompt:
+                "Eine Rede spricht das Publikum direkt an und benutzt rhetorische Fragen.",
+              answer: true,
+              explanation:
+                "Merkmale: „Liebe…“, rhetorische Fragen, Aufruf zum Handeln.",
+            },
+            {
+              id: "db-l21-q4",
+              type: "mcq",
+              prompt: "Eine Broschüre enthält",
+              choices: [
+                "lange Kapitel",
+                "kurze Texte, Abschnitte, Daten und oft Bilder",
+                "ein Interview",
+                "Gedichte",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Broschüre: visuell organisierte Information, werbende Sprache.",
+            },
+            {
+              id: "db-l21-q5",
+              type: "short",
+              prompt:
+                "Formeller Briefschluss: „Mit freundlichen ___“ (ein Wort).",
+              answer: "Grüßen",
+              keywords: ["grüßen", "gruessen", "grüssen"],
+              acceptable: ["Gruessen", "Grüssen", "Grüßen"],
+              explanation:
+                "„Mit freundlichen Grüßen“ (MfG).",
+            },
+            {
+              id: "db-l21-q6",
+              type: "short",
+              prompt:
+                "Wie nennt man den letzten Teil einer Rezension mit der Empfehlung? (ein Wort, Englisch: conclusion)",
+              answer: "der Schluss",
+              keywords: ["schluss", "fazit", "empfehlung"],
+              acceptable: ["das Fazit", "die Empfehlung", "Schluss"],
+              explanation:
+                "Schluss / Fazit / Empfehlung.",
+            },
+          ],
+        },
+        {
+          id: "db-l22",
+          title: "Interview und Rezension: Konventionen",
+          questions: [
+            {
+              id: "db-l22-q1",
+              type: "mcq",
+              prompt: "Ein schriftliches Interview hat meist das Format",
+              choices: [
+                "langer Absätze",
+                "von Fragen und Antworten (Interviewer/Interviewter)",
+                "eines Briefes",
+                "einer Liste",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Frage-Antwort-Format mit Sprecherangabe.",
+            },
+            {
+              id: "db-l22-q2",
+              type: "mcq",
+              prompt: "Eine Rezension über ein Buch sollte enthalten",
+              choices: [
+                "nur die Zusammenfassung",
+                "kurze Beschreibung, Bewertung und Empfehlung",
+                "keine Meinung",
+                "nur den Preis",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Rezension = beschreiben + bewerten + empfehlen.",
+            },
+            {
+              id: "db-l22-q3",
+              type: "tf",
+              prompt:
+                "In einem Interview benutzt man „Sie“ für formelle und „du“ für informelle Situationen.",
+              answer: true,
+              explanation:
+                "Sie/du — zentrale Registerwahl.",
+            },
+            {
+              id: "db-l22-q4",
+              type: "mcq",
+              prompt: "Positives Adjektiv für eine Rezension:",
+              choices: ["langweilig", "spannend", "furchtbar", "mittelmäßig"],
+              answerIndex: 1,
+              explanation:
+                "„spannend“, „beeindruckend“, „berührend“ = positiv.",
+            },
+            {
+              id: "db-l22-q5",
+              type: "short",
+              prompt:
+                "Übersetze: 'an interview' (das Nomen).",
+              answer: "ein Interview",
+              keywords: ["interview"],
+              acceptable: ["Interview", "das Interview"],
+              explanation:
+                "Das Interview.",
+            },
+            {
+              id: "db-l22-q6",
+              type: "short",
+              prompt:
+                "Übersetze: 'I would recommend this film' (empfehlen, Konditional).",
+              answer: "würde empfehlen",
+              keywords: ["empfehlen", "würde"],
+              acceptable: ["ich würde diesen Film empfehlen", "wuerde empfehlen"],
+              explanation:
+                "„Ich würde diesen Film empfehlen.“",
+            },
+          ],
+        },
+        {
+          id: "db-l23",
+          title: "Prüfungsstrategien: Hör- und Leseverstehen",
+          questions: [
+            {
+              id: "db-l23-q1",
+              type: "mcq",
+              prompt: "Vor dem Hören solltest du",
+              choices: [
+                "die Augen schließen",
+                "die Fragen lesen und Inhalte vorhersagen",
+                "die Antworten schreiben",
+                "warten",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Vorhersagen hilft, Schlüsselinformationen zu erfassen.",
+            },
+            {
+              id: "db-l23-q2",
+              type: "mcq",
+              prompt: "Wenn du ein Wort nicht verstehst, zuerst",
+              choices: [
+                "das Wörterbuch benutzen",
+                "die Bedeutung aus dem Kontext erschließen",
+                "die Frage überspringen",
+                "es übersetzen",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Der Kontext verrät meist die Bedeutung.",
+            },
+            {
+              id: "db-l23-q3",
+              type: "tf",
+              prompt:
+                "Im Hörverstehen folgen die Fragen meist der Reihenfolge des Textes.",
+              answer: true,
+              explanation:
+                "Antworten erscheinen sequenziell im Audio.",
+            },
+            {
+              id: "db-l23-q4",
+              type: "mcq",
+              prompt: "„Fakten von Meinungen unterscheiden“ ist eine Fähigkeit des",
+              choices: [
+                "Schreibens",
+                "kritischen Leseverstehens",
+                "Sprechens",
+                "der Grammatik",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Fakt vs. Meinung = kritisches Lesen (Paper 2).",
+            },
+            {
+              id: "db-l23-q5",
+              type: "short",
+              prompt:
+                "Wie viele Schreibaufgaben sind in German B Paper 1 zu erledigen? (Zahl)",
+              answer: "1",
+              keywords: ["1"],
+              acceptable: ["eine", "eins"],
+              explanation:
+                "Ein Text aus drei Optionen.",
+            },
+            {
+              id: "db-l23-q6",
+              type: "short",
+              prompt:
+                "Technik: schnell lesen für die Hauptidee (englisch 'skimming').",
+              answer: "Überfliegen",
+              keywords: ["überflieg", "ueberflieg", "skim", "hauptidee"],
+              acceptable: ["Skimming", "überfliegen", "ueberfliegen"],
+              explanation:
+                "Den Text überfliegen = skimming.",
             },
           ],
         },
@@ -891,6 +1755,163 @@ export const germanB: Subject = {
               acceptable: ["andererseits", "auf der anderen seite", "demgegenüber"],
               explanation:
                 "„andererseits“, „auf der anderen Seite“, „demgegenüber“ — formal contrast markers.",
+            },
+          ],
+        },
+        {
+          id: "db-l24",
+          title: "HL: Analyse eines literarischen Auszugs",
+          level: "HL",
+          questions: [
+            {
+              id: "db-l24-q1",
+              type: "mcq",
+              prompt:
+                "In HL Paper 2 kann ein literarischer Text vorkommen. Bei der Analyse achtest du auf",
+              choices: [
+                "nur den Inhalt",
+                "wie die Sprache Figuren, Stimmung und Thema schafft",
+                "die Biografie des Autors",
+                "die Übersetzung",
+              ],
+              answerIndex: 1,
+              explanation:
+                "HL verlangt Analyse der Autortechnik, nicht nur Verstehen.",
+            },
+            {
+              id: "db-l24-q2",
+              type: "mcq",
+              prompt:
+                "Lies: „Das Haus atmete Schweigen; selbst die Uhr schien leiser zu ticken.“ — Der Haupteffekt ist",
+              choices: [
+                "die Personifikation",
+                "der Reim",
+                "die Statistik",
+                "eine Frage",
+              ],
+              answerIndex: 0,
+              explanation:
+                "Haus „atmet“, Uhr „tickt leiser“ — Personifikation erzeugt Atmosphäre.",
+            },
+            {
+              id: "db-l24-q3",
+              type: "tf",
+              prompt:
+                "Ein Ich-Erzähler gibt Zugang zu Gedanken, kann aber unzuverlässig sein.",
+              answer: true,
+              explanation:
+                "Die Erzählperspektive prägt unsere Lektüre.",
+            },
+            {
+              id: "db-l24-q4",
+              type: "mcq",
+              prompt: "Der „Ton“ eines Auszugs bezieht sich auf",
+              choices: [
+                "die Lautstärke",
+                "die Haltung des Autors durch Wortwahl",
+                "die Schrift",
+                "den Schauplatz",
+              ],
+              answerIndex: 1,
+              explanation:
+                "Ton = Haltung (ironisch, nostalgisch, kritisch…) durch Diktion.",
+            },
+            {
+              id: "db-l24-q5",
+              type: "short",
+              prompt:
+                "Nenne das Stilmittel: „Er war ein Fels im Sturm.“ (ein Wort)",
+              answer: "Metapher",
+              keywords: ["metapher"],
+              acceptable: ["eine Metapher", "metapher"],
+              explanation:
+                "Direkter Vergleich ohne „wie“ = Metapher.",
+            },
+            {
+              id: "db-l24-q6",
+              type: "short",
+              prompt:
+                "Die Person, die die Geschichte erzählt, heißt der/die ___.",
+              answer: "Erzähler/in",
+              keywords: ["erzähler", "erzaehler", "erzählerin"],
+              acceptable: ["Erzähler", "Erzählerin", "Erzaehler"],
+              explanation:
+                "Erzähler ≠ Autor — wichtige HL-Unterscheidung.",
+            },
+          ],
+        },
+        {
+          id: "db-l25",
+          title: "HL: Konjunktiv I und Paper 1 Planung",
+          level: "HL",
+          questions: [
+            {
+              id: "db-l25-q1",
+              type: "mcq",
+              prompt: "Konjunktiv I wird hauptsächlich benutzt für",
+              choices: [
+                "Wünsche",
+                "indirekte Rede (reported speech)",
+                "Befehle",
+                "Vergangenheit",
+              ],
+              answerIndex: 1,
+              explanation:
+                "„Er sagte, er sei müde“ — Konjunktiv I markiert indirekte Rede.",
+            },
+            {
+              id: "db-l25-q2",
+              type: "mcq",
+              prompt: "„Er sagt, er ___ keine Zeit.“ (haben, KI)",
+              choices: ["hat", "habe", "hätte", "hast"],
+              answerIndex: 1,
+              explanation:
+                "Konjunktiv I von haben, 3. Person: „habe“.",
+            },
+            {
+              id: "db-l25-q3",
+              type: "tf",
+              prompt:
+                "When Konjunktiv I is ambiguous, Konjunktiv II („würde“) often replaces it.",
+              answer: true,
+              explanation:
+                "e.g. „sie hätten“ statt „sie haben“ to avoid ambiguity.",
+            },
+            {
+              id: "db-l25-q4",
+              type: "mcq",
+              prompt: "In HL Paper 1 schreibst du einen Text von",
+              choices: [
+                "100–150 Wörtern",
+                "450–600 Wörtern",
+                "50 Wörtern",
+                "2000 Wörtern",
+              ],
+              answerIndex: 1,
+              explanation:
+                "HL: 450–600 Wörter; SL: 250–400.",
+            },
+            {
+              id: "db-l25-q5",
+              type: "short",
+              prompt:
+                "Setze in die indirekte Rede: Er sagt: „Ich bin krank.“ → Er sagt, er ___ krank.",
+              answer: "sei",
+              keywords: ["sei"],
+              acceptable: ["sei"],
+              explanation:
+                "Konjunktiv I von sein, 3. Person: „sei“.",
+            },
+            {
+              id: "db-l25-q6",
+              type: "short",
+              prompt:
+                "Vor dem Schreiben in Paper 1 identifiziert man Zielgruppe, Zweck und ___. (ein Wort)",
+              answer: "Textsorte",
+              keywords: ["textsorte", "text type", "format"],
+              acceptable: ["Textsorte", "die Textsorte", "Format"],
+              explanation:
+                "Audience, purpose and text type drive the plan.",
             },
           ],
         },
