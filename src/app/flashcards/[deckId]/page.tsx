@@ -10,6 +10,7 @@ import { Progress } from "@/components/ui/progress";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { getDeck, getSubject } from "@/content";
 import { useProgress } from "@/store/progress";
+import { seededOrder } from "@/lib/shuffle";
 import { cn } from "@/lib/utils";
 
 type Card = { id: string; front: string; back: string };
@@ -90,13 +91,8 @@ export default function DeckPage() {
           picks.push(others[(start + k) % others.length]);
         }
         const opts = [lCard.back, ...picks];
-        // deterministic shuffle by card id hash
-        const h = lCard.id.split("").reduce((a, c) => (a * 31 + c.charCodeAt(0)) >>> 0, 7);
-        for (let i = opts.length - 1; i > 0; i--) {
-          const j = (h + i * 2654435761) % (i + 1);
-          [opts[i], opts[j]] = [opts[j], opts[i]];
-        }
-        return opts;
+        const ord = seededOrder(lCard.id, opts.length);
+        return ord.map((i) => opts[i]);
       })()
     : [];
 

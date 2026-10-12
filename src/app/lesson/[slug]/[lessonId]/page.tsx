@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import Link from "next/link";
 import { notFound, useParams, useRouter } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
@@ -27,6 +27,7 @@ import { getLesson } from "@/content";
 import type { Question } from "@/content/types";
 import { MAX_HEARTS, useProgress } from "@/store/progress";
 import { useAuth } from "@/lib/auth";
+import { seededOrder } from "@/lib/shuffle";
 import { cn } from "@/lib/utils";
 
 type Phase = "answering" | "correct" | "wrong" | "done";
@@ -35,8 +36,13 @@ function norm(s: string) {
   return s.trim().toLowerCase();
 }
 
-function mcqCorrect(q: Question, sel: number | null, text: string): boolean {
-  if (q.type === "mcq") return sel === q.answerIndex;
+function mcqCorrect(
+  q: Question,
+  sel: number | null,
+  text: string,
+  order: number[]
+): boolean {
+  if (q.type === "mcq") return sel !== null && order[sel] === q.answerIndex;
   if (q.type === "tf") return (text === "true") === q.answer;
   return false;
 }
@@ -64,6 +70,10 @@ export default function LessonPage() {
   const lesson = found?.lesson;
   const subject = found?.subject;
   const q = lesson?.questions[qIndex];
+  const order = useMemo(
+    () => (q && q.type === "mcq" ? seededOrder(q.id, q.choices.length) : []),
+    [q]
+  );
 
   if (!lesson || !subject || !q) notFound();
 
@@ -107,7 +117,7 @@ export default function LessonPage() {
       }
       return;
     }
-    applyResult(mcqCorrect(q, sel, tfText));
+    applyResult(mcqCorrect(q, sel, tfText, order));
   };
 
   const next = () => {
@@ -257,7 +267,9 @@ export default function LessonPage() {
 
             {q.type === "mcq" && (
               <div className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2">
-                {q.choices.map((choice, i) => (
+                {order.map((orig, i) => {
+                  const choice = q.choices[orig];
+                  return (
                   <button
                     key={i}
                     onClick={() => phase === "answering" && setSel(i)}
@@ -270,7 +282,8 @@ export default function LessonPage() {
                   >
                     {choice}
                   </button>
-                ))}
+                  );
+                })}
               </div>
             )}
 
