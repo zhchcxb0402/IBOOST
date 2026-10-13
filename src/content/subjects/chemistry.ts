@@ -2014,7 +2014,7 @@ export const chemistry: Subject = {
                 "Give the suffix used to name ketones (e.g. propan___).",
               answer: "-one",
               keywords: ["one"],
-              hint: "Think propanone, butanone — what ending do they share?",
+              hint: "Which suffix does IUPAC attach to a C=O inside a carbon chain? Check the names of the smallest members.",
               acceptable: ["one", "-one"],
               explanation:
                 "Ketones end in '-one': propanone, butanone.",

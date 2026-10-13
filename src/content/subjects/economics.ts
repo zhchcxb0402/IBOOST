@@ -95,7 +95,7 @@ export const economics: Subject = {
               answer:
                 "Positive is testable/factual ('a tax raises prices'); normative is a value judgement ('the tax is unfair').",
               keywords: ["test", "fact", "judg", "opinion", "value"],
-              hint: "One is testable ('what is'), the other a value judgement ('what ought to be').",
+              hint: "Ask yourself: could evidence prove or disprove the claim?",
               explanation:
                 "Positive = what is/can be verified; normative = what ought to be.",
             },
@@ -489,7 +489,7 @@ export const economics: Subject = {
               answer:
                 "Income, tastes/preferences, prices of related goods, expectations, number of buyers.",
               keywords: ["income", "taste", "related", "expect", "population"],
-              hint: "Think income, tastes, related goods' prices — anything non-price.",
+              hint: "Anything except the good's own price that shifts the whole curve — list three.",
               explanation:
                 "Any three: income, tastes, prices of substitutes/complements, expectations, demographics.",
             },
@@ -908,7 +908,7 @@ export const economics: Subject = {
               answer:
                 "Ignores income distribution and non-market/informal activity; also leisure, environmental damage.",
               keywords: ["distribution", "informal", "leisure", "environment", "inequal"],
-              hint: "Think distribution, unpaid work, environment, informal economy.",
+              hint: "What does a single average output figure fail to capture — think about who benefits and what goes uncounted.",
               explanation:
                 "Any two: inequality, unpaid/shadow economy, negative externalities, composition of output.",
             },
@@ -980,7 +980,7 @@ export const economics: Subject = {
               answer:
                 "Government borrowing raises interest rates, reducing private investment.",
               keywords: ["interest", "investment", "borrow"],
-              hint: "Government borrowing → interest rates → private investment.",
+              hint: "Trace what happens in loan markets when the state competes for the same funds.",
               explanation:
                 "G↑ financed by borrowing → i↑ → I↓; private spending partly offset.",
             },
@@ -1472,7 +1472,7 @@ export const economics: Subject = {
               answer:
                 "Contracts are fixed and habits/supply chains adjust slowly, so volumes respond little at first.",
               keywords: ["contract", "time", "adjust", "volume", "inelastic"],
-              hint: "Contracts and habits fix volumes at first — elasticity needs time.",
+              hint: "Think about what buyers and sellers are locked into immediately after the rate moves.",
               explanation:
                 "Short-run stickiness → price changes dominate → J-curve dip before improvement.",
             },

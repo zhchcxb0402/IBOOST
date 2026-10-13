@@ -90,7 +90,7 @@ export const physics: Subject = {
               answer:
                 "Velocity changes direction almost instantaneously on impact, so the jump is nearly vertical.",
               keywords: ["direction", "instant", "impact", "bounce", "sudden"],
-              hint: "What happens to velocity at the instant of impact — magnitude, direction, duration?",
+              hint: "On a v–t graph, what does the velocity do in the ~0 s the ball spends in contact with the ground?",
               explanation:
                 "The collision reverses velocity in a very short time, so Δv/Δt is huge and the graph looks vertical.",
             },
@@ -174,7 +174,7 @@ export const physics: Subject = {
               answer:
                 "They extend the collision time, so for the same momentum change the average force is smaller.",
               keywords: ["time", "force", "momentum", "impulse", "longer"],
-              hint: "Impulse = FΔt = Δp — same momentum change, longer time.",
+              hint: "The crash fixes Δp — which other factor in F = Δp/Δt can car engineers enlarge?",
               explanation:
                 "F = Δp/Δt: increasing Δt for fixed Δp lowers F on passengers.",
             },
@@ -500,7 +500,7 @@ export const physics: Subject = {
               answer:
                 "Specific heat raises temperature; latent heat changes state at constant temperature.",
               keywords: ["temperature", "state", "phase", "change"],
-              hint: "One changes temperature, the other changes state — which stays constant?",
+              hint: "One quantity is priced per degree, the other per kilogram during melting or boiling.",
               explanation:
                 "c: energy per kg per °C. L: energy per kg for a phase change with no ΔT.",
             },
@@ -1693,7 +1693,7 @@ export const physics: Subject = {
               answer: "3 days",
               acceptable: ["3"],
               keywords: ["3"],
-              hint: "Count the halvings: 800 → 400 → 200 → 100 is how many half-lives?",
+              hint: "Work out how many times the activity halves; divide the elapsed days by that count to get T½.",
               explanation:
                 "800→400→200→100 is 3 half-lives in 9 days → T½ = 3 days.",
             },
