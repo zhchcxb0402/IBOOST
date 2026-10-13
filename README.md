@@ -1,5 +1,7 @@
 # IBOOST
 
+IBOOST is built for IB Diploma students juggling six subjects, IAs, and exams with no single place to revise from. Existing study tools are generic — they don't know the IB syllabus, HL vs SL scope, or the way IB actually assesses. IBOOST lets you pick your subjects and level, then serves curriculum-aligned material, practice tasks, and Quizlet-style flashcards drawn from the official IB curriculum and the best IB resources (InThinking, RevisionDojo, Clastify, Nail IB). It's IB-native, not a chatbot: every card and task maps to a real syllabus point, so you always know exactly what you're revising and why it matters for your grade.
+
 Gamified learning PWA — Next.js (App Router) + Tailwind CSS + shadcn/ui + Supabase.
 
 ## Setup
