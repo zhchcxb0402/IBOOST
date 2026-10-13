@@ -43,9 +43,11 @@ export type StudyBlock =
   | { type: "text"; body: string }
   | { type: "definition"; term: string; body: string }
   | { type: "formula"; label: string; body: string }
-  | { type: "example"; title: string; steps: string[] }
+  | { type: "example"; title: string; steps: string[]; blank?: number }
   | { type: "tip"; body: string }
-  | { type: "list"; title?: string; items: string[] };
+  | { type: "list"; title?: string; items: string[] }
+  | { type: "warmup"; prompt: string; answer: string }
+  | { type: "check"; prompt: string; answer: string };
 export type StudyNotes = Record<string /* lessonId */, StudyBlock[]>;
 export type Subject = {
   slug: string;

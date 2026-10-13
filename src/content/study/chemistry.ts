@@ -3,8 +3,18 @@ import type { StudyNotes } from "../types";
 export const chemistryStudy: StudyNotes = {
   "ch-l1": [
     {
+      type: "warmup",
+      prompt: "One mole of feathers and one mole of lead — same mass or same number of particles?",
+      answer: "Same number of particles (6.02 × 10²³). The lead mole has far more mass because each particle is heavier.",
+    },
+    {
       type: "text",
       body: "Atoms are made of protons and neutrons in a tiny nucleus surrounded by electrons. The **mole** is chemistry's counting unit: 6.02 × 10²³ particles (Avogadro's number), chosen so one mole of any substance has a mass in grams equal to its relative atomic mass.",
+    },
+    {
+      type: "check",
+      prompt: "Why is chlorine's relative atomic mass 35.5, not a whole number?",
+      answer: "It's the weighted mean of its isotopes (~75% ³⁵Cl, 25% ³⁷Cl) — Ar is an average, not a single atom's mass.",
     },
     {
       type: "definition",
@@ -33,6 +43,7 @@ export const chemistryStudy: StudyNotes = {
         "M(CH₄) = 12.0 + 4 × 1.0 = 16.0 g mol⁻¹",
         "n = 8.0 / 16.0 = **0.50 mol**",
       ],
+      blank: 1,
     },
     {
       type: "tip",
@@ -41,8 +52,18 @@ export const chemistryStudy: StudyNotes = {
   ],
   "ch-l2": [
     {
+      type: "warmup",
+      prompt: "Why do 2 dm³ of H₂ react with exactly 1 dm³ of O₂ to form water (same T and p)?",
+      answer: "Equal gas volumes contain equal molecule numbers (Avogadro's law), so volume ratios equal mole ratios: 2:1 per the equation.",
+    },
+    {
       type: "text",
       body: "Stoichiometry uses the mole ratios in a balanced equation to convert between quantities of reactants and products. For gases, the same temperature and pressure means equal moles occupy equal volumes — at STP one mole occupies 22.7 dm³ (IB convention).",
+    },
+    {
+      type: "check",
+      prompt: "Why must every stoichiometry problem start from a balanced equation?",
+      answer: "Only the balanced equation gives the correct mole ratios — unbalanced coefficients produce wrong conversions.",
     },
     {
       type: "definition",
@@ -67,6 +88,7 @@ export const chemistryStudy: StudyNotes = {
         "Ratio 1:1 → n(CaCO₃) = 0.20 mol; M = 100.1",
         "m = 0.20 × 100.1 = **20.0 g**",
       ],
+      blank: 2,
     },
     {
       type: "tip",
@@ -75,8 +97,18 @@ export const chemistryStudy: StudyNotes = {
   ],
   "ch-l11": [
     {
+      type: "warmup",
+      prompt: "You burn 4 mol of H₂ in 4 mol of O₂ (2H₂ + O₂ → 2H₂O). Which runs out first?",
+      answer: "H₂ — it needs 2 mol O₂ for 4 mol H₂ but you have 4 mol O₂; dividing moles by coefficients shows H₂ limits (2 < 4).",
+    },
+    {
       type: "text",
       body: "When reactants aren't in exact stoichiometric ratio, one runs out first — the **limiting reagent** — and it alone determines how much product can form. Theoretical yield comes from the limiting reagent; percentage yield compares what you actually got.",
+    },
+    {
+      type: "check",
+      prompt: "Why do real reactions give less than 100% yield even with excess reagents?",
+      answer: "Side reactions, incomplete conversion and transfer losses — theoretical yield assumes perfect, complete stoichiometric conversion.",
     },
     {
       type: "definition",
@@ -101,6 +133,7 @@ export const chemistryStudy: StudyNotes = {
         "n(H₂O) = 6 mol → theoretical m = 6 × 18.0 = 108 g",
         "% yield = 90/108 × 100 = **83%** (limiting reagent H₂)",
       ],
+      blank: 2,
     },
     {
       type: "tip",
@@ -109,8 +142,18 @@ export const chemistryStudy: StudyNotes = {
   ],
   "ch-l12": [
     {
+      type: "warmup",
+      prompt: "Glucose is C₆H₁₂O₆ — what is its empirical formula?",
+      answer: "CH₂O — divide all subscripts by 6 for the simplest whole-number ratio.",
+    },
+    {
       type: "text",
       body: "The **empirical formula** is the simplest whole-number ratio of atoms; the **molecular formula** is the true number of atoms per molecule — an integer multiple of the empirical formula. Find it by turning percentage composition into moles.",
+    },
+    {
+      type: "check",
+      prompt: "Why does empirical formula need percentage composition rather than masses?",
+      answer: "Percentages make the sample size irrelevant — convert % directly to moles via Ar without weighing anything.",
     },
     {
       type: "definition",
@@ -135,6 +178,7 @@ export const chemistryStudy: StudyNotes = {
         "Empirical mass = 14; n = 42/14 = 3",
         "Molecular formula = **C₃H₆**",
       ],
+      blank: 2,
     },
     {
       type: "tip",
@@ -143,8 +187,18 @@ export const chemistryStudy: StudyNotes = {
   ],
   "ch-l13": [
     {
+      type: "warmup",
+      prompt: "Why do chemists convert everything to moles before comparing?",
+      answer: "Moles count particles — ratios in equations are particle ratios, so mass or volume comparisons are meaningless until converted.",
+    },
+    {
       type: "text",
       body: "Mole calculations tie everything together: mass ↔ moles ↔ particles ↔ gas volume ↔ concentration. In exam conditions, write the balanced equation, convert everything to moles, use the ratio, convert out — and carry units at each step so mistakes show themselves.",
+    },
+    {
+      type: "check",
+      prompt: "In a titration, why does the endpoint give the moles of only the titrant directly?",
+      answer: "You know the titrant's concentration and delivered volume — cV gives its moles; the analyte's amount comes via the equation's ratio.",
     },
     {
       type: "formula",
@@ -163,6 +217,7 @@ export const chemistryStudy: StudyNotes = {
         "n(HCl) = 0.100 × 0.0220 = 2.20 × 10⁻³ mol; ratio 1:1",
         "c(NaOH) = 2.20 × 10⁻³ / 0.0250 = **0.088 mol dm⁻³**",
       ],
+      blank: 1,
     },
     {
       type: "example",
@@ -180,8 +235,18 @@ export const chemistryStudy: StudyNotes = {
   ],
   "ch-l3": [
     {
+      type: "warmup",
+      prompt: "NaCl conducts electricity when molten but not when solid. Why?",
+      answer: "Ions carry the current; they're locked in the lattice when solid but mobile when molten — the structure matters, not the substance.",
+    },
+    {
       type: "text",
       body: "Three bonding models explain bulk properties. **Ionic** compounds form between metals and non-metals — high melting, conduct when molten/aqueous, brittle. **Covalent** molecular substances have strong intramolecular bonds but weak intermolecular forces — low melting, non-conductors. **Metallic** bonding gives mobile electrons — conduct and are malleable.",
+    },
+    {
+      type: "check",
+      prompt: "Why is graphite a conductor while diamond isn't, both pure carbon?",
+      answer: "Graphite has delocalised electrons between layers (sp², one free electron each); diamond bonds all electrons in sp³ σ bonds — nothing mobile.",
     },
     {
       type: "definition",
@@ -211,6 +276,7 @@ export const chemistryStudy: StudyNotes = {
         "High m.p. rules out simple molecular; conduction only when molten means mobile ions, not electrons",
         "→ **ionic lattice**",
       ],
+      blank: 1,
     },
     {
       type: "tip",
@@ -219,8 +285,18 @@ export const chemistryStudy: StudyNotes = {
   ],
   "ch-l4": [
     {
+      type: "warmup",
+      prompt: "How many σ and π bonds are in a C=C double bond?",
+      answer: "One σ + one π — the second bond forms by sideways p-orbital overlap, which is a π bond.",
+    },
+    {
       type: "text",
       body: "Hybridisation describes mixing of atomic orbitals to form bonding orbitals: sp³ (4 electron domains, tetrahedral, e.g. CH₄), sp² (3 domains, trigonal planar, e.g. C in C=C), sp (2 domains, linear, e.g. CO₂). Periodicity: properties repeat because electron configurations repeat across periods.",
+    },
+    {
+      type: "check",
+      prompt: "Why does atomic radius shrink across a period even though electrons are being added?",
+      answer: "Electrons enter the same shell — shielding stays similar while nuclear charge grows, so the outer electrons are pulled closer.",
     },
     {
       type: "definition",
@@ -239,6 +315,7 @@ export const chemistryStudy: StudyNotes = {
         "4 C–H single bonds = 4σ; C=C = 1σ + 1π",
         "Total: **5σ + 1π**",
       ],
+      blank: 1,
     },
     {
       type: "tip",
@@ -247,8 +324,18 @@ export const chemistryStudy: StudyNotes = {
   ],
   "ch-l14": [
     {
+      type: "warmup",
+      prompt: "BF₃ and NF₃ both have three bonds — same shape?",
+      answer: "No: BF₃ is trigonal planar (3 domains) but NF₃ is trigonal pyramidal (N has a lone pair — 4 domains). Lone pairs distort shape.",
+    },
+    {
       type: "text",
       body: "VSEPR (valence shell electron pair repulsion): electron domains arrange themselves as far apart as possible, and the **molecular** shape names only the atom positions — lone pairs distort angles but aren't drawn. Bond angle order: lone pair repels more than bonding pair (LP–LP > LP–BP > BP–BP).",
+    },
+    {
+      type: "check",
+      prompt: "Why is CO₂ non-polar while H₂O is polar despite both having polar bonds?",
+      answer: "CO₂'s linear symmetry cancels its bond dipoles; water's bent geometry leaves a net dipole.",
     },
     {
       type: "definition",
@@ -270,9 +357,11 @@ export const chemistryStudy: StudyNotes = {
       type: "example",
       title: "Shape of NH₃",
       steps: [
-        "N has 5 valence e⁻ + 3 bonds → 3 bonding pairs + 1 lone pair",
-        "Electron geometry tetrahedral; molecular shape = **trigonal pyramidal, ~107°**",
+        "N has 5 valence e⁻ + 3 bonds → 3 bonding pairs + 1 lone pair = 4 domains",
+        "Lone pair repels more → molecular shape ignores the LP → trigonal pyramidal",
+        "Angle compressed from 109.5° to **~107°**",
       ],
+      blank: 1,
     },
     {
       type: "tip",
@@ -281,8 +370,18 @@ export const chemistryStudy: StudyNotes = {
   ],
   "ch-l15": [
     {
+      type: "warmup",
+      prompt: "F₂ (Mr 38) boils at −188 °C but HF (Mr 20) at +19.5 °C — why is the lighter molecule's boiling point higher?",
+      answer: "HF forms hydrogen bonds (H bonded to F) — far stronger than the London forces in non-polar F₂.",
+    },
+    {
       type: "text",
       body: "Between molecules, three intermolecular forces (IMFs) matter: **London dispersion** (every molecule, stronger with more electrons), **dipole–dipole** (polar molecules) and **hydrogen bonding** (H bonded to N, O or F — by far the strongest). IMFs, not covalent bonds, determine boiling points of molecular substances.",
+    },
+    {
+      type: "check",
+      prompt: "Why do boiling points rise down a group of non-polar molecules like the halogens?",
+      answer: "More electrons → stronger London dispersion forces — larger electron clouds polarise more easily.",
     },
     {
       type: "definition",
@@ -301,6 +400,7 @@ export const chemistryStudy: StudyNotes = {
         "Both have similar London forces; propane is only weakly polar",
         "Ethanol's –OH forms **hydrogen bonds** → much more energy needed to separate molecules",
       ],
+      blank: 1,
     },
     {
       type: "tip",
@@ -309,8 +409,18 @@ export const chemistryStudy: StudyNotes = {
   ],
   "ch-l16": [
     {
+      type: "warmup",
+      prompt: "Which is easier to ionise: Na or Cl?",
+      answer: "Na — it's a metal with a single loosely held outer electron; Cl's higher effective nuclear charge grips electrons tightly.",
+    },
+    {
       type: "text",
       body: "Periodic trends follow electron structure. **Atomic radius** falls across a period and rises down a group. **First ionisation energy** rises across a period (jumps between shells/groups reveal sub-shell structure) and falls down a group. **Electronegativity** peaks at fluorine.",
+    },
+    {
+      type: "check",
+      prompt: "Why does ionisation energy jump hugely between removing the 1st and inner-shell electrons?",
+      answer: "Inner electrons sit in a lower energy level with much less shielding — removing them needs far more energy, revealing group structure.",
     },
     {
       type: "definition",
@@ -338,6 +448,7 @@ export const chemistryStudy: StudyNotes = {
         "Huge jump after the 2nd electron → 2 outer electrons",
         "→ **Group 2**",
       ],
+      blank: 1,
     },
     {
       type: "tip",
@@ -346,8 +457,18 @@ export const chemistryStudy: StudyNotes = {
   ],
   "ch-l5": [
     {
+      type: "warmup",
+      prompt: "ΔH for a reaction is the same whether you go via one step or three. What law guarantees this?",
+      answer: "Hess's law — enthalpy is a state function, depending only on start and end states, not the route.",
+    },
+    {
       type: "text",
       body: "Enthalpy change ΔH is heat exchanged at constant pressure: negative = exothermic (products more stable), positive = endothermic. **Hess's law**: total enthalpy change is route-independent — it depends only on start and end states, so you can compute ΔH for any reaction via a convenient path.",
+    },
+    {
+      type: "check",
+      prompt: "Why can you measure ΔH for a reaction that won't run in a calorimeter?",
+      answer: "Construct a Hess cycle through measurable quantities (formation or combustion enthalpies) — route independence makes the indirect path valid.",
     },
     {
       type: "definition",
@@ -371,6 +492,7 @@ export const chemistryStudy: StudyNotes = {
         "Products: −394 + 2(−286) = −966; reactants: −75 + 0 = −75",
         "ΔH = −966 − (−75) = **−891 kJ mol⁻¹**",
       ],
+      blank: 1,
     },
     {
       type: "tip",
@@ -379,8 +501,18 @@ export const chemistryStudy: StudyNotes = {
   ],
   "ch-l6": [
     {
+      type: "warmup",
+      prompt: "Water freezes spontaneously below 0 °C — an exothermic process that reduces entropy. Why isn't ΔS < 0 a deal-breaker?",
+      answer: "ΔG = ΔH − TΔS: at low T the negative ΔH dominates the TΔS term, so ΔG stays negative — exothermicity wins at low temperature.",
+    },
+    {
       type: "text",
       body: "Entropy S measures dispersal of energy/matter: gases ≫ liquids > solids; more moles of gas → higher S. Gibbs free energy ΔG = ΔH − TΔS decides feasibility: ΔG < 0 spontaneous. The sign chart of ΔH/ΔS predicts temperature dependence.",
+    },
+    {
+      type: "check",
+      prompt: "Why does melting become spontaneous above 0 °C even though it increases disorder in both cases?",
+      answer: "At higher T, the TΔS term outweighs ΔH — spontaneity is a temperature-dependent competition, not a fixed property.",
     },
     {
       type: "definition",
@@ -404,6 +536,7 @@ export const chemistryStudy: StudyNotes = {
         "ΔG < 0 when T > ΔH/ΔS = 178 000 / 160",
         "T > 1113 K → **spontaneous above ~1113 K**",
       ],
+      blank: 1,
     },
     {
       type: "tip",
@@ -412,8 +545,18 @@ export const chemistryStudy: StudyNotes = {
   ],
   "ch-l17": [
     {
+      type: "warmup",
+      prompt: "You dissolve something and the water warms by 10 °C. Is the process exothermic or endothermic, and which sign for ΔH?",
+      answer: "Exothermic — ΔH negative. Heat released by the process went into the water; convention takes the system's perspective.",
+    },
+    {
       type: "text",
       body: "Two everyday ΔH techniques: calorimetry measures heat with **q = mcΔT** (usually assuming solution behaves like water: c = 4.18 J g⁻¹ K⁻¹); bond-enthalpy estimates use ΔH = energy to break bonds − energy released forming them.",
+    },
+    {
+      type: "check",
+      prompt: "Why does a bond-enthalpy estimate of ΔH rarely match the measured value?",
+      answer: "Tabulated bond enthalpies are averages over many molecules — the actual bonds in your molecule differ from the mean.",
     },
     {
       type: "definition",
@@ -437,6 +580,7 @@ export const chemistryStudy: StudyNotes = {
         "Broken: 436 + 242 = 678; formed: 2 × 431 = 862",
         "ΔH = 678 − 862 = **−184 kJ mol⁻¹**",
       ],
+      blank: 1,
     },
     {
       type: "example",
@@ -454,8 +598,18 @@ export const chemistryStudy: StudyNotes = {
   ],
   "ch-l18": [
     {
+      type: "warmup",
+      prompt: "Combustion data gives ΔH via reactants − products; formation data via products − reactants. Why the flip?",
+      answer: "The cycles run opposite directions: combustion arrows point from each species to CO₂/H₂O; formation arrows point from elements to each species.",
+    },
+    {
       type: "text",
       body: "Hess's law turns impossible measurements into arithmetic: enthalpies of formation, combustion, hydration, or atomisation can all complete a cycle. The skill is choosing the right route — always check which direction each given ΔH points.",
+    },
+    {
+      type: "check",
+      prompt: "Why must you draw the Hess triangle rather than just plug numbers in?",
+      answer: "Direction of each ΔH determines its sign in the sum — a drawn cycle prevents the classic sign inversion error.",
     },
     {
       type: "definition",
@@ -474,6 +628,7 @@ export const chemistryStudy: StudyNotes = {
         "ΔH = ΣΔHc(reactants) − ΣΔHc(products) = ΔHc(C) − [ΔHc(CO) + ΔHc(H₂)]",
         "= −394 − (−283 − 286) = **+175 kJ mol⁻¹**",
       ],
+      blank: 1,
     },
     {
       type: "tip",
@@ -482,8 +637,18 @@ export const chemistryStudy: StudyNotes = {
   ],
   "ch-l19": [
     {
+      type: "warmup",
+      prompt: "MgO's lattice enthalpy (~−3800) dwarfs NaCl's (−787). Which two factors explain it?",
+      answer: "Mg²⁺ and O²⁻ carry double charge and are smaller — both multiply the electrostatic attraction ∝ q₁q₂/r.",
+    },
+    {
       type: "text",
       body: "Born–Haber cycles apply Hess's law to ionic compound formation: the lattice enthalpy is found from a path through atomisation, ionisation, electron affinity and formation. **Lattice enthalpy** is the energy released when gaseous ions form one mole of solid lattice (large negative = strong lattice).",
+    },
+    {
+      type: "check",
+      prompt: "Why is lattice enthalpy always negative when defined as gaseous ions → solid?",
+      answer: "Forming the lattice releases the attraction energy between oppositely charged ions — exothermic by construction.",
     },
     {
       type: "definition",
@@ -514,6 +679,7 @@ export const chemistryStudy: StudyNotes = {
         "ΔHf = 108 + 121 + 496 − 349 + ΔHlatt = 376 + ΔHlatt",
         "ΔHlatt = −411 − 376 = **−787 kJ mol⁻¹**",
       ],
+      blank: 1,
     },
     {
       type: "tip",
@@ -522,8 +688,18 @@ export const chemistryStudy: StudyNotes = {
   ],
   "ch-l7": [
     {
+      type: "warmup",
+      prompt: "Why does a dusty grain silo explode while a solid block of grain just smoulders?",
+      answer: "Surface area — fine dust exposes vastly more particles to oxygen, multiplying collision frequency and reaction rate.",
+    },
+    {
       type: "text",
       body: "Rate of reaction = change in concentration per unit time. **Collision theory**: reactions need collisions with sufficient energy (≥ Ea) and correct orientation. **Dynamic equilibrium** is reached in a closed system when forward and reverse rates are equal — concentrations stay constant but reactions continue.",
+    },
+    {
+      type: "check",
+      prompt: "Why does a catalyst speed up a reaction without being used up?",
+      answer: "It provides an alternative pathway with lower activation energy — it participates but is regenerated by the end of the mechanism.",
     },
     {
       type: "definition",
@@ -552,6 +728,7 @@ export const chemistryStudy: StudyNotes = {
         "rate = ΔV/Δt = 40/100",
         "= **0.4 cm³ s⁻¹**",
       ],
+      blank: 1,
     },
     {
       type: "tip",
@@ -560,8 +737,18 @@ export const chemistryStudy: StudyNotes = {
   ],
   "ch-l8": [
     {
+      type: "warmup",
+      prompt: "Doubling [A] quadruples the rate. What is the order in A?",
+      answer: "Second order — 2^m = 4 gives m = 2.",
+    },
+    {
       type: "text",
       body: "Rate equations come only from experiment: rate = k[A]^m[B]^n, where orders m, n are found by comparing experiments. The **overall order** is m + n and fixes the units of k. The **Arrhenius equation** links k to temperature: k = Ae^(−Ea/RT) — a plot of ln k vs 1/T has gradient −Ea/R.",
+    },
+    {
+      type: "check",
+      prompt: "Why can't you read reaction orders from the balanced equation?",
+      answer: "Orders reflect the mechanism's rate-determining step, not overall stoichiometry — only experiments (initial rates) reveal them.",
     },
     {
       type: "definition",
@@ -581,6 +768,7 @@ export const chemistryStudy: StudyNotes = {
         "2^m = 4 → m = 2; 2^n = 1 → n = 0",
         "rate = **k[A]²**",
       ],
+      blank: 1,
     },
     {
       type: "tip",
@@ -589,8 +777,18 @@ export const chemistryStudy: StudyNotes = {
   ],
   "ch-l20": [
     {
+      type: "warmup",
+      prompt: "Successive half-lives of a reaction are 200 s, 200 s, 200 s. What order is it?",
+      answer: "First order — constant half-life is its signature; other orders' half-lives change with concentration.",
+    },
+    {
       type: "text",
       body: "Rate graphs: concentration–time curves have a decreasing gradient (rate falls as reactants deplete); rate–concentration graphs reveal order directly — straight line through origin = first order, parabola = second, horizontal = zero order.",
+    },
+    {
+      type: "check",
+      prompt: "Why does a 10 K rise roughly double many reaction rates?",
+      answer: "The Maxwell–Boltzmann tail beyond Ea grows disproportionately — the fraction of successful collisions rises steeply even though average speed rises only slightly.",
     },
     {
       type: "definition",
@@ -609,6 +807,7 @@ export const chemistryStudy: StudyNotes = {
         "Constant t½ → first order",
         "k = ln2/t½ = 0.693/100 = **6.93 × 10⁻³ s⁻¹**",
       ],
+      blank: 1,
     },
     {
       type: "tip",
@@ -617,8 +816,18 @@ export const chemistryStudy: StudyNotes = {
   ],
   "ch-l21": [
     {
+      type: "warmup",
+      prompt: "You add more N₂ to the Haber equilibrium N₂ + 3H₂ ⇌ 2NH₃. Which way does equilibrium shift?",
+      answer: "Right — Le Châtelier: the system consumes added N₂, producing more NH₃ to oppose the imposed change.",
+    },
+    {
       type: "text",
       body: "For aA + bB ⇌ cC + dD, the equilibrium constant Kc = [C]^c[D]^d / [A]^a[B]^b. Kc is constant at a given temperature; only temperature changes its value. **Le Châtelier's principle**: a system at equilibrium opposes any imposed change.",
+    },
+    {
+      type: "check",
+      prompt: "Why does a catalyst leave Kc and the equilibrium position unchanged?",
+      answer: "A catalyst speeds both directions equally — it shortens the time to reach equilibrium without altering it.",
     },
     {
       type: "definition",
@@ -648,6 +857,7 @@ export const chemistryStudy: StudyNotes = {
         "Products over reactants, powers = coefficients",
         "Kc = **[NH₃]² / ([N₂][H₂]³)**",
       ],
+      blank: 1,
     },
     {
       type: "tip",
@@ -656,8 +866,18 @@ export const chemistryStudy: StudyNotes = {
   ],
   "ch-l22": [
     {
+      type: "warmup",
+      prompt: "For H₂ + I₂ ⇌ 2HI you can use moles directly in Kc, but for N₂ + 3H₂ ⇌ 2NH₃ you can't. Why?",
+      answer: "Equal moles of gas each side (2 = 2) means volume cancels in Kc; 4 → 2 leaves V in the expression, so concentrations are required.",
+    },
+    {
       type: "text",
       body: "Kc calculations use an ICE table (Initial, Change, Equilibrium). Convert everything to concentrations, express changes via stoichiometry (e.g. −x, +2x), then substitute equilibrium values into the Kc expression and solve.",
+    },
+    {
+      type: "check",
+      prompt: "Why does the ICE method always start from initial concentrations, never equilibrium ones?",
+      answer: "Kc is written in equilibrium terms — the change row bridges known initials to unknown equilibrium values via stoichiometry.",
     },
     {
       type: "example",
@@ -668,6 +888,7 @@ export const chemistryStudy: StudyNotes = {
         "Concentrations (÷2.0): [H₂] = [I₂] = 0.10, [HI] = 0.80 mol dm⁻³",
         "Kc = 0.80² / (0.10 × 0.10) = 0.64/0.01 = **64**",
       ],
+      blank: 2,
     },
     {
       type: "text",
@@ -689,8 +910,18 @@ export const chemistryStudy: StudyNotes = {
   ],
   "ch-l9": [
     {
+      type: "warmup",
+      prompt: "In Zn + Cu²⁺ → Zn²⁺ + Cu, which species is the reducing agent?",
+      answer: "Zn — it loses electrons (oxidised, 0 → +2), and the species oxidised is by definition the reducing agent.",
+    },
+    {
       type: "text",
       body: "Brønsted–Lowry: acids are proton **donors**, bases proton **acceptors** — the acid–base pair differ by H⁺. Redox is electron transfer: oxidation is loss of electrons (OIL), reduction is gain (RIG). Assign oxidation numbers to track what's oxidised/reduced in any reaction.",
+    },
+    {
+      type: "check",
+      prompt: "Why do oxidation and reduction always happen together?",
+      answer: "Electrons can't exist free — every electron lost must be gained by something else, so the processes are inseparable.",
     },
     {
       type: "definition",
@@ -719,6 +950,7 @@ export const chemistryStudy: StudyNotes = {
         "Zn: 0 → +2 (loses e⁻) = oxidised = reducing agent",
         "Cu²⁺: +2 → 0 (gains e⁻) = reduced = oxidising agent",
       ],
+      blank: 1,
     },
     {
       type: "tip",
@@ -727,8 +959,18 @@ export const chemistryStudy: StudyNotes = {
   ],
   "ch-l10": [
     {
+      type: "warmup",
+      prompt: "In a Daniell cell, which electrode is the anode and what happens there?",
+      answer: "Zn is the anode — oxidation (Zn → Zn²⁺ + 2e⁻) occurs there; electrons flow through the wire to the Cu cathode.",
+    },
+    {
       type: "text",
       body: "Electrochemistry splits into **voltaic cells** (spontaneous redox → electricity; oxidation at the anode, reduction at the cathode) and **electrolytic cells** (electricity drives non-spontaneous redox). E°cell = E°cathode − E°anode; positive E°cell → spontaneous.",
+    },
+    {
+      type: "check",
+      prompt: "Why is the equivalence point of a weak acid–strong base titration above pH 7?",
+      answer: "The conjugate base of the weak acid remains and hydrolyses water, producing OH⁻ — the salt solution is basic.",
     },
     {
       type: "definition",
@@ -752,6 +994,7 @@ export const chemistryStudy: StudyNotes = {
         "E°cell = 0.34 − (−0.76) = **+1.10 V**",
         "Zn is oxidised → anode (more negative E°)",
       ],
+      blank: 1,
     },
     {
       type: "tip",
@@ -760,8 +1003,18 @@ export const chemistryStudy: StudyNotes = {
   ],
   "ch-l23": [
     {
+      type: "warmup",
+      prompt: "Two acids, both 0.1 M: HCl has pH 1, ethanoic acid pH ~3. Same concentration — why different pH?",
+      answer: "Ethanoic acid is weak — it only partially dissociates, so [H⁺] ≪ 0.1 M; strength and concentration are different things.",
+    },
+    {
       type: "text",
       body: "Water self-ionises: Kw = [H⁺][OH⁻] = 1.0 × 10⁻¹⁴ at 298 K. pH = −log[H⁺], so each pH unit is a 10× concentration change. Weak acids only partially dissociate — their pH needs Ka = [H⁺][A⁻]/[HA]; larger Ka (smaller pKa) = stronger weak acid.",
+    },
+    {
+      type: "check",
+      prompt: "Why does pH + pOH = 14 hold only at 298 K?",
+      answer: "Kw = 1.0 × 10⁻¹⁴ is temperature-dependent — warmer water ionises more, so the sum changes with T.",
     },
     {
       type: "definition",
@@ -781,6 +1034,7 @@ export const chemistryStudy: StudyNotes = {
         "0.10 M weak acid, Ka = 1.8 × 10⁻⁵: [H⁺] ≈ √(Ka·c) = √(1.8 × 10⁻⁶)",
         "[H⁺] = 1.34 × 10⁻³ → pH = **2.87**",
       ],
+      blank: 1,
     },
     {
       type: "tip",
@@ -789,8 +1043,18 @@ export const chemistryStudy: StudyNotes = {
   ],
   "ch-l24": [
     {
+      type: "warmup",
+      prompt: "Why does a buffer of ethanoic acid + ethanoate barely change pH when a little HCl is added?",
+      answer: "Added H⁺ is absorbed: A⁻ + H⁺ → HA — the large reservoir of conjugate base neutralises it, so [H⁺] barely moves.",
+    },
+    {
       type: "text",
       body: "Three applied electrochem/equilibria topics. **Buffers** resist pH change: a weak acid + its salt; added H⁺ is absorbed by A⁻, added OH⁻ by HA. **Electrolysis** forces non-spontaneous reactions; at the cathode the species easiest to reduce wins (in aqueous solution, often H₂ not the metal). **Redox titrations** (e.g. KMnO₄, self-indicating) quantify analytes.",
+    },
+    {
+      type: "check",
+      prompt: "Why does electrolysing dilute NaCl(aq) give O₂ at the anode but concentrated gives Cl₂?",
+      answer: "Concentration shifts the discharge competition — abundant Cl⁻ discharges preferentially at high concentration despite the unfavourable E°.",
     },
     {
       type: "definition",
@@ -810,6 +1074,7 @@ export const chemistryStudy: StudyNotes = {
         "ratio [A⁻]/[HA] = 1 → log 1 = 0",
         "pH = **4.76**",
       ],
+      blank: 1,
     },
     {
       type: "example",
@@ -828,8 +1093,18 @@ export const chemistryStudy: StudyNotes = {
   ],
   "ch-l25": [
     {
+      type: "warmup",
+      prompt: "A compound's IR shows a sharp peak at ~1700 cm⁻¹ and nothing at ~3300. Alcohol or ketone?",
+      answer: "Ketone (or other carbonyl) — C=O confirmed, no O–H stretch rules out alcohols and acids.",
+    },
+    {
       type: "text",
       body: "Organic nomenclature: longest carbon chain → root (meth-, eth-, prop-…); functional group → suffix (-ol, -al, -oic acid); positions → lowest locants. Spectroscopy identifies structures: IR shows functional groups (O–H broad ~3200–3550, C=O sharp ~1700 cm⁻¹); ¹H NMR shows proton environments, splitting (n+1 rule) and integration.",
+    },
+    {
+      type: "check",
+      prompt: "Why does the n+1 rule split a proton signal into a triplet?",
+      answer: "Two neighbouring protons split it into 2+1 = 3 lines — splitting counts adjacent hydrogens, not the protons' own count.",
     },
     {
       type: "definition",
@@ -854,6 +1129,7 @@ export const chemistryStudy: StudyNotes = {
         "3H triplet = CH₃ next to CH₂; 2H quartet = CH₂ next to CH₃; 1H singlet = OH",
         "Structure: **ethanol, CH₃CH₂OH**",
       ],
+      blank: 1,
     },
     {
       type: "tip",
@@ -862,8 +1138,18 @@ export const chemistryStudy: StudyNotes = {
   ],
   "ch-l26": [
     {
+      type: "warmup",
+      prompt: "A tertiary halogenoalkane reacts with OH⁻. SN1 or SN2 — and why?",
+      answer: "SN1 — the tertiary carbocation is stable enough to form; backside attack (SN2) is blocked by the three bulky alkyl groups.",
+    },
+    {
       type: "text",
       body: "Nucleophilic substitution replaces a leaving group on a carbon by a nucleophile (species with a lone pair attacking a δ⁺ carbon). Two mechanisms: **SN2** — one step, backside attack, rate = k[halogenoalkane][Nu], favoured by primary substrates; **SN1** — two steps via a carbocation, rate = k[halogenoalkane] only, favoured by tertiary substrates.",
+    },
+    {
+      type: "check",
+      prompt: "Why does the rate law distinguish SN1 from SN2 so cleanly?",
+      answer: "SN1's slow step is unimolecular ionisation — [Nu] appears only in the fast second step, so rate = k[R–X] alone vs k[R–X][Nu] for SN2.",
     },
     {
       type: "definition",
@@ -891,6 +1177,7 @@ export const chemistryStudy: StudyNotes = {
         "Rate = k[R–Br] → SN1",
         "→ **tertiary halogenoalkane** (stable carbocation intermediate)",
       ],
+      blank: 1,
     },
     {
       type: "tip",
