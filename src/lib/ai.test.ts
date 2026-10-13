@@ -42,7 +42,7 @@ test("no key: not configured, chat returns null without fetch", async () => {
   assert.equal(called, false);
 });
 
-test("AI_API_KEY only: defaults to Gemini base + gemini-2.0-flash", async () => {
+test("AI_API_KEY only: defaults to Gemini base + gemini-3.5-flash-lite", async () => {
   process.env.AI_API_KEY = "test-key";
   const calls = mockFetch({
     choices: [{ message: { content: "  hello  " } }],
@@ -55,7 +55,7 @@ test("AI_API_KEY only: defaults to Gemini base + gemini-2.0-flash", async () => 
       "https://generativelanguage.googleapis.com/v1beta/openai"
     )
   );
-  assert.equal(calls[0].body.model, "gemini-2.0-flash");
+  assert.equal(calls[0].body.model, "gemini-3.5-flash-lite");
 });
 
 test("OPENAI_API_KEY only: falls back to api.openai.com + gpt-4o-mini", async () => {

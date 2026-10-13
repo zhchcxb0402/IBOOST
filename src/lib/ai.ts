@@ -13,7 +13,7 @@ export function resolveConfig(
   if (!key) return null;
   let baseUrl =
     env.AI_BASE_URL ?? "https://generativelanguage.googleapis.com/v1beta/openai";
-  let model = env.AI_MODEL ?? "gemini-2.0-flash";
+  let model = env.AI_MODEL ?? "gemini-3.5-flash-lite";
   // Backwards compat: an OpenAI key with no explicit config means api.openai.com.
   if (!env.AI_API_KEY && env.OPENAI_API_KEY && !env.AI_BASE_URL) {
     baseUrl = "https://api.openai.com/v1";
