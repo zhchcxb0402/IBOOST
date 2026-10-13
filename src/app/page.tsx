@@ -43,8 +43,8 @@ export default function LandingPage() {
     },
     {
       icon: Flame,
-      title: "Short lessons, real stakes",
-      body: "Bite-size practice with hearts, XP and streaks to keep you coming back every day.",
+      title: "Read, then practise",
+      body: "Short study notes first, then bite-size practice with hearts, XP and streaks to keep you coming back.",
     },
     {
       icon: Layers,

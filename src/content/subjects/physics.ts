@@ -10,23 +10,7 @@ export const physics: Subject = {
   levels: ["SL", "HL"],
   description:
     "Space, time & motion; the particulate nature of matter; wave behaviour; fields; nuclear & quantum physics.",
-  resources: [
-    {
-      name: "IB Official",
-      url: "https://www.ibo.org/programmes/diploma-programme/curriculum/sciences/",
-      note: "Subject brief and syllabus outline",
-    },
-    {
-      name: "RevisionDojo",
-      url: "https://www.revisiondojo.com/",
-      note: "Topic questions with worked solutions",
-    },
-    {
-      name: "InThinking",
-      url: "https://www.thinkib.net/physics",
-      note: "Teacher-written lessons and IA guidance",
-    },
-  ],
+  syllabusUrl: "https://www.ibo.org/programmes/diploma-programme/curriculum/sciences/",
   units: [
     {
       id: "ph-u1",

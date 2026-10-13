@@ -10,28 +10,7 @@ export const frenchB: Subject = {
   levels: ["SL", "HL"],
   description:
     "French B — the five prescribed themes taught through vocabulary in context, grammar, register and exam skills.",
-  resources: [
-    {
-      name: "IB Official",
-      url: "https://www.ibo.org/programmes/diploma-programme/curriculum/language-acquisition/",
-      note: "Subject brief and syllabus outline",
-    },
-    {
-      name: "InThinking",
-      url: "https://www.thinkib.net/french-b",
-      note: "Teacher-written lessons and exam guidance",
-    },
-    {
-      name: "Clastify",
-      url: "https://www.clastify.com/",
-      note: "Past papers and exemplar work",
-    },
-    {
-      name: "RevisionDojo",
-      url: "https://www.revisiondojo.com/",
-      note: "Topic questions with worked solutions",
-    },
-  ],
+  syllabusUrl: "https://www.ibo.org/programmes/diploma-programme/curriculum/language-acquisition/",
   units: [
     {
       id: "fb-u1",

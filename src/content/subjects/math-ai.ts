@@ -10,28 +10,7 @@ export const mathAi: Subject = {
   levels: ["SL", "HL"],
   description:
     "Mathematics: Applications and Interpretation — the five topics taught through modelling, technology and real-world data.",
-  resources: [
-    {
-      name: "IB Official",
-      url: "https://www.ibo.org/programmes/diploma-programme/curriculum/mathematics/",
-      note: "Subject brief and syllabus outline",
-    },
-    {
-      name: "RevisionDojo",
-      url: "https://www.revisiondojo.com/",
-      note: "Topic questions with worked solutions",
-    },
-    {
-      name: "Nail IB",
-      url: "https://nailib.com/",
-      note: "Video walkthroughs and practice exams",
-    },
-    {
-      name: "Clastify",
-      url: "https://www.clastify.com/",
-      note: "Past papers and exemplar IAs",
-    },
-  ],
+  syllabusUrl: "https://www.ibo.org/programmes/diploma-programme/curriculum/mathematics/",
   units: [
     {
       id: "mai-u1",

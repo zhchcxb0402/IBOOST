@@ -10,28 +10,7 @@ export const englishLangLit: Subject = {
   levels: ["SL", "HL"],
   description:
     "Areas of exploration, non-literary text analysis, comparative essays, the HL essay and the individual oral.",
-  resources: [
-    {
-      name: "IB Official",
-      url: "https://www.ibo.org/programmes/diploma-programme/curriculum/language-and-literature/",
-      note: "Subject brief and assessment outline",
-    },
-    {
-      name: "InThinking",
-      url: "https://www.thinkib.net/english-a-lang-lit",
-      note: "Units, exemplar papers and IO guidance",
-    },
-    {
-      name: "Clastify",
-      url: "https://www.clastify.com/",
-      note: "Marked exemplar essays and IAs",
-    },
-    {
-      name: "Nail IB",
-      url: "https://nailib.com/",
-      note: "Study guides and Paper 1 frameworks",
-    },
-  ],
+  syllabusUrl: "https://www.ibo.org/programmes/diploma-programme/curriculum/language-and-literature/",
   units: [
     {
       id: "ell-u1",

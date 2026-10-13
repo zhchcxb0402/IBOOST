@@ -10,28 +10,7 @@ export const computerScience: Subject = {
   levels: ["SL", "HL"],
   description:
     "Computer fundamentals, networks, databases and machine learning, plus computational thinking, programming, OOP and abstract data types.",
-  resources: [
-    {
-      name: "IB Official",
-      url: "https://www.ibo.org/programmes/diploma-programme/curriculum/sciences/",
-      note: "Subject brief and syllabus outline",
-    },
-    {
-      name: "RevisionDojo",
-      url: "https://www.revisiondojo.com/",
-      note: "Topic questions with worked solutions",
-    },
-    {
-      name: "Clastify",
-      url: "https://www.clastify.com/",
-      note: "Past papers and exemplar work",
-    },
-    {
-      name: "Nail IB",
-      url: "https://nailib.com/",
-      note: "Past-paper practice and study guides",
-    },
-  ],
+  syllabusUrl: "https://www.ibo.org/programmes/diploma-programme/curriculum/sciences/",
   units: [
     {
       id: "cs-u1",

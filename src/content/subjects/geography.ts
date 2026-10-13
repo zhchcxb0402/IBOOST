@@ -10,28 +10,7 @@ export const geography: Subject = {
   levels: ["SL", "HL"],
   description:
     "Changing populations, climate vulnerability, resource security, freshwater and urban environments — with the HL global interactions extension.",
-  resources: [
-    {
-      name: "IB Official",
-      url: "https://www.ibo.org/programmes/diploma-programme/curriculum/individuals-and-societies/",
-      note: "Subject brief and syllabus outline",
-    },
-    {
-      name: "InThinking",
-      url: "https://www.thinkib.net/geography",
-      note: "Teacher-written lessons and case-study ideas",
-    },
-    {
-      name: "RevisionDojo",
-      url: "https://www.revisiondojo.com/",
-      note: "Topic questions with worked solutions",
-    },
-    {
-      name: "Nail IB",
-      url: "https://nailib.com/",
-      note: "Past-paper practice and study guides",
-    },
-  ],
+  syllabusUrl: "https://www.ibo.org/programmes/diploma-programme/curriculum/individuals-and-societies/",
   units: [
     {
       id: "ge-u1",

@@ -12,8 +12,6 @@ import type { Level } from "@/content/types";
 import { useProgress } from "@/store/progress";
 import { cn } from "@/lib/utils";
 
-const PARTNERS = ["RevisionDojo", "Nail IB", "Clastify", "InThinking"];
-
 export default function OnboardingPage() {
   const router = useRouter();
   const { setSubjectLevel, finishOnboarding, selectedSubjects } = useProgress();
@@ -58,22 +56,9 @@ export default function OnboardingPage() {
               </h1>
               <p className="font-bold text-muted-foreground">
                 All curriculum content is structured from the official IB DP
-                subject guides. Practice styles are inspired by{" "}
-                {PARTNERS.slice(0, -1).join(", ")} and{" "}
-                {PARTNERS[PARTNERS.length - 1]} — built into one Duolingo ×
-                Quizlet experience.
+                subject guides — original notes, practice tasks and
+                flashcards in one Duolingo × Quizlet experience.
               </p>
-              <div className="flex flex-wrap justify-center gap-2">
-                {PARTNERS.map((p) => (
-                  <Badge
-                    key={p}
-                    variant="secondary"
-                    className="rounded-full font-bold"
-                  >
-                    {p}
-                  </Badge>
-                ))}
-              </div>
             </div>
           )}
 

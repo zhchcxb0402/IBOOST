@@ -10,28 +10,7 @@ export const economics: Subject = {
   levels: ["SL", "HL"],
   description:
     "Scarcity, markets and intervention; the macroeconomy and policy; the global economy and real-world issues.",
-  resources: [
-    {
-      name: "IB Official",
-      url: "https://www.ibo.org/programmes/diploma-programme/curriculum/individuals-and-societies/",
-      note: "Subject brief and syllabus outline",
-    },
-    {
-      name: "RevisionDojo",
-      url: "https://www.revisiondojo.com/",
-      note: "Topic questions with worked solutions",
-    },
-    {
-      name: "InThinking",
-      url: "https://www.thinkib.net/economics",
-      note: "Teacher-written lessons and IA guidance",
-    },
-    {
-      name: "Nail IB",
-      url: "https://nailib.com/",
-      note: "Past-paper practice and study guides",
-    },
-  ],
+  syllabusUrl: "https://www.ibo.org/programmes/diploma-programme/curriculum/individuals-and-societies/",
   units: [
     {
       id: "ec-u1",

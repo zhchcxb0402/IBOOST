@@ -39,11 +39,14 @@ export type Unit = {
   level?: Level;
   lessons: Lesson[];
 };
-export type Resource = {
-  name: "InThinking" | "RevisionDojo" | "Clastify" | "Nail IB" | "IB Official";
-  url: string;
-  note: string;
-};
+export type StudyBlock =
+  | { type: "text"; body: string }
+  | { type: "definition"; term: string; body: string }
+  | { type: "formula"; label: string; body: string }
+  | { type: "example"; title: string; steps: string[] }
+  | { type: "tip"; body: string }
+  | { type: "list"; title?: string; items: string[] };
+export type StudyNotes = Record<string /* lessonId */, StudyBlock[]>;
 export type Subject = {
   slug: string;
   name: string;
@@ -54,7 +57,7 @@ export type Subject = {
   levels: Level[];
   comingSoon?: boolean;
   description: string;
-  resources: Resource[];
+  syllabusUrl: string;
   units: Unit[];
 };
 export type Card = { id: string; front: string; back: string };
