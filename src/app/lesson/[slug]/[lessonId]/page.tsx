@@ -27,6 +27,7 @@ import { getLesson, getStudy } from "@/content";
 import type { Question } from "@/content/types";
 import { MAX_HEARTS, useProgress } from "@/store/progress";
 import { useAuth } from "@/lib/auth";
+import { localCheck } from "@/lib/check";
 import { seededOrder } from "@/lib/shuffle";
 import { cn } from "@/lib/utils";
 
@@ -98,6 +99,15 @@ export default function LessonPage() {
 
   const check = async () => {
     if (q.type === "short") {
+      const fast = localCheck({
+        answer: q.answer,
+        acceptable: q.acceptable ?? [],
+        userAnswer: text,
+      });
+      if (fast) {
+        applyResult(true, fast.feedback, "rules");
+        return;
+      }
       setChecking(true);
       try {
         const res = await fetch("/api/check", {

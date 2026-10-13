@@ -35,7 +35,12 @@ function stripFences(s: string): string {
 
 export async function chat(
   messages: ChatMessage[],
-  opts?: { temperature?: number; json?: boolean }
+  opts?: {
+    temperature?: number;
+    json?: boolean;
+    timeoutMs?: number;
+    maxTokens?: number;
+  }
 ): Promise<string | null> {
   const cfg = resolveConfig();
   if (!cfg) return null;
@@ -51,8 +56,9 @@ export async function chat(
         temperature: opts?.temperature ?? 0.3,
         messages,
         ...(opts?.json ? { response_format: { type: "json_object" } } : {}),
+        ...(opts?.maxTokens ? { max_tokens: opts.maxTokens } : {}),
       }),
-      signal: AbortSignal.timeout(15_000),
+      signal: AbortSignal.timeout(opts?.timeoutMs ?? 15_000),
     });
     if (!res.ok) {
       const body = (await res.text()).slice(0, 300);
