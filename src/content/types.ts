@@ -23,6 +23,7 @@ export type Question =
       answer: string;
       keywords: string[];
       acceptable?: string[];
+      hint?: string;
       explanation: string;
     };
 

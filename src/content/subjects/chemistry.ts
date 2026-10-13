@@ -72,6 +72,7 @@ export const chemistry: Subject = {
               answer: "0.1 mol",
               acceptable: ["0.10 mol", "0.1"],
               keywords: ["0.1"],
+              hint: "n = m/M.",
               explanation: "n = m/M = 10/100 = 0.1 mol.",
             },
             {
@@ -82,6 +83,7 @@ export const chemistry: Subject = {
               answer:
                 "It shows relative abundance vs mass-to-charge ratio; separate peaks reveal different isotopes.",
               keywords: ["abundance", "mass", "isotop", "peak"],
+              hint: "Each peak corresponds to one m/z — what does peak height tell you?",
               explanation:
                 "Each isotope gives a peak at its m/z with height ∝ abundance → weighted Aᵣ.",
             },
@@ -142,6 +144,7 @@ export const chemistry: Subject = {
               answer: "6 mol",
               acceptable: ["6"],
               keywords: ["6"],
+              hint: "Use the mole ratio from the balanced equation: propane to CO₂.",
               explanation: "1 mol C₃H₈ → 3 mol CO₂, so 2 mol → 6 mol.",
             },
             {
@@ -152,6 +155,7 @@ export const chemistry: Subject = {
               answer:
                 "Particles have negligible volume and no intermolecular forces; collisions are elastic; motion is random/continuous.",
               keywords: ["volume", "negligible", "force", "elastic"],
+              hint: "Think particle size, forces between them, and what collisions conserve.",
               explanation:
                 "Zero particle volume, no attractions, elastic collisions, random motion — deviations at high P / low T.",
             },
@@ -220,6 +224,7 @@ export const chemistry: Subject = {
                 "2H₂ + O₂ → 2H₂O. With 4 mol H₂ and 1 mol O₂, how many moles of H₂O form?",
               answer: "2",
               keywords: ["2"],
+              hint: "Divide each reactant's moles by its coefficient — the smaller value limits.",
               acceptable: ["2 mol"],
               explanation:
                 "O₂ is limiting (needs 2 mol H₂): 1 mol O₂ → 2 mol H₂O; 2 mol H₂ left over.",
@@ -231,6 +236,7 @@ export const chemistry: Subject = {
                 "Theoretical yield 10 g, actual yield 8 g. Give the percentage yield.",
               answer: "80%",
               keywords: ["80"],
+              hint: "% yield = actual/theoretical × 100.",
               acceptable: ["80", "80 percent"],
               explanation: "8/10 × 100 = 80%.",
             },
@@ -293,6 +299,7 @@ export const chemistry: Subject = {
                 "A hydrocarbon is 80% C and 20% H by mass. Give its empirical formula.",
               answer: "CH3",
               keywords: ["CH3", "CH₃"],
+              hint: "Convert % to moles via Ar: C 80/12, H 20/1 — then find the ratio.",
               acceptable: ["CH₃"],
               explanation:
                 "80/12 = 6.67 mol C; 20/1 = 20 mol H; ratio 1:3 → CH₃.",
@@ -304,6 +311,7 @@ export const chemistry: Subject = {
                 "Empirical formula CH₂ (mass 14) and molecular mass 56. Give the molecular formula.",
               answer: "C4H8",
               keywords: ["C4H8", "C₄H₈"],
+              hint: "n = 56/14 — multiply the empirical subscripts by n.",
               acceptable: ["C₄H₈"],
               explanation: "56/14 = 4 → C₄H₈.",
             },
@@ -363,6 +371,7 @@ export const chemistry: Subject = {
                 "Give the moles in 8 g of CH₄ (M = 16 g/mol).",
               answer: "0.5",
               keywords: ["0.5"],
+              hint: "n = m/M.",
               acceptable: ["0.5 mol"],
               explanation: "8/16 = 0.5 mol.",
             },
@@ -373,6 +382,7 @@ export const chemistry: Subject = {
                 "Give the mass of 0.25 mol of NaOH (M = 40 g/mol).",
               answer: "10",
               keywords: ["10"],
+              hint: "m = n × M.",
               acceptable: ["10 g"],
               explanation: "0.25 × 40 = 10 g.",
             },
@@ -451,6 +461,7 @@ export const chemistry: Subject = {
               answer:
                 "Diamond: each C has 4 strong covalent bonds in a 3-D lattice. Graphite: layers with delocalised electrons that carry current.",
               keywords: ["covalent", "delocalised", "delocalized", "layers", "electron"],
+              hint: "Compare bonding: how many bonds per carbon, and which has free electrons?",
               explanation:
                 "Structure determines properties: 3-D covalent network vs layered structure with free electrons.",
             },
@@ -462,6 +473,7 @@ export const chemistry: Subject = {
               answer: "Tetrahedral, 109.5°",
               acceptable: ["tetrahedral", "109.5"],
               keywords: ["tetra", "109"],
+              hint: "Four bonding domains, no lone pairs → which geometry?",
               explanation:
                 "4 bonding pairs, no lone pairs → tetrahedral, 109.5°.",
             },
@@ -529,6 +541,7 @@ export const chemistry: Subject = {
               answer: "sp², 120°",
               acceptable: ["sp2", "120"],
               keywords: ["sp", "120"],
+              hint: "Count electron domains around B — any lone pairs?",
               explanation:
                 "3 electron domains → trigonal planar sp², 120°.",
             },
@@ -540,6 +553,7 @@ export const chemistry: Subject = {
               answer:
                 "Al's outer electron is in a 3p subshell — higher in energy and slightly shielded by 3s — so it is removed more easily.",
               keywords: ["3p", "subshell", "shield", "higher"],
+              hint: "Which subshell is Al's outer electron in vs Mg's — compare energies and shielding.",
               explanation:
                 "3p is further/higher energy than 3s → lower IE despite more protons.",
             },
@@ -603,6 +617,7 @@ export const chemistry: Subject = {
               prompt: "Name the molecular shape of BF₃.",
               answer: "trigonal planar",
               keywords: ["trigonal", "planar"],
+              hint: "Three domains, no lone pair — name the shape, not the electron geometry.",
               acceptable: ["trigonal planar", "flat triangle"],
               explanation:
                 "3 domains, no lone pairs → trigonal planar, 120°.",
@@ -613,6 +628,7 @@ export const chemistry: Subject = {
               prompt: "Give the bond angle in methane CH₄, in degrees.",
               answer: "109.5",
               keywords: ["109.5"],
+              hint: "Four bonding pairs, ideal tetrahedral angle.",
               acceptable: ["109.5°", "109"],
               explanation: "Perfect tetrahedron: 109.5°.",
             },
@@ -683,6 +699,7 @@ export const chemistry: Subject = {
                 "Which has the higher boiling point: H₂O or H₂S? (one word)",
               answer: "water",
               keywords: ["water", "H2O", "H₂O"],
+              hint: "Which of the two can hydrogen-bond?",
               acceptable: ["H2O", "H₂O"],
               explanation:
                 "H-bonding in water vs weak dipole forces in H₂S.",
@@ -694,6 +711,7 @@ export const chemistry: Subject = {
                 "Name the dominant intermolecular force between CHCl₃ (chloroform, polar) molecules.",
               answer: "dipole-dipole",
               keywords: ["dipole"],
+              hint: "Polar molecule but no H bonded to N/O/F — which IMF remains?",
               acceptable: ["dipole-dipole forces", "permanent dipole"],
               explanation:
                 "Polar molecule without N/O/F–H → dipole–dipole.",
@@ -758,6 +776,7 @@ export const chemistry: Subject = {
                 "Which is larger: a Na atom or a Na⁺ ion? (one word)",
               answer: "Na",
               keywords: ["na", "atom", "sodium atom"],
+              hint: "Removing an electron loses a whole shell — which species keeps more?",
               acceptable: ["na atom", "sodium", "the atom"],
               explanation:
                 "Na⁺ loses its outer shell — much smaller.",
@@ -769,6 +788,7 @@ export const chemistry: Subject = {
                 "State the trend in first ionisation energy DOWN a group (one word).",
               answer: "decreases",
               keywords: ["decreas"],
+              hint: "Think shielding and distance down a group.",
               acceptable: ["decrease", "goes down", "lower"],
               explanation:
                 "Outer electron farther and more shielded → easier to remove.",
@@ -847,6 +867,7 @@ export const chemistry: Subject = {
               answer: "-891 kJ/mol",
               acceptable: ["-891", "−891 kJ", "-890"],
               keywords: ["89"],
+              hint: "ΔH = ΣΔHf(products) − ΣΔHf(reactants); don't forget the 2× on H₂O.",
               explanation:
                 "ΔH = [(−394) + 2(−286)] − [(−75)] = −966 + 75 = −891 kJ/mol.",
             },
@@ -858,6 +879,7 @@ export const chemistry: Subject = {
               answer:
                 "Products above reactants; activation energy is the hump from reactants to the peak; ΔH is the positive gap.",
               keywords: ["products", "above", "activation", "higher"],
+              hint: "Which side sits higher on the y-axis for endothermic? Draw reactants, hump, products.",
               explanation:
                 "Ea = reactants → peak; ΔH = reactants → products (positive).",
             },
@@ -930,6 +952,7 @@ export const chemistry: Subject = {
               answer: "-40.4 kJ/mol",
               acceptable: ["-40.4", "-40"],
               keywords: ["-40", "40.4"],
+              hint: "ΔG = ΔH − TΔS — ΔS is already in kJ here.",
               explanation:
                 "ΔG = ΔH − TΔS = −100 − 298(−0.2) = −100 + 59.6 = −40.4 kJ/mol.",
             },
@@ -941,6 +964,7 @@ export const chemistry: Subject = {
               answer:
                 "The entropy increase of liquid water outweighs the energy cost once TΔS > ΔH.",
               keywords: ["entropy", "disorder", "temperature", "tδs", "tΔs"],
+              hint: "ΔG = ΔH − TΔS: which term wins as T rises?",
               explanation:
                 "ΔS > 0; above 273 K the TΔS term dominates → ΔG < 0.",
             },
@@ -1010,6 +1034,7 @@ export const chemistry: Subject = {
                 "100 g of water warms by 10°C (c = 4.18 J/g·K). Give q in joules.",
               answer: "4180",
               keywords: ["4180", "4.18"],
+              hint: "q = mcΔT with c per gram.",
               acceptable: ["4,180", "4.18 kJ"],
               explanation: "q = 100 × 4.18 × 10 = 4,180 J.",
             },
@@ -1020,6 +1045,7 @@ export const chemistry: Subject = {
                 "Estimate ΔH for H₂ + Cl₂ → 2HCl using bond enthalpies: H–H 436, Cl–Cl 243, H–Cl 432 kJ/mol.",
               answer: "-185",
               keywords: ["-185", "185"],
+              hint: "ΔH = bonds broken − bonds formed: 436 + 243 − 2×432.",
               acceptable: ["−185", "-185 kJ", "−185 kJ"],
               explanation:
                 "Broken: 436 + 243 = 679; formed: 2 × 432 = 864; ΔH = 679 − 864 = −185 kJ.",
@@ -1089,6 +1115,7 @@ export const chemistry: Subject = {
                 "Using ΔHf: CO₂ = −394, CO = −111 kJ/mol. Give ΔH for CO + ½O₂ → CO₂ in kJ/mol.",
               answer: "-283",
               keywords: ["-283", "283"],
+              hint: "ΔHf route: products − reactants; O₂ contributes 0.",
               acceptable: ["−283", "-283 kJ/mol"],
               explanation:
                 "−394 − (−111) = −283 kJ/mol.",
@@ -1100,6 +1127,7 @@ export const chemistry: Subject = {
                 "A → B is +50 kJ and B → C is −20 kJ. Give ΔH for A → C in kJ.",
               answer: "30",
               keywords: ["30"],
+              hint: "Hess: total ΔH is path-independent — just add the steps.",
               acceptable: ["+30", "30 kJ"],
               explanation: "50 − 20 = +30 kJ.",
             },
@@ -1166,6 +1194,7 @@ export const chemistry: Subject = {
                 "Born–Haber for NaCl: sublimation +107, IE +496, ½Cl₂ bond +121, EA −349, ΔHf = −411 kJ/mol. Give the lattice enthalpy.",
               answer: "-786",
               keywords: ["-786", "786"],
+              hint: "ΔHf = sum of steps + lattice enthalpy — solve for the lattice term.",
               acceptable: ["−786", "-786 kJ"],
               explanation:
                 "Steps sum: 107 + 496 + 121 − 349 = 375; lattice = −411 − 375 = −786 kJ/mol.",
@@ -1177,6 +1206,7 @@ export const chemistry: Subject = {
                 "Is the first electron affinity of chlorine exothermic or endothermic? (one word)",
               answer: "exothermic",
               keywords: ["exotherm"],
+              hint: "Gaining an electron on a halogen releases energy — which sign?",
               acceptable: ["negative", "exo"],
               explanation:
                 "Cl + e⁻ → Cl⁻ releases energy — negative ΔH.",
@@ -1256,6 +1286,7 @@ export const chemistry: Subject = {
               answer: "Kc = [NH₃]² / ([N₂][H₂]³)",
               acceptable: ["Kc=[NH3]^2/[N2][H2]^3"],
               keywords: ["nh3", "n2", "h2", "squared", "²"],
+              hint: "Products over reactants, each raised to its coefficient.",
               explanation:
                 "Products over reactants, each raised to its stoichiometric coefficient.",
             },
@@ -1267,6 +1298,7 @@ export const chemistry: Subject = {
               answer:
                 "Shifts toward NH₃ — the side with fewer gas moles (4 → 2).",
               keywords: ["ammonia", "fewer", "moles", "product"],
+              hint: "Count moles of gas on each side — shift goes to the smaller side.",
               explanation:
                 "Higher pressure favours fewer gas particles, i.e. the product side.",
             },
@@ -1333,6 +1365,7 @@ export const chemistry: Subject = {
               answer: "Rate increases 9-fold",
               acceptable: ["9", "nine times"],
               keywords: ["9"],
+              hint: "Rate ∝ [B]² — cube it.",
               explanation: "rate ∝ [B]² → 3² = 9× faster.",
             },
             {
@@ -1343,6 +1376,7 @@ export const chemistry: Subject = {
               answer:
                 "It provides an alternative pathway with lower Ea, so a larger fraction of particles have enough energy to react.",
               keywords: ["activation", "lower", "pathway", "fraction", "energy"],
+              hint: "Lower Ea moves the threshold line — what does that do to the shaded fraction?",
               explanation:
                 "Lower Ea → exponentially more collisions exceed it → faster rate.",
             },
@@ -1413,6 +1447,7 @@ export const chemistry: Subject = {
                 "Powdered magnesium reacts faster than a ribbon of the same mass because of increased ___ (one phrase).",
               answer: "surface area",
               keywords: ["surface", "area"],
+              hint: "More contact between particles means more what per unit time?",
               acceptable: ["surface area"],
               explanation:
                 "More particles exposed → more collisions per second.",
@@ -1424,6 +1459,7 @@ export const chemistry: Subject = {
                 "0.05 mol of product forms in 10 s. Give the average rate in mol/s.",
               answer: "0.005",
               keywords: ["0.005"],
+              hint: "rate = Δamount/Δt.",
               acceptable: ["5e-3", "0.005 mol/s"],
               explanation: "0.05/10 = 0.005 mol/s.",
             },
@@ -1492,6 +1528,7 @@ export const chemistry: Subject = {
                 "Write the Kc expression for N₂ + 3H₂ ⇌ 2NH₃.",
               answer: "[NH3]^2/([N2][H2]^3)",
               keywords: ["NH3", "N2", "H2"],
+              hint: "Same Kc rule: products over reactants to the power of coefficients.",
               acceptable: ["[nh3]2/([n2][h2]3)", "Kc = [NH₃]²/([N₂][H₂]³)"],
               explanation:
                 "[NH₃]²/([N₂][H₂]³).",
@@ -1503,6 +1540,7 @@ export const chemistry: Subject = {
                 "For an exothermic forward reaction, heating shifts equilibrium which way? (one word)",
               answer: "left",
               keywords: ["left", "backward", "reactant"],
+              hint: "Le Châtelier: heating favours the endothermic direction — which is that here?",
               acceptable: ["backwards", "towards reactants", "reverse"],
               explanation:
                 "The system opposes the added heat → shifts toward reactants.",
@@ -1573,6 +1611,7 @@ export const chemistry: Subject = {
                 "Equilibrium: [NH₃] = 0.2, [N₂] = 0.1, [H₂] = 0.1 M. Give Kc for N₂ + 3H₂ ⇌ 2NH₃.",
               answer: "400",
               keywords: ["400"],
+              hint: "Kc = [NH₃]²/([N₂][H₂]³) — plug in directly.",
               explanation:
                 "Kc = 0.2²/(0.1 × 0.1³) = 0.04/0.0001 = 400.",
             },
@@ -1583,6 +1622,7 @@ export const chemistry: Subject = {
                 "For A ⇌ B, equilibrium has [A] = 0.3 and [B] = 0.6. Give Kc.",
               answer: "2",
               keywords: ["2"],
+              hint: "Kc = [B]/[A].",
               explanation: "Kc = [B]/[A] = 0.6/0.3 = 2.",
             },
           ],
@@ -1653,6 +1693,7 @@ export const chemistry: Subject = {
               answer: "+6",
               acceptable: ["6", "+VI"],
               keywords: ["6"],
+              hint: "Sum of oxidation numbers = ion charge; O is −2 each.",
               explanation: "x + 4(−2) = −2 → x = +6.",
             },
             {
@@ -1663,6 +1704,7 @@ export const chemistry: Subject = {
               answer: "HSO₄⁻ and NH₄⁺",
               acceptable: ["HSO4-", "NH4+"],
               keywords: ["hso", "nh4"],
+              hint: "Conjugate = add/remove exactly one H⁺.",
               explanation:
                 "Remove H⁺ from the acid → conjugate base; add H⁺ to the base → conjugate acid.",
             },
@@ -1723,6 +1765,7 @@ export const chemistry: Subject = {
               answer:
                 "It completes the circuit by allowing ion flow to balance charge without mixing the half-cell solutions.",
               keywords: ["ion", "circuit", "charge", "complete"],
+              hint: "What would happen to charge build-up in each half-cell without it?",
               explanation:
                 "Salt bridge lets counter-ions migrate, keeping each half-cell electrically neutral.",
             },
@@ -1734,6 +1777,7 @@ export const chemistry: Subject = {
               answer:
                 "The conjugate base of the weak acid hydrolyses water to produce OH⁻, making the solution basic.",
               keywords: ["conjugate", "base", "hydroly", "oh", "basic"],
+              hint: "What's left in solution at equivalence — and does that ion react with water?",
               explanation:
                 "e.g. CH₃COO⁻ + H₂O ⇌ CH₃COOH + OH⁻ → pH > 7 at equivalence.",
             },
@@ -1798,6 +1842,7 @@ export const chemistry: Subject = {
               prompt: "Give the pH of a solution with [H⁺] = 1 × 10⁻³ M.",
               answer: "3",
               keywords: ["3"],
+              hint: "pH = −log[H⁺].",
               acceptable: ["3.0"],
               explanation: "pH = −log(10⁻³) = 3.",
             },
@@ -1807,6 +1852,7 @@ export const chemistry: Subject = {
               prompt: "A solution has pH = 9. Give its pOH.",
               answer: "5",
               keywords: ["5"],
+              hint: "pH + pOH = 14.",
               explanation: "pOH = 14 − 9 = 5.",
             },
           ],
@@ -1875,6 +1921,7 @@ export const chemistry: Subject = {
                 "During electrolysis of MOLTEN NaCl, name the product formed at the cathode.",
               answer: "sodium",
               keywords: ["sodium", "na"],
+              hint: "Molten = no water competing — which species is easiest to reduce?",
               acceptable: ["Na", "liquid sodium"],
               explanation:
                 "Na⁺ + e⁻ → Na at the cathode; Cl₂ gas forms at the anode.",
@@ -1886,6 +1933,7 @@ export const chemistry: Subject = {
                 "MnO₄⁻ oxidises Fe²⁺ in a 1:5 ratio. Give the moles of Fe²⁺ oxidised by 0.02 mol MnO₄⁻.",
               answer: "0.1",
               keywords: ["0.1"],
+              hint: "Ratio 1:5 — multiply moles of MnO₄⁻.",
               acceptable: ["0.10", "0.1 mol"],
               explanation: "0.02 × 5 = 0.1 mol Fe²⁺.",
             },
@@ -1955,6 +2003,7 @@ export const chemistry: Subject = {
                 "Give the number of ¹H NMR signals for ethanol CH₃CH₂OH.",
               answer: "3",
               keywords: ["3"],
+              hint: "Count distinct proton environments — CH₃, CH₂, OH.",
               explanation:
                 "CH₃, CH₂ and OH are three distinct environments.",
             },
@@ -1965,6 +2014,7 @@ export const chemistry: Subject = {
                 "Give the suffix used to name ketones (e.g. propan___).",
               answer: "-one",
               keywords: ["one"],
+              hint: "Think propanone, butanone — what ending do they share?",
               acceptable: ["one", "-one"],
               explanation:
                 "Ketones end in '-one': propanone, butanone.",
@@ -2035,6 +2085,7 @@ export const chemistry: Subject = {
                 "Which reacts fastest by SN2: primary, secondary or tertiary halogenoalkane? (one word)",
               answer: "primary",
               keywords: ["primary"],
+              hint: "SN2 needs clear access for backside attack — which is least crowded?",
               acceptable: ["1°", "primary halogenoalkane"],
               explanation:
                 "Least steric hindrance → easiest backside attack.",
@@ -2046,6 +2097,7 @@ export const chemistry: Subject = {
                 "Name the positively charged intermediate in an SN1 reaction.",
               answer: "carbocation",
               keywords: ["carbocation"],
+              hint: "Two-step mechanism: what forms after the leaving group departs?",
               acceptable: ["carbonium ion"],
               explanation:
                 "The leaving group departs first, forming a carbocation.",

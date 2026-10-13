@@ -78,6 +78,7 @@ export const physics: Subject = {
               answer: "30 m/s",
               acceptable: ["30"],
               keywords: ["30"],
+              hint: "SUVAT with u = 0: v² = u² + 2as.",
               explanation:
                 "v² = u² + 2gs = 2 × 10 × 45 = 900, so v = 30 m/s.",
             },
@@ -89,6 +90,7 @@ export const physics: Subject = {
               answer:
                 "Velocity changes direction almost instantaneously on impact, so the jump is nearly vertical.",
               keywords: ["direction", "instant", "impact", "bounce", "sudden"],
+              hint: "What happens to velocity at the instant of impact — magnitude, direction, duration?",
               explanation:
                 "The collision reverses velocity in a very short time, so Δv/Δt is huge and the graph looks vertical.",
             },
@@ -160,6 +162,7 @@ export const physics: Subject = {
               answer: "1 m/s",
               acceptable: ["1.0 m/s"],
               keywords: ["1"],
+              hint: "Conserve momentum: total p before = total p after, shared mass.",
               explanation:
                 "p = 0.5 × 4 = 2 kg m/s; v = 2 / (0.5 + 1.5) = 1 m/s.",
             },
@@ -171,6 +174,7 @@ export const physics: Subject = {
               answer:
                 "They extend the collision time, so for the same momentum change the average force is smaller.",
               keywords: ["time", "force", "momentum", "impulse", "longer"],
+              hint: "Impulse = FΔt = Δp — same momentum change, longer time.",
               explanation:
                 "F = Δp/Δt: increasing Δt for fixed Δp lowers F on passengers.",
             },
@@ -237,6 +241,7 @@ export const physics: Subject = {
               answer:
                 "Net force zero and net torque zero about any point.",
               keywords: ["force", "torque", "zero"],
+              hint: "Two conditions: one about forces, one about turning.",
               explanation:
                 "ΣF = 0 prevents translation; Στ = 0 prevents rotation.",
             },
@@ -248,6 +253,7 @@ export const physics: Subject = {
               answer: "100 N·m",
               acceptable: ["100 N m", "100"],
               keywords: ["100"],
+              hint: "τ = Fd — the weight acts at the plank's centre of gravity.",
               explanation:
                 "Weight acts at the centre of mass, 1 m from the pivot: τ = 100 × 1 = 100 N·m.",
             },
@@ -313,6 +319,7 @@ export const physics: Subject = {
                 "A ball is thrown horizontally at 10 m/s from a 20 m cliff (g = 10 m/s²). Give the horizontal range in metres.",
               answer: "20",
               keywords: ["20"],
+              hint: "Time of flight comes from the vertical fall; horizontal speed stays 10.",
               acceptable: ["20 m"],
               explanation:
                 "Fall time t = √(2×20/10) = 2 s; range = 10 × 2 = 20 m.",
@@ -324,6 +331,7 @@ export const physics: Subject = {
                 "A ball is launched straight up at 20 m/s (g = 10). Give the maximum height in metres.",
               answer: "20",
               keywords: ["20"],
+              hint: "v² = u² − 2gh at the top where v = 0.",
               acceptable: ["20 m"],
               explanation: "h = v²/2g = 400/20 = 20 m.",
             },
@@ -390,6 +398,7 @@ export const physics: Subject = {
                 "A 2 kg mass is raised 5 m (g = 9.8). Give the gain in potential energy in joules.",
               answer: "98",
               keywords: ["98"],
+              hint: "Ep = mgh.",
               acceptable: ["98 J", "100", "100 J"],
               explanation:
                 "E_p = mgh = 2 × 9.8 × 5 = 98 J (≈100 J if g = 10).",
@@ -401,6 +410,7 @@ export const physics: Subject = {
                 "A mass moves in a circle at v = 4 m/s with r = 2 m. Give the centripetal acceleration in m/s².",
               answer: "8",
               keywords: ["8"],
+              hint: "a = v²/r.",
               acceptable: ["8 m/s²", "8 m/s^2"],
               explanation: "a = v²/r = 16/2 = 8 m/s².",
             },
@@ -478,6 +488,7 @@ export const physics: Subject = {
               answer: "126000 J",
               acceptable: ["126 kJ", "1.26e5 J", "126,000 J"],
               keywords: ["126", "000", "kj"],
+              hint: "Q = mcΔT — watch the ΔT calculation.",
               explanation:
                 "Q = mcΔT = 0.5 × 4200 × 60 = 126,000 J.",
             },
@@ -489,6 +500,7 @@ export const physics: Subject = {
               answer:
                 "Specific heat raises temperature; latent heat changes state at constant temperature.",
               keywords: ["temperature", "state", "phase", "change"],
+              hint: "One changes temperature, the other changes state — which stays constant?",
               explanation:
                 "c: energy per kg per °C. L: energy per kg for a phase change with no ΔT.",
             },
@@ -555,6 +567,7 @@ export const physics: Subject = {
               answer: "300 J",
               acceptable: ["+300 J", "300"],
               keywords: ["300"],
+              hint: "First law: ΔQ = ΔU + W — check the sign convention for work done BY the gas.",
               explanation:
                 "ΔU = Q + W = 500 + (−200) = 300 J (work done BY gas is negative).",
             },
@@ -566,6 +579,7 @@ export const physics: Subject = {
               answer:
                 "The net work done by the gas per cycle.",
               keywords: ["work", "cycle", "area", "net"],
+              hint: "Area under a p–V curve is work; what does a closed loop net out to?",
               explanation:
                 "Area inside the loop = net work output per cycle of the engine.",
             },
@@ -634,6 +648,7 @@ export const physics: Subject = {
                 "Heat needed to warm 0.5 kg of water by 20°C (c = 4200 J/kg·K). Give Q in joules.",
               answer: "42000",
               keywords: ["42000"],
+              hint: "Q = mcΔT.",
               acceptable: ["42,000", "42 kJ", "42000 J"],
               explanation: "Q = 0.5 × 4200 × 20 = 42,000 J.",
             },
@@ -644,6 +659,7 @@ export const physics: Subject = {
                 "Energy to melt 0.1 kg of ice at 0°C (L_f = 334,000 J/kg). Give Q in joules.",
               answer: "33400",
               keywords: ["33400", "33.4"],
+              hint: "Q = mL — temperature doesn't change during a phase change.",
               acceptable: ["33,400", "33.4 kJ", "33400 J"],
               explanation: "Q = mL = 0.1 × 334,000 = 33,400 J.",
             },
@@ -706,6 +722,7 @@ export const physics: Subject = {
                 "2 L of gas at constant temperature is compressed from 100 kPa to 200 kPa. Give the new volume in litres.",
               answer: "1",
               keywords: ["1"],
+              hint: "Constant temperature → Boyle's law: p₁V₁ = p₂V₂.",
               acceptable: ["1 L"],
               explanation: "V₂ = p₁V₁/p₂ = 100×2/200 = 1 L.",
             },
@@ -716,6 +733,7 @@ export const physics: Subject = {
                 "A sealed gas at 300 K and 100 kPa is heated to 600 K. Give the new pressure in kPa.",
               answer: "200",
               keywords: ["200"],
+              hint: "Constant volume → p/T is constant; kelvin are already given.",
               acceptable: ["200 kPa"],
               explanation: "p₂ = p₁T₂/T₁ = 100 × 2 = 200 kPa.",
             },
@@ -777,6 +795,7 @@ export const physics: Subject = {
               prompt: "Convert 27°C to kelvin.",
               answer: "300",
               keywords: ["300"],
+              hint: "T/K = θ/°C + 273.",
               acceptable: ["300 K"],
               explanation: "T = 27 + 273 = 300 K.",
             },
@@ -787,6 +806,7 @@ export const physics: Subject = {
                 "Heat needed to raise 0.2 kg of water by 10°C (c = 4200). Give Q in joules.",
               answer: "8400",
               keywords: ["8400"],
+              hint: "Q = mcΔT with m = 0.2, ΔT = 10.",
               acceptable: ["8,400", "8.4 kJ"],
               explanation: "Q = 0.2 × 4200 × 10 = 8,400 J.",
             },
@@ -859,6 +879,7 @@ export const physics: Subject = {
               answer:
                 "Strings fixed at both ends, and air columns in pipes.",
               keywords: ["string", "pipe", "column", "guitar", "organ"],
+              hint: "Think instruments: strings and pipes.",
               explanation:
                 "Any medium with boundaries that reflect waves — e.g. guitar strings, organ pipes.",
             },
@@ -870,6 +891,7 @@ export const physics: Subject = {
               answer: "0.5 Hz",
               acceptable: ["0.5"],
               keywords: ["0.5"],
+              hint: "f = 1/T.",
               explanation: "f = 1/T = 1/2.0 = 0.5 Hz.",
             },
           ],
@@ -940,6 +962,7 @@ export const physics: Subject = {
               answer:
                 "Path difference is a whole number of wavelengths.",
               keywords: ["path", "difference", "wavelength", "integer", "phase"],
+              hint: "Express it as a path difference in terms of λ.",
               explanation:
                 "Δd = nλ (phase difference = 2πn) gives constructive interference.",
             },
@@ -951,6 +974,7 @@ export const physics: Subject = {
               answer: "439 Hz",
               acceptable: ["440 Hz", "439", "≈440"],
               keywords: ["43", "44"],
+              hint: "Moving source approaching: f′ = f·v/(v − us).",
               explanation:
                 "f′ = f × v/(v − vs) = 400 × 340/310 ≈ 439 Hz.",
             },
@@ -1015,6 +1039,7 @@ export const physics: Subject = {
                 "A string fixed at both ends is 0.5 m long. Give its fundamental wavelength in metres.",
               answer: "1",
               keywords: ["1"],
+              hint: "Fundamental: the string is half a wavelength long.",
               acceptable: ["1 m"],
               explanation: "λ = 2L = 1 m.",
             },
@@ -1025,6 +1050,7 @@ export const physics: Subject = {
                 "A 500 Hz source approaches at half the wave speed. Give the observed frequency in Hz (f′ = f·v/(v − v_s)).",
               answer: "1000",
               keywords: ["1000"],
+              hint: "f′ = f·v/(v − us) with us = v/2.",
               acceptable: ["1000 Hz"],
               explanation:
                 "f′ = 500·v/(v − 0.5v) = 500/0.5 = 1000 Hz.",
@@ -1095,6 +1121,7 @@ export const physics: Subject = {
                 "Double slit: λ = 600 nm, D = 2 m, d = 1 mm. Give the fringe spacing in mm.",
               answer: "1.2",
               keywords: ["1.2"],
+              hint: "s = λD/d — convert nm and mm to metres first.",
               acceptable: ["1.2 mm"],
               explanation:
                 "Δy = 600×10⁻⁹ × 2 / 10⁻³ = 1.2×10⁻³ m = 1.2 mm.",
@@ -1106,6 +1133,7 @@ export const physics: Subject = {
                 "Give the path difference (in wavelengths) for the first DARK fringe in a double slit.",
               answer: "λ/2",
               keywords: ["half", "0.5", "1/2", "λ/2"],
+              hint: "Destructive interference happens at half-integer path differences.",
               acceptable: ["half a wavelength", "0.5λ", "lambda/2"],
               explanation:
                 "Destructive interference needs Δ = (n + ½)λ; first dark = λ/2.",
@@ -1175,6 +1203,7 @@ export const physics: Subject = {
                 "Light speed in a medium with n = 1.5 (c = 3 × 10⁸ m/s). Give v in m/s.",
               answer: "2 × 10^8",
               keywords: ["2", "10^8"],
+              hint: "n = c/v → rearrange for v.",
               acceptable: ["2e8", "200000000", "2×10⁸"],
               explanation: "v = c/n = 3×10⁸/1.5 = 2×10⁸ m/s.",
             },
@@ -1185,6 +1214,7 @@ export const physics: Subject = {
                 "Give the critical angle for n = 1.5 into air (sin θ_c = 1/n), in degrees to 1 d.p.",
               answer: "41.8",
               keywords: ["41"],
+              hint: "sin θc = 1/n, then take arcsin.",
               acceptable: ["41.8", "42"],
               explanation:
                 "sin θ_c = 0.667 → θ_c = sin⁻¹(0.667) ≈ 41.8°.",
@@ -1257,6 +1287,7 @@ export const physics: Subject = {
               answer:
                 "Gravity only attracts; electric forces can attract or repel.",
               keywords: ["repel", "attract", "charge"],
+              hint: "One only attracts; the other can do both.",
               explanation:
                 "Mass is always positive → only attraction; charge can be ± → both directions.",
             },
@@ -1268,6 +1299,7 @@ export const physics: Subject = {
               answer: "2.7e-3 m/s²",
               acceptable: ["0.0027", "2.7 × 10⁻³", "0.003"],
               keywords: ["10⁻", "0.00", "2.7"],
+              hint: "Inverse-square: g ∝ 1/r² — compute the ratio (R/(R+r))².",
               explanation:
                 "g ∝ 1/r²: 9.8 × (6.4e6/3.84e8)² ≈ 2.7 × 10⁻³ m/s².",
             },
@@ -1334,6 +1366,7 @@ export const physics: Subject = {
               answer:
                 "Induced currents in the copper create opposing magnetic fields that brake the fall.",
               keywords: ["induced", "current", "oppose", "magnetic", "lenz"],
+              hint: "Which law says the induced effect opposes the change? What flows in copper?",
               explanation:
                 "Lenz's law: eddy currents oppose the flux change → upward force on the magnet.",
             },
@@ -1345,6 +1378,7 @@ export const physics: Subject = {
               answer: "6 V",
               acceptable: ["6.0 V", "6"],
               keywords: ["6"],
+              hint: "ε = N ΔΦ/Δt.",
               explanation:
                 "ε = N ΔΦ/Δt = 200 × 3.0e-3 / 0.10 = 6 V.",
             },
@@ -1412,6 +1446,7 @@ export const physics: Subject = {
                 "Force between two 1 C charges 1 m apart (k = 9 × 10⁹). Give F in newtons.",
               answer: "9 × 10^9",
               keywords: ["9", "10^9"],
+              hint: "F = kq₁q₂/r².",
               acceptable: ["9e9", "9000000000", "9×10⁹"],
               explanation: "F = 9×10⁹ × 1 × 1 / 1 = 9×10⁹ N.",
             },
@@ -1422,6 +1457,7 @@ export const physics: Subject = {
                 "Field strength 1 m from a 2 × 10⁻⁶ C charge (k = 9 × 10⁹). Give E in N/C.",
               answer: "18000",
               keywords: ["18000", "1.8"],
+              hint: "E = kq/r².",
               acceptable: ["1.8e4", "18,000", "1.8×10⁴"],
               explanation: "E = kq/r² = 9×10⁹ × 2×10⁻⁶ = 1.8×10⁴ N/C.",
             },
@@ -1485,6 +1521,7 @@ export const physics: Subject = {
                 "emf = 12 V, internal r = 1 Ω, load R = 5 Ω. Give the terminal voltage in volts.",
               answer: "10",
               keywords: ["10"],
+              hint: "Find I first from ε = I(R + r), then V = ε − Ir or V = IR.",
               acceptable: ["10 V"],
               explanation:
                 "I = 12/6 = 2 A; V = 12 − 2×1 = 10 V.",
@@ -1496,6 +1533,7 @@ export const physics: Subject = {
                 "Two 4 Ω resistors in parallel. Give the total resistance in ohms.",
               answer: "2",
               keywords: ["2"],
+              hint: "Equal parallel resistors halve — or use 1/R = 1/R₁ + 1/R₂.",
               acceptable: ["2 Ω", "2 ohms"],
               explanation: "R_t = 4/2 = 2 Ω.",
             },
@@ -1565,6 +1603,7 @@ export const physics: Subject = {
                 "q = 1 × 10⁻⁶ C, v = 100 m/s, B = 0.5 T, θ = 90°. Give the force in newtons.",
               answer: "5 × 10^-5",
               keywords: ["5", "10^-5"],
+              hint: "F = qvB sin θ with θ = 90°.",
               acceptable: ["5e-5", "0.00005", "5×10⁻⁵"],
               explanation: "F = 10⁻⁶ × 100 × 0.5 = 5×10⁻⁵ N.",
             },
@@ -1575,6 +1614,7 @@ export const physics: Subject = {
                 "Force on a wire: B = 0.2 T, I = 5 A, L = 0.3 m (wire ⟂ to field). Give F in newtons.",
               answer: "0.3",
               keywords: ["0.3"],
+              hint: "F = BIL.",
               acceptable: ["0.3 N"],
               explanation: "F = BIL = 0.2 × 5 × 0.3 = 0.3 N.",
             },
@@ -1653,6 +1693,7 @@ export const physics: Subject = {
               answer: "3 days",
               acceptable: ["3"],
               keywords: ["3"],
+              hint: "Count the halvings: 800 → 400 → 200 → 100 is how many half-lives?",
               explanation:
                 "800→400→200→100 is 3 half-lives in 9 days → T½ = 3 days.",
             },
@@ -1664,6 +1705,7 @@ export const physics: Subject = {
               answer:
                 "Reaching and confining the extreme temperatures needed to overcome Coulomb repulsion.",
               keywords: ["temperature", "confin", "repuls", "plasma"],
+              hint: "Think about what force the nuclei must overcome to fuse — and what that requires.",
               explanation:
                 "Nuclei repel; ~10⁸ K plasma must be confined long enough — hard to sustain.",
             },
@@ -1735,6 +1777,7 @@ export const physics: Subject = {
               answer:
                 "Each photon carries too little energy; more photons can't compensate since emission is one-photon-per-electron.",
               keywords: ["photon", "frequency", "energy", "threshold"],
+              hint: "Energy arrives in packets E = hf — what does more intensity add, energy per photon or photon count?",
               explanation:
                 "Emission depends on individual photon energy hf ≥ work function, not total intensity.",
             },
@@ -1746,6 +1789,7 @@ export const physics: Subject = {
               answer:
                 "The moving clock ticks more slowly than the observer's clock.",
               keywords: ["slow", "dilat", "clock", "time"],
+              hint: "γ > 1 means the moving clock runs ___ — fill in the direction of the effect.",
               explanation:
                 "Δt = γΔt₀: the moving (proper-time) interval appears longer, i.e. the moving clock runs slow.",
             },
@@ -1808,6 +1852,7 @@ export const physics: Subject = {
                 "An isotope has T½ = 5 years. Starting with 100 g, give the mass remaining after 15 years, in grams.",
               answer: "12.5",
               keywords: ["12.5"],
+              hint: "15 years = how many half-lives? Then (½)ⁿ × 100 g.",
               acceptable: ["12.5 g"],
               explanation:
                 "3 half-lives: 100 → 50 → 25 → 12.5 g.",
@@ -1819,6 +1864,7 @@ export const physics: Subject = {
                 "A sample falls from 800 to 100 counts. T½ = 2 hours. Give the elapsed time in hours.",
               answer: "6",
               keywords: ["6"],
+              hint: "Count the halvings from 800 to 100, then multiply by T½.",
               acceptable: ["6 h", "6 hours"],
               explanation:
                 "800 → 400 → 200 → 100 is 3 half-lives → 3 × 2 = 6 h.",
@@ -1890,6 +1936,7 @@ export const physics: Subject = {
                 "Light of energy 5 eV hits a metal with work function 2 eV. Give the maximum electron KE in eV.",
               answer: "3",
               keywords: ["3"],
+              hint: "Ekmax = hf − Φ.",
               acceptable: ["3 eV"],
               explanation: "KE_max = 5 − 2 = 3 eV.",
             },
@@ -1900,6 +1947,7 @@ export const physics: Subject = {
                 "An electron drops from −3.4 eV to −13.6 eV. Give the emitted photon energy in eV.",
               answer: "10.2",
               keywords: ["10.2"],
+              hint: "Photon energy = difference between levels — subtract, mind the signs.",
               acceptable: ["10.2 eV"],
               explanation:
                 "ΔE = −3.4 − (−13.6) = 10.2 eV.",
@@ -1971,6 +2019,7 @@ export const physics: Subject = {
                 "A mass defect of 0.001 u gives roughly how much energy in MeV? (1 u = 931.5 MeV)",
               answer: "0.93",
               keywords: ["0.93"],
+              hint: "ΔE = Δm × 931.5 MeV.",
               acceptable: ["0.9", "0.9315", "0.93 MeV"],
               explanation: "0.001 × 931.5 ≈ 0.93 MeV.",
             },
@@ -1981,6 +2030,7 @@ export const physics: Subject = {
                 "A nucleus of 200 nucleons has binding energy 8 MeV per nucleon. Give the total binding energy in MeV.",
               answer: "1600",
               keywords: ["1600"],
+              hint: "Total = per-nucleon × number of nucleons.",
               acceptable: ["1,600", "1600 MeV"],
               explanation: "200 × 8 = 1,600 MeV.",
             },

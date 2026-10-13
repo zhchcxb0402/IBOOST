@@ -9,6 +9,7 @@ const base: ProgressSlice = {
   lastActiveDate: null,
   completedLessons: {},
   srs: {},
+  lessonReview: {},
   onboarded: false,
   selectedSubjects: {},
 };
@@ -40,6 +41,26 @@ test("srs later due wins per card", () => {
   assert.deepEqual(m.srs.c1, { due: 900, interval: 4 });
   assert.deepEqual(m.srs.c2, { due: 500, interval: 2 });
   assert.deepEqual(m.srs.c3, { due: 50, interval: 1 });
+});
+
+test("lessonReview later due wins per key", () => {
+  const local = {
+    ...base,
+    lessonReview: {
+      "physics/ph-l1": { due: 100, stage: 0 },
+      "physics/ph-l2": { due: 900, stage: 3 },
+    },
+  };
+  const remote = {
+    lessonReview: {
+      "physics/ph-l1": { due: 500, stage: 2 },
+      "physics/ph-l3": { due: 50, stage: 1 },
+    },
+  };
+  const m = mergeProgress(local, remote);
+  assert.deepEqual(m.lessonReview["physics/ph-l1"], { due: 500, stage: 2 });
+  assert.deepEqual(m.lessonReview["physics/ph-l2"], { due: 900, stage: 3 });
+  assert.deepEqual(m.lessonReview["physics/ph-l3"], { due: 50, stage: 1 });
 });
 
 test("selectedSubjects local wins over remote", () => {

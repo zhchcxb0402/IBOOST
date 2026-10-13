@@ -1,7 +1,8 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
-import { ChevronRight, Layers, Plus } from "lucide-react";
+import { ChevronRight, Layers, Plus, Repeat } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
@@ -15,11 +16,28 @@ export default function HomePage() {
   const hydrated = useHydrated();
   const completedLessons = useProgress((s) => s.completedLessons);
   const selectedSubjects = useProgress((s) => s.selectedSubjects);
+  const lessonReview = useProgress((s) => s.lessonReview);
   const { user } = useAuth();
 
   const selected = subjects.filter((s) =>
     hydrated ? selectedSubjects[s.slug] : false
   );
+
+  const [now] = useState(() => Date.now());
+  const dueBySubject = selected
+    .map((s) => {
+      const level = selectedSubjects[s.slug] ?? "HL";
+      const due = unitsForLevel(s, level)
+        .flatMap((u) => u.lessons)
+        .filter(
+          (l) =>
+            completedLessons[`${s.slug}/${l.id}`] &&
+            lessonReview[`${s.slug}/${l.id}`]?.due <= now
+        ).length;
+      return { subject: s, due };
+    })
+    .filter((d) => d.due > 0);
+  const totalDue = dueBySubject.reduce((n, d) => n + d.due, 0);
 
   return (
     <div className="pt-4 space-y-6">
@@ -37,6 +55,33 @@ export default function HomePage() {
           )}
         </div>
       </header>
+
+      {dueBySubject.length > 0 && (
+        <Card className="border-2 border-amber-300 bg-amber-50">
+          <CardContent className="flex flex-col gap-3 p-4">
+            <div className="flex items-center gap-3">
+              <div className="flex size-10 items-center justify-center rounded-2xl bg-amber-100">
+                <Repeat className="size-5 text-amber-600" />
+              </div>
+              <p className="flex-1 font-extrabold">
+                Review due · {totalDue} lessons across {dueBySubject.length}{" "}
+                subjects
+              </p>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {dueBySubject.map(({ subject: s, due }) => (
+                <Link
+                  key={s.slug}
+                  href={`/review/${s.slug}`}
+                  className="inline-flex items-center gap-1 rounded-full border-2 border-amber-300 bg-background px-3 py-1 text-xs font-extrabold hover:bg-amber-100"
+                >
+                  {s.emoji} {s.short ?? s.name} · {due}
+                </Link>
+              ))}
+            </div>
+          </CardContent>
+        </Card>
+      )}
 
       <section className="grid grid-cols-1 gap-3 sm:grid-cols-2">
         {selected.map((s) => {

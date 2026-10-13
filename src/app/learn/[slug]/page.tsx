@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import { useParams, notFound } from "next/navigation";
 import { BookMarked, BookOpen, Check, ExternalLink, Lock, Star } from "lucide-react";
@@ -23,6 +24,7 @@ export default function LearnPage() {
   const subject = getSubject(slug);
   const hydrated = useHydrated();
   const completedLessons = useProgress((s) => s.completedLessons);
+  const lessonReview = useProgress((s) => s.lessonReview);
   const selectedLevel = useProgress((s) => s.selectedSubjects[slug]) ?? "HL";
   if (!subject) notFound();
 
@@ -31,6 +33,14 @@ export default function LearnPage() {
   const firstIncomplete = flat.findIndex(
     (l) => !completedLessons[`${slug}/${l.id}`]
   );
+  const [now] = useState(() => Date.now());
+  const dueCount = hydrated
+    ? flat.filter(
+        (l) =>
+          completedLessons[`${slug}/${l.id}`] &&
+          lessonReview[`${slug}/${l.id}`]?.due <= now
+      ).length
+    : 0;
   let idx = 0;
 
   return (
@@ -42,7 +52,17 @@ export default function LearnPage() {
         >
           ← HOME
         </Link>
-        <StatsPills />
+        <div className="flex items-center gap-2">
+          {dueCount > 0 && (
+            <Link
+              href={`/review/${slug}`}
+              className="rounded-full border-2 border-amber-300 bg-amber-50 px-3 py-1 text-xs font-extrabold text-amber-700 hover:bg-amber-100"
+            >
+              Review · {dueCount}
+            </Link>
+          )}
+          <StatsPills />
+        </div>
       </header>
 
       <div className="mt-4 flex items-center justify-between">

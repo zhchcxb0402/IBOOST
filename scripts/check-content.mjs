@@ -103,7 +103,11 @@ for (const [slug, notes] of Object.entries(studyBySubject)) {
 for (const s of subjects) {
   const lessonIds = s.units.flatMap(u => u.lessons.map(l => l.id));
   const have = lessonIds.filter(id => studyBySubject[s.slug]?.[id]?.length).length;
-  console.log(s.slug + ": study notes " + have + "/" + lessonIds.length + " lessons");
+  const shorts = s.units.flatMap(u => u.lessons).flatMap(l => l.questions).filter(q => q.type === "short");
+  const hinted = shorts.filter(q => q.hint).length;
+  console.log(s.slug + ": study notes " + have + "/" + lessonIds.length + " lessons; hints " + hinted + "/" + shorts.length);
+  if (STUDY_REQUIRED.has(s.slug) && hinted !== shorts.length)
+    errors.push("missing short-question hints " + s.slug + " (" + hinted + "/" + shorts.length + ")");
   if (STUDY_REQUIRED.has(s.slug) && have !== lessonIds.length)
     errors.push("incomplete study notes " + s.slug + " (" + have + "/" + lessonIds.length + ")");
 }
