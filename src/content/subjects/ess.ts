@@ -10,28 +10,7 @@ export const ess: Subject = {
   levels: ["SL", "HL"],
   description:
     "An interdisciplinary subject: foundations, ecology, biodiversity, resource use, climate change and human populations — with HL lenses of law, economics and ethics.",
-  resources: [
-    {
-      name: "IB Official",
-      url: "https://www.ibo.org/programmes/diploma-programme/curriculum/sciences/",
-      note: "Subject brief and syllabus outline",
-    },
-    {
-      name: "RevisionDojo",
-      url: "https://www.revisiondojo.com/",
-      note: "Topic questions with worked solutions",
-    },
-    {
-      name: "InThinking",
-      url: "https://www.thinkib.net/ess",
-      note: "Teacher-written lessons and IA guidance",
-    },
-    {
-      name: "Clastify",
-      url: "https://www.clastify.com/",
-      note: "Past papers and exemplar work",
-    },
-  ],
+  syllabusUrl: "https://www.ibo.org/programmes/diploma-programme/curriculum/sciences/",
   units: [
     {
       id: "es-u1",

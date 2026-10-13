@@ -10,28 +10,7 @@ export const chemistry: Subject = {
   levels: ["SL", "HL"],
   description:
     "Models of the particulate nature of matter, bonding and structure, and what drives, limits and speeds up chemical change.",
-  resources: [
-    {
-      name: "IB Official",
-      url: "https://www.ibo.org/programmes/diploma-programme/curriculum/sciences/",
-      note: "Subject brief and syllabus outline",
-    },
-    {
-      name: "RevisionDojo",
-      url: "https://www.revisiondojo.com/",
-      note: "Topic questions with worked solutions",
-    },
-    {
-      name: "InThinking",
-      url: "https://www.thinkib.net/chemistry",
-      note: "Teacher-written lessons and IA guidance",
-    },
-    {
-      name: "Nail IB",
-      url: "https://nailib.com/",
-      note: "Past-paper practice and study guides",
-    },
-  ],
+  syllabusUrl: "https://www.ibo.org/programmes/diploma-programme/curriculum/sciences/",
   units: [
     {
       id: "ch-u1",

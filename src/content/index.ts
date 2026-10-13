@@ -1,4 +1,6 @@
 import type { Deck, Lesson, Level, Subject, Unit } from "./types";
+import type { StudyBlock } from "./types";
+import { studyBySubject } from "./study";
 import { mathAA } from "./subjects/math-aa";
 import { englishLangLit } from "./subjects/english-langlit";
 import { businessManagement } from "./subjects/business-management";
@@ -58,6 +60,13 @@ export function getLesson(
 
 export function getDeck(id: string): Deck | undefined {
   return decks.find((d) => d.id === id);
+}
+
+export function getStudy(
+  slug: string,
+  lessonId: string
+): StudyBlock[] | undefined {
+  return studyBySubject[slug]?.[lessonId];
 }
 
 /** Units/lessons visible at a level: SL hides anything marked "HL". */

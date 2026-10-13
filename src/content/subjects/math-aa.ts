@@ -10,28 +10,7 @@ export const mathAA: Subject = {
   levels: ["SL", "HL"],
   description:
     "The five official topics: number & algebra, functions, geometry & trigonometry, statistics & probability, and calculus.",
-  resources: [
-    {
-      name: "IB Official",
-      url: "https://www.ibo.org/programmes/diploma-programme/curriculum/mathematics/",
-      note: "Subject brief and syllabus outline",
-    },
-    {
-      name: "RevisionDojo",
-      url: "https://www.revisiondojo.com/",
-      note: "Topic questions with worked solutions",
-    },
-    {
-      name: "InThinking",
-      url: "https://www.thinkib.net/math-aa",
-      note: "Teacher-written lessons and IA guidance",
-    },
-    {
-      name: "Clastify",
-      url: "https://www.clastify.com/",
-      note: "Exemplar IAs/EEs with examiner marks",
-    },
-  ],
+  syllabusUrl: "https://www.ibo.org/programmes/diploma-programme/curriculum/mathematics/",
   units: [
     {
       id: "maa-u1",

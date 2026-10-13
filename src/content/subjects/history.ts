@@ -10,28 +10,7 @@ export const history: Subject = {
   levels: ["SL", "HL"],
   description:
     "Rights and protest, the move to global war, authoritarian states, 20th-century wars and the Cold War — plus source and essay skills.",
-  resources: [
-    {
-      name: "IB Official",
-      url: "https://www.ibo.org/programmes/diploma-programme/curriculum/individuals-and-societies/",
-      note: "Subject brief and syllabus outline",
-    },
-    {
-      name: "InThinking",
-      url: "https://www.thinkib.net/history",
-      note: "Teacher-written lessons, source practice and essay guidance",
-    },
-    {
-      name: "RevisionDojo",
-      url: "https://www.revisiondojo.com/",
-      note: "Topic questions with worked solutions",
-    },
-    {
-      name: "Clastify",
-      url: "https://www.clastify.com/",
-      note: "Past papers and exemplar essays",
-    },
-  ],
+  syllabusUrl: "https://www.ibo.org/programmes/diploma-programme/curriculum/individuals-and-societies/",
   units: [
     {
       id: "hi-u1",

@@ -2,18 +2,10 @@
 
 import Link from "next/link";
 import { useParams, notFound } from "next/navigation";
-import { BookMarked, Check, ExternalLink, Lock, Star } from "lucide-react";
+import { BookMarked, BookOpen, Check, ExternalLink, Lock, Star } from "lucide-react";
 import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
-import { getSubject, unitsForLevel } from "@/content";
+import { getStudy, getSubject, unitsForLevel } from "@/content";
 import { StatsPills } from "@/components/stats-pills";
 import { useHydrated } from "@/lib/use-hydrated";
 import { useProgress } from "@/store/progress";
@@ -61,40 +53,15 @@ export default function LearnPage() {
             {selectedLevel}
           </Badge>
         </div>
-        <Dialog>
-          <DialogTrigger className="inline-flex items-center rounded-xl border-2 border-input bg-background px-3 py-1.5 text-sm font-extrabold hover:bg-muted transition-colors">
-            <BookMarked className="mr-1 size-4" /> Resources
-          </DialogTrigger>
-          <DialogContent className="max-w-sm rounded-2xl">
-            <DialogHeader>
-              <DialogTitle className="font-extrabold">
-                {subject.name} resources
-              </DialogTitle>
-              <DialogDescription className="font-bold">
-                Trusted external sites for this subject.
-              </DialogDescription>
-            </DialogHeader>
-            <div className="space-y-2">
-              {subject.resources.map((r) => (
-                <a
-                  key={r.name}
-                  href={r.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-3 rounded-xl border-2 border-muted p-3 hover:border-brand transition-colors"
-                >
-                  <div className="flex-1">
-                    <p className="text-sm font-extrabold">{r.name}</p>
-                    <p className="text-xs font-bold text-muted-foreground">
-                      {r.note}
-                    </p>
-                  </div>
-                  <ExternalLink className="size-4 text-muted-foreground" />
-                </a>
-              ))}
-            </div>
-          </DialogContent>
-        </Dialog>
+        <a
+          href={subject.syllabusUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center rounded-xl border-2 border-input bg-background px-3 py-1.5 text-sm font-extrabold hover:bg-muted transition-colors"
+        >
+          <BookMarked className="mr-1 size-4" /> IB syllabus
+          <ExternalLink className="ml-1 size-3.5 text-muted-foreground" />
+        </a>
       </div>
 
       {units.map((unit) => (
@@ -126,6 +93,7 @@ export default function LearnPage() {
                 hydrated && firstIncomplete >= 0 && idx === firstIncomplete;
               const locked =
                 hydrated && firstIncomplete >= 0 && idx > firstIncomplete;
+              const hasStudy = !!getStudy(slug, lesson.id);
               const offset = OFFSETS[idx % OFFSETS.length];
               idx++;
 
@@ -177,11 +145,24 @@ export default function LearnPage() {
                   {locked ? (
                     node
                   ) : (
-                    <Link href={`/lesson/${slug}/${lesson.id}`}>{node}</Link>
+                    <Link
+                      href={
+                        hasStudy
+                          ? `/study/${slug}/${lesson.id}`
+                          : `/lesson/${slug}/${lesson.id}`
+                      }
+                    >
+                      {node}
+                    </Link>
                   )}
                   <span className="text-xs font-bold text-muted-foreground">
                     {lesson.title}
                   </span>
+                  {hasStudy && (
+                    <span className="flex items-center gap-0.5 text-[10px] font-extrabold text-brand">
+                      <BookOpen className="size-3" /> Notes + practice
+                    </span>
+                  )}
                 </div>
               );
             })}

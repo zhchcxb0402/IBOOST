@@ -10,28 +10,7 @@ export const psychology: Subject = {
   levels: ["SL", "HL"],
   description:
     "Biological, cognitive and sociocultural approaches to behaviour, research methods and the abnormal psychology option.",
-  resources: [
-    {
-      name: "IB Official",
-      url: "https://www.ibo.org/programmes/diploma-programme/curriculum/individuals-and-societies/",
-      note: "Subject brief and syllabus outline",
-    },
-    {
-      name: "InThinking",
-      url: "https://www.thinkib.net/psychology",
-      note: "Teacher-written lessons and study summaries",
-    },
-    {
-      name: "RevisionDojo",
-      url: "https://www.revisiondojo.com/",
-      note: "Topic questions with worked solutions",
-    },
-    {
-      name: "Clastify",
-      url: "https://www.clastify.com/",
-      note: "Past papers and exemplar work",
-    },
-  ],
+  syllabusUrl: "https://www.ibo.org/programmes/diploma-programme/curriculum/individuals-and-societies/",
   units: [
     {
       id: "ps-u1",

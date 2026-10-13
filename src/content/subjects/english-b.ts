@@ -10,28 +10,7 @@ export const englishB: Subject = {
   levels: ["SL", "HL"],
   description:
     "Language acquisition through the five prescribed themes — Identities, Experiences, Human ingenuity, Social organization and Sharing the planet — plus exam skills.",
-  resources: [
-    {
-      name: "IB Official",
-      url: "https://www.ibo.org/programmes/diploma-programme/curriculum/language-acquisition/",
-      note: "Subject brief and syllabus outline",
-    },
-    {
-      name: "RevisionDojo",
-      url: "https://www.revisiondojo.com/",
-      note: "Topic questions with worked solutions",
-    },
-    {
-      name: "InThinking",
-      url: "https://www.thinkib.net/english-b",
-      note: "Teacher-written lessons and exam guidance",
-    },
-    {
-      name: "Clastify",
-      url: "https://www.clastify.com/",
-      note: "Past papers and exemplar work",
-    },
-  ],
+  syllabusUrl: "https://www.ibo.org/programmes/diploma-programme/curriculum/language-acquisition/",
   units: [
     {
       id: "eb-u1",

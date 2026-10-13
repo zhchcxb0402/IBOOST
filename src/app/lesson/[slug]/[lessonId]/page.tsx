@@ -23,7 +23,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
-import { getLesson } from "@/content";
+import { getLesson, getStudy } from "@/content";
 import type { Question } from "@/content/types";
 import { MAX_HEARTS, useProgress } from "@/store/progress";
 import { useAuth } from "@/lib/auth";
@@ -292,6 +292,14 @@ export default function LessonPage() {
           <X className="size-6 text-muted-foreground" />
         </Link>
         <Progress value={progress} className="h-4 flex-1" />
+        {getStudy(slug, lessonId) && (
+          <Link
+            href={`/study/${slug}/${lessonId}`}
+            className="text-xs font-extrabold text-brand"
+          >
+            Review notes
+          </Link>
+        )}
         <span className="flex items-center gap-1 text-sm font-extrabold text-rose-500">
           <Heart className="size-4 fill-rose-400 text-rose-400" />
           {hearts}

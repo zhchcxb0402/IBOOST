@@ -10,28 +10,7 @@ export const businessManagement: Subject = {
   levels: ["SL", "HL"],
   description:
     "The five official units (2024 syllabus): introduction, HR, finance & accounts, marketing, and operations.",
-  resources: [
-    {
-      name: "IB Official",
-      url: "https://www.ibo.org/programmes/diploma-programme/curriculum/individuals-and-societies/",
-      note: "Subject brief and syllabus outline",
-    },
-    {
-      name: "RevisionDojo",
-      url: "https://www.revisiondojo.com/",
-      note: "Case-style practice questions",
-    },
-    {
-      name: "InThinking",
-      url: "https://www.thinkib.net/business-management",
-      note: "Teacher resources and IA exemplars",
-    },
-    {
-      name: "Nail IB",
-      url: "https://nailib.com/",
-      note: "Study guides and past-paper strategy",
-    },
-  ],
+  syllabusUrl: "https://www.ibo.org/programmes/diploma-programme/curriculum/individuals-and-societies/",
   units: [
     {
       id: "bm-u1",
