@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { aiConfigured, chat } from "@/lib/ai";
 
 export const runtime = "nodejs";
 
@@ -32,48 +33,32 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "bad request" }, { status: 400 });
   }
 
-  const key = process.env.OPENAI_API_KEY;
-  if (!key) {
+  if (!aiConfigured()) {
     return NextResponse.json(
       { error: "AI explanations are not configured yet." },
       { status: 503 }
     );
   }
 
-  try {
-    const res = await fetch("https://api.openai.com/v1/chat/completions", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${key}`,
+  const content = await chat(
+    [
+      {
+        role: "system",
+        content:
+          "You are a friendly IB tutor. A student answered a question incorrectly. In at most 80 words and plain language, explain why their answer is wrong and why the correct answer is right, referring to the specific misconception if you can spot one. Do not restate the question. No markdown.",
       },
-      body: JSON.stringify({
-        model: "gpt-4o-mini",
-        temperature: 0.3,
-        messages: [
-          {
-            role: "system",
-            content:
-              "You are a friendly IB tutor. A student answered a question incorrectly. In at most 80 words and plain language, explain why their answer is wrong and why the correct answer is right, referring to the specific misconception if you can spot one. Do not restate the question. No markdown.",
-          },
-          {
-            role: "user",
-            content: `Subject: ${subject}\nQuestion: ${prompt}\nStudent's answer: ${userAnswer}\nCorrect answer: ${correctAnswer}\nTeacher note: ${explanation}`,
-          },
-        ],
-      }),
-    });
-    if (!res.ok) throw new Error(`upstream ${res.status}`);
-    const data = await res.json();
-    const content = String(
-      data?.choices?.[0]?.message?.content ?? ""
-    ).trim();
-    if (!content) throw new Error("empty response");
-    return NextResponse.json({ explanation: content.slice(0, 600) });
-  } catch {
+      {
+        role: "user",
+        content: `Subject: ${subject}\nQuestion: ${prompt}\nStudent's answer: ${userAnswer}\nCorrect answer: ${correctAnswer}\nTeacher note: ${explanation}`,
+      },
+    ],
+    { temperature: 0.3 }
+  );
+  if (!content) {
     return NextResponse.json(
       { error: "Could not get an explanation right now." },
       { status: 502 }
     );
   }
+  return NextResponse.json({ explanation: content.slice(0, 600) });
 }
