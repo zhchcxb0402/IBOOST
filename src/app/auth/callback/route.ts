@@ -9,8 +9,9 @@ export async function GET(request: NextRequest) {
       ? `https://${forwardedHost}`
       : requestOrigin;
   const code = searchParams.get("code");
-  const rawNext = searchParams.get("next") ?? "/";
-  const next = rawNext.startsWith("/") && !rawNext.startsWith("//") ? rawNext : "/";
+  const rawNext = searchParams.get("next") ?? "/home";
+  const next =
+    rawNext.startsWith("/") && !rawNext.startsWith("//") ? rawNext : "/home";
 
   if (!code) {
     return NextResponse.redirect(

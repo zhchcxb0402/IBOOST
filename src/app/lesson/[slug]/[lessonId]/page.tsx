@@ -66,6 +66,9 @@ export default function LessonPage() {
   const [checking, setChecking] = useState(false);
   const [feedback, setFeedback] = useState("");
   const [source, setSource] = useState<"ai" | "rules" | null>(null);
+  const [explaining, setExplaining] = useState(false);
+  const [explained, setExplained] = useState<string | null>(null);
+  const [explainErr, setExplainErr] = useState("");
 
   const lesson = found?.lesson;
   const subject = found?.subject;
@@ -132,6 +135,8 @@ export default function LessonPage() {
       setText("");
       setFeedback("");
       setSource(null);
+      setExplained(null);
+      setExplainErr("");
       setPhase("answering");
     }
   };
@@ -150,6 +155,46 @@ export default function LessonPage() {
       : q.type === "tf"
         ? String(q.answer).toUpperCase()
         : q.answer;
+  const userAnswerText =
+    q.type === "mcq"
+      ? sel !== null
+        ? q.choices[order[sel]]
+        : ""
+      : q.type === "tf"
+        ? tfSel === null
+          ? ""
+          : tfSel
+            ? "True"
+            : "False"
+        : text;
+
+  const explain = async () => {
+    setExplaining(true);
+    setExplainErr("");
+    try {
+      const res = await fetch("/api/explain", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          subject: subject.name,
+          prompt: q.prompt,
+          correctAnswer: correctAnswerText,
+          userAnswer: userAnswerText,
+          explanation: q.explanation,
+        }),
+      });
+      const data = await res.json();
+      if (res.ok && typeof data.explanation === "string") {
+        setExplained(data.explanation);
+      } else {
+        setExplainErr(data.error ?? "Could not get an explanation right now.");
+      }
+    } catch {
+      setExplainErr("Could not get an explanation right now.");
+    } finally {
+      setExplaining(false);
+    }
+  };
 
   if (phase === "done") {
     return (
@@ -358,6 +403,34 @@ export default function LessonPage() {
                 <p className="text-sm font-bold text-rose-500">{feedback}</p>
               )}
               <p className="text-sm font-bold text-rose-500">{q.explanation}</p>
+              {explained ? (
+                <p className="mt-2 rounded-xl bg-brand-soft p-3 text-sm font-bold text-foreground">
+                  <Sparkles className="mr-1 inline size-3.5 text-brand" />
+                  {explained}
+                </p>
+              ) : explainErr ? (
+                <p className="mt-2 text-sm font-bold text-muted-foreground">
+                  {explainErr}
+                </p>
+              ) : (
+                <Button
+                  variant="outline"
+                  size="sm"
+                  disabled={explaining}
+                  onClick={explain}
+                  className="mt-2 font-extrabold"
+                >
+                  {explaining ? (
+                    <>
+                      <Loader2 className="mr-1 size-4 animate-spin" /> Thinking…
+                    </>
+                  ) : (
+                    <>
+                      <Sparkles className="mr-1 size-4" /> Explain my mistake
+                    </>
+                  )}
+                </Button>
+              )}
             </div>
           )}
           {phase === "answering" ? (

@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { chat } from "@/lib/ai";
 
 export const runtime = "nodejs";
 
@@ -53,34 +54,22 @@ function rulesCheck(b: Required<Body>): { correct: boolean; feedback: string } {
 async function aiCheck(
   b: Required<Body>
 ): Promise<{ correct: boolean; feedback: string } | null> {
-  const key = process.env.OPENAI_API_KEY;
-  if (!key) return null;
-  try {
-    const res = await fetch("https://api.openai.com/v1/chat/completions", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${key}`,
+  const content = await chat(
+    [
+      {
+        role: "system",
+        content:
+          "You are an IB examiner. Decide if the student's answer is correct for the question given the model answer and key ideas. Accept paraphrases and equivalent notation; do not require exact wording. Reply ONLY with JSON {\"correct\": boolean, \"feedback\": string (max 25 words)}.",
       },
-      body: JSON.stringify({
-        model: "gpt-4o-mini",
-        temperature: 0,
-        messages: [
-          {
-            role: "system",
-            content:
-              "You are an IB examiner. Decide if the student's answer is correct for the question given the model answer and key ideas. Accept paraphrases and equivalent notation; do not require exact wording. Reply ONLY with JSON {\"correct\": boolean, \"feedback\": string (max 25 words)}.",
-          },
-          {
-            role: "user",
-            content: `Question: ${b.prompt}\nModel answer: ${b.answer}\nKey ideas: ${b.keywords.join(", ")}\nStudent answer: ${b.userAnswer}`,
-          },
-        ],
-      }),
-    });
-    if (!res.ok) return null;
-    const data = await res.json();
-    const content = data?.choices?.[0]?.message?.content ?? "";
+      {
+        role: "user",
+        content: `Question: ${b.prompt}\nModel answer: ${b.answer}\nKey ideas: ${b.keywords.join(", ")}\nStudent answer: ${b.userAnswer}`,
+      },
+    ],
+    { temperature: 0, json: true }
+  );
+  if (!content) return null;
+  try {
     const parsed = JSON.parse(content);
     if (typeof parsed.correct !== "boolean") return null;
     return {

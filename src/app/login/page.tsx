@@ -43,7 +43,7 @@ function LoginInner() {
   );
 
   useEffect(() => {
-    if (!loading && user) router.replace("/");
+    if (!loading && user) router.replace("/home");
   }, [loading, user, router]);
 
   const sendMagicLink = async () => {
@@ -72,7 +72,7 @@ function LoginInner() {
     <div className="min-h-screen flex flex-col items-center justify-center px-6 py-10">
       <div className="w-full max-w-sm">
         <Link
-          href="/"
+          href="/home"
           className="inline-flex items-center gap-1 text-sm font-bold text-muted-foreground hover:text-foreground mb-10"
         >
           <ChevronLeft className="size-4" /> Continue as guest

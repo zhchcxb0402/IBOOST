@@ -10,8 +10,12 @@ const nunito = Nunito({
 });
 
 export const metadata: Metadata = {
-  title: "IBOOST — IB prep, gamified",
-  description: "IBOOST — gamified learning PWA",
+  title: {
+    default: "IBOOST — IB revision, gamified",
+    template: "%s — IBOOST",
+  },
+  description:
+    "Duolingo-style lessons and Quizlet-style flashcards for IB Diploma subjects, HL and SL.",
   manifest: "/manifest.json",
 };
 

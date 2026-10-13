@@ -45,7 +45,7 @@ export default function LearnPage() {
     <div className="pt-4 pb-8">
       <header className="flex items-center justify-between">
         <Link
-          href="/"
+          href="/home"
           className="text-sm font-extrabold text-muted-foreground"
         >
           ← HOME
