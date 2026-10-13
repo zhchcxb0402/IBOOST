@@ -54,12 +54,17 @@ export async function chat(
       }),
       signal: AbortSignal.timeout(15_000),
     });
-    if (!res.ok) return null;
+    if (!res.ok) {
+      const body = (await res.text()).slice(0, 300);
+      console.error(`[ai] ${cfg.model} @ ${cfg.baseUrl} -> ${res.status}: ${body}`);
+      return null;
+    }
     const data = await res.json();
     const content = String(data?.choices?.[0]?.message?.content ?? "");
     const cleaned = stripFences(content);
     return cleaned || null;
-  } catch {
+  } catch (err) {
+    console.error(`[ai] request failed: ${err instanceof Error ? err.message : String(err)}`);
     return null;
   }
 }
