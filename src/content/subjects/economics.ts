@@ -83,6 +83,7 @@ export const economics: Subject = {
               answer: "Land, labour, capital, entrepreneurship",
               acceptable: ["land labor capital enterprise"],
               keywords: ["land", "labour", "capital", "entrepren"],
+              hint: "Think land, and the human, man-made and organising inputs.",
               explanation:
                 "Land, labour, capital and entrepreneurship (management/enterprise).",
             },
@@ -94,6 +95,7 @@ export const economics: Subject = {
               answer:
                 "Positive is testable/factual ('a tax raises prices'); normative is a value judgement ('the tax is unfair').",
               keywords: ["test", "fact", "judg", "opinion", "value"],
+              hint: "Ask yourself: could evidence prove or disprove the claim?",
               explanation:
                 "Positive = what is/can be verified; normative = what ought to be.",
             },
@@ -164,6 +166,7 @@ export const economics: Subject = {
                 "Name the three basic questions every economic system must answer.",
               answer: "What to produce, how to produce, and for whom to produce.",
               keywords: ["what", "how", "whom"],
+              hint: "What, how, and the distributional question.",
               explanation:
                 "Allocation questions: what/how/for whom — answered by markets, planning or both.",
             },
@@ -175,6 +178,7 @@ export const economics: Subject = {
               answer:
                 "It raises transport costs, affecting trade partners' import prices and production costs.",
               keywords: ["trade", "cost", "partner", "export", "import"],
+              hint: "Petrol feeds transport costs — trace the knock-on through trade.",
               explanation:
                 "Interdependence: economies are linked via trade and prices; policy spills across borders.",
             },
@@ -242,6 +246,7 @@ export const economics: Subject = {
                 "Demand rises while supply falls: price ___ (one word).",
               answer: "rises",
               keywords: ["rise", "increase", "up"],
+              hint: "Demand up pushes price up; supply down pushes price up — both agree.",
               acceptable: ["increases", "goes up"],
               explanation:
                 "Both effects push price upward — unambiguous rise.",
@@ -253,6 +258,7 @@ export const economics: Subject = {
                 "A good whose demand falls when income rises is an ___ good.",
               answer: "inferior",
               keywords: ["inferior"],
+              hint: "Negative income elasticity has a name.",
               acceptable: ["inferior good"],
               explanation:
                 "Inferior goods: YED < 0.",
@@ -308,6 +314,7 @@ export const economics: Subject = {
                 "Income rises 5%, demand rises 10%. YED = ___ (number).",
               answer: "2",
               keywords: ["2"],
+              hint: "YED = %ΔQd/%ΔY.",
               acceptable: ["2.0", "+2"],
               explanation:
                 "YED = 10/5 = 2 — income-elastic normal good.",
@@ -319,6 +326,7 @@ export const economics: Subject = {
                 "Price of tea rises 8%, demand for coffee rises 4%. XED = ___ (number).",
               answer: "0.5",
               keywords: ["0.5"],
+              hint: "XED = %ΔQd of coffee / %ΔP of tea.",
               acceptable: ["+0.5", "0.5"],
               explanation:
                 "XED = 4/8 = 0.5 — positive, so substitutes.",
@@ -377,6 +385,7 @@ export const economics: Subject = {
                 "A price ceiling set BELOW equilibrium creates a ___ (one word).",
               answer: "shortage",
               keywords: ["shortage"],
+              hint: "Below equilibrium, Qd > Qs — what does that gap produce?",
               acceptable: ["shortage", "excess demand"],
               explanation:
                 "Excess demand — quantity demanded exceeds supplied.",
@@ -388,6 +397,7 @@ export const economics: Subject = {
                 "An illegal market emerging from price controls is called a ___ market (or black market).",
               answer: "parallel",
               keywords: ["parallel", "black", "underground"],
+              hint: "Two-word name — unofficial trading beside the official one.",
               acceptable: ["black", "black market", "parallel market"],
               explanation:
                 "Parallel/black markets arise when official prices are capped.",
@@ -467,6 +477,7 @@ export const economics: Subject = {
               answer:
                 "The difference between what consumers are willing to pay and the price they actually pay.",
               keywords: ["willing", "pay", "price", "difference"],
+              hint: "Willingness to pay minus what they actually pay — state it as a difference.",
               explanation:
                 "Area under the demand curve above price — marginal benefit minus price.",
             },
@@ -478,6 +489,7 @@ export const economics: Subject = {
               answer:
                 "Income, tastes/preferences, prices of related goods, expectations, number of buyers.",
               keywords: ["income", "taste", "related", "expect", "population"],
+              hint: "Anything except the good's own price that shifts the whole curve — list three.",
               explanation:
                 "Any three: income, tastes, prices of substitutes/complements, expectations, demographics.",
             },
@@ -549,6 +561,7 @@ export const economics: Subject = {
               answer: "-2.5",
               acceptable: ["2.5", "-2.5"],
               keywords: ["2.5"],
+              hint: "PED = %ΔQd/%ΔP — keep the sign or give the absolute value.",
               explanation: "PED = %ΔQd/%ΔP = −25/10 = −2.5 (elastic).",
             },
             {
@@ -559,6 +572,7 @@ export const economics: Subject = {
               answer:
                 "To raise revenue and to reduce consumption of demerit goods.",
               keywords: ["revenue", "demerit", "consumption", "externality"],
+              hint: "Revenue + behaviour change — one is fiscal, one targets consumption.",
               explanation:
                 "Raise government revenue; internalise externalities/discourage harmful consumption.",
             },
@@ -630,6 +644,7 @@ export const economics: Subject = {
               answer:
                 "Common access resources are rivalrous but non-excludable (fish stocks); public goods are non-rivalrous and non-excludable.",
               keywords: ["rival", "exclud"],
+              hint: "Rivalry is the dividing line — which one is rivalrous?",
               explanation:
                 "Rivalry is the difference: one user's consumption reduces availability for common resources.",
             },
@@ -641,6 +656,7 @@ export const economics: Subject = {
               answer:
                 "Education/vaccination; subsidy or direct provision to raise consumption toward the social optimum.",
               keywords: ["educat", "vaccin", "subsid", "provision"],
+              hint: "Education or vaccines fit — what tool raises MPB toward MSB?",
               explanation:
                 "MSB > MPB → subsidy, free provision or mandatory consumption raises output to Qsocial.",
             },
@@ -713,6 +729,7 @@ export const economics: Subject = {
               answer: "600",
               acceptable: ["$600"],
               keywords: ["600"],
+              hint: "Profit per unit × quantity.",
               explanation: "Profit = (P − ATC) × Q = (20 − 14) × 100 = 600.",
             },
             {
@@ -723,6 +740,7 @@ export const economics: Subject = {
               answer:
                 "To sell an extra unit it must lower the price on all units, so MR gains less than the price.",
               keywords: ["price", "lower", "units", "all"],
+              hint: "To sell one more, price drops on ALL units — what does that do to MR?",
               explanation:
                 "Single-price monopolist: selling one more means cutting price on every unit → MR < AR.",
             },
@@ -786,6 +804,7 @@ export const economics: Subject = {
                 "A tax equal to the external cost, internalising the externality, is a ___ tax.",
               answer: "Pigouvian",
               keywords: ["pigouvian", "pigovian", "corrective"],
+              hint: "Named after the economist who proposed taxing external costs.",
               acceptable: ["corrective", "Pigovian"],
               explanation:
                 "Named after Pigou — forces producers to face the full social cost.",
@@ -797,6 +816,7 @@ export const economics: Subject = {
                 "HL: compared to perfect competition, monopoly price is higher and output is ___ (one word).",
               answer: "lower",
               keywords: ["lower", "smaller", "less"],
+              hint: "Restricting output is how monopoly keeps price up.",
               acceptable: ["lower", "reduced"],
               explanation:
                 "Monopoly restricts output to raise price — deadweight loss results.",
@@ -876,6 +896,7 @@ export const economics: Subject = {
               answer:
                 "Two consecutive quarters of negative real GDP growth.",
               keywords: ["two", "quarter", "negative", "gdp", "consecutive"],
+              hint: "Definition is in quarters of real GDP.",
               explanation:
                 "The standard technical definition: real output falls for two quarters running.",
             },
@@ -887,6 +908,7 @@ export const economics: Subject = {
               answer:
                 "Ignores income distribution and non-market/informal activity; also leisure, environmental damage.",
               keywords: ["distribution", "informal", "leisure", "environment", "inequal"],
+              hint: "What does a single average output figure fail to capture — think about who benefits and what goes uncounted.",
               explanation:
                 "Any two: inequality, unpaid/shadow economy, negative externalities, composition of output.",
             },
@@ -958,6 +980,7 @@ export const economics: Subject = {
               answer:
                 "Government borrowing raises interest rates, reducing private investment.",
               keywords: ["interest", "investment", "borrow"],
+              hint: "Trace what happens in loan markets when the state competes for the same funds.",
               explanation:
                 "G↑ financed by borrowing → i↑ → I↓; private spending partly offset.",
             },
@@ -969,6 +992,7 @@ export const economics: Subject = {
               answer:
                 "Low and stable inflation, low unemployment, and economic growth.",
               keywords: ["inflation", "unemployment", "growth"],
+              hint: "Growth, and two 'low' objectives.",
               explanation:
                 "Core objectives: price stability, full employment, sustained growth (+ external balance).",
             },
@@ -1035,6 +1059,7 @@ export const economics: Subject = {
               answer: "160 billion",
               acceptable: ["160"],
               keywords: ["160"],
+              hint: "k = 1/(1 − MPC), then multiply by the injection.",
               explanation: "k = 1/(1−0.75) = 4; ΔY = 4 × 40 = 160 billion.",
             },
             {
@@ -1044,6 +1069,7 @@ export const economics: Subject = {
                 "State two leakages (withdrawals) from the circular flow that shrink the multiplier.",
               answer: "Savings, taxes and imports.",
               keywords: ["sav", "tax", "import"],
+              hint: "S, T and M — the three ways income leaks out.",
               explanation:
                 "S, T, M are withdrawals — each reduces re-spending of income domestically.",
             },
@@ -1107,6 +1133,7 @@ export const economics: Subject = {
                 "MPC = 0.75. A $10bn injection raises national income by $___ bn. (number)",
               answer: "40",
               keywords: ["40"],
+              hint: "k = 1/(1 − 0.75) = 4 — multiply.",
               acceptable: ["40 billion", "$40bn"],
               explanation:
                 "k = 1/0.25 = 4 → 4 × $10bn = $40bn.",
@@ -1118,6 +1145,7 @@ export const economics: Subject = {
                 "Long-run AS shifts right when the economy gains productive ___ (one word).",
               answer: "capacity",
               keywords: ["capacity", "potential", "output"],
+              hint: "More/better resources and technology expand productive ___.",
               acceptable: ["capacity", "potential output"],
               explanation:
                 "More/better factors of production → LRAS right.",
@@ -1186,6 +1214,7 @@ export const economics: Subject = {
                 "CPI rises from 120 to 126. Inflation rate = ___%. (number)",
               answer: "5",
               keywords: ["5"],
+              hint: "%ΔCPI = (126 − 120)/120 × 100.",
               acceptable: ["5%"],
               explanation:
                 "(126−120)/120 × 100 = 5%.",
@@ -1197,6 +1226,7 @@ export const economics: Subject = {
                 "Unemployment type: workers between jobs searching for a better match. (one word)",
               answer: "frictional",
               keywords: ["frictional"],
+              hint: "Short spells between jobs have their own category name.",
               acceptable: ["frictional unemployment"],
               explanation:
                 "Frictional — normal turnover, shortest duration.",
@@ -1276,6 +1306,7 @@ export const economics: Subject = {
               answer:
                 "Selling exports below cost or below home price, which can destroy domestic industries.",
               keywords: ["below", "cost", "price", "export"],
+              hint: "Selling abroad below cost — what does that do to domestic rivals?",
               explanation:
                 "Predatory pricing abroad that undermines fair competition in the importing country.",
             },
@@ -1286,6 +1317,7 @@ export const economics: Subject = {
                 "Name three types of protectionism besides tariffs.",
               answer: "Quotas, subsidies to domestic producers, administrative barriers.",
               keywords: ["quota", "subsid", "barrier", "standard", "embargo"],
+              hint: "Quantity limits, payments to home firms, red tape.",
               explanation:
                 "Any three: quotas, subsidies, red tape/standards, embargoes, VERs.",
             },
@@ -1357,6 +1389,7 @@ export const economics: Subject = {
               answer: "5.6%",
               acceptable: ["5.5", "5.56", "5.6"],
               keywords: ["5.5", "5.6"],
+              hint: "(0.95 − 0.90)/0.90 × 100.",
               explanation: "(0.95 − 0.90)/0.90 × 100 ≈ 5.6%.",
             },
             {
@@ -1366,6 +1399,7 @@ export const economics: Subject = {
                 "Name the three main accounts within the balance of payments.",
               answer: "Current account, capital account and financial account.",
               keywords: ["current", "capital", "financial"],
+              hint: "Current, plus the two money-movement accounts.",
               explanation:
                 "Current (trade/income/transfers), capital (transfers of capital), financial (investment flows).",
             },
@@ -1438,6 +1472,7 @@ export const economics: Subject = {
               answer:
                 "Contracts are fixed and habits/supply chains adjust slowly, so volumes respond little at first.",
               keywords: ["contract", "time", "adjust", "volume", "inelastic"],
+              hint: "Think about what buyers and sellers are locked into immediately after the rate moves.",
               explanation:
                 "Short-run stickiness → price changes dominate → J-curve dip before improvement.",
             },
@@ -1449,6 +1484,7 @@ export const economics: Subject = {
               answer: "107.7",
               acceptable: ["107.69", "108", "107.7"],
               keywords: ["107", "108"],
+              hint: "ToT = export index / import index × 100.",
               explanation: "ToT = 112/104 × 100 ≈ 107.7 — an improvement.",
             },
           ],
@@ -1515,6 +1551,7 @@ export const economics: Subject = {
                 "The account recording FDI, portfolio investment and reserves is the ___ account.",
               answer: "financial",
               keywords: ["financial", "capital"],
+              hint: "Investment flows and reserves sit in the account named after money movements.",
               acceptable: ["financial account", "capital account"],
               explanation:
                 "Financial (and capital) account — capital flows.",
@@ -1526,6 +1563,7 @@ export const economics: Subject = {
                 "A currency losing value in a float is a ___ (one word).",
               answer: "depreciation",
               keywords: ["depreciation"],
+              hint: "Floating down = depre___ — complete the word.",
               acceptable: ["depreciation", "depreciating"],
               explanation:
                 "Depreciation (market-driven) vs devaluation (policy).",
@@ -1595,6 +1633,7 @@ export const economics: Subject = {
                 "Deepest form of integration with shared currency and central bank = economic and ___ union.",
               answer: "monetary",
               keywords: ["monetary"],
+              hint: "Economic and ___ union — the missing word is about money.",
               acceptable: ["monetary union"],
               explanation:
                 "e.g. the Eurozone.",
@@ -1606,6 +1645,7 @@ export const economics: Subject = {
                 "A tax on imports to protect domestic industry is a ___.",
               answer: "tariff",
               keywords: ["tariff"],
+              hint: "A tax specifically on imports.",
               acceptable: ["a tariff"],
               explanation:
                 "Tariffs raise import prices — trade protection.",
@@ -1685,6 +1725,7 @@ export const economics: Subject = {
               answer:
                 "Trade liberalisation/export-led growth and improved education/health investment.",
               keywords: ["trade", "educat", "health", "aid", "infrastructure"],
+              hint: "Think trade strategy or human-capital investment.",
               explanation:
                 "Any two: export promotion, import substitution, FDI, aid, microfinance, human capital.",
             },
@@ -1696,6 +1737,7 @@ export const economics: Subject = {
               answer:
                 "It ignores income inequality and the large informal economy is unmeasured.",
               keywords: ["informal", "inequal", "unpaid", "distribution"],
+              hint: "What does an average hide — and what economy goes uncounted?",
               explanation:
                 "Subsistence and informal work are uncounted, and averages hide distribution.",
             },
@@ -1767,6 +1809,7 @@ export const economics: Subject = {
               answer:
                 "Carbon taxes (market-oriented) and regulation/bans (interventionist).",
               keywords: ["tax", "permit", "regulat", "ban"],
+              hint: "Taxes/tradable permits vs bans/regulation.",
               explanation:
                 "Market: carbon tax, cap-and-trade; intervention: emission standards, bans, direct provision.",
             },
@@ -1778,6 +1821,7 @@ export const economics: Subject = {
               answer:
                 "Advantage: funds infrastructure/health; disadvantage: dependency or misuse/tied conditions.",
               keywords: ["infrastructure", "depend", "corrupt", "condition"],
+              hint: "Funding vs dependency — pick one of each.",
               explanation:
                 "Aid can fill saving gaps but may create dependency or be tied to donor interests.",
             },
@@ -1840,6 +1884,7 @@ export const economics: Subject = {
                 "Gini formula: area between Lorenz curve and equality line ÷ ___. (one phrase)",
               answer: "the total area under the line",
               keywords: ["total area", "0.5", "whole area", "a+b"],
+              hint: "Gini = A/(A + B) — what is the denominator in words?",
               acceptable: ["total area under the equality line", "A/(A+B)", "0.5"],
               explanation:
                 "Gini = A/(A+B) where A is the gap area, A+B the whole triangle.",
@@ -1851,6 +1896,7 @@ export const economics: Subject = {
                 "Transfer payments to the poorest households are an example of income ___.",
               answer: "redistribution",
               keywords: ["redistribution"],
+              hint: "Moving income between groups is re___.",
               acceptable: ["redistribution"],
               explanation:
                 "Taxes + transfers redistribute income, shifting Lorenz toward equality.",
@@ -1919,6 +1965,7 @@ export const economics: Subject = {
                 "Name ONE disadvantage of using demand-side policy to reduce inflation.",
               answer: "it may cause unemployment / lower growth",
               keywords: ["unemployment", "recession", "growth", "conflict"],
+              hint: "Demand-side inflation control trades against which other objective?",
               acceptable: ["higher unemployment", "slower growth"],
               explanation:
                 "Policy conflicts — disinflation costs output.",
@@ -1930,6 +1977,7 @@ export const economics: Subject = {
                 "When government borrowing raises interest rates and reduces private investment = ___ out.",
               answer: "crowding",
               keywords: ["crowding"],
+              hint: "Government borrowing ___ out private investment.",
               acceptable: ["crowding out"],
               explanation:
                 "Crowding out — a standard fiscal-policy evaluation.",
@@ -1998,6 +2046,7 @@ export const economics: Subject = {
                 "Name ONE barrier to economic development.",
               answer: "poverty cycle / lack of infrastructure",
               keywords: ["poverty", "infrastructure", "corruption", "debt", "education", "institution", "capital"],
+              hint: "Poverty cycle, infrastructure, institutions — any one.",
               acceptable: ["poverty trap", "corruption", "poor infrastructure", "debt burden"],
               explanation:
                 "Poverty cycles, weak institutions, infrastructure gaps, debt.",
@@ -2009,6 +2058,7 @@ export const economics: Subject = {
                 "Forgiving a developing country's repayments is called debt ___.",
               answer: "relief",
               keywords: ["relief", "cancellation", "forgiveness"],
+              hint: "Debt ___ — a word meaning release from obligation.",
               acceptable: ["relief", "cancellation", "debt cancellation"],
               explanation:
                 "Debt relief/cancellation (e.g. HIPC initiative).",

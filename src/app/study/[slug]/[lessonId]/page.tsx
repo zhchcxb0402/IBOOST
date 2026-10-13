@@ -1,17 +1,82 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import { notFound, useParams } from "next/navigation";
 import { motion } from "framer-motion";
-import { Lightbulb } from "lucide-react";
+import { HelpCircle, Lightbulb, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { getLesson, getStudy } from "@/content";
 import type { StudyBlock } from "@/content/types";
 import { StatsPills } from "@/components/stats-pills";
 import { renderInline } from "@/lib/inline";
 
+function Reveal({
+  label,
+  answer,
+  placeholder,
+}: {
+  label: string;
+  answer: string;
+  placeholder?: boolean;
+}) {
+  const [input, setInput] = useState("");
+  const [shown, setShown] = useState(false);
+  return (
+    <div className="mt-2 space-y-2">
+      {placeholder && (
+        <input
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
+          placeholder="Your guess…"
+          className="w-full rounded-xl border-2 border-muted bg-background px-3 py-2 text-sm font-bold outline-none focus:border-brand"
+        />
+      )}
+      {shown ? (
+        <p className="rounded-xl bg-muted px-3 py-2 text-sm font-bold">
+          {renderInline(answer)}
+        </p>
+      ) : (
+        <Button
+          variant="outline"
+          size="sm"
+          className="rounded-xl font-extrabold"
+          onClick={() => setShown(true)}
+        >
+          {label}
+        </Button>
+      )}
+    </div>
+  );
+}
+
 function Block({ block }: { block: StudyBlock }) {
+  const [stepShown, setStepShown] = useState(false);
   switch (block.type) {
+    case "warmup":
+      return (
+        <div className="rounded-xl border-2 border-sky-300 bg-sky-50 p-4">
+          <p className="flex items-center gap-1 text-[10px] font-extrabold uppercase tracking-wide text-sky-600">
+            <Zap className="size-3" /> Warm-up — have a go before you read
+          </p>
+          <p className="mt-1 text-sm font-extrabold">
+            {renderInline(block.prompt)}
+          </p>
+          <Reveal label="Reveal" answer={block.answer} placeholder />
+        </div>
+      );
+    case "check":
+      return (
+        <div className="rounded-xl border-2 border-violet-300 bg-violet-50 p-4">
+          <p className="flex items-center gap-1 text-[10px] font-extrabold uppercase tracking-wide text-violet-600">
+            <HelpCircle className="size-3" /> Check yourself
+          </p>
+          <p className="mt-1 text-sm font-extrabold">
+            {renderInline(block.prompt)}
+          </p>
+          <Reveal label="Show answer" answer={block.answer} />
+        </div>
+      );
     case "text":
       return (
         <p className="text-sm font-bold leading-relaxed text-foreground">
@@ -45,11 +110,22 @@ function Block({ block }: { block: StudyBlock }) {
             Worked example: {block.title}
           </p>
           <ol className="mt-2 list-decimal space-y-1 pl-5">
-            {block.steps.map((s, i) => (
-              <li key={i} className="text-sm font-bold">
-                {renderInline(s)}
-              </li>
-            ))}
+            {block.steps.map((s, i) =>
+              block.blank === i && !stepShown ? (
+                <li key={i} className="list-none">
+                  <button
+                    onClick={() => setStepShown(true)}
+                    className="w-full rounded-lg border-2 border-dashed border-brand px-3 py-2 text-left text-sm font-extrabold text-brand"
+                  >
+                    Your turn: what&apos;s the next step? — Reveal step
+                  </button>
+                </li>
+              ) : (
+                <li key={i} className="text-sm font-bold">
+                  {renderInline(s)}
+                </li>
+              )
+            )}
           </ol>
         </div>
       );
@@ -104,7 +180,15 @@ export default function StudyPage() {
         >
           ← BACK
         </Link>
-        <StatsPills />
+        <div className="flex items-center gap-3">
+          <Link
+            href={`/lesson/${slug}/${lessonId}`}
+            className="text-xs font-extrabold text-brand"
+          >
+            Know this already? Skip to practice →
+          </Link>
+          <StatsPills />
+        </div>
       </header>
 
       <motion.div

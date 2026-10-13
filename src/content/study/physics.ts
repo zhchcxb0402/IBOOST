@@ -3,8 +3,18 @@ import type { StudyNotes } from "../types";
 export const physicsStudy: StudyNotes = {
   "ph-l1": [
     {
+      type: "warmup",
+      prompt: "A ball thrown straight up has velocity 0 m/s at the top of its flight. What is its acceleration there?",
+      answer: "Still g ≈ 9.81 m/s² downwards — acceleration is set by gravity, not by velocity. Zero velocity does not mean zero acceleration.",
+    },
+    {
       type: "text",
       body: "Kinematics describes motion without asking what causes it. In IB physics you work with five quantities — displacement s, initial velocity u, final velocity v, acceleration a and time t — and the four SUVAT equations connect any three of them when **acceleration is constant**.",
+    },
+    {
+      type: "check",
+      prompt: "Why can't you use SUVAT on motion where acceleration changes halfway through?",
+      answer: "SUVAT derives from constant acceleration — each equation assumes a single a over the whole interval, so changing a invalidates them.",
     },
     {
       type: "definition",
@@ -33,6 +43,7 @@ export const physicsStudy: StudyNotes = {
         "Choose v² = u² + 2as: 0 = 20² + 2(−4)s",
         "s = 400 / 8 = **50 m**",
       ],
+      blank: 1,
     },
     {
       type: "tip",
@@ -41,8 +52,18 @@ export const physicsStudy: StudyNotes = {
   ],
   "ph-l2": [
     {
+      type: "warmup",
+      prompt: "If a 60 kg skater pushes off a wall, which is bigger: the force on the skater or the force on the wall?",
+      answer: "They are equal — Newton's third law pair. The skater accelerates more because her mass is smaller, not because the forces differ.",
+    },
+    {
       type: "text",
       body: "Newton's three laws connect forces to motion: a body keeps its velocity unless a resultant force acts (1st), acceleration is proportional to resultant force and inversely proportional to mass (2nd), and every force has an equal opposite partner acting on the *other* body (3rd). Momentum p = mv is conserved in any closed system — collisions and explosions alike.",
+    },
+    {
+      type: "check",
+      prompt: "Why is momentum conserved in a collision even when kinetic energy isn't?",
+      answer: "Momentum conservation follows from Newton's third law (internal forces cancel); kinetic energy can be converted into heat and sound, so it needn't survive.",
     },
     {
       type: "definition",
@@ -71,6 +92,7 @@ export const physicsStudy: StudyNotes = {
         "Momentum before = 2 × 3 = 6 kg m s⁻¹",
         "Shared velocity v = 6 / (2 + 1) = **2 m s⁻¹**",
       ],
+      blank: 1,
     },
     {
       type: "tip",
@@ -79,8 +101,18 @@ export const physicsStudy: StudyNotes = {
   ],
   "ph-l3": [
     {
+      type: "warmup",
+      prompt: "A door is easier to push open far from the hinge than near it — what physics quantity does that illustrate?",
+      answer: "The moment (torque): the same force applied at a larger perpendicular distance produces more rotational effect.",
+    },
+    {
       type: "text",
       body: "Extended bodies can rotate as well as translate. A force causes rotation through its **moment** (torque): the force multiplied by the perpendicular distance from the pivot. A body is in equilibrium when both the net force and the net moment about any point are zero.",
+    },
+    {
+      type: "check",
+      prompt: "Why does a ladder start to slip more easily when you climb higher?",
+      answer: "Climbing raises your weight's moment arm about the base, increasing the required friction torque the ground must supply — eventually exceeding available friction.",
     },
     {
       type: "definition",
@@ -109,6 +141,7 @@ export const physicsStudy: StudyNotes = {
         "Anticlockwise = clockwise: 300 × 2 = 200 × d",
         "d = 600 / 200 = **3 m**",
       ],
+      blank: 1,
     },
     {
       type: "tip",
@@ -117,8 +150,18 @@ export const physicsStudy: StudyNotes = {
   ],
   "ph-l12": [
     {
+      type: "warmup",
+      prompt: "A bullet fired horizontally and one dropped from the same height land at the same instant (flat ground). Why?",
+      answer: "Vertical motion is independent of horizontal motion — both start with zero vertical velocity and fall under the same g.",
+    },
+    {
       type: "text",
       body: "Projectile problems separate into two independent motions: **constant horizontal velocity** and **constant vertical acceleration g ≈ 9.81 m s⁻² downwards**. Time links the two — whatever takes the object up takes the same time to come back down over level ground.",
+    },
+    {
+      type: "check",
+      prompt: "Why does a projectile's speed at launch height equal its launch speed on the way down?",
+      answer: "Vertical speed returns symmetrically (same |v| at same height) and horizontal speed never changes — so total speed is restored.",
     },
     {
       type: "definition",
@@ -143,6 +186,7 @@ export const physicsStudy: StudyNotes = {
         "t_top = 10 / 9.81 ≈ 1.02 s, so flight ≈ 2.04 s",
         "Range = 17.3 × 2.04 ≈ **35 m**",
       ],
+      blank: 2,
     },
     {
       type: "tip",
@@ -151,8 +195,18 @@ export const physicsStudy: StudyNotes = {
   ],
   "ph-l13": [
     {
+      type: "warmup",
+      prompt: "Does the tension in a string whirling a ball horizontally do work on the ball?",
+      answer: "No — the force is perpendicular to the velocity at every instant, so W = Fs cos 90° = 0; only direction changes, not speed.",
+    },
+    {
       type: "text",
       body: "Work is energy transferred by a force acting through a displacement: W = Fs cos θ. Power is the rate of doing work. In uniform circular motion a centripetal force F = mv²/r points towards the centre — it changes direction, not speed, so it does **no work**.",
+    },
+    {
+      type: "check",
+      prompt: "Why do satellite orbits need no engine to keep going?",
+      answer: "Gravity supplies the centripetal force and does no work on the satellite, so its speed — and hence its orbit — is maintained indefinitely (ignoring drag).",
     },
     {
       type: "definition",
@@ -181,6 +235,7 @@ export const physicsStudy: StudyNotes = {
         "At the top: mg = mv²/r → v² = gr = 9.81 × 1.2",
         "v = √11.77 ≈ **3.4 m s⁻¹**",
       ],
+      blank: 1,
     },
     {
       type: "tip",
@@ -189,8 +244,18 @@ export const physicsStudy: StudyNotes = {
   ],
   "ph-l4": [
     {
+      type: "warmup",
+      prompt: "Two identical heaters warm 1 kg of water and 1 kg of iron for the same time. Which ends hotter?",
+      answer: "Iron — its specific heat capacity is much lower, so the same energy input produces a much larger temperature rise.",
+    },
+    {
       type: "text",
       body: "Temperature measures the average random kinetic energy of particles. Internal energy is the sum of the random kinetic and potential energies of all particles. Heat is energy transferred due to a temperature difference — bodies contain internal energy, never 'heat'.",
+    },
+    {
+      type: "check",
+      prompt: "Why must temperature be in kelvin for pV = nRT?",
+      answer: "The gas laws derive from average molecular kinetic energy, which is proportional to absolute temperature — a Celsius zero doesn't correspond to zero molecular energy.",
     },
     {
       type: "definition",
@@ -219,6 +284,7 @@ export const physicsStudy: StudyNotes = {
         "T = 27 + 273 = 300 K",
         "p = nRT / V = 2 × 8.31 × 300 / 0.05 = **9.97 × 10⁴ Pa ≈ 100 kPa**",
       ],
+      blank: 1,
     },
     {
       type: "tip",
@@ -227,8 +293,18 @@ export const physicsStudy: StudyNotes = {
   ],
   "ph-l5": [
     {
+      type: "warmup",
+      prompt: "Why does a pump get warm when you inflate a tyre quickly?",
+      answer: "Rapid compression is roughly adiabatic — no time for heat to escape — so the work done on the gas raises its internal energy and temperature.",
+    },
+    {
       type: "text",
       body: "The first law of thermodynamics is energy conservation for gases: heat supplied ΔQ either raises internal energy ΔU or lets the gas do work W. Sign convention in the IB data booklet: ΔQ = ΔU + W with W the work done **by** the gas.",
+    },
+    {
+      type: "check",
+      prompt: "Why can't a heat engine ever be 100% efficient?",
+      answer: "The second law requires some heat to be dumped to a cold reservoir; all real processes increase total entropy, so not all heat can become work.",
     },
     {
       type: "definition",
@@ -252,6 +328,7 @@ export const physicsStudy: StudyNotes = {
         "η = 1 − Tc/Th = 1 − 300/500",
         "η = **0.4 = 40%**",
       ],
+      blank: 1,
     },
     {
       type: "tip",
@@ -260,8 +337,18 @@ export const physicsStudy: StudyNotes = {
   ],
   "ph-l14": [
     {
+      type: "warmup",
+      prompt: "Steam at 100 °C burns worse than water at 100 °C. Why?",
+      answer: "Condensing steam releases its latent heat of vaporisation (~2260 kJ/kg) on skin in addition to the cooling energy — far more energy delivered.",
+    },
+    {
       type: "text",
       body: "Heating a substance either raises its temperature or changes its state — never both at once. **Specific heat capacity c** links energy to temperature change; **specific latent heat L** links energy to a phase change at constant temperature.",
+    },
+    {
+      type: "check",
+      prompt: "Why does temperature stay constant while ice melts, even though heat keeps flowing in?",
+      answer: "The energy goes into breaking intermolecular bonds — raising potential energy — rather than kinetic energy, so temperature (a measure of kinetic energy) is unchanged.",
     },
     {
       type: "definition",
@@ -291,6 +378,7 @@ export const physicsStudy: StudyNotes = {
         "Heating water: Q2 = mcΔT = 0.5 × 4180 × 20 = 41 800 J",
         "Total = 167 000 + 41 800 = **2.09 × 10⁵ J ≈ 209 kJ**",
       ],
+      blank: 2,
     },
     {
       type: "tip",
@@ -299,8 +387,18 @@ export const physicsStudy: StudyNotes = {
   ],
   "ph-l15": [
     {
+      type: "warmup",
+      prompt: "A sealed bag of crisps puffs up on a mountain. Which gas law explains it?",
+      answer: "Boyle's law — external pressure drops while the trapped air's temperature is roughly constant, so its volume expands (pV = const).",
+    },
+    {
       type: "text",
       body: "Gas-law calculations all reduce to p₁V₁/T₁ = p₂V₂/T₂ for a fixed mass — or pV = nRT when moles are involved. Identify which quantity is held constant, convert temperatures to kelvin, and the algebra is routine.",
+    },
+    {
+      type: "check",
+      prompt: "Why must all temperatures be in kelvin for p₁V₁/T₁ = p₂V₂/T₂?",
+      answer: "The combined gas law comes from molecular kinetic energy ∝ absolute temperature; using Celsius breaks the proportionality (e.g. 0 °C ≠ zero energy).",
     },
     {
       type: "definition",
@@ -320,6 +418,7 @@ export const physicsStudy: StudyNotes = {
         "p₁V₁ = p₂V₂ → 100 × 300 = p₂ × 75",
         "p₂ = **400 kPa**",
       ],
+      blank: 1,
     },
     {
       type: "example",
@@ -346,8 +445,18 @@ export const physicsStudy: StudyNotes = {
   ],
   "ph-l16": [
     {
+      type: "warmup",
+      prompt: "If the temperature of a gas doubles (in kelvin), what happens to the average kinetic energy of its molecules?",
+      answer: "It doubles — Ēk = (3/2)kT links mean kinetic energy directly to absolute temperature.",
+    },
+    {
       type: "text",
       body: "The kinetic theory derives pressure from molecular bombardment: pV = ⅓Nmc²̄, where c²̄ is the mean square speed. Combining with pV = NkT shows the average translational kinetic energy of a molecule depends only on temperature: Ēk = (3/2)kT.",
+    },
+    {
+      type: "check",
+      prompt: "Why do gas molecules exert pressure on container walls at all?",
+      answer: "Each molecule rebounds off a wall with a change in momentum; billions of collisions per second apply a steady average force per unit area — that force per area is pressure.",
     },
     {
       type: "definition",
@@ -371,6 +480,7 @@ export const physicsStudy: StudyNotes = {
         "Ēk = (3/2)kT = 1.5 × 1.38 × 10⁻²³ × 300",
         "Ēk = **6.21 × 10⁻²¹ J**",
       ],
+      blank: 1,
     },
     {
       type: "tip",
@@ -379,8 +489,18 @@ export const physicsStudy: StudyNotes = {
   ],
   "ph-l6": [
     {
+      type: "warmup",
+      prompt: "For a pendulum, at which point of the swing is acceleration greatest — the centre or the extremes?",
+      answer: "The extremes: a = −ω²x, so acceleration is proportional to displacement — maximum where displacement is maximum.",
+    },
+    {
       type: "text",
       body: "A wave transfers energy without net transfer of matter. In a **transverse** wave oscillations are perpendicular to propagation (light, water waves, strings); in a **longitudinal** wave they are parallel (sound). Travelling waves carry energy forward; standing waves store it in place.",
+    },
+    {
+      type: "check",
+      prompt: "Why does doubling a pendulum's length only multiply its period by √2, not 2?",
+      answer: "T = 2π√(l/g) is a square-root relationship — restoring torque doesn't grow proportionally with length.",
     },
     {
       type: "definition",
@@ -404,6 +524,7 @@ export const physicsStudy: StudyNotes = {
         "T = 2π√(l/g) = 2π√(2.0/9.81) = 2π × 0.451",
         "T ≈ **2.8 s**",
       ],
+      blank: 1,
     },
     {
       type: "tip",
@@ -412,8 +533,18 @@ export const physicsStudy: StudyNotes = {
   ],
   "ph-l7": [
     {
+      type: "warmup",
+      prompt: "An ambulance siren sounds higher pitched coming towards you and lower going away. What changes — the emitted frequency or the received frequency?",
+      answer: "Only the received frequency — the source emits at constant f; wavefronts bunch up in front and spread behind (Doppler effect).",
+    },
+    {
       type: "text",
       body: "All waves share five behaviours: **reflection** (angle in = angle out), **refraction** (speed and direction change between media), **diffraction** (spreading through gaps, strongest when gap ≈ λ), **interference** (superposition giving constructive/destructive patterns) and the **Doppler effect** (frequency shift from relative motion).",
+    },
+    {
+      type: "check",
+      prompt: "Why do only coherent sources produce a stable interference pattern?",
+      answer: "Coherence keeps the phase difference at each point constant; incoherent sources average out to uniform illumination.",
     },
     {
       type: "definition",
@@ -442,6 +573,7 @@ export const physicsStudy: StudyNotes = {
         "f′ = 500 × 340 / (340 − 30) = 500 × 340/310",
         "f′ ≈ **548 Hz**",
       ],
+      blank: 1,
     },
     {
       type: "tip",
@@ -450,8 +582,18 @@ export const physicsStudy: StudyNotes = {
   ],
   "ph-l17": [
     {
+      type: "warmup",
+      prompt: "Does a standing wave on a guitar string transfer energy along the string?",
+      answer: "No — it stores energy. The two counter-propagating waves carry energy in opposite directions, netting zero transfer; nodes are still.",
+    },
+    {
       type: "text",
       body: "Standing waves form when two identical waves travelling in opposite directions superpose — e.g. reflections in a stretched string or an air column. **Nodes** never move; **antinodes** oscillate with maximum amplitude. Only certain wavelengths 'fit': L = nλ/2 for strings and open–open pipes, L = (2n−1)λ/4 for closed pipes.",
+    },
+    {
+      type: "check",
+      prompt: "Why does a pipe closed at one end produce only odd harmonics?",
+      answer: "The closed end must be a node and the open end an antinode — only wavelengths with L = (2n−1)λ/4 fit, skipping even harmonics.",
     },
     {
       type: "definition",
@@ -475,6 +617,7 @@ export const physicsStudy: StudyNotes = {
         "f1 = v / 2L = 240 / 1.6 = 150 Hz",
         "f3 = 3 × 150 = **450 Hz**",
       ],
+      blank: 1,
     },
     {
       type: "tip",
@@ -483,8 +626,18 @@ export const physicsStudy: StudyNotes = {
   ],
   "ph-l18": [
     {
+      type: "warmup",
+      prompt: "In a double-slit experiment the slits are moved closer together. Do the fringes get closer or further apart?",
+      answer: "Further apart — s = λD/d is inversely proportional to slit separation d.",
+    },
+    {
       type: "text",
       body: "Interference needs **coherent** sources. In Young's double slit, light passing through two close slits produces bright fringes where path difference = nλ and dark fringes at (n + ½)λ. Fringes are evenly spaced: s = λD/d.",
+    },
+    {
+      type: "check",
+      prompt: "Why can't you get an interference pattern using two ordinary light bulbs?",
+      answer: "They aren't coherent — random phase jumps wash out the pattern; interference needs a constant phase relationship (one source split two ways).",
     },
     {
       type: "definition",
@@ -513,6 +666,7 @@ export const physicsStudy: StudyNotes = {
         "s = λD/d = (6.0 × 10⁻⁷ × 1.5) / 2.0 × 10⁻⁴",
         "s = 4.5 × 10⁻³ m = **4.5 mm**",
       ],
+      blank: 1,
     },
     {
       type: "tip",
@@ -521,8 +675,18 @@ export const physicsStudy: StudyNotes = {
   ],
   "ph-l19": [
     {
+      type: "warmup",
+      prompt: "A fish looking up at the surface sees the whole outside world in a cone. What sets the cone's edge?",
+      answer: "The critical angle ~48.8°: beyond it, light from air can't refract into water, so the fish sees reflections of the water instead.",
+    },
+    {
       type: "text",
       body: "Refraction happens because wave speed changes between media. The refractive index n = c/v tells how much light slows down; Snell's law n₁ sin θ₁ = n₂ sin θ₂ tracks the bending. Beyond the critical angle, light inside the denser medium is totally internally reflected.",
+    },
+    {
+      type: "check",
+      prompt: "Why does light bend towards the normal entering glass but frequency stays constant?",
+      answer: "Speed falls (n > 1) so wavelength shrinks; the wavefronts can't change frequency without breaking continuity across the boundary.",
     },
     {
       type: "definition",
@@ -551,6 +715,7 @@ export const physicsStudy: StudyNotes = {
         "sin θc = 1/1.33 = 0.752",
         "θc = **48.8°**",
       ],
+      blank: 1,
     },
     {
       type: "tip",
@@ -559,8 +724,18 @@ export const physicsStudy: StudyNotes = {
   ],
   "ph-l8": [
     {
+      type: "warmup",
+      prompt: "At what height does Earth's gravity halve — 3 000 km, or farther?",
+      answer: "Much farther: g ∝ 1/r², so g halves at r = R√2 ≈ 1.41R — about 2 600 km altitude above the surface.",
+    },
+    {
       type: "text",
       body: "A **field** is a region where an object experiences a force at a distance. Gravitational field strength g = F/m acts on mass; electric field strength E = F/q acts on charge. Both point fields follow inverse-square laws — the mathematics is identical.",
+    },
+    {
+      type: "check",
+      prompt: "Why can the electric force between two protons be nonzero while gravity between them is negligible?",
+      answer: "The Coulomb constant is ~10³⁶ times larger relative to charge-to-mass scales — the gravitational force on proton masses is fantastically small.",
     },
     {
       type: "definition",
@@ -584,6 +759,7 @@ export const physicsStudy: StudyNotes = {
         "E = kq/r² = 8.99 × 10⁹ × 2.0 × 10⁻⁶ / 0.09",
         "E ≈ **2.0 × 10⁵ N C⁻¹** away from the charge",
       ],
+      blank: 1,
     },
     {
       type: "tip",
@@ -592,8 +768,18 @@ export const physicsStudy: StudyNotes = {
   ],
   "ph-l9": [
     {
+      type: "warmup",
+      prompt: "You drop a magnet through a copper pipe and it falls slowly. What slows it — magnetic attraction to the pipe?",
+      answer: "No — induced eddy currents in the pipe create fields opposing the motion (Lenz's law), dissipating energy as heat.",
+    },
+    {
       type: "text",
       body: "Electromagnetic induction: a changing magnetic flux linkage induces an emf. **Faraday's law** gives the size (ε = −NΔΦ/Δt); **Lenz's law** gives the direction — the induced effect always opposes the change that made it, which is just energy conservation in disguise.",
+    },
+    {
+      type: "check",
+      prompt: "Why does Lenz's law follow directly from energy conservation?",
+      answer: "If the induced effect aided the change, you'd get accelerating change for free — a perpetual-energy machine; opposition is the only option consistent with conservation.",
     },
     {
       type: "definition",
@@ -622,6 +808,7 @@ export const physicsStudy: StudyNotes = {
         "ε = N ΔΦ/Δt = 50 × 0.02 / 0.10",
         "ε = **10 V**",
       ],
+      blank: 1,
     },
     {
       type: "tip",
@@ -630,8 +817,18 @@ export const physicsStudy: StudyNotes = {
   ],
   "ph-l20": [
     {
+      type: "warmup",
+      prompt: "Two charges, +q and −q, sit 1 cm apart. If you double the separation, what happens to the force between them?",
+      answer: "It quarters — Coulomb's law is inverse-square: F ∝ 1/r².",
+    },
+    {
       type: "text",
       body: "Coulomb's law gives the force between point charges: F = kq₁q₂/r². Electric field E = F/q then describes the force-per-charge at any point — useful because the field exists whether or not a test charge is present. Between parallel plates the field is uniform: E = V/d.",
+    },
+    {
+      type: "check",
+      prompt: "Why is the field between parallel plates uniform while a point charge's field isn't?",
+      answer: "Each plate contributes equally everywhere in the gap — contributions sum to a constant; a point charge's influence spreads spherically, diluting with r².",
     },
     {
       type: "definition",
@@ -660,6 +857,7 @@ export const physicsStudy: StudyNotes = {
         "eV = ½mv² → 3.2 × 10⁻¹⁷ = ½ × 9.11 × 10⁻³¹ v²",
         "v² = 7.03 × 10¹³ → v ≈ **8.4 × 10⁶ m s⁻¹**",
       ],
+      blank: 1,
     },
     {
       type: "tip",
@@ -668,8 +866,18 @@ export const physicsStudy: StudyNotes = {
   ],
   "ph-l21": [
     {
+      type: "warmup",
+      prompt: "Your phone battery reads 1.5 V idle but drops to 1.2 V under load. What explains the drop?",
+      answer: "Internal resistance: terminal p.d. V = ε − Ir falls as current increases — the missing volts are dropped inside the battery.",
+    },
+    {
       type: "text",
       body: "Circuit analysis runs on three pillars: Ohm's law (V = IR), Kirchhoff's junction rule (current in = current out — charge conservation) and loop rule (emf gains = p.d. drops — energy conservation). Series resistors add; parallel resistors add as reciprocals.",
+    },
+    {
+      type: "check",
+      prompt: "Why do appliances in your home run in parallel rather than series?",
+      answer: "Parallel gives each device the full supply voltage and keeps the others working if one breaks; series would split voltage and chain failures.",
     },
     {
       type: "definition",
@@ -693,6 +901,7 @@ export const physicsStudy: StudyNotes = {
         "V = ε − Ir → 1.4 = 1.5 − 0.50r",
         "r = 0.1/0.5 = **0.20 Ω**",
       ],
+      blank: 1,
     },
     {
       type: "tip",
@@ -701,8 +910,18 @@ export const physicsStudy: StudyNotes = {
   ],
   "ph-l22": [
     {
+      type: "warmup",
+      prompt: "A charged particle circling in a magnetic field gains speed. True or false?",
+      answer: "False — the magnetic force is always perpendicular to velocity, does zero work, and only changes direction, never speed.",
+    },
+    {
       type: "text",
       body: "A moving charge in a magnetic field feels a force F = qvB sin θ perpendicular to both velocity and field — hence circular paths. A current-carrying wire feels F = BIl sin θ. Directions come from **Fleming's left-hand rule** (conventional current, positive charges).",
+    },
+    {
+      type: "check",
+      prompt: "Why does the radius of a charged particle's circular path grow if its speed increases?",
+      answer: "r = mv/qB — faster particles need a wider circle for the same force to supply enough centripetal acceleration.",
     },
     {
       type: "definition",
@@ -726,6 +945,7 @@ export const physicsStudy: StudyNotes = {
         "r = mv / qB = (9.11 × 10⁻³¹ × 2.0 × 10⁷) / (1.6 × 10⁻¹⁹ × 5.0 × 10⁻⁴)",
         "r ≈ **0.23 m**",
       ],
+      blank: 1,
     },
     {
       type: "tip",
@@ -734,8 +954,18 @@ export const physicsStudy: StudyNotes = {
   ],
   "ph-l10": [
     {
+      type: "warmup",
+      prompt: "Which decay reduces a nucleus's mass number by 4: alpha, beta or gamma?",
+      answer: "Alpha — the emitted particle is a helium nucleus (2p + 2n), removing 4 mass units; beta changes Z only, gamma neither.",
+    },
+    {
       type: "text",
       body: "Radioactive decay is a spontaneous, random nuclear transformation. Alpha (α = ⁴He nucleus) is heavy and stopped by paper; beta (β = electron) penetrates a few mm of aluminium; gamma (γ = photon) needs thick lead. Each decay type rewrites the parent nucleus differently — track proton and mass numbers to find products.",
+    },
+    {
+      type: "check",
+      prompt: "Why is radioactive decay described as 'random but predictable'?",
+      answer: "Each nucleus's decay time is genuinely random, but huge populations make the aggregate half-life statistically reliable.",
     },
     {
       type: "definition",
@@ -759,6 +989,7 @@ export const physicsStudy: StudyNotes = {
         "15 days = 3 half-lives → 800 × (½)³",
         "A = **100 Bq**",
       ],
+      blank: 1,
     },
     {
       type: "tip",
@@ -767,8 +998,18 @@ export const physicsStudy: StudyNotes = {
   ],
   "ph-l11": [
     {
+      type: "warmup",
+      prompt: "Brighter UV light ejects more photoelectrons; brighter red light ejects none. What does that show about light?",
+      answer: "Light arrives as photons with E = hf — electron energy depends on frequency, not intensity, so light is quantised.",
+    },
+    {
       type: "text",
       body: "Quantum physics begins where classical predictions fail: light ejects electrons from metals only above a threshold frequency — explained if light arrives in photons of energy E = hf. Relativity follows from two postulates: laws of physics are the same in all inertial frames, and light speed is invariant — giving time dilation and length contraction.",
+    },
+    {
+      type: "check",
+      prompt: "Why does instantaneous electron emission rule out the wave model of light?",
+      answer: "A wave would need time to deposit enough energy on one electron; instant emission at any intensity means energy arrives in discrete packets.",
     },
     {
       type: "definition",
@@ -797,6 +1038,7 @@ export const physicsStudy: StudyNotes = {
         "hf = 6.63 × 10⁻³⁴ × 1.0 × 10¹⁵ = 6.63 × 10⁻¹⁹ J",
         "Ekmax = 6.63 − 3.2 = **3.4 × 10⁻¹⁹ J ≈ 2.1 eV**",
       ],
+      blank: 1,
     },
     {
       type: "tip",
@@ -805,8 +1047,18 @@ export const physicsStudy: StudyNotes = {
   ],
   "ph-l23": [
     {
+      type: "warmup",
+      prompt: "A sample halves its activity in 6 hours. After 18 hours, what fraction of the original activity remains?",
+      answer: "⅛ = 12.5% — three half-lives (18/6), and (½)³ = 0.125.",
+    },
+    {
       type: "text",
       body: "Decay is random per nucleus but statistically smooth in bulk: activity A = λN and the exponential law N = N₀e^(−λt). The decay constant λ is the probability a nucleus decays per second — larger λ, shorter half-life: T½ = ln2/λ.",
+    },
+    {
+      type: "check",
+      prompt: "Why can't you predict when a single nucleus will decay, yet date a fossil precisely?",
+      answer: "Decay is quantum-random per nucleus, but the law of large numbers makes the aggregate rate constant — fossils contain enormous numbers of nuclei.",
     },
     {
       type: "definition",
@@ -830,6 +1082,7 @@ export const physicsStudy: StudyNotes = {
         "24 days = 3 half-lives → (½)³ = 0.125",
         "Or via λ: λ = 0.693/8 = 0.0866 d⁻¹; e^(−0.0866×24) = e^(−2.08) = 0.125 → **12.5%**",
       ],
+      blank: 1,
     },
     {
       type: "tip",
@@ -838,8 +1091,18 @@ export const physicsStudy: StudyNotes = {
   ],
   "ph-l24": [
     {
+      type: "warmup",
+      prompt: "Why do photoelectrons stop completely below a threshold frequency, however bright the light?",
+      answer: "Each photon carries hf — below f₀ a single photon has less than the work function, and photons don't combine.",
+    },
+    {
       type: "text",
       body: "The photoelectric effect — electrons ejected only above a threshold frequency — proves light is quantised. Energy-level quantisation explains line spectra: electrons occupy discrete levels, and photons are emitted/absorbed only with energy exactly equal to a level difference: E = hf = ΔE.",
+    },
+    {
+      type: "check",
+      prompt: "Why do atoms emit only specific wavelengths instead of a continuous spectrum?",
+      answer: "Electron energies are quantised — only transitions between allowed levels are possible, so photon energies are discrete.",
     },
     {
       type: "definition",
@@ -863,6 +1126,7 @@ export const physicsStudy: StudyNotes = {
         "Ekmax = 6.0 − 3.5 = 2.5 × 10⁻¹⁹ J",
         "Vs = Ekmax/e = 2.5 × 10⁻¹⁹ / 1.6 × 10⁻¹⁹ = **1.6 V**",
       ],
+      blank: 1,
     },
     {
       type: "tip",
@@ -871,8 +1135,18 @@ export const physicsStudy: StudyNotes = {
   ],
   "ph-l25": [
     {
+      type: "warmup",
+      prompt: "Both fission and fusion release energy. How can splitting AND joining nuclei both give energy out?",
+      answer: "Binding energy per nucleon peaks near iron: splitting heavy nuclei or joining light ones both move products 'up the hill' toward more binding.",
+    },
+    {
       type: "text",
       body: "Mass and energy are equivalent: E = mc². The mass of a nucleus is less than the sum of its parts — the missing mass is **mass defect**, and the corresponding energy needed to disassemble the nucleus is **binding energy**. Binding energy per nucleon measures stability: it peaks near iron, so both fission (heavy → mid) and fusion (light → mid) release energy.",
+    },
+    {
+      type: "check",
+      prompt: "Why is mass defect called a 'defect' if the nucleus isn't broken?",
+      answer: "The bound nucleus simply has less mass than its separate parts — the difference left as the binding energy that held it together (E = Δmc²).",
     },
     {
       type: "definition",
@@ -896,6 +1170,7 @@ export const physicsStudy: StudyNotes = {
         "ΔE = 0.20 × 931.5 MeV",
         "ΔE = **186 MeV**",
       ],
+      blank: 1,
     },
     {
       type: "tip",

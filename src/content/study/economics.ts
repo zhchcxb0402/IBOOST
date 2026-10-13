@@ -3,8 +3,18 @@ import type { StudyNotes } from "../types";
 export const economicsStudy: StudyNotes = {
   "ec-l1": [
     {
+      type: "warmup",
+      prompt: "A student skips a paid shift (would have earned $40) to revise. The revision is 'free'. True cost?",
+      answer: "At least $40 — opportunity cost is the next best alternative forgone: the forgone wages (plus what leisure/rest was worth), not $0.",
+    },
+    {
       type: "text",
       body: "Economics starts with **scarcity**: unlimited wants meet limited resources (land, labour, capital, entrepreneurship), so every agent must choose. The true cost of any choice is the **opportunity cost** — the next best alternative forgone, not the money spent.",
+    },
+    {
+      type: "check",
+      prompt: "Why does scarcity force choice even for rich economies?",
+      answer: "Wants expand with resources — time, environment and attention stay limited, so the opportunity cost logic applies at every income level.",
     },
     {
       type: "definition",
@@ -28,6 +38,7 @@ export const economicsStudy: StudyNotes = {
         "Opportunity cost of the 10 extra guns = butter forgone = 150 − 110 = 40 units",
         "Per gun: 40 / 10 = **4 units of butter per extra gun** — always name the alternative given up",
       ],
+      blank: 1,
     },
     {
       type: "tip",
@@ -36,8 +47,18 @@ export const economicsStudy: StudyNotes = {
   ],
   "ec-l2": [
     {
+      type: "warmup",
+      prompt: "A government gives free school meals. Which two of the nine IB concepts does this most directly serve?",
+      answer: "Equity (fairer access regardless of income) and economic well-being (health/learning) — though it raises efficiency vs intervention debates too.",
+    },
+    {
       type: "text",
       body: "Economic systems answer three questions: **what to produce, how to produce, and for whom**. A free-market economy answers via price signals and private ownership; a planned economy via the state; most real economies are mixed. The IB organises analysis around **nine key concepts**: scarcity, choice, efficiency, equity, economic well-being, sustainability, change, interdependence and intervention.",
+    },
+    {
+      type: "check",
+      prompt: "Why can a policy be efficient but inequitable at the same time?",
+      answer: "Efficiency maximises total surplus regardless of who gets it; equity concerns distribution — maximising the pie says nothing about the slices.",
     },
     {
       type: "definition",
@@ -67,6 +88,7 @@ export const economicsStudy: StudyNotes = {
         "Intervention (subsidy), sustainability (energy transition), equity (who can afford panels), efficiency (resource allocation shifts)",
         "Frame answers around the concept + a real-world example",
       ],
+      blank: 1,
     },
     {
       type: "tip",
@@ -75,8 +97,18 @@ export const economicsStudy: StudyNotes = {
   ],
   "ec-l15": [
     {
+      type: "warmup",
+      prompt: "Petrol gets more expensive because oil supply fell. On the petrol diagram, does demand or supply shift?",
+      answer: "Supply shifts left (higher input costs) — a price rise caused by supply is a movement up the unchanged demand curve, not a demand shift.",
+    },
+    {
       type: "text",
       body: "Demand curves slope down (income, substitution and diminishing-marginal-utility effects); supply curves slope up (profit motive). **Movements along** a curve come from the good's own price; **shifts** come from determinants — demand: income, tastes, prices of substitutes/complements, population, expectations; supply: input costs, technology, taxes/subsidies, weather, number of firms.",
+    },
+    {
+      type: "check",
+      prompt: "Why does a shortage push price up automatically in a free market?",
+      answer: "Excess demand lets sellers raise prices while still selling everything — unserved buyers bid prices up until Qd falls to meet Qs.",
     },
     {
       type: "definition",
@@ -95,6 +127,7 @@ export const economicsStudy: StudyNotes = {
         "Cheaper coffee → consumers switch → demand for tea shifts LEFT",
         "New equilibrium: lower price, lower quantity for tea",
       ],
+      blank: 1,
     },
     {
       type: "tip",
@@ -103,8 +136,18 @@ export const economicsStudy: StudyNotes = {
   ],
   "ec-l16": [
     {
+      type: "warmup",
+      prompt: "A shop raises prices 10% and quantity demanded falls 30%. Elastic or inelastic — and what happens to revenue?",
+      answer: "PED = 3 → elastic; revenue falls — the quantity loss outweighs the price gain when |PED| > 1.",
+    },
+    {
       type: "text",
       body: "Elasticities measure responsiveness. **PED** = %ΔQd / %ΔP; **PES** same for supply; **YED** = %ΔQd / %Δincome; **XED** = %ΔQd of good A / %ΔP of good B. Sign and size carry meaning: PED is reported as absolute value; YED positive = normal good, negative = inferior; XED positive = substitutes, negative = complements.",
+    },
+    {
+      type: "check",
+      prompt: "Why is a negative YED actually informative rather than an error?",
+      answer: "Negative income elasticity defines inferior goods — demand falls as income rises; the sign carries the classification.",
     },
     {
       type: "definition",
@@ -128,6 +171,7 @@ export const economicsStudy: StudyNotes = {
         "%ΔQd = −20/100 = −20%; %ΔP = 1/4 = +25%",
         "PED = −20/25 = −0.8 → |PED| = **0.8, inelastic**",
       ],
+      blank: 1,
     },
     {
       type: "example",
@@ -145,8 +189,18 @@ export const economicsStudy: StudyNotes = {
   ],
   "ec-l17": [
     {
+      type: "warmup",
+      prompt: "Rent control is set below the market equilibrium. What appears in the market — a surplus or a shortage?",
+      answer: "A shortage — below equilibrium, quantity demanded exceeds quantity supplied; waiting lists and black markets follow.",
+    },
+    {
       type: "text",
       body: "Governments intervene on price: a **price ceiling** (maximum, e.g. rent control) binds only below equilibrium → shortage; a **price floor** (minimum, e.g. minimum wage, agricultural price supports) binds only above equilibrium → surplus. A **subsidy** shifts supply down; the benefit splits between consumers and producers depending on elasticities.",
+    },
+    {
+      type: "check",
+      prompt: "Why does a price ceiling above equilibrium have zero effect?",
+      answer: "The market clears at a price already below the legal maximum — non-binding controls never bite.",
     },
     {
       type: "definition",
@@ -165,6 +219,7 @@ export const economicsStudy: StudyNotes = {
         "Floor binds (above equilibrium)",
         "Surplus = 80k − 50k = **30k unemployed**",
       ],
+      blank: 1,
     },
     {
       type: "tip",
@@ -173,8 +228,18 @@ export const economicsStudy: StudyNotes = {
   ],
   "ec-l3": [
     {
+      type: "warmup",
+      prompt: "Avocado toast becomes fashionable. On the avocado market diagram, what shifts?",
+      answer: "Demand shifts right (tastes/preferences) — price and quantity both rise along the existing supply curve.",
+    },
+    {
       type: "text",
       body: "The law of demand: ceteris paribus, as price rises, quantity demanded falls — shown by a downward-sloping curve. Supply slopes up: higher prices make production more profitable and draw in firms. Equilibrium price and quantity clear the market; the price mechanism allocates resources via signals and incentives.",
+    },
+    {
+      type: "check",
+      prompt: "How does the price mechanism ration scarce concert tickets?",
+      answer: "Price rises until quantity demanded equals the fixed supply — tickets go to those willing and able to pay; the signal attracts more supply later.",
     },
     {
       type: "definition",
@@ -193,6 +258,7 @@ export const economicsStudy: StudyNotes = {
         "Firms cut price to clear stock → Qd rises, Qs falls",
         "Price settles where **Qd = Qs**",
       ],
+      blank: 1,
     },
     {
       type: "tip",
@@ -201,8 +267,18 @@ export const economicsStudy: StudyNotes = {
   ],
   "ec-l4": [
     {
+      type: "warmup",
+      prompt: "Governments tax cigarettes heavily. From a revenue view, why is that a smart choice?",
+      answer: "Demand is inelastic (addictive, few substitutes) — quantity barely falls when price rises, so tax × quantity stays high and consumers bear most of the burden.",
+    },
+    {
       type: "text",
       body: "Elasticity determines who bears interventions. With an **indirect tax**, the side of the market that's more inelastic bears more of the burden: inelastic demand (cigarettes, fuel) → consumers pay most of the tax; elastic demand → producers absorb it. Government revenue = tax × new quantity.",
+    },
+    {
+      type: "check",
+      prompt: "Why does taxing an elastic good create a bigger deadweight loss?",
+      answer: "Quantity collapses when price rises — the lost trades (surplus destroyed rather than transferred) are the deadweight triangle.",
     },
     {
       type: "definition",
@@ -227,6 +303,7 @@ export const economicsStudy: StudyNotes = {
         "Producer burden = $3 − ($4.60 − $2) = $0.40 (20%)",
         "Inelastic demand → **consumers bear most**",
       ],
+      blank: 2,
     },
     {
       type: "tip",
@@ -235,8 +312,18 @@ export const economicsStudy: StudyNotes = {
   ],
   "ec-l5": [
     {
+      type: "warmup",
+      prompt: "A factory pollutes a river. Is the market quantity of the good too high or too low relative to the social optimum?",
+      answer: "Too high — MSC > MPC means the market overproduces: output extends past the point where marginal social cost meets marginal benefit.",
+    },
+    {
       type: "text",
       body: "**Market failure** occurs when free markets misallocate resources: externalities, public goods, common-access resources, asymmetric information and market power. **Externalities** are third-party effects — negative (pollution: MSC > MPC, overproduction) or positive (education: MSB > MPB, underproduction).",
+    },
+    {
+      type: "check",
+      prompt: "Why won't private markets provide street lighting even though everyone values it?",
+      answer: "Non-excludability → free-riding: you can benefit without paying, so no firm can charge — public goods need collective provision.",
     },
     {
       type: "definition",
@@ -265,6 +352,7 @@ export const economicsStudy: StudyNotes = {
         "Market equilibrium Qm at D = MPC > social optimum Q* at D = MSC",
         "Welfare loss triangle between MSC and D over Q*–Qm",
       ],
+      blank: 1,
     },
     {
       type: "tip",
@@ -273,8 +361,18 @@ export const economicsStudy: StudyNotes = {
   ],
   "ec-l6": [
     {
+      type: "warmup",
+      prompt: "A monopoly produces where MC = MR, then charges the demand price. Is that price above or below MC = MR?",
+      answer: "Above — price is read off the demand (AR) curve at the MC = MR quantity, so P > MC: the source of monopoly welfare loss.",
+    },
+    {
       type: "text",
       body: "Firms' objectives vary (profit maximisation, revenue maximisation, satisficing, growth). Market structures run from **perfect competition** (many small firms, identical products, no barriers → price takers) to **monopoly** (single seller, high barriers → price maker). Firms profit-maximise where MC = MR.",
+    },
+    {
+      type: "check",
+      prompt: "Why can a monopoly keep supernormal profit in the long run while a competitive firm can't?",
+      answer: "Barriers to entry block the entry that would erode profit — perfect competition has none, so entry drives profit to normal.",
     },
     {
       type: "definition",
@@ -298,6 +396,7 @@ export const economicsStudy: StudyNotes = {
         "No barriers → new firms enter → market supply rises → price falls",
         "Each firm's demand falls until P = ATC → **normal profit only**",
       ],
+      blank: 1,
     },
     {
       type: "tip",
@@ -306,8 +405,18 @@ export const economicsStudy: StudyNotes = {
   ],
   "ec-l18": [
     {
+      type: "warmup",
+      prompt: "A pigouvian tax equals the marginal external cost. What happens to the market quantity?",
+      answer: "It falls to the social optimum — MPC shifts up to MSC, removing the overproduction between Qm and Q*.",
+    },
+    {
       type: "text",
       body: "Deeper market-failure toolkit: **indirect taxes** internalise negative externalities (raise MPC toward MSC); **tradable pollution permits** cap total emissions and let firms trade allowances; **subsidies** correct positive externalities (raise MPB toward MSB). Under **market power**, HL analysis uses MR and MC: monopoly produces where MC = MR but prices off the demand curve.",
+    },
+    {
+      type: "check",
+      prompt: "Why do economists often prefer tradable permits over taxes for pollution?",
+      answer: "Permits fix the total emission quantity with certainty and let the market find the cheapest abatement — taxes fix the price, not the amount.",
     },
     {
       type: "definition",
@@ -331,6 +440,7 @@ export const economicsStudy: StudyNotes = {
         "Tax = external cost → shifts MPC up to coincide with MSC",
         "→ **$5 per unit**, output falls to the social optimum",
       ],
+      blank: 1,
     },
     {
       type: "tip",
@@ -339,8 +449,18 @@ export const economicsStudy: StudyNotes = {
   ],
   "ec-l7": [
     {
+      type: "warmup",
+      prompt: "Nominal GDP rises 5% while prices rise 5%. Did the economy grow?",
+      answer: "No — real GDP is unchanged; nominal growth from pure inflation isn't more output.",
+    },
+    {
       type: "text",
       body: "Macroeconomics starts by measuring activity. **GDP** = value of final goods and services produced in a country per period — via output, income or expenditure (C + I + G + X − M). Real GDP removes inflation; GDP per capita and HDI adjust for living standards. **AD** = total planned spending; **AS** = total output firms will supply.",
+    },
+    {
+      type: "check",
+      prompt: "Why does AD slope downward?",
+      answer: "Lower price levels raise real wealth, cut interest rates, and cheapen exports relative to imports — three separate channels boosting planned spending.",
     },
     {
       type: "definition",
@@ -369,6 +489,7 @@ export const economicsStudy: StudyNotes = {
         "Real = nominal / index × 100 = 220 / 110 × 100",
         "= **$200bn**",
       ],
+      blank: 1,
     },
     {
       type: "tip",
@@ -377,8 +498,18 @@ export const economicsStudy: StudyNotes = {
   ],
   "ec-l8": [
     {
+      type: "warmup",
+      prompt: "A central bank cuts interest rates in a recession. Trace the chain to AD.",
+      answer: "Cheaper borrowing → consumption and investment rise → AD shifts right — expansionary monetary policy.",
+    },
+    {
       type: "text",
       body: "Demand-side policies manage AD. **Fiscal policy** = government spending and taxation (expansionary G↑/T↑ deficit to fight recession; contractionary to fight inflation). **Monetary policy** = interest rates/money supply by the central bank (cut rates → cheaper borrowing → C and I rise → AD shifts right).",
+    },
+    {
+      type: "check",
+      prompt: "Why does fiscal policy suffer 'crowding out'?",
+      answer: "Government borrowing raises interest rates and competes for funds, dampening the private C and I it was meant to stimulate.",
     },
     {
       type: "definition",
@@ -407,6 +538,7 @@ export const economicsStudy: StudyNotes = {
         "Contractionary policy lowers inflation but worsens output — a dilemma",
         "→ supply-side policies (raise LRAS) suit supply shocks",
       ],
+      blank: 1,
     },
     {
       type: "tip",
@@ -415,8 +547,18 @@ export const economicsStudy: StudyNotes = {
   ],
   "ec-l9": [
     {
+      type: "warmup",
+      prompt: "MPC = 0.8 and the government spends $10bn — the multiplier is 5, so output rises $50bn. Where does the 'extra' spending come from?",
+      answer: "Each round of spending becomes someone's income, of which 80% is re-spent — the geometric chain 10 + 8 + 6.4 + … sums to 50.",
+    },
+    {
       type: "text",
       body: "Keynesian view: economies can get stuck below full employment — AD shortfalls persist because wages/prices are sticky, so intervention is needed. The **multiplier** amplifies any injection: ΔY = multiplier × injection, where k = 1/(1 − MPC) = 1/MPS (with taxes/imports, k = 1/MPW). Monetarists reply that economies self-correct and demand stimulus just inflates.",
+    },
+    {
+      type: "check",
+      prompt: "Why do monetarists distrust fiscal stimulus even when the multiplier is large?",
+      answer: "They believe economies self-correct to potential output — stimulus then bids up prices (inflation) rather than raising real output long-run.",
     },
     {
       type: "definition",
@@ -440,6 +582,7 @@ export const economicsStudy: StudyNotes = {
         "k = 1/(1 − 0.8) = 5",
         "ΔY = 5 × 10 = **$50bn**",
       ],
+      blank: 1,
     },
     {
       type: "tip",
@@ -448,8 +591,18 @@ export const economicsStudy: StudyNotes = {
   ],
   "ec-l19": [
     {
+      type: "warmup",
+      prompt: "Consumer confidence collapses during a financial crisis. Which AD/AS diagram section determines whether stimulus works?",
+      answer: "The Keynesian AS curve — on the horizontal section stimulus raises output without inflation; near vertical, it mostly inflates.",
+    },
+    {
       type: "text",
       body: "AD shifts with any C, I, G or net-export determinant: consumer confidence, interest rates, fiscal stance, exchange rates, foreign incomes. SRAS shifts with input costs (wages, oil), taxes/subsidies, supply shocks; LRAS shifts with resources, technology, institutions and productivity.",
+    },
+    {
+      type: "check",
+      prompt: "Why does an oil-price shock move SRAS rather than AD?",
+      answer: "Oil is an input cost for most production — dearer oil raises marginal costs economy-wide, shifting SRAS left (stagflation).",
     },
     {
       type: "text",
@@ -463,6 +616,7 @@ export const economicsStudy: StudyNotes = {
         "MPW = 0.1 + 0.2 + 0.1 = 0.4 → k = 2.5",
         "ΔY = **$12.5bn**",
       ],
+      blank: 1,
     },
     {
       type: "list",
@@ -481,8 +635,18 @@ export const economicsStudy: StudyNotes = {
   ],
   "ec-l20": [
     {
+      type: "warmup",
+      prompt: "Unemployment falls yet inflation accelerates. What does the short-run Phillips curve predict, and why?",
+      answer: "Exactly this trade-off — tight labour markets bid wages up, feeding prices; the SRPC slopes down until expectations adjust.",
+    },
+    {
       type: "text",
       body: "**Unemployment** types: cyclical/demand-deficient (recession), structural (skills mismatch), frictional (between jobs), seasonal. **Inflation** = sustained rise in the general price level, measured by CPI — a weighted basket; demand-pull vs cost-push causes. The **Phillips curve** (HL) shows a short-run inflation–unemployment trade-off; in the long run it's vertical at the natural rate.",
+    },
+    {
+      type: "check",
+      prompt: "Why is the long-run Phillips curve vertical?",
+      answer: "Once workers and firms fully anticipate inflation, no real wage change occurs — unemployment returns to the natural rate at any inflation rate.",
     },
     {
       type: "definition",
@@ -507,6 +671,7 @@ export const economicsStudy: StudyNotes = {
         "(126 − 120)/120 × 100",
         "= **5%**",
       ],
+      blank: 1,
     },
     {
       type: "tip",
@@ -515,8 +680,18 @@ export const economicsStudy: StudyNotes = {
   ],
   "ec-l10": [
     {
+      type: "warmup",
+      prompt: "A tariff raises domestic price from $10 to $12. Domestic producers cheer, consumers lose — is society better off?",
+      answer: "Net worse — the deadweight-loss triangles exceed the transfer: gains to producers and government are smaller than consumer loss.",
+    },
+    {
       type: "text",
       body: "Free-trade arguments rest on comparative advantage and efficiency; **protectionism** shields domestic industries. Tools: **tariffs** (import taxes), **quotas** (quantity limits), subsidies to domestic producers, administrative barriers. All raise domestic producer surplus but cost consumers more — net welfare loss.",
+    },
+    {
+      type: "check",
+      prompt: "Why is the 'infant industry' argument time-limited by design?",
+      answer: "It's meant to shelter new industries until they reach competitive scale — permanent protection just breeds inefficiency and dependency.",
     },
     {
       type: "definition",
@@ -543,6 +718,7 @@ export const economicsStudy: StudyNotes = {
         "Government revenue = tax × imports = 2 × 40 000",
         "= **$80 000**",
       ],
+      blank: 1,
     },
     {
       type: "tip",
@@ -551,8 +727,18 @@ export const economicsStudy: StudyNotes = {
   ],
   "ec-l11": [
     {
+      type: "warmup",
+      prompt: "The pound depreciates from £1 = $1.40 to £1 = $1.20. For a UK exporter, is this good or bad news?",
+      answer: "Good — its goods become cheaper in dollar terms, boosting competitiveness abroad (though imports cost more).",
+    },
+    {
       type: "text",
       body: "An **exchange rate** is the price of one currency in another. Floating rates are set by demand for (exports, capital inflows) and supply of (imports, capital outflows) the currency; depreciation makes exports cheaper and imports dearer. The **balance of payments** records international transactions: current account + capital + financial account.",
+    },
+    {
+      type: "check",
+      prompt: "Why must a current-account deficit be matched by a financial/capital surplus?",
+      answer: "Balance of payments is an accounting identity — money spent abroad beyond earnings is financed by borrowing or asset sales.",
     },
     {
       type: "definition",
@@ -577,6 +763,7 @@ export const economicsStudy: StudyNotes = {
         "Before: $14; after: $12",
         "Depreciation → export **cheaper by $2** → more competitive",
       ],
+      blank: 1,
     },
     {
       type: "tip",
@@ -585,8 +772,18 @@ export const economicsStudy: StudyNotes = {
   ],
   "ec-l12": [
     {
+      type: "warmup",
+      prompt: "A country depreciates its currency but the trade deficit first widens. Is the policy failing?",
+      answer: "Not necessarily — the J-curve: contracts lock in old volumes short-run, so the value effect dominates until quantities adjust.",
+    },
+    {
       type: "text",
       body: "Two HL refinements. **Marshall–Lerner condition**: depreciation improves the current account only if |PED exports| + |PED imports| > 1 — elasticities decide, not just the rate change. The **J-curve**: the current account worsens short-run (contracts fixed, volumes inelastic) before improving long-run. **Terms of trade** = index of export prices / index of import prices × 100.",
+    },
+    {
+      type: "check",
+      prompt: "Why does the Marshall–Lerner condition need BOTH elasticities, not just one?",
+      answer: "The trade balance responds to export and import volumes together — the sum of PEDs decides whether the quantity response outweighs the price effect.",
     },
     {
       type: "definition",
@@ -611,6 +808,7 @@ export const economicsStudy: StudyNotes = {
         "Sum = 1.3 > 1 → condition satisfied",
         "→ **Yes**, once the J-curve lag passes",
       ],
+      blank: 1,
     },
     {
       type: "tip",
@@ -619,8 +817,18 @@ export const economicsStudy: StudyNotes = {
   ],
   "ec-l21": [
     {
+      type: "warmup",
+      prompt: "A central bank raises interest rates sharply. What happens to the exchange rate — and why?",
+      answer: "It appreciates — higher returns attract foreign capital inflows (hot money), raising demand for the currency.",
+    },
+    {
       type: "text",
       body: "Exchange-rate determination in depth: currency demand comes from exports, inward investment and speculation; supply from imports, outward investment and central-bank sales. Under floating regimes the rate clears the market; managed/fixed regimes need reserves or interest-rate defence.",
+    },
+    {
+      type: "check",
+      prompt: "Why can a persistent current-account surplus signal weakness rather than strength?",
+      answer: "It may reflect chronically weak domestic demand — the economy relies on exports because households and firms won't spend at home.",
     },
     {
       type: "list",
@@ -644,6 +852,7 @@ export const economicsStudy: StudyNotes = {
         "Trade: −15; total = −15 − 5 + 4",
         "= **−$16bn deficit**",
       ],
+      blank: 1,
     },
     {
       type: "tip",
@@ -652,8 +861,18 @@ export const economicsStudy: StudyNotes = {
   ],
   "ec-l22": [
     {
+      type: "warmup",
+      prompt: "Two countries scrap mutual tariffs but keep independent external tariffs. What stage of integration is this?",
+      answer: "A free-trade area — only a customs union adds the common external tariff.",
+    },
+    {
       type: "text",
       body: "**Economic integration** ranges from preferential trade areas → free-trade areas → customs unions (common external tariff) → common markets (free factor movement) → monetary union. Benefits: bigger markets, specialisation, FDI; costs: loss of sovereignty (a monetary-union member can't set its own interest rate or devalue).",
+    },
+    {
+      type: "check",
+      prompt: "Why do Eurozone members lose a policy tool that floating-rate countries keep?",
+      answer: "Monetary union means one shared interest rate and no independent devaluation — adjustment must come through wages/prices ('internal devaluation').",
     },
     {
       type: "definition",
@@ -672,6 +891,7 @@ export const economicsStudy: StudyNotes = {
         "Free-trade area = internal tariffs only; adding common external tariff",
         "→ **customs union**",
       ],
+      blank: 1,
     },
     {
       type: "tip",
@@ -680,8 +900,18 @@ export const economicsStudy: StudyNotes = {
   ],
   "ec-l13": [
     {
+      type: "warmup",
+      prompt: "Country X doubles GDP per capita while life expectancy and literacy stagnate. Growth, development, or both?",
+      answer: "Growth only — GDP rose but the well-being dimensions that define development didn't move.",
+    },
+    {
       type: "text",
       body: "**Economic growth** = increase in real GDP; **economic development** = broader improvement in well-being — health, education, freedoms, sustainability. A country can grow without developing (rising GDP alongside inequality and environmental damage).",
+    },
+    {
+      type: "check",
+      prompt: "Why do economists prefer HDI over GDP per capita for ranking countries?",
+      answer: "HDI adds health and education to income — GDP alone ignores how income converts into actual capabilities and well-being.",
     },
     {
       type: "definition",
@@ -710,6 +940,7 @@ export const economicsStudy: StudyNotes = {
         "Growth? Yes (real GDP rising). Development? Ambiguous — education flat, sustainability falling",
         "→ **growth without full development** — the textbook distinction",
       ],
+      blank: 1,
     },
     {
       type: "tip",
@@ -718,8 +949,18 @@ export const economicsStudy: StudyNotes = {
   ],
   "ec-l14": [
     {
+      type: "warmup",
+      prompt: "A carbon tax raises energy prices that hit poor households hardest. Pro or con for sustainability?",
+      answer: "Mixed — environmentally it's sound policy, but it's regressive unless revenue is recycled to lower-income groups; evaluation must weigh both.",
+    },
+    {
       type: "text",
       body: "Sustainability and equity are evaluative battlegrounds. Development paths that deplete natural capital raise current income at the expense of future well-being; redistribution can support equity but may blunt incentives — the classic efficiency–equity debate runs through Paper 1(b) answers.",
+    },
+    {
+      type: "check",
+      prompt: "Why does 'growth first, redistribute later' often fail the sustainability test?",
+      answer: "Growth patterns set infrastructure and consumption norms — environmental and equity damage locked in early is hard to reverse later.",
     },
     {
       type: "definition",
@@ -745,6 +986,7 @@ export const economicsStudy: StudyNotes = {
         "Against: regressive, carbon leakage if neighbours don't act",
         "Conclusion: effective IF revenue is recycled progressively and trading partners coordinate",
       ],
+      blank: 2,
     },
     {
       type: "tip",
@@ -753,8 +995,18 @@ export const economicsStudy: StudyNotes = {
   ],
   "ec-l23": [
     {
+      type: "warmup",
+      prompt: "Gini = 0.6 in country A vs 0.3 in country B — which Lorenz curve bows further from the equality line?",
+      answer: "Country A — Gini measures that bowed area; higher Gini means the bottom shares hold less of total income.",
+    },
+    {
       type: "text",
       body: "**Inequality** is measured with the Lorenz curve — cumulative % of income against cumulative % of population; the further it bows from the 45° equality line, the more unequal. The **Gini coefficient** = A/(A+B), 0 = perfect equality, 1 = one person owns everything. Direct taxes and transfers flatten the curve; indirect taxes can steepen it.",
+    },
+    {
+      type: "check",
+      prompt: "Why can progressive taxation shrink the Lorenz gap without shrinking the pie?",
+      answer: "Transfers re-weight income shares toward the bottom quintiles — post-tax Lorenz curves lie inside pre-tax ones, and evidence for big incentive losses is mixed at moderate rates.",
     },
     {
       type: "definition",
@@ -778,6 +1030,7 @@ export const economicsStudy: StudyNotes = {
         "Cumulative shares: bottom 20% → 5%, bottom 40% → 15%, bottom 60% → 30%, all → 100%",
         "A Lorenz curve through those points sits far below the 45° line → **high inequality**",
       ],
+      blank: 1,
     },
     {
       type: "tip",
@@ -786,8 +1039,18 @@ export const economicsStudy: StudyNotes = {
   ],
   "ec-l24": [
     {
+      type: "warmup",
+      prompt: "Inflation is driven by a supply shock (oil). Will raising interest rates fix it cleanly?",
+      answer: "No — contractionary policy lowers inflation only by depressing output further; supply shocks need supply-side or patience, making it a policy dilemma.",
+    },
+    {
       type: "text",
       body: "Full policy evaluation: weigh fiscal, monetary and supply-side responses against the problem's cause, time horizon and side-effects. Demand shocks → demand management; supply shocks/structural stagnation → supply-side. Contractionary demand policy fights inflation at an output cost — the Phillips trade-off.",
+    },
+    {
+      type: "check",
+      prompt: "Why is 'it depends on the cause of the problem' the right evaluation move?",
+      answer: "Demand-deficient vs structural problems need different instruments — fiscal/monetary manage AD; supply-side reforms fix capacity.",
     },
     {
       type: "list",
@@ -812,6 +1075,7 @@ export const economicsStudy: StudyNotes = {
         "Demand stimulus won't fix mismatch — workers lack needed skills",
         "→ **interventionist supply-side: retraining/education**",
       ],
+      blank: 1,
     },
     {
       type: "tip",
@@ -820,8 +1084,18 @@ export const economicsStudy: StudyNotes = {
   ],
   "ec-l25": [
     {
+      type: "warmup",
+      prompt: "A country receives large aid inflows but its government spends them on prestige projects. Aid helping or hurting?",
+      answer: "Hurting, likely — aid's development effect depends on governance and use; misallocated aid can entrench dependency without building capacity.",
+    },
+    {
       type: "text",
       body: "Development strategies split into market-led (trade liberalisation, FDI, privatisation) and interventionist (import substitution, aid, industrial policy). **Foreign aid** provides resources but risks dependency and mismanagement; **debt** burdens (e.g. servicing costs crowding out health spending) trap some economies; **microfinance** and fair-trade schemes work at household level.",
+    },
+    {
+      type: "check",
+      prompt: "Why do heavy debt-servicing costs crowd out development spending?",
+      answer: "Interest payments come before health/education in the budget — a debt trap diverts scarce public resources to creditors instead of capability building.",
     },
     {
       type: "definition",
@@ -851,6 +1125,7 @@ export const economicsStudy: StudyNotes = {
         "Trade: self-sustaining growth via comparative advantage, but needs infrastructure + market access",
         "Conclusion: trade builds durable growth; aid bridges the transition — cite one country each",
       ],
+      blank: 2,
     },
     {
       type: "tip",

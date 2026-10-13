@@ -3,7 +3,11 @@
 import { useEffect, useRef } from "react";
 import type { User } from "@supabase/supabase-js";
 import { createClient, isSupabaseConfigured } from "@/lib/supabase/client";
-import { useProgress, type SrsEntry } from "@/store/progress";
+import {
+  useProgress,
+  type LessonReviewEntry,
+  type SrsEntry,
+} from "@/store/progress";
 import type { Level } from "@/content/types";
 
 export type ProgressSlice = {
@@ -13,6 +17,7 @@ export type ProgressSlice = {
   lastActiveDate: string | null;
   completedLessons: Record<string, true>;
   srs: Record<string, SrsEntry>;
+  lessonReview: Record<string, LessonReviewEntry>;
   onboarded: boolean;
   selectedSubjects: Record<string, Level>;
 };
@@ -26,6 +31,7 @@ export function getSlice(): ProgressSlice {
     lastActiveDate: s.lastActiveDate,
     completedLessons: s.completedLessons,
     srs: s.srs,
+    lessonReview: s.lessonReview,
     onboarded: s.onboarded,
     selectedSubjects: s.selectedSubjects,
   };
@@ -40,6 +46,13 @@ export function mergeProgress(
     const r = srs[id];
     if (!r || entry.due > r.due) srs[id] = entry;
   }
+  const lessonReview: Record<string, LessonReviewEntry> = {
+    ...(remote.lessonReview ?? {}),
+  };
+  for (const [key, entry] of Object.entries(local.lessonReview ?? {})) {
+    const r = lessonReview[key];
+    if (!r || entry.due > r.due) lessonReview[key] = entry;
+  }
   return {
     xp: Math.max(local.xp ?? 0, remote.xp ?? 0),
     hearts: local.hearts,
@@ -53,6 +66,7 @@ export function mergeProgress(
       ...(local.completedLessons ?? {}),
     },
     srs,
+    lessonReview,
     onboarded: Boolean(local.onboarded || remote.onboarded),
     selectedSubjects: {
       ...(remote.selectedSubjects ?? {}),

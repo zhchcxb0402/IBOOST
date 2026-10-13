@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { chat } from "@/lib/ai";
+import { keywordCheck, localCheck } from "@/lib/check";
 
 export const runtime = "nodejs";
 
@@ -10,46 +11,6 @@ type Body = {
   acceptable?: string[];
   userAnswer?: string;
 };
-
-function normalize(s: string) {
-  return s
-    .toLowerCase()
-    .replace(/[^\p{L}\p{N}\s]/gu, "")
-    .replace(/\s+/g, " ")
-    .trim();
-}
-
-function rulesCheck(b: Required<Body>): { correct: boolean; feedback: string } {
-  const norm = normalize(b.userAnswer);
-  const candidates = [b.answer, ...(b.acceptable ?? [])].map(normalize);
-  if (candidates.includes(norm)) {
-    return { correct: true, feedback: "Matches the model answer." };
-  }
-  const uNum = Number(norm);
-  const aNum = Number(normalize(b.answer));
-  if (
-    Number.isFinite(uNum) &&
-    Number.isFinite(aNum) &&
-    aNum !== 0 &&
-    Math.abs(uNum - aNum) / Math.abs(aNum) <= 0.01
-  ) {
-    return { correct: true, feedback: "Numerically equivalent." };
-  }
-  const hits = b.keywords.filter((k) =>
-    normalize(b.userAnswer).includes(normalize(k))
-  );
-  const required = Math.min(2, Math.ceil(b.keywords.length * 0.6));
-  if (b.keywords.length > 0 && hits.length >= required) {
-    return {
-      correct: true,
-      feedback: `Covers the key ideas (${hits.length}/${b.keywords.length} keywords).`,
-    };
-  }
-  return {
-    correct: false,
-    feedback: `Missing key ideas (${hits.length}/${b.keywords.length} keywords matched).`,
-  };
-}
 
 async function aiCheck(
   b: Required<Body>
@@ -66,7 +27,7 @@ async function aiCheck(
         content: `Question: ${b.prompt}\nModel answer: ${b.answer}\nKey ideas: ${b.keywords.join(", ")}\nStudent answer: ${b.userAnswer}`,
       },
     ],
-    { temperature: 0, json: true }
+    { temperature: 0, json: true, timeoutMs: 6_000, maxTokens: 80 }
   );
   if (!content) return null;
   try {
@@ -101,7 +62,10 @@ export async function POST(req: Request) {
       { status: 200 }
     );
   }
+  const fast = localCheck(b);
+  if (fast) return NextResponse.json({ ...fast, source: "rules" });
+  const keyword = keywordCheck(b);
   const ai = await aiCheck(b);
   if (ai) return NextResponse.json({ ...ai, source: "ai" });
-  return NextResponse.json({ ...rulesCheck(b), source: "rules" });
+  return NextResponse.json({ ...keyword, source: "rules" });
 }

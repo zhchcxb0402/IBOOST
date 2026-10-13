@@ -8,6 +8,10 @@ export const MAX_HEARTS = 5;
 
 export type SrsEntry = { due: number; interval: number };
 
+export type LessonReviewEntry = { due: number; stage: number };
+
+export const REVIEW_DAYS = [1, 3, 7, 14, 30];
+
 type ProgressState = {
   xp: number;
   hearts: number;
@@ -15,12 +19,15 @@ type ProgressState = {
   lastActiveDate: string | null;
   completedLessons: Record<string, true>;
   srs: Record<string, SrsEntry>;
+  lessonReview: Record<string, LessonReviewEntry>;
   onboarded: boolean;
   selectedSubjects: Record<string, Level>;
   completeLesson: (key: string, xpEarned: number) => void;
   loseHeart: () => void;
+  addXp: (n: number) => void;
   refillHearts: () => void;
   reviewCard: (cardId: string, known: boolean) => void;
+  recordReview: (keys: string[], passed: boolean) => void;
   syncDaily: () => void;
   setSubjectLevel: (slug: string, level: Level | null) => void;
   finishOnboarding: () => void;
@@ -49,6 +56,7 @@ export const useProgress = create<ProgressState>()(
       lastActiveDate: null,
       completedLessons: {},
       srs: {},
+      lessonReview: {},
       onboarded: false,
       selectedSubjects: {},
       completeLesson: (key, xpEarned) =>
@@ -62,14 +70,37 @@ export const useProgress = create<ProgressState>()(
           } else {
             streak = 1;
           }
+          const lessonReview = s.lessonReview[key]
+            ? s.lessonReview
+            : {
+                ...s.lessonReview,
+                [key]: { due: Date.now() + DAY_MS, stage: 0 },
+              };
           return {
             xp: s.xp + xpEarned,
             streak,
             lastActiveDate: today,
             completedLessons: { ...s.completedLessons, [key]: true },
+            lessonReview,
           };
         }),
+      recordReview: (keys, passed) =>
+        set((s) => {
+          const lessonReview = { ...s.lessonReview };
+          for (const key of keys) {
+            const prev = lessonReview[key] ?? { due: 0, stage: 0 };
+            const stage = passed
+              ? Math.min(prev.stage + 1, REVIEW_DAYS.length - 1)
+              : 0;
+            lessonReview[key] = {
+              stage,
+              due: Date.now() + REVIEW_DAYS[stage] * DAY_MS,
+            };
+          }
+          return { lessonReview };
+        }),
       loseHeart: () => set((s) => ({ hearts: Math.max(0, s.hearts - 1) })),
+      addXp: (n) => set((s) => ({ xp: s.xp + n })),
       refillHearts: () => set({ hearts: MAX_HEARTS }),
       reviewCard: (cardId, known) =>
         set((s) => {
@@ -104,6 +135,7 @@ export const useProgress = create<ProgressState>()(
           lastActiveDate: null,
           completedLessons: {},
           srs: {},
+          lessonReview: {},
           onboarded: false,
           selectedSubjects: {},
         }),
@@ -117,6 +149,7 @@ export const useProgress = create<ProgressState>()(
           ...s,
           onboarded: s.onboarded ?? false,
           selectedSubjects: s.selectedSubjects ?? {},
+          lessonReview: s.lessonReview ?? {},
         } as ProgressState;
       },
     }
