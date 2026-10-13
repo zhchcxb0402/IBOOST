@@ -24,9 +24,9 @@ export const economicsStudy: StudyNotes = {
       type: "example",
       title: "Opportunity cost on a PPC",
       steps: [
-        "An economy can produce 100 guns or 200 butter. It chooses 50 guns + 150 butter is impossible — say producing 60 guns costs 40 butter units.",
-        "The opportunity cost of those extra guns = the butter forgone",
-        "Answer framed as: **X units of butter per extra gun** — always name the alternative given up",
+        "An economy on its PPC produces 50 guns and 150 units of butter. Moving to another point on the curve, it produces 60 guns and 110 units of butter.",
+        "Opportunity cost of the 10 extra guns = butter forgone = 150 − 110 = 40 units",
+        "Per gun: 40 / 10 = **4 units of butter per extra gun** — always name the alternative given up",
       ],
     },
     {
@@ -764,7 +764,7 @@ export const economicsStudy: StudyNotes = {
     {
       type: "formula",
       label: "Gini",
-      body: "Gini = A / (A + B);  also ≈ 1 − Σ income shares",
+      body: "Gini = A / (A + B), where A = area between the Lorenz curve and the 45° line, B = area under the Lorenz curve. 0 = perfect equality, 1 = one person has everything",
     },
     {
       type: "text",
